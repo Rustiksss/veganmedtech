@@ -1,0 +1,1 @@
+Preserved WORK-0014 proxy config validated with its environment; current proxy active/enabled; runtime rollback not performed.

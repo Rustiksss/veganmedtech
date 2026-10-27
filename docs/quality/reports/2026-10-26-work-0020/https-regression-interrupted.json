@@ -1,0 +1,114 @@
+{
+  "base_url": "https://94.103.3.149",
+  "accept_insecure_certs": false,
+  "checks": [
+    {
+      "name": "public page without Basic Auth",
+      "passed": true
+    },
+    {
+      "name": "no public module questionnaires.js",
+      "passed": true
+    },
+    {
+      "name": "no public module questionnaires.js.gz",
+      "passed": true
+    },
+    {
+      "name": "no public module questionnaires.js.br",
+      "passed": true
+    },
+    {
+      "name": "no public module questionnaires.039265690600.js",
+      "passed": true
+    },
+    {
+      "name": "no public module questionnaires.039265690600.js.gz",
+      "passed": true
+    },
+    {
+      "name": "no public module questionnaires.039265690600.js.br",
+      "passed": true
+    },
+    {
+      "name": "anonymous questionnaire hash requires app login",
+      "passed": true
+    },
+    {
+      "name": "patient-a registration",
+      "passed": true
+    },
+    {
+      "name": "patient-a operator confirmation notice",
+      "passed": true
+    },
+    {
+      "name": "patient-a unverified module denied",
+      "passed": true
+    },
+    {
+      "name": "patient-a HTTPS confirmation link",
+      "passed": true
+    },
+    {
+      "name": "patient-a confirmation",
+      "passed": true
+    },
+    {
+      "name": "patient-a login",
+      "passed": true
+    },
+    {
+      "name": "patient-b registration",
+      "passed": true
+    },
+    {
+      "name": "patient-b operator confirmation notice",
+      "passed": true
+    },
+    {
+      "name": "patient-b unverified module denied",
+      "passed": true
+    },
+    {
+      "name": "patient-b HTTPS confirmation link",
+      "passed": true
+    },
+    {
+      "name": "patient-b confirmation",
+      "passed": true
+    },
+    {
+      "name": "patient-b login",
+      "passed": true
+    },
+    {
+      "name": "doctor registration",
+      "passed": true
+    },
+    {
+      "name": "doctor operator confirmation notice",
+      "passed": true
+    },
+    {
+      "name": "doctor unverified module denied",
+      "passed": true
+    },
+    {
+      "name": "doctor HTTPS confirmation link",
+      "passed": true
+    },
+    {
+      "name": "doctor confirmation",
+      "passed": true
+    },
+    {
+      "name": "doctor login",
+      "passed": true
+    },
+    {
+      "name": "doctor waits for operator",
+      "passed": true
+    }
+  ]
+}

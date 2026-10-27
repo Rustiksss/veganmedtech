@@ -1,0 +1,6 @@
+ Container veganmedtech-work0020-test-app-1 Stopping 
+ Container veganmedtech-work0020-test-mailpit-1 Stopping 
+ Container veganmedtech-work0020-test-app-1 Stopped 
+ Container veganmedtech-work0020-test-db-1 Stopping 
+ Container veganmedtech-work0020-test-mailpit-1 Stopped 
+ Container veganmedtech-work0020-test-db-1 Stopped 

@@ -1,0 +1,310 @@
+{
+  "version": "synthetic-benchmark-v1",
+  "manifest_hash": "994708d33ae02ea6ef3212f015a344e11ed3702f9b85cd818414a143530506ea",
+  "table": [
+    {
+      "config_id": "b5539fd98693949c",
+      "model": "cohere/command-r7b-12-2024",
+      "provider": "cohere",
+      "prompt": "russian",
+      "stage": "screen",
+      "n": 4,
+      "quality_ok": 3,
+      "fast_correct": 3,
+      "errors": {
+        "wrong_categories": 1
+      },
+      "p50_correct": 3.338,
+      "p95_correct": 4.685,
+      "max_all": 4.685,
+      "unknown_actual_costs": 0,
+      "known_actual_rub": 0.035659170000000004,
+      "reserved_upper_rub": 0.25577645559,
+      "qualified": false
+    },
+    {
+      "config_id": "860aafcc1e53e1af",
+      "model": "google/gemma-3-4b-it",
+      "provider": "parasail/bf16",
+      "prompt": "russian",
+      "stage": "screen",
+      "n": 4,
+      "quality_ok": 1,
+      "fast_correct": 1,
+      "errors": {
+        "http_429": 2,
+        "invalid_json_schema_evidence": 1
+      },
+      "p50_correct": 2.834,
+      "p95_correct": 2.834,
+      "max_all": 2.834,
+      "unknown_actual_costs": 3,
+      "known_actual_rub": 0.00894963,
+      "reserved_upper_rub": 0.26860798296,
+      "qualified": false
+    }
+  ],
+  "selection": null,
+  "results": [
+    {
+      "type": "result",
+      "manifest_hash": "994708d33ae02ea6ef3212f015a344e11ed3702f9b85cd818414a143530506ea",
+      "config_id": "b5539fd98693949c",
+      "stage": "screen",
+      "repeat": 0,
+      "case": "positive",
+      "attempt_key": "994708d33ae02ea6ef3212f015a344e11ed3702f9b85cd818414a143530506ea:screen:b5539fd98693949c:0:positive",
+      "model": "cohere/command-r7b-12-2024",
+      "provider": "cohere",
+      "ok": true,
+      "reply": "Я понимаю, что вы переживаете трудный период. Хочу напомнить, что в любое время можно обратиться за помощью. Вы можете поговорить с кем-то из близких или обратиться к профессиональному психологу или психотерапевту. Если вы чувствуете, что не можете справиться с эмоциями один, стоит рассмотреть возможность обращения за помощью к врачу или в экстренные службы.",
+      "analysis_status": "matched",
+      "signals": [
+        {
+          "category": "wish_to_die",
+          "quote": "Мне тяжело, я не хочу жить.",
+          "time": "current",
+          "label": "Возможное желание не жить",
+          "time_label": "В сообщении относится к настоящему",
+          "source_ref": "DOCX-ALERT-001 · Описание характера суицидальных идей"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1776,
+        "completion_tokens": 128,
+        "total_tokens": 1904,
+        "cost": 0.00970248
+      },
+      "http_dispatched": true,
+      "http_status": 200,
+      "generation_id": "gen_2226342425868374017",
+      "seconds": 3.338,
+      "attempt": 220,
+      "upper_cost_rub": 0.06379740642,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    },
+    {
+      "type": "result",
+      "manifest_hash": "994708d33ae02ea6ef3212f015a344e11ed3702f9b85cd818414a143530506ea",
+      "config_id": "b5539fd98693949c",
+      "stage": "screen",
+      "repeat": 0,
+      "case": "neutral",
+      "attempt_key": "994708d33ae02ea6ef3212f015a344e11ed3702f9b85cd818414a143530506ea:screen:b5539fd98693949c:0:neutral",
+      "model": "cohere/command-r7b-12-2024",
+      "provider": "cohere",
+      "ok": true,
+      "reply": "Новая запись: выберите дату/время и введите текст наблюдения (1–2000 символов).",
+      "analysis_status": "no_match",
+      "signals": [],
+      "usage": {
+        "prompt_tokens": 1776,
+        "completion_tokens": 39,
+        "total_tokens": 1815,
+        "cost": 0.00819283
+      },
+      "http_dispatched": true,
+      "http_status": 200,
+      "generation_id": "gen_2226342444952326145",
+      "seconds": 4.685,
+      "attempt": 221,
+      "upper_cost_rub": 0.0638659413,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    },
+    {
+      "type": "result",
+      "manifest_hash": "994708d33ae02ea6ef3212f015a344e11ed3702f9b85cd818414a143530506ea",
+      "config_id": "b5539fd98693949c",
+      "stage": "screen",
+      "repeat": 0,
+      "case": "negation",
+      "attempt_key": "994708d33ae02ea6ef3212f015a344e11ed3702f9b85cd818414a143530506ea:screen:b5539fd98693949c:0:negation",
+      "model": "cohere/command-r7b-12-2024",
+      "provider": "cohere",
+      "ok": true,
+      "reply": "Я понимаю, что вы не думаете о самоубийстве и не хотите причинять себе вред. Это важно знать. Если у вас есть какие-либо другие вопросы или обеспокоенности, я могу помочь с ними.",
+      "analysis_status": "no_match",
+      "signals": [],
+      "usage": {
+        "prompt_tokens": 1782,
+        "completion_tokens": 62,
+        "total_tokens": 1844,
+        "cost": 0.00860841
+      },
+      "http_dispatched": true,
+      "http_status": 200,
+      "generation_id": "gen_2226342470664065025",
+      "seconds": 2.449,
+      "attempt": 222,
+      "upper_cost_rub": 0.06402871164,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    },
+    {
+      "type": "result",
+      "manifest_hash": "994708d33ae02ea6ef3212f015a344e11ed3702f9b85cd818414a143530506ea",
+      "config_id": "b5539fd98693949c",
+      "stage": "screen",
+      "repeat": 0,
+      "case": "past",
+      "attempt_key": "994708d33ae02ea6ef3212f015a344e11ed3702f9b85cd818414a143530506ea:screen:b5539fd98693949c:0:past",
+      "model": "cohere/command-r7b-12-2024",
+      "provider": "cohere",
+      "ok": true,
+      "reply": "Я понимаю, что вы пережили сложный период. Важно, что сейчас у вас нет мыслей о самоубийстве. Это шаг вперед. Вы можете рассказать о том, что помогло вам тогда справиться с этими мыслями?",
+      "analysis_status": "matched",
+      "signals": [
+        {
+          "category": "wish_to_die",
+          "quote": "Пять лет назад я думал о самоубийстве, сейчас таких мыслей нет.",
+          "time": "current",
+          "label": "Возможное желание не жить",
+          "time_label": "В сообщении относится к настоящему",
+          "source_ref": "DOCX-ALERT-001 · Описание характера суицидальных идей"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1783,
+        "completion_tokens": 94,
+        "total_tokens": 1877,
+        "cost": 0.00915545
+      },
+      "http_dispatched": true,
+      "http_status": 200,
+      "generation_id": "gen_2226342483594973185",
+      "seconds": 2.314,
+      "attempt": 223,
+      "upper_cost_rub": 0.06408439623,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "wrong_categories"
+      ],
+      "fast": true
+    },
+    {
+      "type": "result",
+      "manifest_hash": "994708d33ae02ea6ef3212f015a344e11ed3702f9b85cd818414a143530506ea",
+      "config_id": "860aafcc1e53e1af",
+      "stage": "screen",
+      "repeat": 0,
+      "case": "positive",
+      "attempt_key": "994708d33ae02ea6ef3212f015a344e11ed3702f9b85cd818414a143530506ea:screen:860aafcc1e53e1af:0:positive",
+      "model": "google/gemma-3-4b-it",
+      "provider": "parasail/bf16",
+      "ok": true,
+      "error": "http_429",
+      "failure_stage": "client",
+      "http_dispatched": true,
+      "http_status": 429,
+      "seconds": 2.43,
+      "attempt": 224,
+      "upper_cost_rub": 0.06699220168,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "http_429"
+      ],
+      "fast": false
+    },
+    {
+      "type": "result",
+      "manifest_hash": "994708d33ae02ea6ef3212f015a344e11ed3702f9b85cd818414a143530506ea",
+      "config_id": "860aafcc1e53e1af",
+      "stage": "screen",
+      "repeat": 0,
+      "case": "neutral",
+      "attempt_key": "994708d33ae02ea6ef3212f015a344e11ed3702f9b85cd818414a143530506ea:screen:860aafcc1e53e1af:0:neutral",
+      "model": "google/gemma-3-4b-it",
+      "provider": "parasail/bf16",
+      "ok": true,
+      "error": "invalid_json_schema_evidence",
+      "failure_stage": "analysis",
+      "http_dispatched": true,
+      "http_status": 200,
+      "generation_id": "gen_2226342576167718913",
+      "seconds": 2.622,
+      "attempt": 225,
+      "upper_cost_rub": 0.06706685,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "invalid_json_schema_evidence"
+      ],
+      "fast": false
+    },
+    {
+      "type": "result",
+      "manifest_hash": "994708d33ae02ea6ef3212f015a344e11ed3702f9b85cd818414a143530506ea",
+      "config_id": "860aafcc1e53e1af",
+      "stage": "screen",
+      "repeat": 0,
+      "case": "negation",
+      "attempt_key": "994708d33ae02ea6ef3212f015a344e11ed3702f9b85cd818414a143530506ea:screen:860aafcc1e53e1af:0:negation",
+      "model": "google/gemma-3-4b-it",
+      "provider": "parasail/bf16",
+      "ok": true,
+      "error": "http_429",
+      "failure_stage": "client",
+      "http_dispatched": true,
+      "http_status": 429,
+      "seconds": 0.937,
+      "attempt": 226,
+      "upper_cost_rub": 0.06724413976,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "http_429"
+      ],
+      "fast": false
+    },
+    {
+      "type": "result",
+      "manifest_hash": "994708d33ae02ea6ef3212f015a344e11ed3702f9b85cd818414a143530506ea",
+      "config_id": "860aafcc1e53e1af",
+      "stage": "screen",
+      "repeat": 0,
+      "case": "past",
+      "attempt_key": "994708d33ae02ea6ef3212f015a344e11ed3702f9b85cd818414a143530506ea:screen:860aafcc1e53e1af:0:past",
+      "model": "google/gemma-3-4b-it",
+      "provider": "parasail/bf16",
+      "ok": true,
+      "reply": "Понимаю, что вы пережили трудный период. Что-то изменилось за эти пять лет?",
+      "analysis_status": "matched",
+      "signals": [
+        {
+          "category": "suicidal_thoughts",
+          "quote": "думал о самоубийстве",
+          "time": "past",
+          "label": "Возможные суицидальные мысли",
+          "time_label": "Упоминание прошлого",
+          "source_ref": "DOCX-ALERT-001 · Анализ суицидальных мыслей"
+        }
+      ],
+      "usage": {
+        "prompt_tokens": 1847,
+        "completion_tokens": 57,
+        "total_tokens": 1904,
+        "cost": 0.00894963
+      },
+      "http_dispatched": true,
+      "http_status": 200,
+      "generation_id": "gen_2226342667246768129",
+      "seconds": 2.834,
+      "attempt": 227,
+      "upper_cost_rub": 0.06730479152,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    }
+  ]
+}

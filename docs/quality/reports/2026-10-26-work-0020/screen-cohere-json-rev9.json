@@ -1,0 +1,47 @@
+{
+  "type": "summary",
+  "attempts_total": 85,
+  "new_attempts": 1,
+  "reserved_upper_rub_since_25": 2.875077301580199,
+  "winner": null,
+  "results": [
+    {
+      "model": "cohere/command-r7b-12-2024",
+      "provider": "cohere",
+      "input_price": 4.295145,
+      "output_price": 17.18058,
+      "request_fee": 0.0,
+      "response_format": "json_object",
+      "reasoning": null,
+      "passed": false,
+      "median_seconds": 2.371,
+      "cases": [
+        {
+          "type": "case",
+          "attempt": 85,
+          "model": "cohere/command-r7b-12-2024",
+          "provider": "cohere",
+          "case": "positive",
+          "passed": false,
+          "seconds": 2.371,
+          "upper_cost_rub": 0.034726247324999994,
+          "reply": "Я понимаю, что вы переживаете трудный период. Жить может быть сложно, но есть люди, которые могут помочь. Вы можете связаться с доктором или другом, чтобы получить поддержку.",
+          "analysis_status": "no_match",
+          "signals": [],
+          "usage": {
+            "prompt_tokens": 1095,
+            "completion_tokens": 57,
+            "total_tokens": 1152,
+            "cost": 0.00568248
+          },
+          "http_status": 200,
+          "generation_id": "gen_2226127240025608193",
+          "returned_model": "cohere/command-r7b-12-2024",
+          "finish_reason": "stop",
+          "content": "{\"reply\":\"Я понимаю, что вы переживаете трудный период. Жить может быть сложно, но есть люди, которые могут помочь. Вы можете связаться с доктором или другом, чтобы получить поддержку.\",\"analysis\":{\"status\":\"no_match\",\"signals\":[]}}"
+        }
+      ]
+    }
+  ],
+  "server_files_or_database_changed": false
+}

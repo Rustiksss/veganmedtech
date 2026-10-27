@@ -1,0 +1,56 @@
+{
+	admin off
+	auto_https disable_redirects
+	storage file_system {
+		root {$TLS_STORAGE:/var/lib/veganmedtech-caddy}
+	}
+	renew_interval {$RENEW_INTERVAL:10m}
+	renewal_window_ratio {$RENEWAL_WINDOW_RATIO:0.333333}
+	servers {
+		protocols h1 h2
+	}
+}
+
+http://94.103.3.149 {
+	redir https://94.103.3.149{uri} 308
+}
+
+https://94.103.3.149 {
+	tls {
+		issuer acme {
+			dir {$ACME_CA:https://acme-v02.api.letsencrypt.org/directory}
+			profile shortlived
+		}
+	}
+	reverse_proxy 127.0.0.1:18008 {
+		header_up X-Forwarded-Proto https
+		header_up X-Forwarded-For {remote_host}
+		header_up X-Real-IP {remote_host}
+		header_up -X-Forwarded-Host
+		header_up -Authorization
+		header_up -Forwarded
+	}
+}
+
+https://94.103.3.149:8443 {
+	tls {
+		issuer acme {
+			dir {$ACME_CA:https://acme-v02.api.letsencrypt.org/directory}
+			profile shortlived
+		}
+	}
+	basic_auth bcrypt "Mailpit operator" {
+		operator {$MAILPIT_PASSWORD_HASH}
+	}
+	header Cache-Control no-store
+	reverse_proxy 127.0.0.1:18025 {
+		header_up Host {http.request.hostport}
+		header_up X-Forwarded-Proto https
+		header_up X-Forwarded-For {remote_host}
+		header_up X-Real-IP {remote_host}
+		header_up -X-Forwarded-Host
+		header_up -Authorization
+		header_up -Cookie
+		header_up -Forwarded
+	}
+}

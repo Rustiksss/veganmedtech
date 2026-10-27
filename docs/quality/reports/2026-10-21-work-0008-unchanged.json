@@ -1,0 +1,26 @@
+[
+  {
+    "path": "frontend/static/js/questionnaires.js",
+    "sha256": "3e7afa1aeb48e69987066bc0ba40455604995455bf2074e97f72e732ec70d2c5"
+  },
+  {
+    "path": "misc_materials/kompas_prototype.html",
+    "sha256": "38fad7a7b5283974f8488a99f3a5784d783b3160cf0171b75b4804f040e7a793"
+  },
+  {
+    "path": "misc_materials/Индекс_жизненной_удовлетворенности.docx",
+    "sha256": "a99bce29961085d3d276eeb42cf8dd60dc36c60bbdb6e26b54bee64dc5a0d5bf"
+  },
+  {
+    "path": "misc_materials/Кейс_цифровой_помощник_клинический_компас.pdf",
+    "sha256": "dbc5d5edebab94f5742f8d81ec1b727954c8b088afcc126e67f75ab5691f41ab"
+  },
+  {
+    "path": "misc_materials/Краткий_опросник_восприятия_болезни_Сирота.docx",
+    "sha256": "ae7d03c5213b4100e41b46a90466da1e20d56e0a004c3e4125b149799d2631a4"
+  },
+  {
+    "path": "misc_materials/Тест_экзистенциальных_мотиваций_текст_и_ключи_.pdf",
+    "sha256": "789fb0455dfcfbb41b9229d12c686031c6fc8ed06dbc18c858abf89782628c46"
+  }
+]

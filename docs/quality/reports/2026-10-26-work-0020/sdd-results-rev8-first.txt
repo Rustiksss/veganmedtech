@@ -1,0 +1,20 @@
+Ошибок SDD: 19
+- docs/quality/reports/2026-10-26-work-0020/revision-8-state.md: битая локальная ссылка docs/quality/reports/2026-10-26-work-0020/revision-6-results.txt
+- docs/quality/reports/2026-10-26-work-0020/revision-8-state.md: битая локальная ссылка docs/quality/reports/2026-10-26-work-0020/approved-revision-1.txt
+- docs/quality/reports/2026-10-26-work-0020/revision-8-state.md: битая локальная ссылка tasks/completed/WORK-0019.md
+- docs/quality/reports/2026-10-26-work-0020/revision-8-state.md: битая локальная ссылка docs/quality/reports/2026-10-26-work-0020/approved-revision-3.txt
+- docs/quality/reports/2026-10-26-work-0020/revision-8-state.md: битая локальная ссылка docs/quality/reports/2026-10-26-work-0020/polza-endpoints.json
+- docs/quality/reports/2026-10-26-work-0020/revision-8-state.md: битая локальная ссылка misc_materials/алертинг.docx
+- docs/quality/reports/2026-10-26-work-0020/revision-8-state.md: битая локальная ссылка docs/clinical/content-policy.md
+- docs/quality/reports/2026-10-26-work-0020/revision-8-state.md: битая локальная ссылка docs/quality/reports/2026-10-26-work-0020.md
+- docs/quality/reports/2026-10-26-work-0020/revision-8-state.md: битая локальная ссылка docs/quality/reports/2026-10-26-work-0020.md
+- docs/quality/reports/2026-10-26-work-0020/revision-8-state.md: битая локальная ссылка docs/quality/reports/2026-10-26-work-0020/source-hashes.json
+- docs/quality/reports/2026-10-26-work-0020/revision-8-state.md: битая локальная ссылка AGENTS.md
+- docs/quality/reports/2026-10-26-work-0020/revision-8-state.md: битая локальная ссылка docs/quality/reports/2026-10-26-work-0020.md
+- docs/quality/reports/2026-10-26-work-0020/revision-8-state.md: битая локальная ссылка docs/quality/reports/2026-10-26-work-0020/polza-endpoints.json
+- docs/quality/reports/2026-10-26-work-0020/revision-8-state.md: битая локальная ссылка docs/quality/reports/2026-10-26-work-0020/polza-live-first.json
+- docs/quality/reports/2026-10-26-work-0020/revision-8-state.md: битая локальная ссылка docs/quality/reports/2026-10-26-work-0020/polza-live.json
+- docs/quality/reports/2026-10-26-work-0020/revision-8-state.md: битая локальная ссылка docs/quality/reports/2026-10-26-work-0020/polza-ledger.json
+- docs/quality/reports/2026-10-26-work-0020/revision-8-state.md: битая локальная ссылка docs/quality/reports/2026-10-26-work-0020/sdd-final.txt
+- docs/quality/reports/2026-10-26-work-0020/revision-8-state.md: битая локальная ссылка docs/quality/reports/2026-10-26-work-0020/unit-final.txt
+- docs/quality/reports/2026-10-26-work-0020/revision-8-state.md: битая локальная ссылка docs/quality/reports/2026-10-26-work-0020/revision-8-results.md

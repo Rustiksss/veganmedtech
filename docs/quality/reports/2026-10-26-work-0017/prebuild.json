@@ -1,0 +1,9 @@
+{
+  "version": "20261026T000000Z-00170001",
+  "image_tag": "veganmedtech-server:20261026T000000Z-00170001",
+  "image_id": "sha256:54ba9e097a5d3530762b9278d60e097476b83d570cace18c9d7676f76fa16fad",
+  "image_size": 217435596,
+  "archive_size": 81433028,
+  "archive_sha256": "8dc86ad4e062b1107631a559e067c28eb22732cef9e5f2ff793f0b29450a2c9b",
+  "local_prebuild_only": true
+}

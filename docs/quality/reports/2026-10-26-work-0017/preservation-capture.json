@@ -1,0 +1,11 @@
+{
+  "control_records_present": true,
+  "baseline_config_preserved": true,
+  "mailpit_preserved": true,
+  "old_mail_retained": true,
+  "available_bytes": 290734080,
+  "links": {
+    "current": "releases/20261025T212653Z-8ecec0d6",
+    "previous": "releases/20261025T100946Z-da5a445c"
+  }
+}

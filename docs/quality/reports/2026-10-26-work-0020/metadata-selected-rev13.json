@@ -1,0 +1,26 @@
+{
+  "observed_on": "2026-10-27",
+  "source": "https://polza.ai/api/v1/models/cohere/command-r7b-12-2024",
+  "transport": "Public GET from existing server, strict TLS, without credentials or generation",
+  "http_status": 200,
+  "model": "cohere/command-r7b-12-2024",
+  "provider": "cohere",
+  "pricing": {
+    "prompt_per_million": "4.28343000",
+    "completion_per_million": "17.13372000",
+    "currency": "RUB"
+  },
+  "parameters": [
+    "max_tokens",
+    "temperature",
+    "top_p",
+    "stop",
+    "frequency_penalty",
+    "presence_penalty",
+    "top_k",
+    "seed",
+    "structured_outputs",
+    "response_format"
+  ],
+  "generations": 0
+}

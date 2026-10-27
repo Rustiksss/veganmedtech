@@ -1,0 +1,16 @@
+{
+  "pause_requested": true,
+  "runner_pid": 303837,
+  "automatic_resume": false,
+  "attempts_at_pause": 183,
+  "in_flight_at_pause": false,
+  "runner_stopped": true,
+  "attempts_total": 183,
+  "revision10_attempts": 88,
+  "reserved_new_upper_rub": 5.039294930656,
+  "remaining_new_upper_rub": 4.960705069344,
+  "unfinished_reservations": 0,
+  "runner_exit_code": 130,
+  "resume_command": "python3 scripts/benchmark_assistant.py --resume docs/quality/reports/2026-10-26-work-0020/batch-rev10.manifest.json",
+  "server_deployment_changed": false
+}

@@ -1,0 +1,162 @@
+{
+  "base_url": "https://94.103.3.149",
+  "accept_insecure_certs": false,
+  "checks": [
+    {
+      "name": "patient-a registration",
+      "passed": true
+    },
+    {
+      "name": "patient-a HTTPS confirmation link",
+      "passed": true
+    },
+    {
+      "name": "patient-a confirmation",
+      "passed": true
+    },
+    {
+      "name": "patient-a login",
+      "passed": true
+    },
+    {
+      "name": "patient-b registration",
+      "passed": true
+    },
+    {
+      "name": "patient-b HTTPS confirmation link",
+      "passed": true
+    },
+    {
+      "name": "patient-b confirmation",
+      "passed": true
+    },
+    {
+      "name": "patient-b login",
+      "passed": true
+    },
+    {
+      "name": "doctor registration",
+      "passed": true
+    },
+    {
+      "name": "doctor HTTPS confirmation link",
+      "passed": true
+    },
+    {
+      "name": "doctor confirmation",
+      "passed": true
+    },
+    {
+      "name": "doctor login",
+      "passed": true
+    },
+    {
+      "name": "doctor waits for operator",
+      "passed": true
+    },
+    {
+      "name": "doctor sees own patient",
+      "passed": true
+    },
+    {
+      "name": "patient saves report",
+      "passed": true
+    },
+    {
+      "name": "independent doctor reads report",
+      "passed": true
+    },
+    {
+      "name": "foreign patient denied",
+      "passed": true
+    },
+    {
+      "name": "patient cannot read another patient",
+      "passed": true
+    },
+    {
+      "name": "report survives reload",
+      "passed": true
+    },
+    {
+      "name": "Secure HttpOnly session",
+      "passed": true
+    },
+    {
+      "name": "browser HTTPS and secure context",
+      "passed": true
+    },
+    {
+      "name": "CSRF rejection over public HTTPS",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient/report",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient/history",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient/questionnaires",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /doctor",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /doctor/patients/6",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient/report",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient/history",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient/questionnaires",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /doctor",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /doctor/patients/6",
+      "passed": true
+    },
+    {
+      "name": "keyboard navigation",
+      "passed": true
+    },
+    {
+      "name": "password request UI",
+      "passed": true
+    },
+    {
+      "name": "HTTPS reset link",
+      "passed": true
+    },
+    {
+      "name": "password reset UI",
+      "passed": true
+    },
+    {
+      "name": "logout clears personal state",
+      "passed": true
+    }
+  ]
+}

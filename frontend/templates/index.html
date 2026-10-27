@@ -1,0 +1,20 @@
+{% load static %}
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <meta name="description" content="VeganMedTech · Клинический компас — личное пространство для наблюдений о самочувствии и работы с самоотчётами.">
+  <title>VeganMedTech — Клинический компас</title>
+  <link rel="stylesheet" href="{% static 'css/app.css' %}">
+</head>
+<body>
+  <a class="skip" href="#mainContent" data-skip>Перейти к содержимому</a>
+  <div id="app" class="app"></div>
+  <div id="announcer" class="sr-only" role="status" aria-live="polite" aria-atomic="true"></div>
+  <noscript><p class="notice">Для работы интерфейса включите JavaScript в настройках браузера.</p></noscript>
+  <script src="{% static 'js/api.js' %}"></script>
+  <script src="{% static 'js/app.js' %}"></script>
+</body>
+</html>

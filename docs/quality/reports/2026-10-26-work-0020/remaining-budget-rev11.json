@@ -1,0 +1,22 @@
+{
+  "remaining_upper_rub": 2.1367362346950003,
+  "candidates": [
+    {
+      "model": "cohere/command-r7b-12-2024",
+      "provider": "cohere",
+      "four_upper": 0.25577645559,
+      "qualification_upper": 1.53559252128,
+      "protected_final_reserve": 0.6,
+      "needed_upper": 2.39136897687
+    },
+    {
+      "model": "google/gemma-3-4b-it",
+      "provider": "parasail/bf16",
+      "four_upper": 0.26860798296,
+      "qualification_upper": 1.61266498112,
+      "protected_final_reserve": 0.6,
+      "needed_upper": 2.48127296408
+    }
+  ],
+  "additional_generations": 0
+}

@@ -1,0 +1,3 @@
+{"type": "case", "attempt": 38, "model": "google/gemini-2.5-flash-lite", "provider": "google-ai-studio", "case": "positive", "passed": false, "seconds": 5.347, "error": "invalid_response"}
+{"type": "case", "attempt": 39, "model": "openai/gpt-oss-20b", "provider": "groq", "case": "positive", "passed": false, "seconds": 10.749, "error": "rate_limit"}
+{"winner": null, "attempts_total": 39}

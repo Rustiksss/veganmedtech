@@ -1,0 +1,25 @@
+{
+  "frontend/static/css/app.css": {
+    "sha256": "89cb22e849c26580790fa769419bbf5e35437b5f9318f2860b0ad3c8bf5be091",
+    "matches_work0018": true
+  },
+  "frontend/static/js/api.js": {
+    "sha256": "97eec168c2f114b34e0d83028f9db80d58d3cdabf71359699c27023f06cc4212",
+    "matches_work0018": true
+  },
+  "frontend/static/js/questionnaires.js": {
+    "sha256": "3e7afa1aeb48e69987066bc0ba40455604995455bf2074e97f72e732ec70d2c5",
+    "matches_work0018": true
+  },
+  "backend/pyproject.toml": {
+    "sha256": "72ab083cbbd00c015836284b23ce923a7644284b2e061f21ef49707cd1816fa5",
+    "matches_work0018": true
+  },
+  "backend/uv.lock": {
+    "sha256": "3463803239c3a06a2fbef098fb6aa66c80d680972e0c22221cb7ebbbafb0c243",
+    "matches_work0018": true
+  },
+  "misc_materials/алертинг.docx": {
+    "sha256": "2efe6058392c9ac9e4dd5d1ab22343fedbcbf20aaab4f4b4970098ab36637653"
+  }
+}

@@ -1,0 +1,6 @@
+{
+  "ram_staging_proven": true,
+  "image_size": 217435596,
+  "required_with_ram": 485871052,
+  "available_after_cleanup": 512512000
+}

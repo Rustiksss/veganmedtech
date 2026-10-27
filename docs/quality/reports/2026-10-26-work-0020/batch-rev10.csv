@@ -1,0 +1,15 @@
+config_id,model,provider,prompt,stage,n,quality_ok,fast_correct,p50_correct,p95_correct,max_all,unknown_actual_costs,known_actual_rub,reserved_upper_rub,qualified,errors
+76fb470ca3ed618c,google/gemma-3-12b-it,deepinfra/bf16,compact,screen,4,2,2,6.3025,6.336,18.001,1,0.03227863,0.19836491985,False,"{""timeout"": 1, ""wrong_categories"": 1, ""wrong_status"": 1}"
+c012c67c4c06c37e,google/gemma-3-12b-it,deepinfra/bf16/priority,compact,screen,4,3,3,3.056,4.464,4.464,1,0.03237224,0.297547379775,False,"{""invalid_json_schema_evidence"": 1}"
+899b9519f91644e9,google/gemma-3-27b-it,deepinfra/fp8,compact,screen,4,3,2,4.067,17.629,18.001,1,0.034115610000000005,0.29822163688000003,False,"{""timeout"": 1}"
+85dbb3290fab48a4,qwen/qwen3.5-35b-a3b,darkbloom/fp4,compact,screen,4,3,3,2.281,3.215,3.215,0,0.05555462,0.382726626486,False,"{""wrong_categories"": 1, ""wrong_status"": 1}"
+4e0a9ad1e262ce11,meta-llama/llama-3.1-8b-instruct,groq,compact,screen,4,4,4,1.6444999999999999,2.989,2.989,0,0.022373979999999998,0.157842569948,True,{}
+4e0a9ad1e262ce11,meta-llama/llama-3.1-8b-instruct,groq,compact,qualify,24,18,17,1.421,10.392,10.392,0,0.14553968,0.948303875168,False,"{""wrong_categories"": 6, ""wrong_status"": 6}"
+7d38cb77e84cb7a4,meta-llama/llama-3.1-8b-instruct,novita/fp8,compact,screen,4,4,3,2.512,15.241,15.241,0,0.01133141,0.06735932732,False,{}
+5269675c41a4f20f,google/gemma-3-4b-it,parasail/bf16,compact,screen,4,3,3,4.363,6.603,6.603,0,0.01909844,0.14192498036,False,"{""wrong_categories"": 1, ""wrong_status"": 1}"
+464deb61903c48dc,mistralai/ministral-3b-2512,mistral,compact,screen,4,3,3,1.989,3.674,3.674,0,0.04239262,0.34160719900000003,False,"{""wrong_categories"": 1}"
+e5a470e305dd159f,cohere/command-r7b-12-2024,cohere,compact,screen,4,2,2,5.3245000000000005,6.984,18.001,1,0.01769763,0.139493424165,False,"{""timeout"": 1, ""wrong_categories"": 1, ""wrong_status"": 1}"
+4b5c06e4cf5751e6,openai/gpt-oss-20b,groq,compact,screen,4,4,4,3.125,5.321,5.321,0,0.05660269,0.315511974975,True,{}
+4b5c06e4cf5751e6,openai/gpt-oss-20b,groq,compact,qualify,24,19,17,2.584,14.546,14.546,1,0.2863199,1.8949840968,False,"{""wrong_categories"": 4, ""wrong_status"": 4, ""http_503"": 1}"
+fa30920f28d5efd4,google/gemma-3-12b-it,deepinfra/bf16,russian,screen,4,4,4,5.537000000000001,6.354,6.354,0,0.07121146,0.35763696245,False,{}
+50126fcc933ac053,meta-llama/llama-3.1-8b-instruct,novita/fp8,russian,screen,4,3,3,2.214,4.127,10.32,0,0.02054887,0.129750030904,False,"{""wrong_status"": 1}"

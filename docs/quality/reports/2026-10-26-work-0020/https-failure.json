@@ -1,0 +1,78 @@
+{
+  "accept_insecure_certs": false,
+  "new_generations": 0,
+  "checks": [
+    {
+      "name": "one saved failed live turn",
+      "passed": true
+    },
+    {
+      "name": "demo enabled clinical disabled",
+      "passed": true
+    },
+    {
+      "name": "no false event or delivery",
+      "passed": true
+    },
+    {
+      "name": "failure is explicit in UI",
+      "passed": true
+    },
+    {
+      "name": "foreign patient denied",
+      "passed": true
+    },
+    {
+      "name": "doctor denied chat",
+      "passed": true
+    },
+    {
+      "name": "patient denied doctor events",
+      "passed": true
+    },
+    {
+      "name": "history no-store",
+      "passed": true
+    },
+    {
+      "name": "same failed turn replayed without a new request",
+      "passed": true
+    },
+    {
+      "name": "key conflict rejected",
+      "passed": true
+    },
+    {
+      "name": "CSRF required",
+      "passed": true
+    },
+    {
+      "name": "failed state layout patient 1440",
+      "passed": true
+    },
+    {
+      "name": "failed state layout doctor 1440",
+      "passed": true
+    },
+    {
+      "name": "failed state layout patient 390",
+      "passed": true
+    },
+    {
+      "name": "failed state layout doctor 390",
+      "passed": true
+    },
+    {
+      "name": "failure persists after reload and repeat deploy",
+      "passed": true
+    },
+    {
+      "name": "logout clears history",
+      "passed": true
+    },
+    {
+      "name": "no new provider attempts turns or events",
+      "passed": true
+    }
+  ]
+}

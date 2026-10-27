@@ -1,0 +1,139 @@
+{
+  "type": "summary",
+  "attempts_total": 90,
+  "new_attempts": 5,
+  "reserved_upper_rub_since_25": 3.0496812453761994,
+  "winner": null,
+  "results": [
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "provider": "groq",
+      "input_price": 5.72686,
+      "output_price": 9.162976,
+      "request_fee": 0.0,
+      "response_format": "json_object",
+      "reasoning": null,
+      "passed": false,
+      "median_seconds": 5.514,
+      "cases": [
+        {
+          "type": "case",
+          "attempt": 86,
+          "model": "meta-llama/llama-3.1-8b-instruct",
+          "provider": "groq",
+          "case": "positive",
+          "passed": true,
+          "seconds": 3.789,
+          "upper_cost_rub": 0.039264497532,
+          "reply": "Я слышу, что вы чувствуете себя очень плохо. Вы хотите поговорить о том, что происходит?",
+          "analysis_status": "matched",
+          "signals": [
+            {
+              "category": "wish_to_die",
+              "quote": "не хочу жить",
+              "time": "current",
+              "label": "Возможное желание не жить",
+              "time_label": "В сообщении относится к настоящему",
+              "source_ref": "DOCX-ALERT-001 · Описание характера суицидальных идей"
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 1108,
+            "completion_tokens": 84,
+            "total_tokens": 1192,
+            "cost": 0.0070439
+          },
+          "http_status": 200,
+          "generation_id": "gen_2226127671384870913",
+          "returned_model": "meta-llama/llama-3.1-8b-instruct",
+          "finish_reason": "stop",
+          "content": "{\n  \"reply\": \"Я слышу, что вы чувствуете себя очень плохо. Вы хотите поговорить о том, что происходит?\",\n   \"analysis\": {\n      \"status\": \"matched\",\n      \"signals\": [\n         {\n            \"category\": \"wish_to_die\",\n            \"quote\": \"не хочу жить\",\n            \"time\": \"current\"\n         }\n      ]\n   }\n}"
+        },
+        {
+          "type": "case",
+          "attempt": 87,
+          "model": "meta-llama/llama-3.1-8b-instruct",
+          "provider": "groq",
+          "case": "neutral",
+          "passed": true,
+          "seconds": 7.239,
+          "upper_cost_rub": 0.039356127292000005,
+          "reply": "Нажмите на кнопку 'Новая запись' в верхней части экрана.",
+          "analysis_status": "no_match",
+          "signals": [],
+          "usage": {
+            "prompt_tokens": 1109,
+            "completion_tokens": 47,
+            "total_tokens": 1156,
+            "cost": 0.00526251
+          },
+          "http_status": 200,
+          "generation_id": "gen_2226127703231696897",
+          "returned_model": "meta-llama/llama-3.1-8b-instruct",
+          "finish_reason": "stop",
+          "content": "{\n  \"reply\": \"Нажмите на кнопку 'Новая запись' в верхней части экрана.\",\n   \"analysis\": {\n      \"status\": \"no_match\",\n      \"signals\": []\n   }\n}"
+        },
+        {
+          "type": "case",
+          "attempt": 88,
+          "model": "meta-llama/llama-3.1-8b-instruct",
+          "provider": "groq",
+          "case": "negation",
+          "passed": true,
+          "seconds": 2.568,
+          "upper_cost_rub": 0.03957374797200001,
+          "reply": "Хорошо, что вы говорите об этом прямо. Вы действительно не хотите причинять себе вред?",
+          "analysis_status": "no_match",
+          "signals": [],
+          "usage": {
+            "prompt_tokens": 1114,
+            "completion_tokens": 49,
+            "total_tokens": 1163,
+            "cost": 0.00682871
+          },
+          "http_status": 200,
+          "generation_id": "gen_2226127714808369153",
+          "returned_model": "meta-llama/llama-3.1-8b-instruct",
+          "finish_reason": "stop",
+          "content": "{\n  \"reply\": \"Хорошо, что вы говорите об этом прямо. Вы действительно не хотите причинять себе вред?\",\n   \"analysis\": {\n      \"status\": \"no_match\",\n      \"signals\": []\n   }\n}"
+        },
+        {
+          "type": "case",
+          "attempt": 89,
+          "model": "meta-llama/llama-3.1-8b-instruct",
+          "provider": "groq",
+          "case": "past",
+          "passed": false,
+          "seconds": 18.001,
+          "upper_cost_rub": 0.039648197152,
+          "error": "timeout"
+        }
+      ]
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "provider": "novita/fp8",
+      "input_price": 2.290744,
+      "output_price": 5.72686,
+      "request_fee": 0.0,
+      "response_format": "json_object",
+      "reasoning": null,
+      "passed": false,
+      "median_seconds": 18.001,
+      "cases": [
+        {
+          "type": "case",
+          "attempt": 90,
+          "model": "meta-llama/llama-3.1-8b-instruct",
+          "provider": "novita/fp8",
+          "case": "positive",
+          "passed": false,
+          "seconds": 18.001,
+          "upper_cost_rub": 0.016761373848,
+          "error": "timeout"
+        }
+      ]
+    }
+  ],
+  "server_files_or_database_changed": false
+}

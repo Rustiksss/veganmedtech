@@ -1,0 +1,6 @@
+ Container veganmedtech-work0017-test-db-1 Running 
+ Container veganmedtech-work0017-test-db-1 Waiting 
+ Container veganmedtech-work0017-test-db-1 Healthy 
+ Container veganmedtech-work0017-test-app-run-d5d9881a7ab2 Creating 
+ Container veganmedtech-work0017-test-app-run-d5d9881a7ab2 Created 
+No changes detected

@@ -1,0 +1,9 @@
+{"type": "case", "attempt": 75, "model": "meta-llama/llama-3.1-8b-instruct", "provider": "novita/fp8", "case": "positive", "passed": true, "seconds": 3.684}
+{"type": "case", "attempt": 76, "model": "meta-llama/llama-3.1-8b-instruct", "provider": "novita/fp8", "case": "neutral", "passed": true, "seconds": 2.559}
+{"type": "case", "attempt": 77, "model": "meta-llama/llama-3.1-8b-instruct", "provider": "novita/fp8", "case": "negation", "passed": true, "seconds": 4.578}
+{"type": "case", "attempt": 78, "model": "meta-llama/llama-3.1-8b-instruct", "provider": "novita/fp8", "case": "past", "passed": false, "seconds": 13.67}
+{"type": "case", "attempt": 79, "model": "meta-llama/llama-3.1-8b-instruct", "provider": "groq", "case": "positive", "passed": true, "seconds": 1.495}
+{"type": "case", "attempt": 80, "model": "meta-llama/llama-3.1-8b-instruct", "provider": "groq", "case": "neutral", "passed": true, "seconds": 1.342}
+{"type": "case", "attempt": 81, "model": "meta-llama/llama-3.1-8b-instruct", "provider": "groq", "case": "negation", "passed": true, "seconds": 1.942}
+{"type": "case", "attempt": 82, "model": "meta-llama/llama-3.1-8b-instruct", "provider": "groq", "case": "past", "passed": false, "seconds": 5.204, "error": "invalid_response"}
+{"winner": null, "attempts_total": 82}

@@ -1,0 +1,599 @@
+{
+  "schema_version": 1,
+  "feature": "005-ai-assistant",
+  "status": "in-progress",
+  "mappings": [
+    {
+      "requirement": "FR-017",
+      "coverage": "full",
+      "acceptance": [
+        "AC-005-01",
+        "AC-005-02",
+        "AC-005-03",
+        "AC-005-04",
+        "AC-005-05",
+        "AC-005-06",
+        "AC-005-07",
+        "AC-005-08",
+        "AC-005-09",
+        "AC-005-10",
+        "AC-005-11"
+      ],
+      "tests": [
+        "TEST-005-01",
+        "TEST-005-02",
+        "TEST-005-03",
+        "TEST-005-04",
+        "TEST-005-05",
+        "TEST-005-06",
+        "TEST-005-07",
+        "TEST-005-08",
+        "TEST-005-09",
+        "TEST-005-10",
+        "TEST-005-11"
+      ]
+    },
+    {
+      "requirement": "FR-006",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-005-01",
+        "AC-005-03",
+        "AC-005-05",
+        "AC-005-06",
+        "AC-005-07",
+        "AC-005-08"
+      ],
+      "tests": [
+        "TEST-005-01",
+        "TEST-005-03",
+        "TEST-005-05",
+        "TEST-005-06",
+        "TEST-005-07",
+        "TEST-005-08"
+      ]
+    },
+    {
+      "requirement": "CON-001",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-005-03",
+        "AC-005-07",
+        "AC-005-12",
+        "AC-005-13",
+        "AC-005-14",
+        "AC-005-15",
+        "AC-005-16",
+        "AC-005-17",
+        "AC-005-18",
+        "AC-005-19"
+      ],
+      "tests": [
+        "TEST-005-03",
+        "TEST-005-07",
+        "TEST-005-12",
+        "TEST-005-13",
+        "TEST-005-14",
+        "TEST-005-15",
+        "TEST-005-16",
+        "TEST-005-17",
+        "TEST-005-18",
+        "TEST-005-19"
+      ]
+    },
+    {
+      "requirement": "CON-002",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-005-03",
+        "AC-005-05",
+        "AC-005-12",
+        "AC-005-13",
+        "AC-005-14",
+        "AC-005-15",
+        "AC-005-16",
+        "AC-005-17",
+        "AC-005-18",
+        "AC-005-19"
+      ],
+      "tests": [
+        "TEST-005-03",
+        "TEST-005-05",
+        "TEST-005-12",
+        "TEST-005-13",
+        "TEST-005-14",
+        "TEST-005-15",
+        "TEST-005-16",
+        "TEST-005-17",
+        "TEST-005-18",
+        "TEST-005-19"
+      ]
+    },
+    {
+      "requirement": "CON-003",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-005-05",
+        "AC-005-08",
+        "AC-005-12",
+        "AC-005-13",
+        "AC-005-14",
+        "AC-005-15",
+        "AC-005-16",
+        "AC-005-17",
+        "AC-005-18",
+        "AC-005-19"
+      ],
+      "tests": [
+        "TEST-005-05",
+        "TEST-005-08",
+        "TEST-005-12",
+        "TEST-005-13",
+        "TEST-005-14",
+        "TEST-005-15",
+        "TEST-005-16",
+        "TEST-005-17",
+        "TEST-005-18",
+        "TEST-005-19"
+      ]
+    },
+    {
+      "requirement": "CON-005",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-005-04",
+        "AC-005-05",
+        "AC-005-12",
+        "AC-005-13",
+        "AC-005-14",
+        "AC-005-15",
+        "AC-005-16",
+        "AC-005-17",
+        "AC-005-18",
+        "AC-005-19",
+        "AC-005-20",
+        "AC-005-21",
+        "AC-005-22",
+        "AC-005-23"
+      ],
+      "tests": [
+        "TEST-005-04",
+        "TEST-005-05",
+        "TEST-005-12",
+        "TEST-005-13",
+        "TEST-005-14",
+        "TEST-005-15",
+        "TEST-005-16",
+        "TEST-005-17",
+        "TEST-005-18",
+        "TEST-005-19",
+        "TEST-005-20",
+        "TEST-005-21",
+        "TEST-005-22",
+        "TEST-005-23"
+      ]
+    },
+    {
+      "requirement": "CON-010",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-005-03",
+        "AC-005-08",
+        "AC-005-11",
+        "AC-005-12",
+        "AC-005-13",
+        "AC-005-14",
+        "AC-005-15",
+        "AC-005-16",
+        "AC-005-17",
+        "AC-005-18",
+        "AC-005-19",
+        "AC-005-20",
+        "AC-005-21",
+        "AC-005-22",
+        "AC-005-23"
+      ],
+      "tests": [
+        "TEST-005-03",
+        "TEST-005-08",
+        "TEST-005-11",
+        "TEST-005-12",
+        "TEST-005-13",
+        "TEST-005-14",
+        "TEST-005-15",
+        "TEST-005-16",
+        "TEST-005-17",
+        "TEST-005-18",
+        "TEST-005-19",
+        "TEST-005-20",
+        "TEST-005-21",
+        "TEST-005-22",
+        "TEST-005-23"
+      ]
+    },
+    {
+      "requirement": "NFR-001",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-005-01",
+        "AC-005-05",
+        "AC-005-12",
+        "AC-005-13",
+        "AC-005-14",
+        "AC-005-15",
+        "AC-005-16",
+        "AC-005-17",
+        "AC-005-18",
+        "AC-005-19"
+      ],
+      "tests": [
+        "TEST-005-01",
+        "TEST-005-05",
+        "TEST-005-12",
+        "TEST-005-13",
+        "TEST-005-14",
+        "TEST-005-15",
+        "TEST-005-16",
+        "TEST-005-17",
+        "TEST-005-18",
+        "TEST-005-19"
+      ]
+    },
+    {
+      "requirement": "NFR-003",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-005-02",
+        "AC-005-06",
+        "AC-005-07",
+        "AC-005-09",
+        "AC-005-12",
+        "AC-005-13",
+        "AC-005-14",
+        "AC-005-15",
+        "AC-005-16",
+        "AC-005-17",
+        "AC-005-18",
+        "AC-005-19",
+        "AC-005-20",
+        "AC-005-21",
+        "AC-005-22",
+        "AC-005-23"
+      ],
+      "tests": [
+        "TEST-005-02",
+        "TEST-005-06",
+        "TEST-005-07",
+        "TEST-005-09",
+        "TEST-005-12",
+        "TEST-005-13",
+        "TEST-005-14",
+        "TEST-005-15",
+        "TEST-005-16",
+        "TEST-005-17",
+        "TEST-005-18",
+        "TEST-005-19",
+        "TEST-005-20",
+        "TEST-005-21",
+        "TEST-005-22",
+        "TEST-005-23"
+      ]
+    },
+    {
+      "requirement": "NFR-007",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-005-02",
+        "AC-005-05",
+        "AC-005-09",
+        "AC-005-11",
+        "AC-005-12",
+        "AC-005-13",
+        "AC-005-14",
+        "AC-005-15",
+        "AC-005-16",
+        "AC-005-17",
+        "AC-005-18",
+        "AC-005-19",
+        "AC-005-20",
+        "AC-005-21",
+        "AC-005-22",
+        "AC-005-23"
+      ],
+      "tests": [
+        "TEST-005-02",
+        "TEST-005-05",
+        "TEST-005-09",
+        "TEST-005-11",
+        "TEST-005-12",
+        "TEST-005-13",
+        "TEST-005-14",
+        "TEST-005-15",
+        "TEST-005-16",
+        "TEST-005-17",
+        "TEST-005-18",
+        "TEST-005-19",
+        "TEST-005-20",
+        "TEST-005-21",
+        "TEST-005-22",
+        "TEST-005-23"
+      ]
+    },
+    {
+      "requirement": "NFR-010",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-005-04",
+        "AC-005-12",
+        "AC-005-13",
+        "AC-005-14",
+        "AC-005-15",
+        "AC-005-16",
+        "AC-005-17",
+        "AC-005-18",
+        "AC-005-19"
+      ],
+      "tests": [
+        "TEST-005-04",
+        "TEST-005-12",
+        "TEST-005-13",
+        "TEST-005-14",
+        "TEST-005-15",
+        "TEST-005-16",
+        "TEST-005-17",
+        "TEST-005-18",
+        "TEST-005-19"
+      ]
+    },
+    {
+      "requirement": "NFR-013",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-005-03",
+        "AC-005-06",
+        "AC-005-08",
+        "AC-005-11",
+        "AC-005-12",
+        "AC-005-13",
+        "AC-005-14",
+        "AC-005-15",
+        "AC-005-16",
+        "AC-005-17",
+        "AC-005-18",
+        "AC-005-19",
+        "AC-005-20",
+        "AC-005-21",
+        "AC-005-22",
+        "AC-005-23"
+      ],
+      "tests": [
+        "TEST-005-03",
+        "TEST-005-06",
+        "TEST-005-08",
+        "TEST-005-11",
+        "TEST-005-12",
+        "TEST-005-13",
+        "TEST-005-14",
+        "TEST-005-15",
+        "TEST-005-16",
+        "TEST-005-17",
+        "TEST-005-18",
+        "TEST-005-19",
+        "TEST-005-20",
+        "TEST-005-21",
+        "TEST-005-22",
+        "TEST-005-23"
+      ]
+    },
+    {
+      "requirement": "FR-018",
+      "coverage": "full",
+      "acceptance": [
+        "AC-005-12",
+        "AC-005-13",
+        "AC-005-14",
+        "AC-005-15",
+        "AC-005-16",
+        "AC-005-17",
+        "AC-005-18",
+        "AC-005-19",
+        "AC-005-20",
+        "AC-005-21",
+        "AC-005-22",
+        "AC-005-23"
+      ],
+      "tests": [
+        "TEST-005-12",
+        "TEST-005-13",
+        "TEST-005-14",
+        "TEST-005-15",
+        "TEST-005-16",
+        "TEST-005-17",
+        "TEST-005-18",
+        "TEST-005-19",
+        "TEST-005-20",
+        "TEST-005-21",
+        "TEST-005-22",
+        "TEST-005-23"
+      ]
+    }
+  ],
+  "verification": [
+    {
+      "test": "TEST-005-01",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-25-work-0016.md"
+      ]
+    },
+    {
+      "test": "TEST-005-02",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-25-work-0016.md"
+      ]
+    },
+    {
+      "test": "TEST-005-03",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-25-work-0016.md"
+      ]
+    },
+    {
+      "test": "TEST-005-04",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-25-work-0016.md"
+      ]
+    },
+    {
+      "test": "TEST-005-05",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-25-work-0016.md"
+      ]
+    },
+    {
+      "test": "TEST-005-06",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-25-work-0016.md"
+      ]
+    },
+    {
+      "test": "TEST-005-07",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-25-work-0016.md"
+      ]
+    },
+    {
+      "test": "TEST-005-08",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-25-work-0016.md"
+      ]
+    },
+    {
+      "test": "TEST-005-09",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-25-work-0016.md"
+      ]
+    },
+    {
+      "test": "TEST-005-10",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-25-work-0016.md"
+      ]
+    },
+    {
+      "test": "TEST-005-11",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-26-work-0017.md"
+      ]
+    },
+    {
+      "test": "TEST-005-12",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-26-work-0020.md"
+      ]
+    },
+    {
+      "test": "TEST-005-13",
+      "status": "failed",
+      "evidence": [
+        "docs/quality/reports/2026-10-26-work-0020.md",
+        "docs/quality/reports/2026-10-26-work-0020/revision-8-results.md",
+        "docs/quality/reports/2026-10-26-work-0020/revision-9-results.md",
+        "docs/quality/reports/2026-10-26-work-0020/revision-11-results.md",
+        "docs/quality/reports/2026-10-26-work-0020/revision-12-results.md",
+        "docs/quality/reports/2026-10-26-work-0020/deployment-rev13.md"
+      ]
+    },
+    {
+      "test": "TEST-005-14",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-26-work-0020.md"
+      ]
+    },
+    {
+      "test": "TEST-005-15",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-26-work-0020.md"
+      ]
+    },
+    {
+      "test": "TEST-005-16",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-26-work-0020.md"
+      ]
+    },
+    {
+      "test": "TEST-005-17",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-26-work-0020.md"
+      ]
+    },
+    {
+      "test": "TEST-005-18",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-26-work-0020.md"
+      ]
+    },
+    {
+      "test": "TEST-005-19",
+      "status": "blocked",
+      "evidence": [
+        "docs/quality/reports/2026-10-26-work-0020.md",
+        "docs/quality/reports/2026-10-26-work-0020/revision-8-results.md",
+        "docs/quality/reports/2026-10-26-work-0020/revision-9-results.md",
+        "docs/quality/reports/2026-10-26-work-0020/revision-11-results.md",
+        "docs/quality/reports/2026-10-26-work-0020/revision-12-results.md",
+        "docs/quality/reports/2026-10-26-work-0020/deployment-rev13.md"
+      ]
+    },
+    {
+      "test": "TEST-005-20",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-26-work-0020.md"
+      ]
+    },
+    {
+      "test": "TEST-005-21",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-26-work-0020.md"
+      ]
+    },
+    {
+      "test": "TEST-005-22",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-26-work-0020.md"
+      ]
+    },
+    {
+      "test": "TEST-005-23",
+      "status": "blocked",
+      "evidence": [
+        "docs/quality/reports/2026-10-26-work-0020.md",
+        "docs/quality/reports/2026-10-26-work-0020/revision-8-results.md",
+        "docs/quality/reports/2026-10-26-work-0020/revision-9-results.md",
+        "docs/quality/reports/2026-10-26-work-0020/revision-11-results.md",
+        "docs/quality/reports/2026-10-26-work-0020/revision-12-results.md",
+        "docs/quality/reports/2026-10-26-work-0020/deployment-rev13.md"
+      ]
+    }
+  ]
+}

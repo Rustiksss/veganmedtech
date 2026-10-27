@@ -1,0 +1,6 @@
+{
+  "stop_executed": false,
+  "guard_triggered": true,
+  "reason": "Защитная проверка не подтвердила ожидаемый cgroup, systemctl stop не исполнялся. Последующая инвентаризация: обе APT-службы inactive.",
+  "services_or_timers_changed": false
+}

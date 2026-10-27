@@ -1,0 +1,2 @@
+config_id,model,provider,prompt,stage,n,quality_ok,fast_correct,p50_correct,p95_correct,max_all,unknown_actual_costs,known_actual_rub,reserved_upper_rub,qualified,errors
+aa2fdbe047574a1c,cohere/command-r7b-12-2024,cohere,selected,functional,12,6,6,1.909,2.384,3.825,2,0.07270039,0.6591342084,False,"{""invalid_json_schema_evidence"": 2, ""wrong_categories"": 4, ""wrong_status"": 3}"

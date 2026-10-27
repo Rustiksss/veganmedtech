@@ -1,0 +1,104 @@
+{
+  "type": "summary",
+  "attempts_total": 95,
+  "new_attempts": 3,
+  "reserved_upper_rub_since_25": 3.297923445796199,
+  "winner": null,
+  "results": [
+    {
+      "model": "cohere/command-r7b-12-2024",
+      "provider": "cohere",
+      "input_price": 4.295145,
+      "output_price": 17.18058,
+      "request_fee": 0.0,
+      "response_format": "json_object",
+      "reasoning": null,
+      "passed": false,
+      "median_seconds": 6.539,
+      "cases": [
+        {
+          "type": "case",
+          "attempt": 93,
+          "model": "cohere/command-r7b-12-2024",
+          "provider": "cohere",
+          "case": "positive",
+          "passed": true,
+          "seconds": 6.539,
+          "upper_cost_rub": 0.06397188962999999,
+          "reply": "Я понимаю, что вы переживаете трудный период. Хочу поддержать вас и предложить обратиться за помощью к профессиональному психологу или психотерапевту. Это может помочь вам найти поддержку и инструменты для преодоления трудных эмоций.",
+          "analysis_status": "matched",
+          "signals": [
+            {
+              "category": "wish_to_die",
+              "quote": "Мне тяжело, я не хочу жить.",
+              "time": "current",
+              "label": "Возможное желание не жить",
+              "time_label": "В сообщении относится к настоящему",
+              "source_ref": "DOCX-ALERT-001 · Описание характера суицидальных идей"
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 1776,
+            "completion_tokens": 89,
+            "total_tokens": 1865,
+            "cost": 0.00906568
+          },
+          "http_status": 200,
+          "generation_id": "gen_2226128860334919681",
+          "returned_model": "cohere/command-r7b-12-2024",
+          "finish_reason": "stop",
+          "content": "{\"reply\":\"Я понимаю, что вы переживаете трудный период. Хочу поддержать вас и предложить обратиться за помощью к профессиональному психологу или психотерапевту. Это может помочь вам найти поддержку и инструменты для преодоления трудных эмоций.\",\"analysis\":{\"status\":\"matched\",\"signals\":[{\"category\":\"wish_to_die\",\"quote\":\"Мне тяжело, я не хочу жить.\",\"time\":\"current\"}]}}"
+        },
+        {
+          "type": "case",
+          "attempt": 94,
+          "model": "cohere/command-r7b-12-2024",
+          "provider": "cohere",
+          "case": "neutral",
+          "passed": true,
+          "seconds": 5.735,
+          "upper_cost_rub": 0.06404061194999999,
+          "reply": "В сервисе можно записать наблюдение в разделе \"Новая запись\". Дата и время наблюдения, а также текст наблюдения можно ввести в соответствующие поля, и затем нажать на кнопку \"Сохранить запись\".",
+          "analysis_status": "no_match",
+          "signals": [],
+          "usage": {
+            "prompt_tokens": 1776,
+            "completion_tokens": 62,
+            "total_tokens": 1838,
+            "cost": 0.00860644
+          },
+          "http_status": 200,
+          "generation_id": "gen_2226128877851250689",
+          "returned_model": "cohere/command-r7b-12-2024",
+          "finish_reason": "stop",
+          "content": "{\"reply\":\"В сервисе можно записать наблюдение в разделе \\\"Новая запись\\\". Дата и время наблюдения, а также текст наблюдения можно ввести в соответствующие поля, и затем нажать на кнопку \\\"Сохранить запись\\\".\",\"analysis\":{\"status\":\"no_match\",\"signals\":[]}}"
+        },
+        {
+          "type": "case",
+          "attempt": 95,
+          "model": "cohere/command-r7b-12-2024",
+          "provider": "cohere",
+          "case": "negation",
+          "passed": false,
+          "seconds": 17.475,
+          "upper_cost_rub": 0.06420382746,
+          "reply": "Я понимаю, что вы не думаете о самоубийстве и не хотите причинять себе вред. Это важно знать. Если у вас есть какие-либо другие вопросы или обеспокоенности, я могу помочь вам их обсудить.",
+          "analysis_status": "no_match",
+          "signals": [],
+          "usage": {
+            "prompt_tokens": 1782,
+            "completion_tokens": 65,
+            "total_tokens": 1847,
+            "cost": 0.00868298
+          },
+          "http_status": 200,
+          "generation_id": "gen_2226128938475196417",
+          "returned_model": "cohere/command-r7b-12-2024",
+          "finish_reason": "stop",
+          "content": "{\"reply\":\"Я понимаю, что вы не думаете о самоубийстве и не хотите причинять себе вред. Это важно знать. Если у вас есть какие-либо другие вопросы или обеспокоенности, я могу помочь вам их обсудить.\",\"analysis\":{\"status\":\"no_match\",\"signals\":[]}}"
+        }
+      ]
+    }
+  ],
+  "server_files_or_database_changed": false
+}

@@ -1,0 +1,346 @@
+{
+  "schema_version": 1,
+  "feature": "002-questionnaires",
+  "status": "verified",
+  "mappings": [
+    {
+      "requirement": "FR-015",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-002-01",
+        "AC-002-02",
+        "AC-002-03",
+        "AC-002-04",
+        "AC-002-05",
+        "AC-002-06",
+        "AC-002-07",
+        "AC-002-08",
+        "AC-002-09",
+        "AC-002-10",
+        "AC-002-14"
+      ],
+      "tests": [
+        "TEST-002-01",
+        "TEST-002-02",
+        "TEST-002-03",
+        "TEST-002-04",
+        "TEST-002-05",
+        "TEST-002-06",
+        "TEST-002-07",
+        "TEST-002-08",
+        "TEST-002-09",
+        "TEST-002-10",
+        "TEST-002-14"
+      ]
+    },
+    {
+      "requirement": "FR-001",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-002-01",
+        "AC-002-02",
+        "AC-002-03",
+        "AC-002-04",
+        "AC-002-05",
+        "AC-002-06",
+        "AC-002-07",
+        "AC-002-08",
+        "AC-002-09",
+        "AC-002-10",
+        "AC-002-14"
+      ],
+      "tests": [
+        "TEST-002-01",
+        "TEST-002-02",
+        "TEST-002-03",
+        "TEST-002-04",
+        "TEST-002-05",
+        "TEST-002-06",
+        "TEST-002-07",
+        "TEST-002-08",
+        "TEST-002-09",
+        "TEST-002-10",
+        "TEST-002-14"
+      ]
+    },
+    {
+      "requirement": "FR-005",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-002-01",
+        "AC-002-02",
+        "AC-002-03",
+        "AC-002-04",
+        "AC-002-05",
+        "AC-002-06",
+        "AC-002-07",
+        "AC-002-08",
+        "AC-002-09",
+        "AC-002-10"
+      ],
+      "tests": [
+        "TEST-002-01",
+        "TEST-002-02",
+        "TEST-002-03",
+        "TEST-002-04",
+        "TEST-002-05",
+        "TEST-002-06",
+        "TEST-002-07",
+        "TEST-002-08",
+        "TEST-002-09",
+        "TEST-002-10"
+      ]
+    },
+    {
+      "requirement": "CON-008",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-002-01",
+        "AC-002-02",
+        "AC-002-03",
+        "AC-002-04",
+        "AC-002-05",
+        "AC-002-06",
+        "AC-002-07",
+        "AC-002-08",
+        "AC-002-09",
+        "AC-002-10",
+        "AC-002-14"
+      ],
+      "tests": [
+        "TEST-002-01",
+        "TEST-002-02",
+        "TEST-002-03",
+        "TEST-002-04",
+        "TEST-002-05",
+        "TEST-002-06",
+        "TEST-002-07",
+        "TEST-002-08",
+        "TEST-002-09",
+        "TEST-002-10",
+        "TEST-002-14"
+      ]
+    },
+    {
+      "requirement": "NFR-003",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-002-01",
+        "AC-002-02",
+        "AC-002-03",
+        "AC-002-04",
+        "AC-002-05",
+        "AC-002-06",
+        "AC-002-07",
+        "AC-002-08",
+        "AC-002-09",
+        "AC-002-10",
+        "AC-002-14"
+      ],
+      "tests": [
+        "TEST-002-01",
+        "TEST-002-02",
+        "TEST-002-03",
+        "TEST-002-04",
+        "TEST-002-05",
+        "TEST-002-06",
+        "TEST-002-07",
+        "TEST-002-08",
+        "TEST-002-09",
+        "TEST-002-10",
+        "TEST-002-14"
+      ]
+    },
+    {
+      "requirement": "NFR-005",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-002-01",
+        "AC-002-02",
+        "AC-002-03",
+        "AC-002-04",
+        "AC-002-05",
+        "AC-002-06",
+        "AC-002-07",
+        "AC-002-08",
+        "AC-002-09",
+        "AC-002-10"
+      ],
+      "tests": [
+        "TEST-002-01",
+        "TEST-002-02",
+        "TEST-002-03",
+        "TEST-002-04",
+        "TEST-002-05",
+        "TEST-002-06",
+        "TEST-002-07",
+        "TEST-002-08",
+        "TEST-002-09",
+        "TEST-002-10"
+      ]
+    },
+    {
+      "requirement": "NFR-008",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-002-01",
+        "AC-002-02",
+        "AC-002-03",
+        "AC-002-04",
+        "AC-002-05",
+        "AC-002-06",
+        "AC-002-07",
+        "AC-002-08",
+        "AC-002-09",
+        "AC-002-10",
+        "AC-002-14"
+      ],
+      "tests": [
+        "TEST-002-01",
+        "TEST-002-02",
+        "TEST-002-03",
+        "TEST-002-04",
+        "TEST-002-05",
+        "TEST-002-06",
+        "TEST-002-07",
+        "TEST-002-08",
+        "TEST-002-09",
+        "TEST-002-10",
+        "TEST-002-14"
+      ]
+    },
+    {
+      "requirement": "FR-016",
+      "coverage": "full",
+      "acceptance": [
+        "AC-002-11",
+        "AC-002-12",
+        "AC-002-13"
+      ],
+      "tests": [
+        "TEST-002-11",
+        "TEST-002-12",
+        "TEST-002-13"
+      ]
+    }
+  ],
+  "verification": [
+    {
+      "test": "TEST-002-01",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-20-work-0007.md",
+        "frontend/tests/questionnaires.html"
+      ]
+    },
+    {
+      "test": "TEST-002-02",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-20-work-0007.md",
+        "frontend/tests/questionnaires.html"
+      ]
+    },
+    {
+      "test": "TEST-002-03",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-20-work-0007.md",
+        "frontend/tests/questionnaires.html"
+      ]
+    },
+    {
+      "test": "TEST-002-04",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-20-work-0007.md",
+        "frontend/tests/questionnaires.html"
+      ]
+    },
+    {
+      "test": "TEST-002-05",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-20-work-0007.md",
+        "frontend/tests/questionnaires.html"
+      ]
+    },
+    {
+      "test": "TEST-002-06",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-20-work-0007.md",
+        "frontend/tests/questionnaires.html"
+      ]
+    },
+    {
+      "test": "TEST-002-07",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-20-work-0007.md",
+        "frontend/tests/questionnaires.html"
+      ]
+    },
+    {
+      "test": "TEST-002-08",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-20-work-0007.md",
+        "frontend/tests/questionnaires.html"
+      ]
+    },
+    {
+      "test": "TEST-002-09",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-20-work-0007.md",
+        "frontend/tests/questionnaires.html"
+      ]
+    },
+    {
+      "test": "TEST-002-10",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-20-work-0007.md",
+        "frontend/tests/questionnaires.html"
+      ]
+    },
+    {
+      "test": "TEST-002-11",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-21-work-0009.md",
+        "docs/quality/reports/2026-10-21-work-0009-sources.json"
+      ]
+    },
+    {
+      "test": "TEST-002-12",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-21-work-0009.md",
+        "docs/quality/reports/2026-10-21-work-0009-sources.json",
+        "docs/quality/reports/2026-10-21-work-0009-unchanged.json",
+        "docs/quality/reports/2026-10-21-work-0009-browser.json"
+      ]
+    },
+    {
+      "test": "TEST-002-13",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-21-work-0009.md",
+        "docs/quality/reports/2026-10-21-work-0009-sources.json",
+        "docs/quality/reports/2026-10-21-work-0009-browser.json",
+        "docs/quality/reports/2026-10-21-work-0009-sdd-tests.txt"
+      ]
+    },
+    {
+      "test": "TEST-002-14",
+      "status": "passed",
+      "evidence": [
+        "tasks/completed/WORK-0014.md",
+        "docs/quality/reports/2026-10-25-work-0014/browser-results.json",
+        "docs/quality/reports/2026-10-25-work-0014/preservation.json"
+      ]
+    }
+  ]
+}

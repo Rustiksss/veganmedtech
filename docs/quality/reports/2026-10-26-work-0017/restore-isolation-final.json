@@ -1,0 +1,5 @@
+{
+  "memory_limits_supported": "true",
+  "swap_limits_supported": "true",
+  "temporary_restore_containers": []
+}

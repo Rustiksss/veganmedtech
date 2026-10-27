@@ -1,0 +1,6 @@
+{
+  "deployed_tag": "veganmedtech-server:20261025T212653Z-8ecec0d6",
+  "portable_id": "sha256:54ba9e097a5d3530762b9278d60e097476b83d570cace18c9d7676f76fa16fad",
+  "matches_deployed": true,
+  "location": "local isolated PostgreSQL; public server disk reserve preserved"
+}

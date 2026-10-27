@@ -1,0 +1,43 @@
+{
+  "tls_verified": true,
+  "readiness": true,
+  "public_resources": {
+    "frontend/static/js/app.js": {
+      "url": "https://94.103.3.149/static/js/app.8d1f777047d3.js",
+      "sha256": "f8281500e4c3c35963ee3b6acb87900351070e0e4f99a1ac04ee0dc9c9d40e02",
+      "matches_local": true
+    },
+    "frontend/static/css/app.css": {
+      "url": "https://94.103.3.149/static/css/app.5f04fd9c086d.css",
+      "sha256": "89cb22e849c26580790fa769419bbf5e35437b5f9318f2860b0ad3c8bf5be091",
+      "matches_local": true
+    },
+    "frontend/static/js/api.js": {
+      "url": "https://94.103.3.149/static/js/api.fd1e6b181991.js",
+      "sha256": "97eec168c2f114b34e0d83028f9db80d58d3cdabf71359699c27023f06cc4212",
+      "matches_local": true
+    }
+  },
+  "server": {
+    "current": "20261026T002622Z-7fc599bf",
+    "previous": "20261025T213505Z-81b7c2d9",
+    "image_id": "sha256:d9ba4fd5cb96e131d5ad84a732bcc823c29c34130dbc12cdb989ef841d3efe3d",
+    "image_tag": "veganmedtech-server:20261026T002622Z-7fc599bf",
+    "source_hashes": {
+      "frontend/static/js/app.js": "f8281500e4c3c35963ee3b6acb87900351070e0e4f99a1ac04ee0dc9c9d40e02",
+      "frontend/static/css/app.css": "89cb22e849c26580790fa769419bbf5e35437b5f9318f2860b0ad3c8bf5be091",
+      "frontend/static/js/api.js": "97eec168c2f114b34e0d83028f9db80d58d3cdabf71359699c27023f06cc4212",
+      "frontend/static/js/questionnaires.js": "3e7afa1aeb48e69987066bc0ba40455604995455bf2074e97f72e732ec70d2c5",
+      "backend/uv.lock": "3463803239c3a06a2fbef098fb6aa66c80d680972e0c22221cb7ebbbafb0c243"
+    },
+    "backup_bytes": 78361,
+    "pg_restore_list_passed": true,
+    "rollback_image_preserved": true,
+    "health": {
+      "veganmedtech-app-1": "healthy",
+      "veganmedtech-db-1": "healthy",
+      "veganmedtech-mailpit-1": "healthy"
+    },
+    "available_bytes": 295219200
+  }
+}

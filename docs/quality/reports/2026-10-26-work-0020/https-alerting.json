@@ -1,0 +1,22 @@
+{
+  "completed": false,
+  "checks": [
+    {
+      "name": "published demo enabled and clinical detection disabled",
+      "passed": true
+    },
+    {
+      "name": "patient boundary discloses sharing",
+      "passed": true
+    },
+    {
+      "name": "real reply 0",
+      "passed": false
+    }
+  ],
+  "metadata": {
+    "accept_insecure_certs": false,
+    "provider": "real Polza",
+    "generations": 1
+  }
+}

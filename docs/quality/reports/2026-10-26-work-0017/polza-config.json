@@ -1,0 +1,6 @@
+{
+  "configured": true,
+  "existing_values_unchanged": true,
+  "mode": "0o600",
+  "backup": "/opt/veganmedtech/backups/work0017-before-polza.env"
+}

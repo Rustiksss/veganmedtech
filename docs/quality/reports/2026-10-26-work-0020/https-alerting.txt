@@ -1,0 +1,11 @@
+Traceback (most recent call last):
+  File "/home/rustiks/veganmedtech/tests/browser/published_alerting.py", line 104, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/rustiks/veganmedtech/tests/browser/published_alerting.py", line 68, in main
+    turn=b.evaluate(pa,'state.assistant.items.at(-1)');check('real reply '+str(index),turn and turn['status']=='completed' and bool(turn['reply']))
+                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rustiks/veganmedtech/tests/browser/published_alerting.py", line 21, in check
+    if not value:raise AssertionError(name)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError: real reply 0

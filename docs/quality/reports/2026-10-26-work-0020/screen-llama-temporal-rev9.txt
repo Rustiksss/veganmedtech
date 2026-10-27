@@ -1,0 +1,6 @@
+{"type": "case", "attempt": 86, "model": "meta-llama/llama-3.1-8b-instruct", "provider": "groq", "case": "positive", "passed": true, "seconds": 3.789}
+{"type": "case", "attempt": 87, "model": "meta-llama/llama-3.1-8b-instruct", "provider": "groq", "case": "neutral", "passed": true, "seconds": 7.239}
+{"type": "case", "attempt": 88, "model": "meta-llama/llama-3.1-8b-instruct", "provider": "groq", "case": "negation", "passed": true, "seconds": 2.568}
+{"type": "case", "attempt": 89, "model": "meta-llama/llama-3.1-8b-instruct", "provider": "groq", "case": "past", "passed": false, "seconds": 18.001, "error": "timeout"}
+{"type": "case", "attempt": 90, "model": "meta-llama/llama-3.1-8b-instruct", "provider": "novita/fp8", "case": "positive", "passed": false, "seconds": 18.001, "error": "timeout"}
+{"winner": null, "attempts_total": 90}

@@ -1,0 +1,31 @@
+[
+  {
+    "manifest": "/home/rustiks/veganmedtech/docs/quality/reports/2026-10-26-work-0020/batch-russian-rev11-1.manifest.json",
+    "rows": 28,
+    "selected": false
+  },
+  {
+    "manifest": "/home/rustiks/veganmedtech/docs/quality/reports/2026-10-26-work-0020/batch-russian-rev11-2.manifest.json",
+    "stop": "No unmeasured configuration fits the remaining budget",
+    "skips": [
+      {
+        "model": "meta-llama/llama-3.1-8b-instruct",
+        "provider": "groq",
+        "prompt": "russian",
+        "reason": "Already measured; do not resend"
+      },
+      {
+        "model": "cohere/command-r7b-12-2024",
+        "provider": "cohere",
+        "prompt": "russian",
+        "reason": "Matrix budget reserve"
+      },
+      {
+        "model": "google/gemma-3-4b-it",
+        "provider": "parasail/bf16",
+        "prompt": "russian",
+        "reason": "Matrix budget reserve"
+      }
+    ]
+  }
+]

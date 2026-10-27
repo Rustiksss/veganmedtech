@@ -1,0 +1,17 @@
+{
+  "attempts_total": 227,
+  "new_phase_results": 132,
+  "phase_upper_cap_rub": 13,
+  "phase_reserved_upper_rub": 8.387648203855,
+  "phase_remaining_upper_rub": 4.612351796144999,
+  "phase_known_actual_rub": 1.17419128,
+  "phase_unknown_actual_costs": 10,
+  "reserved_outcomes": 0,
+  "changed_runtime_sources": {
+    "backend/assistant/client.py": false,
+    "backend/assistant/alerting.py": false,
+    "tests/fixtures/assistant_benchmark_cases.json": false
+  },
+  "clinical_policy_changed": false,
+  "new_generation_calls_for_this_summary": 0
+}

@@ -1,0 +1,21 @@
+{
+  "removed_tags": [
+    "veganmedtech-server:20261024T235343Z-9097274c",
+    "veganmedtech-server:20261024T235815Z-6f6b551f",
+    "veganmedtech-server:20261025T100713Z-2af80812",
+    "veganmedtech-server:20261025T100946Z-da5a445c"
+  ],
+  "remaining_tags": [
+    "veganmedtech-server:20261025T212653Z-8ecec0d6",
+    "veganmedtech-server:20261025T213505Z-81b7c2d9"
+  ],
+  "current_previous_preserved": true,
+  "health": {
+    "veganmedtech-app-1": "healthy",
+    "veganmedtech-db-1": "healthy",
+    "veganmedtech-mailpit-1": "healthy"
+  },
+  "available_before": 289792000,
+  "available_after": 510394368,
+  "freed_bytes": 220602368
+}

@@ -1,0 +1,1 @@
+{"policy_version": "chat-alert-demo-v1", "client_sha256": "8ba0be3dc8bcfdd43b277aeaf3b2730a30484b403e98487abdd58ba101247bdf", "server_files_or_database_changed": false, "calls": 1, "cases": [{"case": "positive", "trace": [{"phase": "tls_connected"}], "passed": false, "error": "timeout", "latency_seconds": 18.002}]}

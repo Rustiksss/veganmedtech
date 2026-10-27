@@ -1,0 +1,474 @@
+{
+  "passed": 117,
+  "failed": 1,
+  "checks": [
+    {
+      "name": "direct protected hash requires login",
+      "passed": true
+    },
+    {
+      "name": "patient signup",
+      "passed": true
+    },
+    {
+      "name": "patient email confirmation UI",
+      "passed": true
+    },
+    {
+      "name": "patient verified login",
+      "passed": true
+    },
+    {
+      "name": "patient signup",
+      "passed": true
+    },
+    {
+      "name": "patient email confirmation UI",
+      "passed": true
+    },
+    {
+      "name": "patient verified login",
+      "passed": true
+    },
+    {
+      "name": "doctor signup",
+      "passed": true
+    },
+    {
+      "name": "doctor email confirmation UI",
+      "passed": true
+    },
+    {
+      "name": "doctor verified login",
+      "passed": true
+    },
+    {
+      "name": "doctor signup",
+      "passed": true
+    },
+    {
+      "name": "doctor email confirmation UI",
+      "passed": true
+    },
+    {
+      "name": "doctor verified login",
+      "passed": true
+    },
+    {
+      "name": "doctor pending after signup",
+      "passed": true
+    },
+    {
+      "name": "session pending doctor /",
+      "passed": true
+    },
+    {
+      "name": "session pending doctor /login",
+      "passed": true
+    },
+    {
+      "name": "session pending doctor /register/patient",
+      "passed": true
+    },
+    {
+      "name": "session pending doctor /register/doctor",
+      "passed": true
+    },
+    {
+      "name": "only own linked patient listed",
+      "passed": true
+    },
+    {
+      "name": "navigation retains cabinet patient 1440",
+      "passed": true
+    },
+    {
+      "name": "navigation busy status patient 1440",
+      "passed": true
+    },
+    {
+      "name": "navigation background render patient 1440",
+      "passed": true
+    },
+    {
+      "name": "navigation ready focus patient 1440",
+      "passed": true
+    },
+    {
+      "name": "navigation active item patient 1440",
+      "passed": true
+    },
+    {
+      "name": "navigation retains cabinet patient 768",
+      "passed": true
+    },
+    {
+      "name": "navigation busy status patient 768",
+      "passed": true
+    },
+    {
+      "name": "navigation background render patient 768",
+      "passed": true
+    },
+    {
+      "name": "navigation ready focus patient 768",
+      "passed": true
+    },
+    {
+      "name": "navigation active item patient 768",
+      "passed": true
+    },
+    {
+      "name": "navigation retains cabinet patient 390",
+      "passed": true
+    },
+    {
+      "name": "navigation busy status patient 390",
+      "passed": true
+    },
+    {
+      "name": "navigation background render patient 390",
+      "passed": true
+    },
+    {
+      "name": "navigation ready focus patient 390",
+      "passed": true
+    },
+    {
+      "name": "navigation active item patient 390",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 1440 /patient",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 1440 /patient/assistant",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 1440 /patient/questionnaires",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 1440 /patient/notifications",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 1440 /patient/doctors",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 1440 /patient/chat/doctor-a",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 1440 /patient/medication",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 1440 /patient/games",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 1440 /patient/films",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 1440 /patient/sounds",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 1440 /patient/report",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 1440 /patient/history",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 768 /patient",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 768 /patient/assistant",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 768 /patient/questionnaires",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 768 /patient/notifications",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 768 /patient/doctors",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 768 /patient/chat/doctor-a",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 768 /patient/medication",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 768 /patient/games",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 768 /patient/films",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 768 /patient/sounds",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 768 /patient/report",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 768 /patient/history",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 390 /patient",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 390 /patient/assistant",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 390 /patient/questionnaires",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 390 /patient/notifications",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 390 /patient/doctors",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 390 /patient/chat/doctor-a",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 390 /patient/medication",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 390 /patient/games",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 390 /patient/films",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 390 /patient/sounds",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 390 /patient/report",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 390 /patient/history",
+      "passed": true
+    },
+    {
+      "name": "navigation history patient back",
+      "passed": true
+    },
+    {
+      "name": "navigation history patient forward",
+      "passed": true
+    },
+    {
+      "name": "navigation waits for data patient",
+      "passed": true
+    },
+    {
+      "name": "navigation retains cabinet doctor 1440",
+      "passed": true
+    },
+    {
+      "name": "navigation busy status doctor 1440",
+      "passed": true
+    },
+    {
+      "name": "navigation background render doctor 1440",
+      "passed": true
+    },
+    {
+      "name": "navigation ready focus doctor 1440",
+      "passed": true
+    },
+    {
+      "name": "navigation active item doctor 1440",
+      "passed": true
+    },
+    {
+      "name": "navigation retains cabinet doctor 768",
+      "passed": true
+    },
+    {
+      "name": "navigation busy status doctor 768",
+      "passed": true
+    },
+    {
+      "name": "navigation background render doctor 768",
+      "passed": true
+    },
+    {
+      "name": "navigation ready focus doctor 768",
+      "passed": true
+    },
+    {
+      "name": "navigation active item doctor 768",
+      "passed": true
+    },
+    {
+      "name": "navigation retains cabinet doctor 390",
+      "passed": true
+    },
+    {
+      "name": "navigation busy status doctor 390",
+      "passed": true
+    },
+    {
+      "name": "navigation background render doctor 390",
+      "passed": true
+    },
+    {
+      "name": "navigation ready focus doctor 390",
+      "passed": true
+    },
+    {
+      "name": "navigation active item doctor 390",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 1440 /doctor",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 1440 /doctor/patients/5",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 1440 /doctor/chat/5",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 1440 /doctor/assistant-alerts",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 1440 /doctor/interactions",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 768 /doctor",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 768 /doctor/patients/5",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 768 /doctor/chat/5",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 768 /doctor/assistant-alerts",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 768 /doctor/interactions",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 390 /doctor",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 390 /doctor/patients/5",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 390 /doctor/chat/5",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 390 /doctor/assistant-alerts",
+      "passed": true
+    },
+    {
+      "name": "navigation no splash 390 /doctor/interactions",
+      "passed": true
+    },
+    {
+      "name": "navigation history doctor back",
+      "passed": true
+    },
+    {
+      "name": "navigation history doctor forward",
+      "passed": true
+    },
+    {
+      "name": "navigation waits for data doctor",
+      "passed": true
+    },
+    {
+      "name": "navigation blocks old form and writes",
+      "passed": true
+    },
+    {
+      "name": "navigation old input cannot receive focus",
+      "passed": true
+    },
+    {
+      "name": "navigation keyboard stays outside inert content",
+      "passed": true
+    },
+    {
+      "name": "navigation reverse responses keep latest route",
+      "passed": true
+    },
+    {
+      "name": "navigation ignores old data",
+      "passed": true
+    },
+    {
+      "name": "navigation failure closes old content 403",
+      "passed": true
+    },
+    {
+      "name": "navigation retry 403",
+      "passed": true
+    },
+    {
+      "name": "navigation failure closes old content 500",
+      "passed": true
+    },
+    {
+      "name": "navigation retry 500",
+      "passed": true
+    },
+    {
+      "name": "navigation failure closes old content network",
+      "passed": true
+    },
+    {
+      "name": "navigation retry network",
+      "passed": true
+    }
+  ]
+}

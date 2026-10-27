@@ -1,0 +1,5 @@
+Navigation retention, delays, races, failures, logout and owner change passed
+Session routes, reload, history and keyboard passed
+Real shared-cookie tab conflicts passed
+Session recovery, switching, errors and delayed responses passed
+{"passed": 334, "failed": 0, "calculations": {"passed": 219, "failed": 0}}

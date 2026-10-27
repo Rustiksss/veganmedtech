@@ -1,0 +1,18 @@
+{
+  "http_status": 201,
+  "seconds": 4.664,
+  "status": "completed",
+  "reply": "Я понимаю, что вы переживаете трудный период. Хочу напомнить, что в любое время можно обратиться за помощью. Вы можете поговорить о своих чувствах с кем-то из близких или обратиться за помощью к профессиональному психологу или психотерапевту. Если вы чувствуете, что не можете справиться с эмоциями один, всегда есть люди, которые готовы поддержать и помочь.",
+  "analysis_status": "matched",
+  "notification_status": "available",
+  "usage": {
+    "cost": 0.00981762,
+    "total_tokens": 1905,
+    "prompt_tokens": 1776,
+    "completion_tokens": 129
+  },
+  "stored_model": "cohere/command-r7b-12-2024",
+  "doctor_events": 1,
+  "doctor_seen": true,
+  "own_accounts_disabled": true
+}

@@ -1,0 +1,6 @@
+{
+  "deploy/Caddyfile": "f527066a097cc18dc12be4b645bab1321966e21b2c4aab41a7b7a195ef1a7d82",
+  "scripts/deploy.sh": "8045530ff75f24446cb89a1a94c9615c4f25f93936e5411c6775c16d3b83834d",
+  "tests/test_deploy.py": "fbdee4c68d3c358097d3456d0846b18fb4ec2ae418c5424f8fcb7b56e4834cc5",
+  "tests/browser/run.py": "12f2da52c42f6cb966ed1802801fc996bea91ad5985afd0168e6557e0e3dd5ad"
+}

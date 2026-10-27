@@ -1,0 +1,32 @@
+{
+  "table_digests_before_after_restored": [
+    {
+      "assistant_assistantturn": "a6dc3ac92967c804bb7ce54e2936a7121c91d951f244ab6b5916bd279174007c",
+      "assistant_assistantnotification": "d63a6f2d5d4b832a69d0a5174153a570140195d9a663a9c75b6ccf0d278d384e",
+      "audit_auditevent": "8a9c94e8686012a06e48b5a8a4c9f70735fbc0b70aa75e3f45d0234d30aa07aa"
+    },
+    {
+      "assistant_assistantturn": "a6dc3ac92967c804bb7ce54e2936a7121c91d951f244ab6b5916bd279174007c",
+      "assistant_assistantnotification": "d63a6f2d5d4b832a69d0a5174153a570140195d9a663a9c75b6ccf0d278d384e",
+      "audit_auditevent": "8a9c94e8686012a06e48b5a8a4c9f70735fbc0b70aa75e3f45d0234d30aa07aa"
+    },
+    {
+      "assistant_assistantturn": "a6dc3ac92967c804bb7ce54e2936a7121c91d951f244ab6b5916bd279174007c",
+      "assistant_assistantnotification": "d63a6f2d5d4b832a69d0a5174153a570140195d9a663a9c75b6ccf0d278d384e",
+      "audit_auditevent": "8a9c94e8686012a06e48b5a8a4c9f70735fbc0b70aa75e3f45d0234d30aa07aa"
+    }
+  ],
+  "recreate_preserved": true,
+  "counts_before_after_restored": [
+    "34|92|14|418|8|4",
+    "34|92|14|418|8|4",
+    "34|92|14|418|8|4"
+  ],
+  "dump_bytes": 80369,
+  "dump_sha256": "0a5dda910679961cd36af2efe82420bed9f47a741ea03c72e101d60f9e7b5af1",
+  "archive_list_valid": true,
+  "restore_preserved": true,
+  "restore_database_removed": true,
+  "private_dump": "/tmp/work0020-private/synthetic.dump",
+  "only_synthetic_project": "veganmedtech-work0020-test"
+}

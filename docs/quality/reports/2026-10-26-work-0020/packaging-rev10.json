@@ -1,0 +1,15 @@
+{
+  "image": "veganmedtech-work0020:rev10-test",
+  "image_id": "sha256:eb40e7810cedab8a55a072a24fae1f2a56a48cd9f71f2708a8def16dcf66fd7d",
+  "django_version": "5.2.18",
+  "venv_pyc_files": 0,
+  "previous_venv_pyc_files": 2138,
+  "previous_venv_pyc_bytes": 14058478,
+  "postgres_tests": 75,
+  "test_seconds": 3.187,
+  "migration_changes": false,
+  "startup_healthy": true,
+  "dockerfile_sha256": "9364e59cff82f9e6c08a20318792619f2fe125268b65d2a38bdc5339f8e69c2d",
+  "test_log": "docs/quality/reports/2026-10-26-work-0020/server-packaging-rev10.txt",
+  "scope": "TD-006 + packaging, before selected runtime model; final image requires new checks"
+}

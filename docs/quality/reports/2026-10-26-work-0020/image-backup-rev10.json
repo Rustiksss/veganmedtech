@@ -1,0 +1,17 @@
+{
+  "archive_source": "direct remote Docker save stream; no remote archive",
+  "tags": [
+    "veganmedtech-server:20261026T001026Z-fb8cfa65",
+    "veganmedtech-server:20261026T002622Z-7fc599bf"
+  ],
+  "remote_image_id": "sha256:c866c83347250a411451cd9d730b4339471ce91d3fa8b5b2a9e0a960880f0ac0",
+  "content_sha256": "d9ba4fd5cb96e131d5ad84a732bcc823c29c34130dbc12cdb989ef841d3efe3d",
+  "archive_path": "/tmp/work0020-private/work0019-previous-r10-image.tar.gz",
+  "archive_bytes": 81062166,
+  "archive_sha256": "00fc8efe32830f9f048a77242335b51cd11b9e126bc8d7b8d255606c6eacd7e0",
+  "layers_verified": true,
+  "docker_load_passed": true,
+  "local_remote_identical": true,
+  "runtime_secret_variables_absent": true,
+  "no_container_references": true
+}

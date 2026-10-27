@@ -1,0 +1,10 @@
+Found 39 test(s).
+Creating test database for alias 'default'...
+Cache table 'auth_rate_limits' already exists.
+System check identified no issues (0 silenced).
+.......................................
+----------------------------------------------------------------------
+Ran 39 tests in 10.451s
+
+OK
+Destroying test database for alias 'default'...

@@ -1,0 +1,9 @@
+{"type": "case", "attempt": 67, "model": "meta-llama/llama-3.1-8b-instruct", "provider": "novita/fp8", "case": "positive", "passed": true, "seconds": 2.19}
+{"type": "case", "attempt": 68, "model": "meta-llama/llama-3.1-8b-instruct", "provider": "novita/fp8", "case": "neutral", "passed": true, "seconds": 1.814}
+{"type": "case", "attempt": 69, "model": "meta-llama/llama-3.1-8b-instruct", "provider": "novita/fp8", "case": "negation", "passed": false, "seconds": 2.919}
+{"type": "case", "attempt": 70, "model": "google/gemma-3-4b-it", "provider": "parasail/bf16", "case": "positive", "passed": true, "seconds": 6.008}
+{"type": "case", "attempt": 71, "model": "google/gemma-3-4b-it", "provider": "parasail/bf16", "case": "neutral", "passed": false, "seconds": 11.945}
+{"type": "case", "attempt": 72, "model": "mistralai/ministral-3b-2512", "provider": "mistral", "case": "positive", "passed": true, "seconds": 6.529}
+{"type": "case", "attempt": 73, "model": "mistralai/ministral-3b-2512", "provider": "mistral", "case": "neutral", "passed": true, "seconds": 6.718}
+{"type": "case", "attempt": 74, "model": "mistralai/ministral-3b-2512", "provider": "mistral", "case": "negation", "passed": false, "seconds": 12.367}
+{"winner": null, "attempts_total": 74}

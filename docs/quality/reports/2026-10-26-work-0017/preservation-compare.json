@@ -1,0 +1,20 @@
+{
+  "config_all_preserved": true,
+  "baseline_config_preserved": true,
+  "tls_preserved": true,
+  "mailpit_preserved": true,
+  "old_mail_retained": true,
+  "controls_preserved": true,
+  "audit_retained": true,
+  "baseline_counts_retained": true,
+  "available_bytes": 289976320,
+  "counts": {
+    "users": 39,
+    "reports": 3,
+    "links": 9
+  },
+  "links": {
+    "current": "releases/20261025T213505Z-81b7c2d9",
+    "previous": "releases/20261025T212653Z-8ecec0d6"
+  }
+}

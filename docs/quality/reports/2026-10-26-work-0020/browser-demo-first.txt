@@ -1,0 +1,13 @@
+{"passed": 35, "total": 35, "metadata": {"provider": "fixed synthetic fixture; real Polza checked separately", "widths": [1440, 768, 390], "delivery_seconds": 15.081, "control_ids": {"turn": 1, "event": 1}}}
+Traceback (most recent call last):
+  File "/home/rustiks/veganmedtech/tests/browser/assistant.py", line 359, in <module>
+    main()
+  File "/home/rustiks/veganmedtech/tests/browser/assistant.py", line 198, in main
+    return run(args)
+           ^^^^^^^^^
+  File "/home/rustiks/veganmedtech/tests/browser/alerting.py", line 124, in run
+    b.click(pa,'[data-action="logout"]');b.wait(pa,'!sessionUser&&!loading')
+                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rustiks/veganmedtech/tests/browser/bidi.py", line 55, in wait
+    raise AssertionError("Browser condition timed out: "+expression[:100])
+AssertionError: Browser condition timed out: !sessionUser&&!loading

@@ -1,0 +1,871 @@
+{
+  "schema_version": 1,
+  "feature": "001-access-and-self-report",
+  "status": "verified",
+  "mappings": [
+    {
+      "requirement": "CON-001",
+      "coverage": "full",
+      "acceptance": [
+        "AC-001-01",
+        "AC-001-02",
+        "AC-001-12",
+        "AC-001-14",
+        "AC-001-16",
+        "AC-001-17",
+        "AC-001-20",
+        "AC-001-27",
+        "AC-001-31",
+        "AC-001-32",
+        "AC-001-33",
+        "AC-001-36",
+        "AC-001-38",
+        "AC-001-40",
+        "AC-001-41",
+        "AC-001-43"
+      ],
+      "tests": [
+        "TEST-001-01",
+        "TEST-001-02",
+        "TEST-001-12",
+        "TEST-001-14",
+        "TEST-001-16",
+        "TEST-001-17",
+        "TEST-001-20",
+        "TEST-001-27",
+        "TEST-001-31",
+        "TEST-001-32",
+        "TEST-001-33",
+        "TEST-001-36",
+        "TEST-001-38",
+        "TEST-001-40",
+        "TEST-001-41",
+        "TEST-001-43"
+      ],
+      "design_coverage": "partial"
+    },
+    {
+      "requirement": "CON-002",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-001-02",
+        "AC-001-03",
+        "AC-001-07",
+        "AC-001-12",
+        "AC-001-14",
+        "AC-001-16",
+        "AC-001-17",
+        "AC-001-22",
+        "AC-001-27",
+        "AC-001-31",
+        "AC-001-32",
+        "AC-001-33",
+        "AC-001-36",
+        "AC-001-40",
+        "AC-001-41",
+        "AC-001-43"
+      ],
+      "tests": [
+        "TEST-001-02",
+        "TEST-001-03",
+        "TEST-001-07",
+        "TEST-001-12",
+        "TEST-001-14",
+        "TEST-001-16",
+        "TEST-001-17",
+        "TEST-001-22",
+        "TEST-001-27",
+        "TEST-001-31",
+        "TEST-001-32",
+        "TEST-001-33",
+        "TEST-001-36",
+        "TEST-001-40",
+        "TEST-001-41",
+        "TEST-001-43"
+      ],
+      "design_coverage": "partial",
+      "scope_note": "Проверена передача самоотчётов; опросники, чаты и другие локальные сведения сервером не сохраняются."
+    },
+    {
+      "requirement": "CON-010",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-001-02",
+        "AC-001-04",
+        "AC-001-08",
+        "AC-001-10",
+        "AC-001-14",
+        "AC-001-17",
+        "AC-001-19",
+        "AC-001-22",
+        "AC-001-27",
+        "AC-001-28",
+        "AC-001-30",
+        "AC-001-39",
+        "AC-001-40",
+        "AC-001-41",
+        "AC-001-42",
+        "AC-001-43"
+      ],
+      "tests": [
+        "TEST-001-02",
+        "TEST-001-04",
+        "TEST-001-08",
+        "TEST-001-10",
+        "TEST-001-14",
+        "TEST-001-17",
+        "TEST-001-19",
+        "TEST-001-22",
+        "TEST-001-27",
+        "TEST-001-28",
+        "TEST-001-30",
+        "TEST-001-39",
+        "TEST-001-40",
+        "TEST-001-41",
+        "TEST-001-42",
+        "TEST-001-43"
+      ],
+      "design_coverage": "partial"
+    },
+    {
+      "requirement": "FR-004",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-001-04",
+        "AC-001-12",
+        "AC-001-16",
+        "AC-001-17",
+        "AC-001-21",
+        "AC-001-30"
+      ],
+      "tests": [
+        "TEST-001-04",
+        "TEST-001-12",
+        "TEST-001-16",
+        "TEST-001-17",
+        "TEST-001-21",
+        "TEST-001-30"
+      ],
+      "design_coverage": "partial"
+    },
+    {
+      "requirement": "FR-005",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-001-03",
+        "AC-001-04",
+        "AC-001-12",
+        "AC-001-13",
+        "AC-001-16",
+        "AC-001-17",
+        "AC-001-21",
+        "AC-001-30"
+      ],
+      "tests": [
+        "TEST-001-03",
+        "TEST-001-04",
+        "TEST-001-12",
+        "TEST-001-13",
+        "TEST-001-16",
+        "TEST-001-17",
+        "TEST-001-21",
+        "TEST-001-30"
+      ],
+      "design_coverage": "partial"
+    },
+    {
+      "requirement": "NFR-003",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-001-05",
+        "AC-001-06",
+        "AC-001-13",
+        "AC-001-17",
+        "AC-001-22",
+        "AC-001-23",
+        "AC-001-26",
+        "AC-001-30",
+        "AC-001-34",
+        "AC-001-35",
+        "AC-001-37",
+        "AC-001-38",
+        "AC-001-40",
+        "AC-001-41",
+        "AC-001-42"
+      ],
+      "tests": [
+        "TEST-001-05",
+        "TEST-001-06",
+        "TEST-001-13",
+        "TEST-001-17",
+        "TEST-001-22",
+        "TEST-001-23",
+        "TEST-001-26",
+        "TEST-001-30",
+        "TEST-001-34",
+        "TEST-001-35",
+        "TEST-001-37",
+        "TEST-001-38",
+        "TEST-001-40",
+        "TEST-001-41",
+        "TEST-001-42"
+      ],
+      "design_coverage": "partial"
+    },
+    {
+      "requirement": "NFR-004",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-001-09",
+        "AC-001-11",
+        "AC-001-15",
+        "AC-001-18",
+        "AC-001-29",
+        "AC-001-43"
+      ],
+      "tests": [
+        "TEST-001-09",
+        "TEST-001-11",
+        "TEST-001-15",
+        "TEST-001-18",
+        "TEST-001-29",
+        "TEST-001-43"
+      ],
+      "design_coverage": "partial"
+    },
+    {
+      "requirement": "NFR-008",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-001-09",
+        "AC-001-11",
+        "AC-001-15",
+        "AC-001-18",
+        "AC-001-29",
+        "AC-001-34",
+        "AC-001-35",
+        "AC-001-37",
+        "AC-001-40",
+        "AC-001-41",
+        "AC-001-42",
+        "AC-001-43"
+      ],
+      "tests": [
+        "TEST-001-09",
+        "TEST-001-11",
+        "TEST-001-15",
+        "TEST-001-18",
+        "TEST-001-29",
+        "TEST-001-34",
+        "TEST-001-35",
+        "TEST-001-37",
+        "TEST-001-40",
+        "TEST-001-41",
+        "TEST-001-42",
+        "TEST-001-43"
+      ],
+      "design_coverage": "partial"
+    },
+    {
+      "requirement": "NFR-012",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-001-03",
+        "AC-001-04",
+        "AC-001-34",
+        "AC-001-35",
+        "AC-001-37"
+      ],
+      "tests": [
+        "TEST-001-03",
+        "TEST-001-04",
+        "TEST-001-34",
+        "TEST-001-35",
+        "TEST-001-37"
+      ]
+    },
+    {
+      "requirement": "NFR-013",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-001-01",
+        "AC-001-02",
+        "AC-001-07",
+        "AC-001-08",
+        "AC-001-14",
+        "AC-001-17",
+        "AC-001-19",
+        "AC-001-28",
+        "AC-001-31",
+        "AC-001-32",
+        "AC-001-33",
+        "AC-001-36",
+        "AC-001-38",
+        "AC-001-39",
+        "AC-001-40",
+        "AC-001-41",
+        "AC-001-42",
+        "AC-001-43"
+      ],
+      "tests": [
+        "TEST-001-01",
+        "TEST-001-02",
+        "TEST-001-07",
+        "TEST-001-08",
+        "TEST-001-14",
+        "TEST-001-17",
+        "TEST-001-19",
+        "TEST-001-28",
+        "TEST-001-31",
+        "TEST-001-32",
+        "TEST-001-33",
+        "TEST-001-36",
+        "TEST-001-38",
+        "TEST-001-39",
+        "TEST-001-40",
+        "TEST-001-41",
+        "TEST-001-42",
+        "TEST-001-43"
+      ],
+      "design_coverage": "partial"
+    },
+    {
+      "requirement": "CON-003",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-001-21",
+        "AC-001-23",
+        "AC-001-28"
+      ],
+      "tests": [
+        "TEST-001-21",
+        "TEST-001-23",
+        "TEST-001-28"
+      ],
+      "design_coverage": "partial"
+    },
+    {
+      "requirement": "CON-007",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-001-23",
+        "AC-001-28"
+      ],
+      "tests": [
+        "TEST-001-23",
+        "TEST-001-28"
+      ],
+      "design_coverage": "partial"
+    },
+    {
+      "requirement": "CON-008",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-001-21",
+        "AC-001-24",
+        "AC-001-28",
+        "AC-001-40",
+        "AC-001-41"
+      ],
+      "tests": [
+        "TEST-001-21",
+        "TEST-001-24",
+        "TEST-001-28",
+        "TEST-001-40",
+        "TEST-001-41"
+      ],
+      "design_coverage": "partial"
+    },
+    {
+      "requirement": "FR-001",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-001-21"
+      ],
+      "tests": [
+        "TEST-001-21"
+      ],
+      "design_coverage": "partial"
+    },
+    {
+      "requirement": "FR-003",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-001-28"
+      ],
+      "tests": [
+        "TEST-001-28"
+      ],
+      "design_coverage": "partial"
+    },
+    {
+      "requirement": "FR-006",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-001-22",
+        "AC-001-27"
+      ],
+      "tests": [
+        "TEST-001-22",
+        "TEST-001-27"
+      ],
+      "design_coverage": "partial"
+    },
+    {
+      "requirement": "FR-007",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-001-21",
+        "AC-001-23"
+      ],
+      "tests": [
+        "TEST-001-21",
+        "TEST-001-23"
+      ],
+      "design_coverage": "partial"
+    },
+    {
+      "requirement": "FR-008",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-001-21"
+      ],
+      "tests": [
+        "TEST-001-21"
+      ],
+      "design_coverage": "partial"
+    },
+    {
+      "requirement": "FR-010",
+      "coverage": "full",
+      "acceptance": [
+        "AC-001-20",
+        "AC-001-31",
+        "AC-001-32",
+        "AC-001-33",
+        "AC-001-36",
+        "AC-001-38",
+        "AC-001-40",
+        "AC-001-41",
+        "AC-001-42",
+        "AC-001-43"
+      ],
+      "tests": [
+        "TEST-001-20",
+        "TEST-001-31",
+        "TEST-001-32",
+        "TEST-001-33",
+        "TEST-001-36",
+        "TEST-001-38",
+        "TEST-001-40",
+        "TEST-001-41",
+        "TEST-001-42",
+        "TEST-001-43"
+      ],
+      "design_coverage": "partial"
+    },
+    {
+      "requirement": "FR-011",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-001-24"
+      ],
+      "tests": [
+        "TEST-001-24"
+      ],
+      "design_coverage": "partial"
+    },
+    {
+      "requirement": "FR-012",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-001-25"
+      ],
+      "tests": [
+        "TEST-001-25"
+      ],
+      "design_coverage": "partial"
+    },
+    {
+      "requirement": "FR-013",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-001-26"
+      ],
+      "tests": [
+        "TEST-001-26"
+      ],
+      "design_coverage": "partial"
+    },
+    {
+      "requirement": "FR-014",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-001-29"
+      ],
+      "tests": [
+        "TEST-001-29"
+      ],
+      "design_coverage": "partial"
+    }
+  ],
+  "verification": [
+    {
+      "test": "TEST-001-01",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-21-work-0008.md"
+      ],
+      "version_scope": "WORK-0008, редакция 1; серверный срез, проверки 2026-10-20–21. Хеши кода в отчёте."
+    },
+    {
+      "test": "TEST-001-02",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-21-work-0008.md"
+      ],
+      "version_scope": "WORK-0008, редакция 1; серверный срез, проверки 2026-10-20–21. Хеши кода в отчёте."
+    },
+    {
+      "test": "TEST-001-03",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-21-work-0008.md"
+      ],
+      "version_scope": "WORK-0008, редакция 1; серверный срез, проверки 2026-10-20–21. Хеши кода в отчёте."
+    },
+    {
+      "test": "TEST-001-04",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-21-work-0008.md"
+      ],
+      "version_scope": "WORK-0008, редакция 1; серверный срез, проверки 2026-10-20–21. Хеши кода в отчёте."
+    },
+    {
+      "test": "TEST-001-05",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-21-work-0008.md"
+      ],
+      "version_scope": "WORK-0008, редакция 1; серверный срез, проверки 2026-10-20–21. Хеши кода в отчёте."
+    },
+    {
+      "test": "TEST-001-06",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-21-work-0008.md"
+      ],
+      "version_scope": "WORK-0008, редакция 1; серверный срез, проверки 2026-10-20–21. Хеши кода в отчёте."
+    },
+    {
+      "test": "TEST-001-07",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-21-work-0008.md"
+      ],
+      "version_scope": "WORK-0008, редакция 1; серверный срез, проверки 2026-10-20–21. Хеши кода в отчёте."
+    },
+    {
+      "test": "TEST-001-08",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-21-work-0008.md"
+      ],
+      "version_scope": "WORK-0008, редакция 1; серверный срез, проверки 2026-10-20–21. Хеши кода в отчёте."
+    },
+    {
+      "test": "TEST-001-09",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-21-work-0008.md"
+      ],
+      "version_scope": "WORK-0008, редакция 1; серверный срез, проверки 2026-10-20–21. Хеши кода в отчёте."
+    },
+    {
+      "test": "TEST-001-10",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-21-work-0008.md"
+      ],
+      "version_scope": "WORK-0008, редакция 1; серверный срез, проверки 2026-10-20–21. Хеши кода в отчёте."
+    },
+    {
+      "test": "TEST-001-11",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-19-work-0003.md"
+      ],
+      "version_scope": "Историческая презентационная версия WORK-0003, SHA-256 703ff3403f78e410eab328ccdca0cd9f330f534607500ba815f08730d8ac5d82"
+    },
+    {
+      "test": "TEST-001-12",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-19-work-0003.md"
+      ],
+      "version_scope": "Историческая презентационная версия WORK-0003, SHA-256 703ff3403f78e410eab328ccdca0cd9f330f534607500ba815f08730d8ac5d82"
+    },
+    {
+      "test": "TEST-001-13",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-19-work-0003.md"
+      ],
+      "version_scope": "Историческая презентационная версия WORK-0003, SHA-256 703ff3403f78e410eab328ccdca0cd9f330f534607500ba815f08730d8ac5d82"
+    },
+    {
+      "test": "TEST-001-14",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-19-work-0003.md"
+      ],
+      "version_scope": "Историческая презентационная версия WORK-0003, SHA-256 703ff3403f78e410eab328ccdca0cd9f330f534607500ba815f08730d8ac5d82"
+    },
+    {
+      "test": "TEST-001-15",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-19-work-0004.md",
+        "docs/quality/reports/2026-10-19-work-0005.md"
+      ],
+      "palette_scope": "WORK-0005: проверены цвета, контраст, состояния и неизменность JavaScript/HTML/компоновки; полный функциональный прогон WORK-0004 не повторялся.",
+      "version_scope": "Исторический интерфейс WORK-0004 и палитра WORK-0005; новая оболочка проверяется TEST-001-19–30."
+    },
+    {
+      "test": "TEST-001-16",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-19-work-0004.md"
+      ],
+      "version_scope": "Исторический интерфейс WORK-0004 и палитра WORK-0005; новая оболочка проверяется TEST-001-19–30."
+    },
+    {
+      "test": "TEST-001-17",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-19-work-0004.md"
+      ],
+      "version_scope": "Исторический интерфейс WORK-0004 и палитра WORK-0005; новая оболочка проверяется TEST-001-19–30."
+    },
+    {
+      "test": "TEST-001-18",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-19-work-0004.md",
+        "docs/quality/reports/2026-10-19-work-0005.md"
+      ],
+      "palette_scope": "WORK-0005: проверены цвета, контраст, состояния и неизменность JavaScript/HTML/компоновки; полный функциональный прогон WORK-0004 не повторялся.",
+      "version_scope": "Исторический интерфейс WORK-0004 и палитра WORK-0005; новая оболочка проверяется TEST-001-19–30."
+    },
+    {
+      "test": "TEST-001-19",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-20-work-0006.md"
+      ],
+      "version_scope": "WORK-0006, редакция 1, SHA-256 0039c7dc1a87515f35e9302f9d55433365dd96bcda5ea7a18ec20eba17ca0a86"
+    },
+    {
+      "test": "TEST-001-20",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-20-work-0006.md"
+      ],
+      "version_scope": "WORK-0006, редакция 1, SHA-256 0039c7dc1a87515f35e9302f9d55433365dd96bcda5ea7a18ec20eba17ca0a86"
+    },
+    {
+      "test": "TEST-001-21",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-20-work-0006.md"
+      ],
+      "version_scope": "WORK-0006, редакция 1, SHA-256 0039c7dc1a87515f35e9302f9d55433365dd96bcda5ea7a18ec20eba17ca0a86"
+    },
+    {
+      "test": "TEST-001-22",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-20-work-0006.md"
+      ],
+      "version_scope": "WORK-0006, редакция 1, SHA-256 0039c7dc1a87515f35e9302f9d55433365dd96bcda5ea7a18ec20eba17ca0a86"
+    },
+    {
+      "test": "TEST-001-23",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-20-work-0006.md"
+      ],
+      "version_scope": "WORK-0006, редакция 1, SHA-256 0039c7dc1a87515f35e9302f9d55433365dd96bcda5ea7a18ec20eba17ca0a86"
+    },
+    {
+      "test": "TEST-001-24",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-20-work-0006.md"
+      ],
+      "version_scope": "WORK-0006, редакция 1, SHA-256 0039c7dc1a87515f35e9302f9d55433365dd96bcda5ea7a18ec20eba17ca0a86"
+    },
+    {
+      "test": "TEST-001-25",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-20-work-0006.md"
+      ],
+      "version_scope": "WORK-0006, редакция 1, SHA-256 0039c7dc1a87515f35e9302f9d55433365dd96bcda5ea7a18ec20eba17ca0a86"
+    },
+    {
+      "test": "TEST-001-26",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-20-work-0006.md"
+      ],
+      "version_scope": "WORK-0006, редакция 1, SHA-256 0039c7dc1a87515f35e9302f9d55433365dd96bcda5ea7a18ec20eba17ca0a86"
+    },
+    {
+      "test": "TEST-001-27",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-20-work-0006.md"
+      ],
+      "version_scope": "WORK-0006, редакция 1, SHA-256 0039c7dc1a87515f35e9302f9d55433365dd96bcda5ea7a18ec20eba17ca0a86"
+    },
+    {
+      "test": "TEST-001-28",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-20-work-0006.md"
+      ],
+      "version_scope": "WORK-0006, редакция 1, SHA-256 0039c7dc1a87515f35e9302f9d55433365dd96bcda5ea7a18ec20eba17ca0a86"
+    },
+    {
+      "test": "TEST-001-29",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-20-work-0006.md"
+      ],
+      "version_scope": "WORK-0006, редакция 1, SHA-256 0039c7dc1a87515f35e9302f9d55433365dd96bcda5ea7a18ec20eba17ca0a86"
+    },
+    {
+      "test": "TEST-001-30",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-20-work-0006.md"
+      ],
+      "version_scope": "WORK-0006, редакция 1, SHA-256 0039c7dc1a87515f35e9302f9d55433365dd96bcda5ea7a18ec20eba17ca0a86"
+    },
+    {
+      "test": "TEST-001-31",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-21-work-0008.md"
+      ],
+      "version_scope": "WORK-0008, редакция 1; серверный срез, проверки 2026-10-20–21. Хеши кода в отчёте."
+    },
+    {
+      "test": "TEST-001-32",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-21-work-0008.md"
+      ],
+      "version_scope": "WORK-0008, редакция 1; серверный срез, проверки 2026-10-20–21. Хеши кода в отчёте."
+    },
+    {
+      "test": "TEST-001-33",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-21-work-0008.md"
+      ],
+      "version_scope": "WORK-0008, редакция 1; серверный срез, проверки 2026-10-20–21. Хеши кода в отчёте."
+    },
+    {
+      "test": "TEST-001-34",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-21-work-0008.md"
+      ],
+      "version_scope": "WORK-0008, редакция 1; серверный срез, проверки 2026-10-20–21. Хеши кода в отчёте."
+    },
+    {
+      "test": "TEST-001-35",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-21-work-0008.md"
+      ],
+      "version_scope": "WORK-0008, редакция 1; серверный срез, проверки 2026-10-20–21. Хеши кода в отчёте."
+    },
+    {
+      "test": "TEST-001-36",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-21-work-0008.md"
+      ],
+      "version_scope": "WORK-0008, редакция 1; серверный срез, проверки 2026-10-20–21. Хеши кода в отчёте."
+    },
+    {
+      "test": "TEST-001-37",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-21-work-0008.md"
+      ],
+      "version_scope": "WORK-0008, редакция 1; серверный срез, проверки 2026-10-20–21. Хеши кода в отчёте."
+    },
+    {
+      "test": "TEST-001-38",
+      "status": "passed",
+      "evidence": [
+        "tasks/completed/WORK-0011.md",
+        "backend/accounts/tests/test_accounts.py",
+        "tests/browser/run.py"
+      ],
+      "version_scope": "WORK-0011, редакция 1; 2026-10-23. 33 серверных, 232 браузерных, 219 расчётных проверок; SHA-256 в протоколе."
+    },
+    {
+      "test": "TEST-001-39",
+      "status": "passed",
+      "evidence": [
+        "tasks/completed/WORK-0012.md"
+      ]
+    },
+    {
+      "test": "TEST-001-40",
+      "status": "passed",
+      "evidence": [
+        "tasks/completed/WORK-0013.md",
+        "docs/quality/reports/2026-10-25-work-0013/browser-results.json"
+      ]
+    },
+    {
+      "test": "TEST-001-41",
+      "status": "passed",
+      "evidence": [
+        "tasks/completed/WORK-0014.md",
+        "docs/quality/reports/2026-10-25-work-0014/browser-results.json",
+        "docs/quality/reports/2026-10-25-work-0014/preservation.json"
+      ]
+    },
+    {
+      "test": "TEST-001-42",
+      "status": "passed",
+      "evidence": [
+        "tasks/completed/WORK-0015.md",
+        "docs/quality/reports/2026-10-25-work-0015/mailpit-browser-results.json",
+        "docs/quality/reports/2026-10-25-work-0015/preservation-repeat.json"
+      ]
+    },
+    {
+      "test": "TEST-001-43",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-26-work-0018.md",
+        "docs/quality/reports/2026-10-26-work-0018/browser.json",
+        "docs/quality/reports/2026-10-26-work-0018/accessibility.json",
+        "docs/quality/reports/2026-10-26-work-0019.md",
+        "docs/quality/reports/2026-10-26-work-0019/internet-browser.json",
+        "docs/quality/reports/2026-10-26-work-0019/published.json"
+      ],
+      "version_scope": "WORK-0018, редакция 1: локальная проверка; WORK-0019, редакции 1–2: публикация 20261026T002622Z-7fc599bf, 91 HTTPS-проверка/219 расчётных примеров, 2026-10-26. Хеши в отчётах."
+    }
+  ],
+  "design_note": "TEST-001-11–30 — исторические версии WORK-0003–0006. Текущий серверный срез: TEST-001-01–10,31–37. Полное покрытие только CON-001/FR-010; остальные требования частичны. TEST-001-38 — исправление сессии WORK-0011, проверено отдельно 2026-10-23."
+}

@@ -1,0 +1,15 @@
+{
+  "runtime_key_matches_private_config": true,
+  "model": "deepseek/deepseek-v4-flash",
+  "automatic_detection_enabled": false,
+  "policy_empty": true,
+  "key_in_image": false,
+  "key_in_logs": false,
+  "key_in_public_assets": false,
+  "key_in_sources": false,
+  "private_chat_text_in_logs": false,
+  "public_assets_checked": 3,
+  "server_env_mode": "0o600",
+  "local_files_scanned": 245,
+  "key_in_local_sources": false
+}

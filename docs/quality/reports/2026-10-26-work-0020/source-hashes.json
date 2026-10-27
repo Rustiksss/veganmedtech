@@ -1,0 +1,21 @@
+{
+  "backend/assistant/alerting.py": "c886def49d9293210b55bd4ec25816b4f9604524d066cc92ed2feb09333c8791",
+  "backend/assistant/alert_policy.demo.json": "67db4c59087684b51068876b7951b30324ffdb698dc7efbbb82a2e1783a64e99",
+  "backend/assistant/alert_policy.template.json": "fd5e7336de28fedd7482e98d6aadacb5031978d903e872175828c2fc91be3d12",
+  "backend/assistant/client.py": "25ab9d3b0798517a7b9a11ea5dd0408286f4e82b06e45735293725dffb3f323c",
+  "backend/assistant/models.py": "63b7e281d11eb4fdd9711dfeafd4dbbec0fa92ef04dedacece035b6ea61fc038",
+  "backend/assistant/services.py": "df952f3886d9380f2bff7d1ec2fbd17c2af29e0a7651ae9267af503382819751",
+  "backend/assistant/views.py": "79f3d0f6db02157c12e4a131d086cd8fc7e76c3edbc7425ac53785fe1b47f999",
+  "backend/assistant/prompts.py": "fe38a4cfa0b9d676b4dd7bbd5789fa0061dcea4582f29a3c542bdfd4eb41f214",
+  "backend/assistant/migrations/0002_demo_analysis.py": "6eddc519e5454cf426622b3fc222702651f14c847019110b6273553375d2b219",
+  "backend/assistant/tests/test_assistant.py": "742213abe672a66d5c4fed2b99c51da9a29c25ec21dfbda5f8e742e079472479",
+  "backend/assistant/tests/test_alerting.py": "1e542adc03441c999f9ce68a28a0deac75a89ed09c70f3d17013a0d6d64ad9b9",
+  "backend/config/settings.py": "f27e3bae5a49c297ec551263440f36046d8d4c365a8573c358e26f7da1b78843",
+  "compose.yaml": "00cd52e115c4ed64df83e3035aec71de84a6d42a9b16a95a16dad7e4727393bd",
+  "frontend/static/js/app.js": "1a16ed2073873ea9a315a32a90d6318369201c0e9c6415a5ddf9c27688490a64",
+  "tests/browser/assistant.py": "08f402f8c5b2afa9afc83fe46345395dbb6ed1f137afaf7beb1413a4b34fc406",
+  "tests/browser/alerting.py": "a7b3c534e4b4372a65b2bea6a8a05288aef296b7b1a3ccad5e914366198cb768",
+  "tests/browser/run.py": "2a59c99fe4dec1e1bfd44853463ea129cd76422c0e967a1256b4dcc22f976426",
+  "backend/pyproject.toml": "72ab083cbbd00c015836284b23ce923a7644284b2e061f21ef49707cd1816fa5",
+  "backend/uv.lock": "3463803239c3a06a2fbef098fb6aa66c80d680972e0c22221cb7ebbbafb0c243"
+}

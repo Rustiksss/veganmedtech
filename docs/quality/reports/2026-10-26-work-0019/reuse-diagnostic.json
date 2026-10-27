@@ -1,0 +1,16 @@
+{
+  "available_bytes": 295981056,
+  "manifest_identity": "sha256:d9ba4fd5cb96e131d5ad84a732bcc823c29c34130dbc12cdb989ef841d3efe3d",
+  "inspected_identity": "sha256:d9ba4fd5cb96e131d5ad84a732bcc823c29c34130dbc12cdb989ef841d3efe3d",
+  "matches_manifest": true,
+  "tags": [
+    "veganmedtech-server:20261026T001026Z-fb8cfa65"
+  ],
+  "listing": [
+    "veganmedtech-server:20261026T001026Z-fb8cfa65",
+    "veganmedtech-server:20261025T212653Z-8ecec0d6",
+    "veganmedtech-server:20261025T213505Z-81b7c2d9",
+    "postgres:<none>",
+    "axllent/mailpit:<none>"
+  ]
+}

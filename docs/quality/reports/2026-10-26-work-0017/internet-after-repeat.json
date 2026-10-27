@@ -1,0 +1,29 @@
+{
+  "checks": [
+    {
+      "name": "saved two replies after repeat",
+      "passed": true
+    },
+    {
+      "name": "same turn ids after repeat",
+      "passed": true
+    },
+    {
+      "name": "same self report after repeat",
+      "passed": true
+    },
+    {
+      "name": "same notification and seen after repeat",
+      "passed": true
+    },
+    {
+      "name": "repeat sessions logged out",
+      "passed": true
+    },
+    {
+      "name": "own accounts disabled",
+      "passed": true
+    }
+  ],
+  "accept_insecure_certs": false
+}

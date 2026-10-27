@@ -1,0 +1,18 @@
+{
+  "passed": 3,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "twenty recovery requests accepted on first worker",
+      "passed": true
+    },
+    {
+      "name": "second worker rejects recovery limit despite forged proxy",
+      "passed": true
+    },
+    {
+      "name": "recovery limit survives application restart",
+      "passed": true
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "removed_tags": [
+    "veganmedtech-server:20261024T222724Z-b3cb7242",
+    "veganmedtech-server:20261024T223639Z-479901e0",
+    "veganmedtech-server:20261024T223820Z-3b1619c5"
+  ],
+  "before_bytes": 291733504,
+  "after_bytes": 512512000,
+  "reclaimed_bytes": 220778496,
+  "current_previous_preserved": true,
+  "ready": true
+}

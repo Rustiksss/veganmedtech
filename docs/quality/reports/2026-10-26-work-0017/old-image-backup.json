@@ -1,0 +1,13 @@
+{
+  "path": "/tmp/work0017-private/work0013-image.tar.gz",
+  "sha256": "821502cd5a5c873a1b5e7d9915891e68220c1239a986628252e5a2eeee306c78",
+  "bytes": 81057838,
+  "portable_id": "sha256:79e1976666c511d562efe27c3f1669d0d8782c1653d68f1603b3c029c7657464",
+  "server_image_id": "sha256:7bced388a15d77582382f3d4c13cb9a19793916ce855f2281bca5640708296db",
+  "tags": [
+    "veganmedtech-server:20261024T222724Z-b3cb7242",
+    "veganmedtech-server:20261024T223639Z-479901e0",
+    "veganmedtech-server:20261024T223820Z-3b1619c5"
+  ],
+  "loaded_and_verified": true
+}

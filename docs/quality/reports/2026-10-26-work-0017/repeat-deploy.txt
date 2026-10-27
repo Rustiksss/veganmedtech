@@ -1,0 +1,113 @@
+Локальная сборка veganmedtech-server:20261025T213505Z-81b7c2d9 (linux/amd64).
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.25kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.13-slim-bookworm@sha256:a1165e272e578941b84abc79e4ab38a0305cd12803a5c4247979ac7655f4d641
+#2 DONE 0.0s
+
+#3 [internal] load metadata for ghcr.io/astral-sh/uv:0.13.4@sha256:9f130421e930bfbdc563c00740466603f8723158e90297d07957c2294640262b
+#3 DONE 0.0s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 293B done
+#4 DONE 0.0s
+
+#5 FROM ghcr.io/astral-sh/uv:0.13.4@sha256:9f130421e930bfbdc563c00740466603f8723158e90297d07957c2294640262b
+#5 DONE 0.0s
+
+#6 [base 1/2] FROM docker.io/library/python:3.13-slim-bookworm@sha256:a1165e272e578941b84abc79e4ab38a0305cd12803a5c4247979ac7655f4d641
+#6 DONE 0.0s
+
+#7 [internal] load build context
+#7 transferring context: 4.55kB done
+#7 DONE 0.0s
+
+#8 [build 5/7] COPY frontend/templates/ /app/frontend/templates/
+#8 CACHED
+
+#9 [base 2/2] WORKDIR /app/backend
+#9 CACHED
+
+#10 [build 1/7] COPY --from=ghcr.io/astral-sh/uv:0.13.4@sha256:9f130421e930bfbdc563c00740466603f8723158e90297d07957c2294640262b /uv /usr/local/bin/uv
+#10 CACHED
+
+#11 [build 6/7] COPY frontend/static/ /app/frontend/static/
+#11 CACHED
+
+#12 [build 7/7] RUN APP_BUILD=1 python manage.py collectstatic --noinput --verbosity 0 --ignore js/questionnaires.js && chmod +x entrypoint.sh
+#12 CACHED
+
+#13 [build 2/7] COPY backend/pyproject.toml backend/uv.lock ./
+#13 CACHED
+
+#14 [build 4/7] COPY backend/ ./
+#14 CACHED
+
+#15 [runtime 1/2] RUN groupadd --gid 10001 compass && useradd --uid 10001 --gid compass --no-create-home compass
+#15 CACHED
+
+#16 [build 3/7] RUN uv sync --locked --no-dev --no-install-project
+#16 CACHED
+
+#17 [runtime 2/2] COPY --from=build --chown=10001:10001 /app/ /app/
+#17 CACHED
+
+#18 exporting to image
+#18 exporting layers done
+#18 writing image sha256:d869ec0cb36388857fca64ec25d44603da0c5a55111cbe98baa9c3fe648accb9 done
+#18 naming to docker.io/library/veganmedtech-server:20261025T213505Z-81b7c2d9 0.0s done
+#18 DONE 0.0s
+Готовый образ: 217435596 байт; транспорт: 81433030 байт.
+Проверен неизменный установленный образ; повторная передача не нужна.
+Передача версии 20261025T213505Z-81b7c2d9; необходимый резерв с образом и транспортом: 256 MiB.
+Docker version 29.9.2, build a82e528
+Docker Compose version v5.6.1
+Серверная конфигурация проверена, права 0600; значения не выводятся.
+Пути, системный пользователь и порты proxy проверены.
+Реквизиты Mailpit проверены, права 0600; значения не выводятся.
+Образ проверен и загружен; временный транспорт удалён, сборки на сервере нет.
+ Image postgres:18.6-bookworm@sha256:afc7e2d441324c0388fa80c3d24f733b4194a4eb7f47dd8ee2b08eb1a24a647c Skipped Image is already present locally
+ Image axllent/mailpit:v1.30.0@sha256:0059ef81e492a7192af3816281eed6859eb078bd7bdc58b76757c13e10e53a7d Skipped Image is already present locally
+Копия БД проверена: /opt/veganmedtech/backups/20261025T213505Z-81b7c2d9.dump
+Известная серверная конфигурация переведена в HTTPS; секреты сохранены.
+Серверная конфигурация проверена, права 0600; значения не выводятся.
+Запуск и ожидание готовности.
+ Container veganmedtech-mailpit-1 Running 
+ Container veganmedtech-db-1 Running 
+ Container veganmedtech-app-1 Recreate 
+ Container veganmedtech-app-1 Recreated 
+ Container veganmedtech-db-1 Waiting 
+ Container veganmedtech-db-1 Healthy 
+ Container veganmedtech-app-1 Starting 
+ Container veganmedtech-app-1 Started 
+ Container veganmedtech-mailpit-1 Waiting 
+ Container veganmedtech-db-1 Waiting 
+ Container veganmedtech-app-1 Waiting 
+ Container veganmedtech-db-1 Healthy 
+ Container veganmedtech-mailpit-1 Healthy 
+ Container veganmedtech-app-1 Healthy 
+Приватный модуль и отсутствие публичных копий проверены до снятия Basic Auth.
+Пути, системный пользователь и порты proxy проверены.
+Реквизиты Mailpit проверены, права 0600; значения не выводятся.
+TLS и защита Mailpit подготовлены; основной сайт без общего пароля.
+{"level":"info","ts":1792964140.0753064,"msg":"using config from file","file":"/etc/veganmedtech/Caddyfile"}
+{"level":"warn","ts":1792964140.076681,"logger":"caddyfile","msg":"Unnecessary header_up X-Forwarded-For: the reverse proxy's default behavior is to pass headers to the upstream"}
+{"level":"warn","ts":1792964140.0778246,"logger":"caddyfile","msg":"Unnecessary header_up X-Forwarded-For: the reverse proxy's default behavior is to pass headers to the upstream"}
+{"level":"info","ts":1792964140.0795903,"msg":"adapted config to JSON","adapter":"caddyfile"}
+{"level":"info","ts":1792964140.0808244,"logger":"http.auto_https","msg":"server is listening only on the HTTPS port but has no TLS connection policies; adding one to enable TLS","server_name":"srv0","https_port":443}
+{"level":"info","ts":1792964140.0809426,"logger":"http.auto_https","msg":"automatic HTTP->HTTPS redirects are disabled","server_name":"srv0"}
+{"level":"warn","ts":1792964140.0810337,"logger":"http.auto_https","msg":"server is listening only on the HTTP port, so no automatic HTTPS will be applied to this server","server_name":"srv1","http_port":80}
+{"level":"info","ts":1792964140.0811172,"logger":"http.auto_https","msg":"automatic HTTP->HTTPS redirects are disabled","server_name":"srv2"}
+{"level":"info","ts":1792964140.0815067,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x19716b412600"}
+{"level":"info","ts":1792964140.0821888,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x19716b412600"}
+Valid configuration
+{"level":"info","ts":1792964140.0822933,"logger":"http","msg":"servers shutting down with eternal grace period"}
+Реквизиты Mailpit проверены, права 0600; значения не выводятся.
+TLS и защита Mailpit подготовлены; основной сайт без общего пароля.
+Доверенный HTTPS, вход пилота и защита Mailpit проверены.
+Деплой завершён: 20261025T213505Z-81b7c2d9.
+Сайт: https://94.103.3.149 · пилот на вымышленных данных
+Обычный вход в аккаунт; Mailpit оператора: https://94.103.3.149:8443/

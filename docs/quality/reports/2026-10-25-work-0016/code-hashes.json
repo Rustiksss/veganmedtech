@@ -1,0 +1,23 @@
+{
+  "backend/assistant/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+  "backend/assistant/alert_policy.template.json": "fd5e7336de28fedd7482e98d6aadacb5031978d903e872175828c2fc91be3d12",
+  "backend/assistant/client.py": "25ab9d3b0798517a7b9a11ea5dd0408286f4e82b06e45735293725dffb3f323c",
+  "backend/assistant/migrations/0001_initial.py": "6f6bb82cd210f6179093b93c10eb198782987ab8932d70c01d5106aa708f2a61",
+  "backend/assistant/migrations/__init__.py": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+  "backend/assistant/models.py": "f11274876408206ef3d1a904376dc8477d0fd757ec46a621ffb584219a973c4f",
+  "backend/assistant/prompts.py": "53acffadad6f567ce83c6110b88905c9ec11342fa837819a7d2c35fa856d942a",
+  "backend/assistant/services.py": "8a1dfa886d91a291a86bdb4e0f37d961648656c1cffd45063af7e178b79ab0bd",
+  "backend/assistant/tests/__init__.py": "01ba4719c80b6fe911b091a7c05124b64eeece964e09c058ef8f9805daca546b",
+  "backend/assistant/tests/test_assistant.py": "ca65c088d8532231d81a45942cd4307d7e33cee1c26691cec09cdc7d5adca934",
+  "backend/assistant/views.py": "3a1b27adfd5fc86ad65e0503773311fd0276d54e27d0872534c8a233e9438b56",
+  "backend/config/settings.py": "82fb4062fdeae1044af564d6ba378b863bccc0f3b00bf753dfb12945f32e4770",
+  "backend/config/urls.py": "f1eae48fc9176692e8adaf90523cd663f6b40353c593e9690060cd6b9fefd7b1",
+  "backend/pyproject.toml": "72ab083cbbd00c015836284b23ce923a7644284b2e061f21ef49707cd1816fa5",
+  "backend/uv.lock": "3463803239c3a06a2fbef098fb6aa66c80d680972e0c22221cb7ebbbafb0c243",
+  "compose.yaml": "d2df8d18d6618be0cab03cefb5807ca57552c34933a59dc4852cb8a3109003db",
+  "frontend/static/css/app.css": "fdeabfb641634034e325f9a64b57d9092a9457fd7e611a158acf393269063faa",
+  "frontend/static/js/api.js": "97eec168c2f114b34e0d83028f9db80d58d3cdabf71359699c27023f06cc4212",
+  "frontend/static/js/app.js": "592e18e837c54acab89f15adc238b5e57066b7114b6d70aac5d131511a44e7d4",
+  "tests/browser/assistant.py": "620bbd1595f46ba3ff89f296fdbe0b461c7f2c755cdfabbd35805f1054c9d9a9",
+  "tests/browser/run.py": "12f2da52c42f6cb966ed1802801fc996bea91ad5985afd0168e6557e0e3dd5ad"
+}

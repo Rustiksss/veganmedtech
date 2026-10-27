@@ -1,0 +1,4 @@
+Session routes, reload, history and keyboard passed
+Real shared-cookie tab conflicts passed
+Session recovery, switching, errors and delayed responses passed
+{"passed": 232, "failed": 0, "calculations": {"passed": 219, "failed": 0}}

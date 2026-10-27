@@ -1,0 +1,17 @@
+{
+  "stage": "first",
+  "current": "20261025T100713Z-2af80812",
+  "previous": "20261024T235815Z-6f6b551f",
+  "all_previous_messages_retained": true,
+  "previous_message_count": 26,
+  "message_count_now": 26,
+  "mailpit_container_unchanged": true,
+  "database_container_unchanged": true,
+  "secrets_unchanged": true,
+  "production_certificate_unchanged": true,
+  "credentials_private": true,
+  "credentials_stable": false,
+  "database_backup_checked_by_deploy": true,
+  "disk_free": 305963008,
+  "reserve_bytes": 268435456
+}

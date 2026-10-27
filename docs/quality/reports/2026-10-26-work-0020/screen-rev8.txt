@@ -1,0 +1,11 @@
+{"type": "case", "attempt": 25, "model": "upstage/solar-mini4", "provider": "upstage/zdr", "case": "positive", "passed": false, "seconds": 18.001, "error": "timeout"}
+{"type": "case", "attempt": 26, "model": "ibm-granite/granite-4.0-h-micro", "provider": "cloudflare", "case": "positive", "passed": false, "seconds": 18.001, "error": "timeout"}
+{"type": "case", "attempt": 27, "model": "qwen/qwen3.8-27b", "provider": "tenstorrent/fp4", "case": "positive", "passed": false, "seconds": 18.001, "error": "timeout"}
+{"type": "case", "attempt": 28, "model": "nex-agi/nex-n2.5-mini", "provider": "nex-agi/bf16", "case": "positive", "passed": false, "seconds": 18.001, "error": "timeout"}
+{"type": "case", "attempt": 29, "model": "qwen/qwen3.5-9b", "provider": "polza", "case": "positive", "passed": false, "seconds": 18.001, "error": "timeout"}
+{"type": "case", "attempt": 30, "model": "deepseek/deepseek-v4.1-flash-1017", "provider": "open-inference/fp4", "case": "positive", "passed": false, "seconds": 18.001, "error": "timeout"}
+{"type": "case", "attempt": 31, "model": "amazon/nova-micro-v1", "provider": "amazon-bedrock", "case": "positive", "passed": false, "seconds": 18.002, "error": "timeout"}
+{"type": "case", "attempt": 32, "model": "nvidia/nemotron-3-nano-30b-a3b", "provider": "novita/fp4", "case": "positive", "passed": false, "seconds": 18.001, "error": "timeout"}
+{"type": "case", "attempt": 33, "model": "amazon/nova-lite-v1", "provider": "amazon-bedrock", "case": "positive", "passed": false, "seconds": 18.001, "error": "timeout"}
+{"type": "case", "attempt": 34, "model": "upstage/solar-mini4", "provider": "upstage", "case": "positive", "passed": false, "seconds": 18.001, "error": "timeout"}
+{"winner": null, "attempts_total": 34}

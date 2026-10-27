@@ -1,0 +1,13 @@
+{
+  "frontend/static/js/app.js": "f8281500e4c3c35963ee3b6acb87900351070e0e4f99a1ac04ee0dc9c9d40e02",
+  "frontend/static/css/app.css": "89cb22e849c26580790fa769419bbf5e35437b5f9318f2860b0ad3c8bf5be091",
+  "tests/browser/run.py": "be2ae43d199b579085dd744d02c51902844ccde60cc98522338ded9a06f8529b",
+  "frontend/static/js/api.js": "97eec168c2f114b34e0d83028f9db80d58d3cdabf71359699c27023f06cc4212",
+  "frontend/static/js/questionnaires.js": "3e7afa1aeb48e69987066bc0ba40455604995455bf2074e97f72e732ec70d2c5",
+  "backend/pyproject.toml": "72ab083cbbd00c015836284b23ce923a7644284b2e061f21ef49707cd1816fa5",
+  "backend/uv.lock": "3463803239c3a06a2fbef098fb6aa66c80d680972e0c22221cb7ebbbafb0c243",
+  "scripts/deploy.sh": "39d859391535a1396ae6243da5791c6f0c004acb83f9f4b8360a5f97bbc82549",
+  "compose.deploy.yaml": "dd53f8c1e2b3bd2689a0dd3e301c234da8fa747f735afdf83f109df5a25fe1b6",
+  "deploy/Caddyfile": "f527066a097cc18dc12be4b645bab1321966e21b2c4aab41a7b7a195ef1a7d82",
+  "deploy/veganmedtech-proxy.service": "a65dae839785dfcb6f58d8d705d40762f7343002e139f9f0f15121720a304acd"
+}

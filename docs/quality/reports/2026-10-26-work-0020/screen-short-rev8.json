@@ -1,0 +1,60 @@
+{
+  "type": "summary",
+  "attempts_total": 39,
+  "new_attempts": 2,
+  "winner": null,
+  "results": [
+    {
+      "model": "google/gemini-2.5-flash-lite",
+      "provider": "google-ai-studio",
+      "input_price": 11.6957,
+      "output_price": 46.7828,
+      "request_fee": 0.0,
+      "json_mode": true,
+      "reasoning": null,
+      "passed": false,
+      "median_seconds": 5.347,
+      "cases": [
+        {
+          "type": "case",
+          "attempt": 38,
+          "model": "google/gemini-2.5-flash-lite",
+          "provider": "google-ai-studio",
+          "case": "positive",
+          "passed": false,
+          "seconds": 5.347,
+          "upper_cost_rub": 0.09887544780000002,
+          "error": "invalid_response",
+          "generation_id": "gen_2226114082196426753"
+        }
+      ]
+    },
+    {
+      "model": "openai/gpt-oss-20b",
+      "provider": "groq",
+      "input_price": 8.771775,
+      "output_price": 35.0871,
+      "request_fee": 0.0,
+      "json_mode": true,
+      "reasoning": {
+        "effort": "low"
+      },
+      "passed": false,
+      "median_seconds": 10.749,
+      "cases": [
+        {
+          "type": "case",
+          "attempt": 39,
+          "model": "openai/gpt-oss-20b",
+          "provider": "groq",
+          "case": "positive",
+          "passed": false,
+          "seconds": 10.749,
+          "upper_cost_rub": 0.07415658585,
+          "error": "rate_limit"
+        }
+      ]
+    }
+  ],
+  "server_files_or_database_changed": false
+}

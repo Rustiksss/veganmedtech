@@ -1,0 +1,19 @@
+{
+  "schema_version": 1,
+  "status": "draft",
+  "policy_version": null,
+  "automatic_detection_enabled": false,
+  "sources": [],
+  "criteria": [],
+  "criterion_fields_to_fill": {
+    "id": null,
+    "description": null,
+    "input_fields": [],
+    "source_refs": [],
+    "positive_examples": [],
+    "negative_examples": [],
+    "missing_or_ambiguous_data": null
+  },
+  "medical_approval": {"reviewer": null, "approved_on": null, "evidence": null},
+  "activation_note": "Заполнение шаблона не включает детектор. Нужны медицинское согласование и отдельная одобренная рабочая задача на реализацию и проверку правил."
+}

@@ -1,0 +1,1 @@
+{"calls": 4, "passed": 0, "output": "/home/rustiks/veganmedtech/docs/quality/reports/2026-10-26-work-0020/polza-live.json"}

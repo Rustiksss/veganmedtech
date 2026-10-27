@@ -1,0 +1,116 @@
+{
+  "passed": 26,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "seed repeat preserves users",
+      "passed": true
+    },
+    {
+      "name": "normal seeded login works",
+      "passed": true
+    },
+    {
+      "name": "persistent record exists",
+      "passed": true
+    },
+    {
+      "name": "https configuration has secure cookies",
+      "passed": true
+    },
+    {
+      "name": "runtime uid is unprivileged",
+      "passed": true
+    },
+    {
+      "name": "schema matches migrations",
+      "passed": true
+    },
+    {
+      "name": "html shell without user records",
+      "passed": true
+    },
+    {
+      "name": "three scripts and stylesheet are served",
+      "passed": true
+    },
+    {
+      "name": "image excludes repository private and source materials",
+      "passed": true
+    },
+    {
+      "name": "readiness fails with database offline",
+      "passed": true
+    },
+    {
+      "name": "database failure never returns empty success",
+      "passed": true
+    },
+    {
+      "name": "ready after database recovery",
+      "passed": true
+    },
+    {
+      "name": "session survives process restart",
+      "passed": true
+    },
+    {
+      "name": "idempotency survives restart",
+      "passed": true
+    },
+    {
+      "name": "account and session survive container recreation",
+      "passed": true
+    },
+    {
+      "name": "record survives container recreation",
+      "passed": true
+    },
+    {
+      "name": "backup restores users links reports and audit",
+      "passed": true
+    },
+    {
+      "name": "gunicorn has two workers",
+      "passed": true
+    },
+    {
+      "name": "wrong password rejected",
+      "passed": true
+    },
+    {
+      "name": "wrong password rejected",
+      "passed": true
+    },
+    {
+      "name": "wrong password rejected",
+      "passed": true
+    },
+    {
+      "name": "wrong password rejected",
+      "passed": true
+    },
+    {
+      "name": "wrong password rejected",
+      "passed": true
+    },
+    {
+      "name": "another worker enforces same login limit",
+      "passed": true
+    },
+    {
+      "name": "login limit survives application restart",
+      "passed": true
+    },
+    {
+      "name": "ordinary logs exclude report and credentials",
+      "passed": true
+    }
+  ],
+  "restored_counts": {
+    "users": 25,
+    "links": 12,
+    "reports": 10,
+    "audit": 182
+  }
+}

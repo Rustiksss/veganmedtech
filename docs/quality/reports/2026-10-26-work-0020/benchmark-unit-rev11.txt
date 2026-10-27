@@ -1,0 +1,24 @@
+test_boundaries_before_dispatch_and_final_reserve (tests.test_assistant_benchmark.BenchmarkTests.test_boundaries_before_dispatch_and_final_reserve) ... ok
+test_confirm_preserves_two_public_calls (tests.test_assistant_benchmark.BenchmarkTests.test_confirm_preserves_two_public_calls) ... ok
+test_duplicate_id_and_idempotent_outcome (tests.test_assistant_benchmark.BenchmarkTests.test_duplicate_id_and_idempotent_outcome) ... ok
+test_errors_cannot_improve_latency_or_qualify (tests.test_assistant_benchmark.BenchmarkTests.test_errors_cannot_improve_latency_or_qualify) ... ok
+test_etalon_status_quote_time_and_duplicate_category (tests.test_assistant_benchmark.BenchmarkTests.test_etalon_status_quote_time_and_duplicate_category) ... ok
+test_insufficient_budget_never_sends_generation (tests.test_assistant_benchmark.BenchmarkTests.test_insufficient_budget_never_sends_generation) ... ok
+test_known_safety_regression_and_safe_counterexamples (tests.test_assistant_benchmark.BenchmarkTests.test_known_safety_regression_and_safe_counterexamples) ... ok
+test_manifest_tampering_and_source_changes_rejected (tests.test_assistant_benchmark.BenchmarkTests.test_manifest_tampering_and_source_changes_rejected) ... ok
+test_measured_configuration_is_not_retried_after_price_change (tests.test_assistant_benchmark.BenchmarkTests.test_measured_configuration_is_not_retried_after_price_change) ... ok
+test_remaining_russian_is_finite_and_stops_without_resampling (tests.test_assistant_benchmark.BenchmarkTests.test_remaining_russian_is_finite_and_stops_without_resampling) ... [{"manifest": "/tmp/tmp16rqc86s/remaining-1.manifest.json", "rows": 1, "selected": false}, {"manifest": "/tmp/tmp16rqc86s/remaining-2.manifest.json", "rows": 1, "selected": false}, {"manifest": "/tmp/tmp16rqc86s/remaining-3.manifest.json", "stop": "No unmeasured configuration fits the remaining budget", "skips": []}]
+ok
+test_replay_is_free_and_detects_64 (tests.test_assistant_benchmark.BenchmarkTests.test_replay_is_free_and_detects_64) ... ok
+test_report_reads_historical_manifest_but_resume_requires_exact_sources (tests.test_assistant_benchmark.BenchmarkTests.test_report_reads_historical_manifest_but_resume_requires_exact_sources) ... ok
+test_timeout_never_becomes_negative (tests.test_assistant_benchmark.BenchmarkTests.test_timeout_never_becomes_negative) ... ok
+test_unknown_resume_does_not_resend (tests.test_assistant_benchmark.BenchmarkTests.test_unknown_resume_does_not_resend) ... {"attempt": 97, "stage": "screen", "config": "fixed", "case": "neutral", "quality_ok": true, "seconds": 1, "errors": []}
+{"attempt": 98, "stage": "screen", "config": "fixed", "case": "negation", "quality_ok": true, "seconds": 1, "errors": []}
+{"attempt": 99, "stage": "screen", "config": "fixed", "case": "past", "quality_ok": true, "seconds": 1, "errors": []}
+ok
+test_worker_is_valid_python (tests.test_assistant_benchmark.BenchmarkTests.test_worker_is_valid_python) ... ok
+
+----------------------------------------------------------------------
+Ran 15 tests in 0.278s
+
+OK

@@ -1,0 +1,2 @@
+Ошибок SDD: 1
+- CURRENT_TASK.md: blocked требует blocked_reason

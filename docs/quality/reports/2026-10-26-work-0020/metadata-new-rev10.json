@@ -1,0 +1,1701 @@
+[
+  {
+    "id": "qwen/qwen3.5-35b-a3b",
+    "name": "Qwen: Qwen3.5-35B-A3B",
+    "type": "chat",
+    "short_description": "Обрабатывает текст, изображения и видео, отвечает текстом; подходит для анализа визуальных материалов, документов и вопросов по длинному контексту.",
+    "description": "## Суть\nМультимодальная модель семейства Qwen3.5 для диалога и анализа входных данных. Она принимает текст, изображения и видео, а результат формирует в виде текста. В карточке разработчика модель описана как языковая модель с модулем обработки изображений и как единая vision-language система: визуальная информация учитывается вместе с текстом, а не обрабатывается отдельной несвязанной моделью.\n\n## Сильные стороны\nАрхитектура сочетает линейное внимание Gated Delta Networks и разреженную смесь экспертов (Mixture of Experts); в отдельных слоях также используется механизм внимания. Такой гибридный подход нацелен на эффективную обработку запросов. Модель предназначена для задач, где полезны рассуждение по тексту, понимание изображений и видео, работа с документами и программирование. Разработчик указывает поддержку множества языков и диалектов.\n\n## Контекст и модальности\nДлина контекста — 262 144 токена. На вход подаются текст, изображения и видео, на выходе генерируется текст. Это позволяет задавать вопросы по визуальному содержимому и объединять его анализ с инструкциями или дополнительным текстом в одном запросе.\n\n## Типовые сценарии\nМодель можно использовать для описания изображений, ответов на вопросы по иллюстрациям и кадрам видео, извлечения и объяснения информации из документов, а также для обычного диалога, анализа текста и помощи с кодом. Большой контекст полезен при передаче объёмных материалов или длинной истории переписки. Вызов внешних инструментов требует подходящей обвязки и поддержки со стороны используемого сервиса.\n\n## Ограничения\nОтветы могут содержать ошибки, в том числе при чтении мелкого текста, интерпретации неоднозначных изображений и рассуждении по длинным материалам; важные выводы следует проверять. Видеовход доступен только там, где его поддерживает интерфейс или провайдер. Модель генерирует текст, поэтому сама по себе не возвращает отредактированные изображения или видео. Заявленный контекст не гарантирует одинаковую точность на всём его объёме.\n\n## Отличие от соседей по семейству\nЭто вариант Qwen3.5 с обработкой визуальных данных и гибридной архитектурой линейного внимания и разреженной смеси экспертов. В карточке разработчика он рассматривается наряду с Qwen3.5-27B и другими моделями серии, но конкретный выбор зависит от нужных модальностей и доступного способа запуска. Репозиторий предоставляет веса и конфигурацию для совместимых инструментов инференса, включая Transformers, vLLM и SGLang.",
+    "icon_provider_slug": "qwen",
+    "is_fz152_compliant": false,
+    "stores_data_in_russia": true,
+    "created": 1772540168,
+    "architecture": {
+      "modality": "text+image+video->text",
+      "input_modalities": [
+        "text",
+        "image",
+        "video"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Qwen3",
+      "instruct_type": null
+    },
+    "context_length": 262144,
+    "max_completion_tokens": 32768,
+    "top_provider": {
+      "reasoning": {
+        "mandatory": false
+      },
+      "name": "darkbloom/fp4",
+      "icon_provider_slug": null,
+      "is_fz152_compliant": false,
+      "stores_data_in_russia": false,
+      "is_hosted_on_polza_infrastructure": false,
+      "is_unofficial": false,
+      "is_moderated": false,
+      "context_length": 262144,
+      "max_completion_tokens": 32768,
+      "pricing": {
+        "prompt_per_million": "7.44491800",
+        "completion_per_million": "85.90290000",
+        "input_cache_read_per_million": "3.72245900",
+        "currency": "RUB"
+      },
+      "supported_parameters": [
+        "reasoning",
+        "include_reasoning",
+        "temperature",
+        "top_p",
+        "top_k",
+        "frequency_penalty",
+        "presence_penalty",
+        "repetition_penalty",
+        "stop",
+        "seed",
+        "max_tokens",
+        "structured_outputs",
+        "logprobs",
+        "top_logprobs",
+        "tools",
+        "response_format",
+        "tool_choice",
+        "reasoning_effort"
+      ],
+      "capabilities": {
+        "tools": {
+          "status": "supported",
+          "verified_at": null
+        },
+        "tool_choice_required": {
+          "status": "rejected",
+          "verified_at": null
+        },
+        "tool_choice_function": {
+          "status": "rejected",
+          "verified_at": null
+        },
+        "tool_choice_none": {
+          "status": "supported",
+          "verified_at": null
+        },
+        "json_object": {
+          "status": "supported",
+          "verified_at": null
+        },
+        "json_schema_strict": {
+          "status": "supported",
+          "verified_at": null
+        },
+        "reasoning_toggle": {
+          "status": "supported",
+          "verified_at": null
+        },
+        "reasoning_effort": {
+          "status": "supported",
+          "verified_at": null
+        },
+        "input_image": {
+          "status": "supported",
+          "verified_at": null
+        },
+        "input_pdf": {
+          "status": "rejected",
+          "verified_at": null
+        },
+        "prompt_cache_implicit": {
+          "status": "supported",
+          "verified_at": null
+        },
+        "native_web_search": {
+          "status": "rejected",
+          "verified_at": null
+        }
+      },
+      "default_parameters": {
+        "temperature": 1,
+        "top_p": 0.95,
+        "frequency_penalty": null
+      }
+    },
+    "providers": [
+      {
+        "reasoning": {
+          "mandatory": false
+        },
+        "name": "deepinfra/fp8",
+        "icon_provider_slug": "qwen",
+        "is_fz152_compliant": false,
+        "stores_data_in_russia": false,
+        "is_hosted_on_polza_infrastructure": false,
+        "is_unofficial": false,
+        "context_length": 262144,
+        "max_completion_tokens": 81920,
+        "is_moderated": false,
+        "pricing": {
+          "prompt_per_million": "16.03520800",
+          "completion_per_million": "114.53720000",
+          "input_cache_read_per_million": "5.72686000",
+          "currency": "RUB"
+        },
+        "supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "stop",
+          "frequency_penalty",
+          "presence_penalty",
+          "repetition_penalty",
+          "top_k",
+          "seed",
+          "min_p",
+          "structured_outputs",
+          "logit_bias",
+          "response_format",
+          "reasoning_effort"
+        ],
+        "supports_native_web_search": false,
+        "capabilities": {
+          "tools": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "tool_choice_required": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "tool_choice_function": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "tool_choice_none": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "json_object": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "json_schema_strict": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "reasoning_toggle": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "reasoning_effort": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "input_image": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "input_pdf": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "prompt_cache_implicit": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "native_web_search": {
+            "status": "rejected",
+            "verified_at": null
+          }
+        },
+        "default_parameters": {
+          "temperature": 1,
+          "top_p": 0.95,
+          "frequency_penalty": null
+        }
+      },
+      {
+        "reasoning": {
+          "mandatory": false
+        },
+        "name": "siliconflow/fp8",
+        "icon_provider_slug": "qwen",
+        "is_fz152_compliant": false,
+        "stores_data_in_russia": false,
+        "is_hosted_on_polza_infrastructure": false,
+        "is_unofficial": false,
+        "context_length": 262144,
+        "max_completion_tokens": 235929,
+        "is_moderated": false,
+        "pricing": {
+          "prompt_per_million": "27.48892800",
+          "completion_per_million": "206.16696000",
+          "input_cache_read_per_million": "17.18058000",
+          "currency": "RUB"
+        },
+        "supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "temperature",
+          "top_p",
+          "top_k",
+          "frequency_penalty",
+          "repetition_penalty",
+          "presence_penalty",
+          "max_tokens",
+          "response_format",
+          "structured_outputs",
+          "reasoning_effort"
+        ],
+        "supports_native_web_search": false,
+        "capabilities": {
+          "tools": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "tool_choice_required": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "tool_choice_function": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "tool_choice_none": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "json_object": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "json_schema_strict": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "reasoning_toggle": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "reasoning_effort": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "input_image": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "input_pdf": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "prompt_cache_implicit": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "native_web_search": {
+            "status": "rejected",
+            "verified_at": null
+          }
+        },
+        "default_parameters": {
+          "temperature": 1,
+          "top_p": 0.95,
+          "frequency_penalty": null
+        }
+      },
+      {
+        "reasoning": {
+          "mandatory": false
+        },
+        "name": "venice",
+        "icon_provider_slug": "qwen",
+        "is_fz152_compliant": false,
+        "stores_data_in_russia": false,
+        "is_hosted_on_polza_infrastructure": false,
+        "is_unofficial": false,
+        "context_length": 256000,
+        "max_completion_tokens": 16384,
+        "is_moderated": false,
+        "pricing": {
+          "prompt_per_million": "17.18058000",
+          "completion_per_million": "114.53720000",
+          "input_cache_read_per_million": "5.72686000",
+          "currency": "RUB"
+        },
+        "supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "stop",
+          "frequency_penalty",
+          "presence_penalty",
+          "top_k",
+          "tool_choice",
+          "logprobs",
+          "response_format",
+          "structured_outputs",
+          "tools",
+          "top_logprobs",
+          "reasoning_effort"
+        ],
+        "supports_native_web_search": false,
+        "capabilities": {
+          "tools": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "tool_choice_required": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "tool_choice_function": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "tool_choice_none": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "json_object": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "json_schema_strict": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "reasoning_toggle": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "reasoning_effort": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "input_image": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "input_pdf": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "prompt_cache_implicit": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "native_web_search": {
+            "status": "rejected",
+            "verified_at": null
+          }
+        },
+        "default_parameters": {
+          "temperature": 1,
+          "top_p": 0.95,
+          "frequency_penalty": null
+        }
+      },
+      {
+        "reasoning": {
+          "mandatory": false
+        },
+        "name": "parasail/fp8",
+        "icon_provider_slug": "qwen",
+        "is_fz152_compliant": false,
+        "stores_data_in_russia": false,
+        "is_hosted_on_polza_infrastructure": false,
+        "is_unofficial": false,
+        "context_length": 262144,
+        "max_completion_tokens": 235929,
+        "is_moderated": false,
+        "pricing": {
+          "prompt_per_million": "17.18058000",
+          "completion_per_million": "114.53720000",
+          "input_cache_read_per_million": "5.72686000",
+          "currency": "RUB"
+        },
+        "supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "frequency_penalty",
+          "presence_penalty",
+          "repetition_penalty",
+          "seed",
+          "stop",
+          "top_k",
+          "logit_bias",
+          "tools",
+          "tool_choice",
+          "response_format",
+          "structured_outputs",
+          "logprobs",
+          "top_logprobs",
+          "reasoning_effort"
+        ],
+        "supports_native_web_search": false,
+        "capabilities": {
+          "tools": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "tool_choice_required": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "tool_choice_function": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "tool_choice_none": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "json_object": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "json_schema_strict": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "reasoning_toggle": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "reasoning_effort": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "input_image": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "input_pdf": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "prompt_cache_implicit": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "native_web_search": {
+            "status": "rejected",
+            "verified_at": null
+          }
+        },
+        "default_parameters": {
+          "temperature": 1,
+          "top_p": 0.95,
+          "frequency_penalty": null
+        }
+      },
+      {
+        "reasoning": {
+          "mandatory": false
+        },
+        "name": "alibaba",
+        "icon_provider_slug": "qwen",
+        "is_fz152_compliant": false,
+        "stores_data_in_russia": false,
+        "is_hosted_on_polza_infrastructure": false,
+        "is_unofficial": false,
+        "context_length": 262144,
+        "max_completion_tokens": 65536,
+        "is_moderated": false,
+        "pricing": {
+          "prompt_per_million": "18.61229500",
+          "completion_per_million": "148.89836000",
+          "currency": "RUB"
+        },
+        "supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "seed",
+          "presence_penalty",
+          "response_format",
+          "tools",
+          "tool_choice",
+          "structured_outputs",
+          "top_logprobs",
+          "logprobs",
+          "top_k",
+          "frequency_penalty",
+          "stop",
+          "reasoning_effort"
+        ],
+        "supports_native_web_search": false,
+        "capabilities": {
+          "tools": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "tool_choice_required": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "tool_choice_function": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "tool_choice_none": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "json_object": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "json_schema_strict": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "reasoning_toggle": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "reasoning_effort": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "input_image": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "input_pdf": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "prompt_cache_implicit": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "native_web_search": {
+            "status": "rejected",
+            "verified_at": null
+          }
+        },
+        "default_parameters": {
+          "temperature": 1,
+          "top_p": 0.95,
+          "frequency_penalty": null
+        }
+      },
+      {
+        "reasoning": {
+          "mandatory": false
+        },
+        "name": "atlas-cloud/fp8",
+        "icon_provider_slug": "qwen",
+        "is_fz152_compliant": false,
+        "stores_data_in_russia": false,
+        "is_hosted_on_polza_infrastructure": false,
+        "is_unofficial": false,
+        "context_length": 262144,
+        "max_completion_tokens": 65536,
+        "is_moderated": false,
+        "pricing": {
+          "prompt_per_million": "25.77087000",
+          "completion_per_million": "206.16696000",
+          "input_cache_read_per_million": "25.77087000",
+          "currency": "RUB"
+        },
+        "supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "top_k",
+          "min_p",
+          "frequency_penalty",
+          "presence_penalty",
+          "repetition_penalty",
+          "seed",
+          "logit_bias",
+          "response_format",
+          "structured_outputs",
+          "tools",
+          "tool_choice",
+          "reasoning_effort"
+        ],
+        "supports_native_web_search": false,
+        "capabilities": {
+          "tools": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "tool_choice_required": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "tool_choice_function": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "tool_choice_none": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "json_object": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "json_schema_strict": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "reasoning_toggle": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "reasoning_effort": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "input_image": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "input_pdf": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "prompt_cache_implicit": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "native_web_search": {
+            "status": "rejected",
+            "verified_at": null
+          }
+        },
+        "default_parameters": {
+          "temperature": 1,
+          "top_p": 0.95,
+          "frequency_penalty": null
+        }
+      },
+      {
+        "name": "yandex",
+        "icon_provider_slug": "qwen",
+        "is_fz152_compliant": true,
+        "stores_data_in_russia": true,
+        "is_hosted_on_polza_infrastructure": false,
+        "is_unofficial": false,
+        "context_length": 262144,
+        "max_completion_tokens": null,
+        "is_moderated": false,
+        "pricing": {
+          "prompt_per_million": "284.00000000",
+          "completion_per_million": "426.00000000",
+          "currency": "RUB"
+        },
+        "supported_parameters": [
+          "max_tokens"
+        ],
+        "supports_native_web_search": false,
+        "capabilities": {},
+        "default_parameters": null
+      },
+      {
+        "reasoning": {
+          "mandatory": false
+        },
+        "name": "darkbloom/fp4",
+        "icon_provider_slug": null,
+        "is_fz152_compliant": false,
+        "stores_data_in_russia": false,
+        "is_hosted_on_polza_infrastructure": false,
+        "is_unofficial": false,
+        "context_length": 262144,
+        "max_completion_tokens": 32768,
+        "is_moderated": false,
+        "pricing": {
+          "prompt_per_million": "7.44491800",
+          "completion_per_million": "85.90290000",
+          "input_cache_read_per_million": "3.72245900",
+          "currency": "RUB"
+        },
+        "supported_parameters": [
+          "reasoning",
+          "include_reasoning",
+          "temperature",
+          "top_p",
+          "top_k",
+          "frequency_penalty",
+          "presence_penalty",
+          "repetition_penalty",
+          "stop",
+          "seed",
+          "max_tokens",
+          "structured_outputs",
+          "logprobs",
+          "top_logprobs",
+          "tools",
+          "response_format",
+          "tool_choice",
+          "reasoning_effort"
+        ],
+        "supports_native_web_search": false,
+        "capabilities": {
+          "tools": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "tool_choice_required": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "tool_choice_function": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "tool_choice_none": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "json_object": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "json_schema_strict": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "reasoning_toggle": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "reasoning_effort": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "input_image": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "input_pdf": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "prompt_cache_implicit": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "native_web_search": {
+            "status": "rejected",
+            "verified_at": null
+          }
+        },
+        "default_parameters": {
+          "temperature": 1,
+          "top_p": 0.95,
+          "frequency_penalty": null
+        }
+      }
+    ],
+    "endpoints": [
+      "/api/v1/chat/completions"
+    ]
+  },
+  {
+    "id": "google/gemma-3-12b-it",
+    "name": "Google: Gemma 3 12B",
+    "type": "chat",
+    "short_description": "Мультимодальная инструкция-модель для диалога, анализа изображений, ответов на вопросы и суммаризации; подходит для встраивания в приложения.",
+    "description": "## Суть\nGemma 3 12B IT — мультимодальная модель Google DeepMind с настройкой для выполнения инструкций и диалога. Она принимает текст и изображения, а в ответ генерирует текст. Семейство Gemma создано на основе исследований и технологий, использованных при разработке моделей Gemini; веса Gemma доступны для самостоятельного развёртывания и адаптации.\n\n## Сильные стороны\nМодель подходит для генерации и редактирования текста, ответов на вопросы, пересказа документов и анализа изображений. Она может описывать визуальное содержимое, извлекать сведения из изображений и отвечать на вопросы по ним. Google также указывает поддержку более чем 140 языков и функции вызова инструментов и структурированного вывода — это может быть полезно при создании прикладных сценариев и автоматизации.\n\n## Контекст и модальности\nСогласно данным каталога, контекст составляет 131 072 токена. На вход подаются текст и изображения, на выходе — текст. Модель не заявлена здесь как генератор изображений или аудио. Большое окно контекста удобно для работы с длинными материалами, однако само по себе не гарантирует точность анализа всего переданного содержимого.\n\n## Типовые сценарии\nЕё можно использовать как основу чат-бота или помощника, для краткого изложения длинных текстов, вопросов и ответов по документам, понимания изображений и извлечения из них информации. Вызов инструментов и структурированный вывод могут пригодиться в приложениях, где ответ нужно передавать другим компонентам системы в заданном формате.\n\n## Ограничения\nМодель может ошибаться в фактах, неверно интерпретировать неоднозначные формулировки и упускать контекст. Качество зависит от задачи и входных данных; ответы не следует считать проверенным источником без дополнительной валидации. Как и другие модели, обученные на больших наборах данных, она может воспроизводить их пробелы и смещения. Для важных решений нужны проверка результатов и подходящие меры безопасности.\n\n## Отличие от соседей по семейству\nВ линейке Gemma 3 представлены варианты 1B, 4B, 12B и 27B. Версия 12B занимает промежуточное положение между 4B и 27B по размеру. Google описывает семейство как рассчитанное на выбор конфигурации с учётом ресурсов и задач; версия 12B сохраняет мультимодальную работу с изображениями и длинный контекст, но конкретная скорость и требования к оборудованию зависят от способа развёртывания.",
+    "icon_provider_slug": "google",
+    "is_fz152_compliant": false,
+    "stores_data_in_russia": false,
+    "created": 1769617393,
+    "architecture": {
+      "modality": "text+image->text",
+      "input_modalities": [
+        "text",
+        "image"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Gemini",
+      "instruct_type": "gemma"
+    },
+    "context_length": 131072,
+    "max_completion_tokens": 117964,
+    "top_provider": {
+      "name": "deepinfra/bf16/flex",
+      "icon_provider_slug": null,
+      "is_fz152_compliant": false,
+      "stores_data_in_russia": false,
+      "is_hosted_on_polza_infrastructure": false,
+      "is_unofficial": false,
+      "is_moderated": false,
+      "context_length": 131072,
+      "max_completion_tokens": 117964,
+      "pricing": {
+        "prompt_per_million": "4.67828000",
+        "completion_per_million": "14.03484000",
+        "currency": "RUB"
+      },
+      "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "top_p",
+        "stop",
+        "frequency_penalty",
+        "presence_penalty",
+        "repetition_penalty",
+        "top_k",
+        "seed",
+        "min_p",
+        "logit_bias",
+        "response_format",
+        "structured_outputs"
+      ],
+      "capabilities": {
+        "tools": {
+          "status": "rejected",
+          "verified_at": null
+        },
+        "tool_choice_required": {
+          "status": "rejected",
+          "verified_at": null
+        },
+        "tool_choice_function": {
+          "status": "rejected",
+          "verified_at": null
+        },
+        "tool_choice_none": {
+          "status": "rejected",
+          "verified_at": null
+        },
+        "json_object": {
+          "status": "supported",
+          "verified_at": null
+        },
+        "json_schema_strict": {
+          "status": "supported",
+          "verified_at": null
+        },
+        "reasoning_effort": {
+          "status": "rejected",
+          "verified_at": null
+        },
+        "input_image": {
+          "status": "supported",
+          "verified_at": null
+        },
+        "input_pdf": {
+          "status": "rejected",
+          "verified_at": null
+        },
+        "prompt_cache_implicit": {
+          "status": "rejected",
+          "verified_at": null
+        },
+        "native_web_search": {
+          "status": "rejected",
+          "verified_at": null
+        }
+      },
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      }
+    },
+    "providers": [
+      {
+        "name": "deepinfra/bf16",
+        "icon_provider_slug": "google",
+        "is_fz152_compliant": false,
+        "stores_data_in_russia": false,
+        "is_hosted_on_polza_infrastructure": false,
+        "is_unofficial": false,
+        "context_length": 131072,
+        "max_completion_tokens": 16384,
+        "is_moderated": false,
+        "pricing": {
+          "prompt_per_million": "5.84785000",
+          "completion_per_million": "17.54355000",
+          "currency": "RUB"
+        },
+        "supported_parameters": [
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "stop",
+          "frequency_penalty",
+          "presence_penalty",
+          "repetition_penalty",
+          "top_k",
+          "seed",
+          "min_p",
+          "logit_bias",
+          "structured_outputs",
+          "tools",
+          "tool_choice",
+          "response_format"
+        ],
+        "supports_native_web_search": false,
+        "capabilities": {
+          "tools": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "tool_choice_required": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "tool_choice_function": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "tool_choice_none": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "json_object": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "json_schema_strict": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "reasoning_effort": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "input_image": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "input_pdf": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "prompt_cache_implicit": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "native_web_search": {
+            "status": "rejected",
+            "verified_at": null
+          }
+        },
+        "default_parameters": {
+          "temperature": null,
+          "top_p": null,
+          "frequency_penalty": null
+        }
+      },
+      {
+        "name": "nextbit/int4",
+        "icon_provider_slug": null,
+        "is_fz152_compliant": false,
+        "stores_data_in_russia": false,
+        "is_hosted_on_polza_infrastructure": false,
+        "is_unofficial": false,
+        "context_length": 131072,
+        "max_completion_tokens": 117964,
+        "is_moderated": false,
+        "pricing": {
+          "prompt_per_million": "8.77177500",
+          "completion_per_million": "17.54355000",
+          "input_cache_read_per_million": "5.84785000",
+          "currency": "RUB"
+        },
+        "supported_parameters": [
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "stop",
+          "frequency_penalty",
+          "presence_penalty",
+          "response_format",
+          "structured_outputs",
+          "repetition_penalty",
+          "seed"
+        ],
+        "supports_native_web_search": false,
+        "capabilities": {
+          "tools": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "tool_choice_required": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "tool_choice_function": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "tool_choice_none": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "json_object": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "json_schema_strict": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "reasoning_effort": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "input_image": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "input_pdf": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "prompt_cache_implicit": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "native_web_search": {
+            "status": "rejected",
+            "verified_at": null
+          }
+        },
+        "default_parameters": {
+          "temperature": null,
+          "top_p": null,
+          "frequency_penalty": null
+        }
+      },
+      {
+        "name": "deepinfra/bf16/flex",
+        "icon_provider_slug": null,
+        "is_fz152_compliant": false,
+        "stores_data_in_russia": false,
+        "is_hosted_on_polza_infrastructure": false,
+        "is_unofficial": false,
+        "context_length": 131072,
+        "max_completion_tokens": 117964,
+        "is_moderated": false,
+        "pricing": {
+          "prompt_per_million": "4.67828000",
+          "completion_per_million": "14.03484000",
+          "currency": "RUB"
+        },
+        "supported_parameters": [
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "stop",
+          "frequency_penalty",
+          "presence_penalty",
+          "repetition_penalty",
+          "top_k",
+          "seed",
+          "min_p",
+          "logit_bias",
+          "response_format",
+          "structured_outputs"
+        ],
+        "supports_native_web_search": false,
+        "capabilities": {
+          "tools": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "tool_choice_required": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "tool_choice_function": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "tool_choice_none": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "json_object": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "json_schema_strict": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "reasoning_effort": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "input_image": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "input_pdf": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "prompt_cache_implicit": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "native_web_search": {
+            "status": "rejected",
+            "verified_at": null
+          }
+        },
+        "default_parameters": {
+          "temperature": null,
+          "top_p": null,
+          "frequency_penalty": null
+        }
+      },
+      {
+        "name": "deepinfra/bf16/priority",
+        "icon_provider_slug": null,
+        "is_fz152_compliant": false,
+        "stores_data_in_russia": false,
+        "is_hosted_on_polza_infrastructure": false,
+        "is_unofficial": false,
+        "context_length": 131072,
+        "max_completion_tokens": 117964,
+        "is_moderated": false,
+        "pricing": {
+          "prompt_per_million": "8.77177500",
+          "completion_per_million": "26.31532500",
+          "currency": "RUB"
+        },
+        "supported_parameters": [
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "stop",
+          "frequency_penalty",
+          "presence_penalty",
+          "repetition_penalty",
+          "top_k",
+          "seed",
+          "min_p",
+          "logit_bias",
+          "response_format",
+          "structured_outputs"
+        ],
+        "supports_native_web_search": false,
+        "capabilities": {
+          "tools": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "tool_choice_required": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "tool_choice_function": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "tool_choice_none": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "json_object": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "json_schema_strict": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "reasoning_effort": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "input_image": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "input_pdf": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "prompt_cache_implicit": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "native_web_search": {
+            "status": "rejected",
+            "verified_at": null
+          }
+        },
+        "default_parameters": {
+          "temperature": null,
+          "top_p": null,
+          "frequency_penalty": null
+        }
+      }
+    ],
+    "endpoints": [
+      "/api/v1/chat/completions"
+    ]
+  },
+  {
+    "id": "mistralai/mistral-small-3.2-24b-instruct",
+    "name": "Mistral: Mistral Small 3.2 24B",
+    "type": "chat",
+    "short_description": "Следует точным инструкциям, анализирует текст и изображения, формирует структурированные ответы и вызывает инструменты — для диалогов и автоматизации.",
+    "description": "## Суть\nИнструктивная мультимодальная модель Mistral для диалогов и прикладных задач. Версия 3.2 развивает Mistral Small 3.1: в первую очередь улучшены выполнение точных инструкций, устойчивость к повторяющимся и бесконечным генерациям, а также шаблон вызова функций.\n\n## Сильные стороны\nМодель подходит для задач, где важно следовать формату и ограничениям запроса. Она поддерживает вызов инструментов и структурированные ответы, поэтому её можно подключать к внешним функциям и использовать в сценариях, где результат должен соответствовать заданной схеме. В карточке разработчика также приведены примеры работы с изображениями и инструментами в одном диалоге. В остальных категориях разработчик ожидает сходства с 3.1 или небольшого улучшения, а не смены назначения модели.\n\n## Контекст и модальности\nКаталог указывает контекст в 131 072 токена. На вход принимает текст и изображения, на выходе генерирует текст. Визуальные задачи могут включать разбор содержимого изображения и документов; возможность обработки изображения не означает генерацию изображений.\n\n## Типовые сценарии\nМодель можно использовать как помощника для ответов и редактирования текста, для извлечения сведений из изображений или документов, а также в агентных процессах с вызовом внешних функций. Структурированный вывод полезен, когда ответ нужно передать следующему компоненту программы в предсказуемом формате.\n\n## Ограничения\nЭто не гарантия безошибочных ответов: выводы по тексту и изображениям стоит проверять, особенно в задачах с важными последствиями. Вызов функции сам по себе не выполняет действие — для работы с инструментами приложению нужны их описания и обработчик результата. Возможности генерации изображений в каталоге не заявлены.\n\n## Отличие от соседей по семейству\nПо сравнению с Mistral Small 3.1 версия 3.2 — целевое обновление, а не модель с новым назначением: акцент сделан на точном следовании инструкциям, уменьшении повторов и более надёжном вызове функций. Magistral Small из той же размерной категории выделяется как модель с дополнительным акцентом на рассуждения; Small 3.2 в карточке описана прежде всего как универсальная instruct-модель.",
+    "icon_provider_slug": "mistral",
+    "is_fz152_compliant": false,
+    "stores_data_in_russia": false,
+    "created": 1769617404,
+    "architecture": {
+      "modality": "text+image->text",
+      "input_modalities": [
+        "image",
+        "text"
+      ],
+      "output_modalities": [
+        "text"
+      ],
+      "tokenizer": "Mistral",
+      "instruct_type": null
+    },
+    "context_length": 128000,
+    "max_completion_tokens": 16384,
+    "top_provider": {
+      "name": "deepinfra/fp8",
+      "icon_provider_slug": "mistral",
+      "is_fz152_compliant": false,
+      "stores_data_in_russia": false,
+      "is_hosted_on_polza_infrastructure": false,
+      "is_unofficial": false,
+      "is_moderated": false,
+      "context_length": 128000,
+      "max_completion_tokens": 16384,
+      "pricing": {
+        "prompt_per_million": "8.59029000",
+        "completion_per_million": "22.90744000",
+        "currency": "RUB"
+      },
+      "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "top_p",
+        "stop",
+        "frequency_penalty",
+        "presence_penalty",
+        "repetition_penalty",
+        "top_k",
+        "seed",
+        "min_p",
+        "logit_bias",
+        "structured_outputs",
+        "tools",
+        "tool_choice",
+        "response_format"
+      ],
+      "capabilities": {
+        "tools": {
+          "status": "supported",
+          "verified_at": null
+        },
+        "tool_choice_required": {
+          "status": "supported",
+          "verified_at": null
+        },
+        "tool_choice_function": {
+          "status": "supported",
+          "verified_at": null
+        },
+        "tool_choice_none": {
+          "status": "rejected",
+          "verified_at": null
+        },
+        "json_object": {
+          "status": "supported",
+          "verified_at": null
+        },
+        "json_schema_strict": {
+          "status": "supported",
+          "verified_at": null
+        },
+        "reasoning_effort": {
+          "status": "rejected",
+          "verified_at": null
+        },
+        "input_image": {
+          "status": "supported",
+          "verified_at": null
+        },
+        "input_pdf": {
+          "status": "rejected",
+          "verified_at": null
+        },
+        "prompt_cache_implicit": {
+          "status": "rejected",
+          "verified_at": null
+        },
+        "native_web_search": {
+          "status": "rejected",
+          "verified_at": null
+        }
+      },
+      "default_parameters": {
+        "temperature": 0.3,
+        "top_p": null,
+        "frequency_penalty": null
+      }
+    },
+    "providers": [
+      {
+        "name": "deepinfra/fp8",
+        "icon_provider_slug": "mistral",
+        "is_fz152_compliant": false,
+        "stores_data_in_russia": false,
+        "is_hosted_on_polza_infrastructure": false,
+        "is_unofficial": false,
+        "context_length": 128000,
+        "max_completion_tokens": 16384,
+        "is_moderated": false,
+        "pricing": {
+          "prompt_per_million": "8.59029000",
+          "completion_per_million": "22.90744000",
+          "currency": "RUB"
+        },
+        "supported_parameters": [
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "stop",
+          "frequency_penalty",
+          "presence_penalty",
+          "repetition_penalty",
+          "top_k",
+          "seed",
+          "min_p",
+          "logit_bias",
+          "structured_outputs",
+          "tools",
+          "tool_choice",
+          "response_format"
+        ],
+        "supports_native_web_search": false,
+        "capabilities": {
+          "tools": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "tool_choice_required": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "tool_choice_function": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "tool_choice_none": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "json_object": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "json_schema_strict": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "reasoning_effort": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "input_image": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "input_pdf": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "prompt_cache_implicit": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "native_web_search": {
+            "status": "rejected",
+            "verified_at": null
+          }
+        },
+        "default_parameters": {
+          "temperature": 0.3,
+          "top_p": null,
+          "frequency_penalty": null
+        }
+      },
+      {
+        "name": "parasail/bf16",
+        "icon_provider_slug": "mistral",
+        "is_fz152_compliant": false,
+        "stores_data_in_russia": false,
+        "is_hosted_on_polza_infrastructure": false,
+        "is_unofficial": false,
+        "context_length": 131072,
+        "max_completion_tokens": 32768,
+        "is_moderated": false,
+        "pricing": {
+          "prompt_per_million": "10.30834800",
+          "completion_per_million": "34.36116000",
+          "input_cache_read_per_million": "5.72686000",
+          "currency": "RUB"
+        },
+        "supported_parameters": [
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "frequency_penalty",
+          "presence_penalty",
+          "repetition_penalty",
+          "seed",
+          "stop",
+          "top_k",
+          "logit_bias",
+          "structured_outputs",
+          "response_format",
+          "logprobs",
+          "top_logprobs"
+        ],
+        "supports_native_web_search": false,
+        "capabilities": {
+          "tools": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "tool_choice_required": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "tool_choice_function": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "tool_choice_none": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "json_object": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "json_schema_strict": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "reasoning_effort": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "input_image": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "input_pdf": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "prompt_cache_implicit": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "native_web_search": {
+            "status": "rejected",
+            "verified_at": null
+          }
+        },
+        "default_parameters": {
+          "temperature": 0.3,
+          "top_p": null,
+          "frequency_penalty": null
+        }
+      },
+      {
+        "name": "venice/fp8",
+        "icon_provider_slug": "mistral",
+        "is_fz152_compliant": false,
+        "stores_data_in_russia": false,
+        "is_hosted_on_polza_infrastructure": false,
+        "is_unofficial": false,
+        "context_length": 256000,
+        "max_completion_tokens": 16384,
+        "is_moderated": false,
+        "pricing": {
+          "prompt_per_million": "10.73786250",
+          "completion_per_million": "28.63430000",
+          "currency": "RUB"
+        },
+        "supported_parameters": [
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "stop",
+          "frequency_penalty",
+          "presence_penalty",
+          "top_k",
+          "response_format",
+          "structured_outputs",
+          "tools",
+          "tool_choice"
+        ],
+        "supports_native_web_search": false,
+        "capabilities": {
+          "tools": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "tool_choice_required": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "tool_choice_function": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "tool_choice_none": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "json_object": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "json_schema_strict": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "reasoning_effort": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "input_image": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "input_pdf": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "prompt_cache_implicit": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "native_web_search": {
+            "status": "rejected",
+            "verified_at": null
+          }
+        },
+        "default_parameters": {
+          "temperature": 0.3,
+          "top_p": null,
+          "frequency_penalty": null
+        }
+      },
+      {
+        "name": "mistral/eu",
+        "icon_provider_slug": null,
+        "is_fz152_compliant": false,
+        "stores_data_in_russia": false,
+        "is_hosted_on_polza_infrastructure": false,
+        "is_unofficial": false,
+        "context_length": 32768,
+        "max_completion_tokens": 26214,
+        "is_moderated": false,
+        "pricing": {
+          "prompt_per_million": "11.45372000",
+          "completion_per_million": "34.36116000",
+          "input_cache_read_per_million": "1.14537200",
+          "currency": "RUB"
+        },
+        "supported_parameters": [
+          "max_tokens",
+          "temperature",
+          "top_p",
+          "stop",
+          "frequency_penalty",
+          "presence_penalty",
+          "seed",
+          "response_format",
+          "structured_outputs",
+          "tools",
+          "tool_choice"
+        ],
+        "supports_native_web_search": false,
+        "capabilities": {
+          "tools": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "tool_choice_required": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "tool_choice_function": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "tool_choice_none": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "json_object": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "json_schema_strict": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "reasoning_effort": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "input_image": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "input_pdf": {
+            "status": "rejected",
+            "verified_at": null
+          },
+          "prompt_cache_implicit": {
+            "status": "supported",
+            "verified_at": null
+          },
+          "native_web_search": {
+            "status": "rejected",
+            "verified_at": null
+          }
+        },
+        "default_parameters": {
+          "temperature": 0.3,
+          "top_p": null,
+          "frequency_penalty": null
+        }
+      }
+    ],
+    "endpoints": [
+      "/api/v1/chat/completions"
+    ]
+  }
+]

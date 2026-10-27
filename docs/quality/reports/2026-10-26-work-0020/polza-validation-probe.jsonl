@@ -1,0 +1,2 @@
+{"non_generating_request": true, "method": "GET", "path": "/api/v1/key", "status": 200, "seconds": 4.067, "key_quota_allows_calls": true}
+{"non_generating_request": true, "method": "POST", "path": "/api/v1/chat/completions", "status": 400, "seconds": 3.342}

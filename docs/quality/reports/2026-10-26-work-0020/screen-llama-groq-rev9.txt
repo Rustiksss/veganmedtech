@@ -1,0 +1,3 @@
+{"type": "case", "attempt": 56, "model": "meta-llama/llama-3.1-8b-instruct", "provider": "groq", "case": "positive", "passed": true, "seconds": 1.888}
+{"type": "case", "attempt": 57, "model": "meta-llama/llama-3.1-8b-instruct", "provider": "groq", "case": "neutral", "passed": false, "seconds": 7.429, "error": "unavailable"}
+{"winner": null, "attempts_total": 57}

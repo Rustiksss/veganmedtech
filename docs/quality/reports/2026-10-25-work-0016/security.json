@@ -1,0 +1,13 @@
+{
+  "scanned_files": 221,
+  "key_in_source": false,
+  "source_hits": [],
+  "key_in_app_logs": false,
+  "chat_markers_in_logs": false,
+  "key_in_image_configuration": false,
+  "private_modes": {
+    "polza.key": "0o600",
+    "test.env": "0o600"
+  },
+  "passed": true
+}

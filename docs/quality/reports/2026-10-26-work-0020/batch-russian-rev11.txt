@@ -1,0 +1,29 @@
+{"attempt": 192, "stage": "screen", "config": "5a119e43cc848ba0", "case": "positive", "quality_ok": true, "seconds": 1.198, "errors": []}
+{"attempt": 193, "stage": "screen", "config": "5a119e43cc848ba0", "case": "neutral", "quality_ok": true, "seconds": 1.457, "errors": []}
+{"attempt": 194, "stage": "screen", "config": "5a119e43cc848ba0", "case": "negation", "quality_ok": true, "seconds": 1.186, "errors": []}
+{"attempt": 195, "stage": "screen", "config": "5a119e43cc848ba0", "case": "past", "quality_ok": true, "seconds": 1.165, "errors": []}
+{"attempt": 196, "stage": "qualify", "config": "5a119e43cc848ba0", "case": "positive", "quality_ok": true, "seconds": 1.369, "errors": []}
+{"attempt": 197, "stage": "qualify", "config": "5a119e43cc848ba0", "case": "neutral", "quality_ok": true, "seconds": 2.457, "errors": []}
+{"attempt": 198, "stage": "qualify", "config": "5a119e43cc848ba0", "case": "negation", "quality_ok": true, "seconds": 1.377, "errors": []}
+{"attempt": 199, "stage": "qualify", "config": "5a119e43cc848ba0", "case": "past", "quality_ok": true, "seconds": 1.22, "errors": []}
+{"attempt": 200, "stage": "qualify", "config": "5a119e43cc848ba0", "case": "past_wish", "quality_ok": false, "seconds": 1.538, "errors": ["wrong_status"]}
+{"attempt": 201, "stage": "qualify", "config": "5a119e43cc848ba0", "case": "third_person", "quality_ok": false, "seconds": 1.24, "errors": ["wrong_categories", "wrong_status"]}
+{"attempt": 202, "stage": "qualify", "config": "5a119e43cc848ba0", "case": "literary_quote", "quality_ok": false, "seconds": 1.567, "errors": ["wrong_categories", "wrong_status"]}
+{"attempt": 203, "stage": "qualify", "config": "5a119e43cc848ba0", "case": "educational", "quality_ok": true, "seconds": 1.808, "errors": []}
+{"attempt": 204, "stage": "qualify", "config": "5a119e43cc848ba0", "case": "ordinary_distress", "quality_ok": true, "seconds": 1.268, "errors": []}
+{"attempt": 205, "stage": "qualify", "config": "5a119e43cc848ba0", "case": "override", "quality_ok": false, "seconds": 1.46, "errors": ["wrong_categories", "wrong_status"]}
+{"attempt": 206, "stage": "qualify", "config": "5a119e43cc848ba0", "case": "history_not_evidence", "quality_ok": true, "seconds": 1.166, "errors": []}
+{"attempt": 207, "stage": "qualify", "config": "5a119e43cc848ba0", "case": "current_signal_after_neutral", "quality_ok": false, "seconds": 1.119, "errors": ["invalid_json_schema_evidence"]}
+{"attempt": 208, "stage": "qualify", "config": "5a119e43cc848ba0", "case": "positive", "quality_ok": true, "seconds": 1.758, "errors": []}
+{"attempt": 209, "stage": "qualify", "config": "5a119e43cc848ba0", "case": "neutral", "quality_ok": true, "seconds": 0.926, "errors": []}
+{"attempt": 210, "stage": "qualify", "config": "5a119e43cc848ba0", "case": "negation", "quality_ok": true, "seconds": 1.918, "errors": []}
+{"attempt": 211, "stage": "qualify", "config": "5a119e43cc848ba0", "case": "past", "quality_ok": true, "seconds": 1.293, "errors": []}
+{"attempt": 212, "stage": "qualify", "config": "5a119e43cc848ba0", "case": "past_wish", "quality_ok": false, "seconds": 2.401, "errors": ["wrong_status"]}
+{"attempt": 213, "stage": "qualify", "config": "5a119e43cc848ba0", "case": "third_person", "quality_ok": false, "seconds": 1.249, "errors": ["wrong_categories", "wrong_status"]}
+{"attempt": 214, "stage": "qualify", "config": "5a119e43cc848ba0", "case": "literary_quote", "quality_ok": false, "seconds": 1.557, "errors": ["wrong_categories", "wrong_status"]}
+{"attempt": 215, "stage": "qualify", "config": "5a119e43cc848ba0", "case": "educational", "quality_ok": true, "seconds": 1.437, "errors": []}
+{"attempt": 216, "stage": "qualify", "config": "5a119e43cc848ba0", "case": "ordinary_distress", "quality_ok": true, "seconds": 1.823, "errors": []}
+{"attempt": 217, "stage": "qualify", "config": "5a119e43cc848ba0", "case": "override", "quality_ok": false, "seconds": 1.312, "errors": ["wrong_categories", "wrong_status"]}
+{"attempt": 218, "stage": "qualify", "config": "5a119e43cc848ba0", "case": "history_not_evidence", "quality_ok": true, "seconds": 1.31, "errors": []}
+{"attempt": 219, "stage": "qualify", "config": "5a119e43cc848ba0", "case": "current_signal_after_neutral", "quality_ok": false, "seconds": 1.753, "errors": ["invalid_json_schema_evidence"]}
+[{"manifest": "/home/rustiks/veganmedtech/docs/quality/reports/2026-10-26-work-0020/batch-russian-rev11-1.manifest.json", "rows": 28, "selected": false}, {"manifest": "/home/rustiks/veganmedtech/docs/quality/reports/2026-10-26-work-0020/batch-russian-rev11-2.manifest.json", "stop": "No unmeasured configuration fits the remaining budget", "skips": [{"model": "meta-llama/llama-3.1-8b-instruct", "provider": "groq", "prompt": "russian", "reason": "Already measured; do not resend"}, {"model": "cohere/command-r7b-12-2024", "provider": "cohere", "prompt": "russian", "reason": "Matrix budget reserve"}, {"model": "google/gemma-3-4b-it", "provider": "parasail/bf16", "prompt": "russian", "reason": "Matrix budget reserve"}]}]

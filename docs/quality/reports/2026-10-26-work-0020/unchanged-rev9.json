@@ -1,0 +1,8 @@
+{
+  "frontend/static/css/app.css": true,
+  "frontend/static/js/api.js": true,
+  "frontend/static/js/questionnaires.js": true,
+  "backend/pyproject.toml": true,
+  "backend/uv.lock": true,
+  "misc_materials/алертинг.docx": true
+}

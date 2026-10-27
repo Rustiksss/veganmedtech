@@ -1,0 +1,8 @@
+time="2026-10-25T16:24:06+03:00" level=warning msg="volume \"veganmedtech-work0008-test_postgres_data\" carries the compose label \"postgres_data\" but does not match the compose file (using \"veganmedtech-work0016-data\"); it is left untouched — remove it manually if it is no longer needed"
+time="2026-10-25T16:24:06+03:00" level=warning msg="volume \"veganmedtech-work0011-3519cebafe\" carries the compose label \"postgres_data\" but does not match the compose file (using \"veganmedtech-work0016-data\"); it is left untouched — remove it manually if it is no longer needed"
+ Container veganmedtech-work0008-test-db-1 Running 
+ Container veganmedtech-work0008-test-db-1 Waiting 
+ Container veganmedtech-work0008-test-db-1 Healthy 
+ Container veganmedtech-work0008-test-app-run-e9f89e0464da Creating 
+ Container veganmedtech-work0008-test-app-run-e9f89e0464da Created 
+No changes detected

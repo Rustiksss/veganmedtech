@@ -1,0 +1,19 @@
+{
+  "strict_trusted_https": true,
+  "checks": {
+    "/": 200,
+    "/api/me": 401,
+    "/api/me/self-reports": 401,
+    "/api/questionnaires/module": 401,
+    "/frontend/static/js/questionnaires.js": 404,
+    "/backend/config/settings.py": 404,
+    "/misc_materials/": 404,
+    "/.env": 404,
+    "manifest_has_no_questionnaire_module": true,
+    "/static/staticfiles.json": 200,
+    "closed_port_18008": true,
+    "closed_port_18025": true,
+    "closed_port_5432": true,
+    "closed_port_2019": true
+  }
+}

@@ -1,0 +1,2 @@
+{"type": "case", "attempt": 24, "model": "mistralai/mistral-nemo", "case": "positive", "passed": false, "seconds": 18.001, "error": "timeout"}
+{"type": "summary", "winner": null, "attempts_total": 24, "new_attempts": 1, "budget": 30, "results": [{"model": "mistralai/mistral-nemo", "passed": false, "median_seconds": 18.001, "cases": [{"model": "mistralai/mistral-nemo", "case": "positive", "passed": false, "seconds": 18.001, "error": "timeout"}]}], "server_files_or_database_changed": false}

@@ -1,0 +1,4 @@
+{"type": "case", "attempt": 93, "model": "cohere/command-r7b-12-2024", "provider": "cohere", "case": "positive", "passed": true, "seconds": 6.539}
+{"type": "case", "attempt": 94, "model": "cohere/command-r7b-12-2024", "provider": "cohere", "case": "neutral", "passed": true, "seconds": 5.735}
+{"type": "case", "attempt": 95, "model": "cohere/command-r7b-12-2024", "provider": "cohere", "case": "negation", "passed": false, "seconds": 17.475}
+{"winner": null, "attempts_total": 95}

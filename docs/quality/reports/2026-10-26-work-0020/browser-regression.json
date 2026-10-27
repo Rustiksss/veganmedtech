@@ -1,0 +1,956 @@
+{
+  "passed": 232,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "direct protected hash requires login",
+      "passed": true
+    },
+    {
+      "name": "patient signup",
+      "passed": true
+    },
+    {
+      "name": "patient email confirmation UI",
+      "passed": true
+    },
+    {
+      "name": "patient verified login",
+      "passed": true
+    },
+    {
+      "name": "patient signup",
+      "passed": true
+    },
+    {
+      "name": "patient email confirmation UI",
+      "passed": true
+    },
+    {
+      "name": "patient verified login",
+      "passed": true
+    },
+    {
+      "name": "doctor signup",
+      "passed": true
+    },
+    {
+      "name": "doctor email confirmation UI",
+      "passed": true
+    },
+    {
+      "name": "doctor verified login",
+      "passed": true
+    },
+    {
+      "name": "doctor signup",
+      "passed": true
+    },
+    {
+      "name": "doctor email confirmation UI",
+      "passed": true
+    },
+    {
+      "name": "doctor verified login",
+      "passed": true
+    },
+    {
+      "name": "doctor pending after signup",
+      "passed": true
+    },
+    {
+      "name": "session pending doctor /",
+      "passed": true
+    },
+    {
+      "name": "session pending doctor /login",
+      "passed": true
+    },
+    {
+      "name": "session pending doctor /register/patient",
+      "passed": true
+    },
+    {
+      "name": "session pending doctor /register/doctor",
+      "passed": true
+    },
+    {
+      "name": "only own linked patient listed",
+      "passed": true
+    },
+    {
+      "name": "session contract auth/login HTTP 409 body {status:409}",
+      "passed": true
+    },
+    {
+      "name": "session contract preserves patient",
+      "passed": true
+    },
+    {
+      "name": "session contract auth/signup HTTP 409 body {status:409}",
+      "passed": true
+    },
+    {
+      "name": "session contract preserves patient",
+      "passed": true
+    },
+    {
+      "name": "session current patient 1440 /",
+      "passed": true
+    },
+    {
+      "name": "session layout patient 1440 /",
+      "passed": true
+    },
+    {
+      "name": "session current patient 1440 /login",
+      "passed": true
+    },
+    {
+      "name": "session layout patient 1440 /login",
+      "passed": true
+    },
+    {
+      "name": "session current patient 1440 /register/patient",
+      "passed": true
+    },
+    {
+      "name": "session layout patient 1440 /register/patient",
+      "passed": true
+    },
+    {
+      "name": "session current patient 1440 /register/doctor",
+      "passed": true
+    },
+    {
+      "name": "session layout patient 1440 /register/doctor",
+      "passed": true
+    },
+    {
+      "name": "session long safe name patient 1440",
+      "passed": true
+    },
+    {
+      "name": "session current patient 768 /",
+      "passed": true
+    },
+    {
+      "name": "session layout patient 768 /",
+      "passed": true
+    },
+    {
+      "name": "session current patient 768 /login",
+      "passed": true
+    },
+    {
+      "name": "session layout patient 768 /login",
+      "passed": true
+    },
+    {
+      "name": "session current patient 768 /register/patient",
+      "passed": true
+    },
+    {
+      "name": "session layout patient 768 /register/patient",
+      "passed": true
+    },
+    {
+      "name": "session current patient 768 /register/doctor",
+      "passed": true
+    },
+    {
+      "name": "session layout patient 768 /register/doctor",
+      "passed": true
+    },
+    {
+      "name": "session long safe name patient 768",
+      "passed": true
+    },
+    {
+      "name": "session current patient 390 /",
+      "passed": true
+    },
+    {
+      "name": "session layout patient 390 /",
+      "passed": true
+    },
+    {
+      "name": "session current patient 390 /login",
+      "passed": true
+    },
+    {
+      "name": "session layout patient 390 /login",
+      "passed": true
+    },
+    {
+      "name": "session current patient 390 /register/patient",
+      "passed": true
+    },
+    {
+      "name": "session layout patient 390 /register/patient",
+      "passed": true
+    },
+    {
+      "name": "session current patient 390 /register/doctor",
+      "passed": true
+    },
+    {
+      "name": "session layout patient 390 /register/doctor",
+      "passed": true
+    },
+    {
+      "name": "session long safe name patient 390",
+      "passed": true
+    },
+    {
+      "name": "session browsing sends no auth POST patient",
+      "passed": true
+    },
+    {
+      "name": "session reload patient /",
+      "passed": true
+    },
+    {
+      "name": "session reload patient /login",
+      "passed": true
+    },
+    {
+      "name": "session reload patient /register/patient",
+      "passed": true
+    },
+    {
+      "name": "session reload patient /register/doctor",
+      "passed": true
+    },
+    {
+      "name": "session Back patient",
+      "passed": true
+    },
+    {
+      "name": "session Forward patient",
+      "passed": true
+    },
+    {
+      "name": "session keyboard continue patient",
+      "passed": true
+    },
+    {
+      "name": "session keyboard opens own cabinet patient",
+      "passed": true
+    },
+    {
+      "name": "session keyboard switch patient",
+      "passed": true
+    },
+    {
+      "name": "session keyboard logout confirmed patient",
+      "passed": true
+    },
+    {
+      "name": "session current doctor 1440 /",
+      "passed": true
+    },
+    {
+      "name": "session layout doctor 1440 /",
+      "passed": true
+    },
+    {
+      "name": "session current doctor 1440 /login",
+      "passed": true
+    },
+    {
+      "name": "session layout doctor 1440 /login",
+      "passed": true
+    },
+    {
+      "name": "session current doctor 1440 /register/patient",
+      "passed": true
+    },
+    {
+      "name": "session layout doctor 1440 /register/patient",
+      "passed": true
+    },
+    {
+      "name": "session current doctor 1440 /register/doctor",
+      "passed": true
+    },
+    {
+      "name": "session layout doctor 1440 /register/doctor",
+      "passed": true
+    },
+    {
+      "name": "session long safe name doctor 1440",
+      "passed": true
+    },
+    {
+      "name": "session current doctor 768 /",
+      "passed": true
+    },
+    {
+      "name": "session layout doctor 768 /",
+      "passed": true
+    },
+    {
+      "name": "session current doctor 768 /login",
+      "passed": true
+    },
+    {
+      "name": "session layout doctor 768 /login",
+      "passed": true
+    },
+    {
+      "name": "session current doctor 768 /register/patient",
+      "passed": true
+    },
+    {
+      "name": "session layout doctor 768 /register/patient",
+      "passed": true
+    },
+    {
+      "name": "session current doctor 768 /register/doctor",
+      "passed": true
+    },
+    {
+      "name": "session layout doctor 768 /register/doctor",
+      "passed": true
+    },
+    {
+      "name": "session long safe name doctor 768",
+      "passed": true
+    },
+    {
+      "name": "session current doctor 390 /",
+      "passed": true
+    },
+    {
+      "name": "session layout doctor 390 /",
+      "passed": true
+    },
+    {
+      "name": "session current doctor 390 /login",
+      "passed": true
+    },
+    {
+      "name": "session layout doctor 390 /login",
+      "passed": true
+    },
+    {
+      "name": "session current doctor 390 /register/patient",
+      "passed": true
+    },
+    {
+      "name": "session layout doctor 390 /register/patient",
+      "passed": true
+    },
+    {
+      "name": "session current doctor 390 /register/doctor",
+      "passed": true
+    },
+    {
+      "name": "session layout doctor 390 /register/doctor",
+      "passed": true
+    },
+    {
+      "name": "session long safe name doctor 390",
+      "passed": true
+    },
+    {
+      "name": "session browsing sends no auth POST doctor",
+      "passed": true
+    },
+    {
+      "name": "session reload doctor /",
+      "passed": true
+    },
+    {
+      "name": "session reload doctor /login",
+      "passed": true
+    },
+    {
+      "name": "session reload doctor /register/patient",
+      "passed": true
+    },
+    {
+      "name": "session reload doctor /register/doctor",
+      "passed": true
+    },
+    {
+      "name": "session Back doctor",
+      "passed": true
+    },
+    {
+      "name": "session Forward doctor",
+      "passed": true
+    },
+    {
+      "name": "session keyboard continue doctor",
+      "passed": true
+    },
+    {
+      "name": "session keyboard opens own cabinet doctor",
+      "passed": true
+    },
+    {
+      "name": "session keyboard switch doctor",
+      "passed": true
+    },
+    {
+      "name": "session keyboard logout confirmed doctor",
+      "passed": true
+    },
+    {
+      "name": "session revoked doctor public",
+      "passed": true
+    },
+    {
+      "name": "session revoked doctor waits",
+      "passed": true
+    },
+    {
+      "name": "session approved doctor refreshes cabinet",
+      "passed": true
+    },
+    {
+      "name": "session patient cannot choose doctor role",
+      "passed": true
+    },
+    {
+      "name": "session doctor cannot choose patient role",
+      "passed": true
+    },
+    {
+      "name": "session stale tab recovers /login",
+      "passed": true
+    },
+    {
+      "name": "session stale tab confirms me after 409 /login",
+      "passed": true
+    },
+    {
+      "name": "session stale tab keeps actual account /login",
+      "passed": true
+    },
+    {
+      "name": "session stale tab recovers /register/patient",
+      "passed": true
+    },
+    {
+      "name": "session stale tab confirms me after 409 /register/patient",
+      "passed": true
+    },
+    {
+      "name": "session stale tab keeps actual account /register/patient",
+      "passed": true
+    },
+    {
+      "name": "session stale tab recovers /register/doctor",
+      "passed": true
+    },
+    {
+      "name": "session stale tab confirms me after 409 /register/doctor",
+      "passed": true
+    },
+    {
+      "name": "session stale tab keeps actual account /register/doctor",
+      "passed": true
+    },
+    {
+      "name": "session conflict no false success unauthenticated",
+      "passed": true
+    },
+    {
+      "name": "session conflict no false success network",
+      "passed": true
+    },
+    {
+      "name": "session conflict no false success forbidden",
+      "passed": true
+    },
+    {
+      "name": "session failed logout stays closed network",
+      "passed": true
+    },
+    {
+      "name": "session failed logout stays closed 403",
+      "passed": true
+    },
+    {
+      "name": "session failed logout stays closed 503",
+      "passed": true
+    },
+    {
+      "name": "session late result invalidated",
+      "passed": true
+    },
+    {
+      "name": "session switch clears private state",
+      "passed": true
+    },
+    {
+      "name": "session expired shows ordinary form",
+      "passed": true
+    },
+    {
+      "name": "session public check failure hides unconfirmed account",
+      "passed": true
+    },
+    {
+      "name": "session public check retry confirms account",
+      "passed": true
+    },
+    {
+      "name": "session separate account flow verify",
+      "passed": true
+    },
+    {
+      "name": "session real invalid link verify",
+      "passed": true
+    },
+    {
+      "name": "session separate account flow reset",
+      "passed": true
+    },
+    {
+      "name": "session real invalid link reset",
+      "passed": true
+    },
+    {
+      "name": "session separate account flow request",
+      "passed": true
+    },
+    {
+      "name": "session separate account flow change",
+      "passed": true
+    },
+    {
+      "name": "session safe error /login 400 Проверьте",
+      "passed": true
+    },
+    {
+      "name": "session safe error /login 400 Исправьте",
+      "passed": true
+    },
+    {
+      "name": "session safe error /login 403 Обновите",
+      "passed": true
+    },
+    {
+      "name": "session safe error /login 429 Слишком много",
+      "passed": true
+    },
+    {
+      "name": "session safe error /login 503 временно недоступ",
+      "passed": true
+    },
+    {
+      "name": "session safe error /login 418 Не удалось",
+      "passed": true
+    },
+    {
+      "name": "session safe error /login 200 Не удалось",
+      "passed": true
+    },
+    {
+      "name": "session safe error /login 0 соединение",
+      "passed": true
+    },
+    {
+      "name": "session safe error /register/doctor 400 Проверьте",
+      "passed": true
+    },
+    {
+      "name": "session safe error /register/doctor 400 Исправьте",
+      "passed": true
+    },
+    {
+      "name": "session safe error /register/doctor 403 Обновите",
+      "passed": true
+    },
+    {
+      "name": "session safe error /register/doctor 429 Слишком много",
+      "passed": true
+    },
+    {
+      "name": "session safe error /register/doctor 503 временно недоступ",
+      "passed": true
+    },
+    {
+      "name": "session safe error /register/doctor 418 Не удалось",
+      "passed": true
+    },
+    {
+      "name": "session safe error /register/doctor 200 Не удалось",
+      "passed": true
+    },
+    {
+      "name": "session safe error /register/doctor 0 соединение",
+      "passed": true
+    },
+    {
+      "name": "session real invalid credentials",
+      "passed": true
+    },
+    {
+      "name": "session anonymous invalid link /verify-email/invalid",
+      "passed": true
+    },
+    {
+      "name": "session link error does not carry into login /verify-email/invalid",
+      "passed": true
+    },
+    {
+      "name": "session anonymous invalid link /password/reset/invalid",
+      "passed": true
+    },
+    {
+      "name": "session link error does not carry into login /password/reset/invalid",
+      "passed": true
+    },
+    {
+      "name": "session late auth does not navigate",
+      "passed": true
+    },
+    {
+      "name": "patient persisted report safe text",
+      "passed": true
+    },
+    {
+      "name": "independent doctor sees saved report",
+      "passed": true
+    },
+    {
+      "name": "foreign doctor denied and clears data",
+      "passed": true
+    },
+    {
+      "name": "report survives reload",
+      "passed": true
+    },
+    {
+      "name": "other patient empty history",
+      "passed": true
+    },
+    {
+      "name": "server validation from browser",
+      "passed": true
+    },
+    {
+      "name": "failed write keeps draft",
+      "passed": true
+    },
+    {
+      "name": "retry succeeds once",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient/assistant",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient/questionnaires",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient/notifications",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient/doctors",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient/chat/doctor-a",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient/medication",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient/games",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient/films",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient/sounds",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient/report",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient/history",
+      "passed": true
+    },
+    {
+      "name": "questionnaire 1440 lsia",
+      "passed": true
+    },
+    {
+      "name": "questionnaire 1440 bipq",
+      "passed": true
+    },
+    {
+      "name": "questionnaire 1440 temmo",
+      "passed": true
+    },
+    {
+      "name": "questionnaire 1440 stolin",
+      "passed": true
+    },
+    {
+      "name": "doctor layout 1440 /doctor",
+      "passed": true
+    },
+    {
+      "name": "doctor layout 1440 /doctor/patients/19",
+      "passed": true
+    },
+    {
+      "name": "doctor layout 1440 /doctor/interactions",
+      "passed": true
+    },
+    {
+      "name": "layout 768 /patient",
+      "passed": true
+    },
+    {
+      "name": "layout 768 /patient/assistant",
+      "passed": true
+    },
+    {
+      "name": "layout 768 /patient/questionnaires",
+      "passed": true
+    },
+    {
+      "name": "layout 768 /patient/notifications",
+      "passed": true
+    },
+    {
+      "name": "layout 768 /patient/doctors",
+      "passed": true
+    },
+    {
+      "name": "layout 768 /patient/chat/doctor-a",
+      "passed": true
+    },
+    {
+      "name": "layout 768 /patient/medication",
+      "passed": true
+    },
+    {
+      "name": "layout 768 /patient/games",
+      "passed": true
+    },
+    {
+      "name": "layout 768 /patient/films",
+      "passed": true
+    },
+    {
+      "name": "layout 768 /patient/sounds",
+      "passed": true
+    },
+    {
+      "name": "layout 768 /patient/report",
+      "passed": true
+    },
+    {
+      "name": "layout 768 /patient/history",
+      "passed": true
+    },
+    {
+      "name": "questionnaire 768 lsia",
+      "passed": true
+    },
+    {
+      "name": "questionnaire 768 bipq",
+      "passed": true
+    },
+    {
+      "name": "questionnaire 768 temmo",
+      "passed": true
+    },
+    {
+      "name": "questionnaire 768 stolin",
+      "passed": true
+    },
+    {
+      "name": "doctor layout 768 /doctor",
+      "passed": true
+    },
+    {
+      "name": "doctor layout 768 /doctor/patients/19",
+      "passed": true
+    },
+    {
+      "name": "doctor layout 768 /doctor/interactions",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient/assistant",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient/questionnaires",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient/notifications",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient/doctors",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient/chat/doctor-a",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient/medication",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient/games",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient/films",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient/sounds",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient/report",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient/history",
+      "passed": true
+    },
+    {
+      "name": "questionnaire 390 lsia",
+      "passed": true
+    },
+    {
+      "name": "questionnaire 390 bipq",
+      "passed": true
+    },
+    {
+      "name": "questionnaire 390 temmo",
+      "passed": true
+    },
+    {
+      "name": "questionnaire 390 stolin",
+      "passed": true
+    },
+    {
+      "name": "doctor layout 390 /doctor",
+      "passed": true
+    },
+    {
+      "name": "doctor layout 390 /doctor/patients/19",
+      "passed": true
+    },
+    {
+      "name": "doctor layout 390 /doctor/interactions",
+      "passed": true
+    },
+    {
+      "name": "breathing starts",
+      "passed": true
+    },
+    {
+      "name": "leaving stops breathing",
+      "passed": true
+    },
+    {
+      "name": "sound starts or reports supported error",
+      "passed": true
+    },
+    {
+      "name": "sound pauses",
+      "passed": true
+    },
+    {
+      "name": "leaving closes audio",
+      "passed": true
+    },
+    {
+      "name": "local chat labelled and does not reassign doctor",
+      "passed": true
+    },
+    {
+      "name": "calendar renders controls",
+      "passed": true
+    },
+    {
+      "name": "keyboard focus visible target",
+      "passed": true
+    },
+    {
+      "name": "representative contrast >= 4.5",
+      "passed": true
+    },
+    {
+      "name": "revoked relationship clears card",
+      "passed": true
+    },
+    {
+      "name": "logout clears local personal state",
+      "passed": true
+    },
+    {
+      "name": "second user in same tab sees no previous data",
+      "passed": true
+    },
+    {
+      "name": "password request UI",
+      "passed": true
+    },
+    {
+      "name": "password reset UI",
+      "passed": true
+    },
+    {
+      "name": "219 calculation regressions",
+      "passed": true
+    }
+  ],
+  "contrast": [
+    {
+      "selector": "body",
+      "ratio": 11.671861130936787
+    },
+    {
+      "selector": ".btn",
+      "ratio": 6.677202150804576
+    },
+    {
+      "selector": ".retention",
+      "ratio": 5.543397647390261
+    },
+    {
+      "selector": ".field-help",
+      "ratio": 5.280816343386684
+    }
+  ],
+  "calculations": {
+    "passed": 219,
+    "failed": 0
+  }
+}

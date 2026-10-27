@@ -1,0 +1,15 @@
+{
+  "scripts/deploy.sh": "39d859391535a1396ae6243da5791c6f0c004acb83f9f4b8360a5f97bbc82549",
+  "tests/test_deploy.py": "73d9d8109e6a7c2c36d9ff13f0f445238982566e03a1eb486f4c2d727c9d7800",
+  "tests/browser/assistant.py": "9321e21ee0867fbbafc7087d3e26deec01ca8386f6d0bdb7ee7b726ff2aa72cd",
+  "tests/browser/run.py": "12f2da52c42f6cb966ed1802801fc996bea91ad5985afd0168e6557e0e3dd5ad",
+  "backend/Dockerfile": "d3983b7b80d6b605fa6ab0bf1d6e845c53afd18ff20af4afa3c42dd5b1b60a81",
+  "backend/pyproject.toml": "72ab083cbbd00c015836284b23ce923a7644284b2e061f21ef49707cd1816fa5",
+  "backend/uv.lock": "3463803239c3a06a2fbef098fb6aa66c80d680972e0c22221cb7ebbbafb0c243",
+  "compose.yaml": "d2df8d18d6618be0cab03cefb5807ca57552c34933a59dc4852cb8a3109003db",
+  "compose.deploy.yaml": "dd53f8c1e2b3bd2689a0dd3e301c234da8fa747f735afdf83f109df5a25fe1b6",
+  "backend/assistant/client.py": "25ab9d3b0798517a7b9a11ea5dd0408286f4e82b06e45735293725dffb3f323c",
+  "backend/assistant/services.py": "8a1dfa886d91a291a86bdb4e0f37d961648656c1cffd45063af7e178b79ab0bd",
+  "backend/assistant/alert_policy.template.json": "fd5e7336de28fedd7482e98d6aadacb5031978d903e872175828c2fc91be3d12",
+  "frontend/static/js/app.js": "592e18e837c54acab89f15adc238b5e57066b7114b6d70aac5d131511a44e7d4"
+}

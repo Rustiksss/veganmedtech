@@ -1,0 +1,86 @@
+{
+  "passed": 19,
+  "failed": 1,
+  "checks": [
+    {
+      "name": "direct protected hash requires login",
+      "passed": true
+    },
+    {
+      "name": "patient signup",
+      "passed": true
+    },
+    {
+      "name": "patient email confirmation UI",
+      "passed": true
+    },
+    {
+      "name": "patient verified login",
+      "passed": true
+    },
+    {
+      "name": "patient signup",
+      "passed": true
+    },
+    {
+      "name": "patient email confirmation UI",
+      "passed": true
+    },
+    {
+      "name": "patient verified login",
+      "passed": true
+    },
+    {
+      "name": "doctor signup",
+      "passed": true
+    },
+    {
+      "name": "doctor email confirmation UI",
+      "passed": true
+    },
+    {
+      "name": "doctor verified login",
+      "passed": true
+    },
+    {
+      "name": "doctor signup",
+      "passed": true
+    },
+    {
+      "name": "doctor email confirmation UI",
+      "passed": true
+    },
+    {
+      "name": "doctor verified login",
+      "passed": true
+    },
+    {
+      "name": "doctor pending after signup",
+      "passed": true
+    },
+    {
+      "name": "session pending doctor /",
+      "passed": true
+    },
+    {
+      "name": "session pending doctor /login",
+      "passed": true
+    },
+    {
+      "name": "session pending doctor /register/patient",
+      "passed": true
+    },
+    {
+      "name": "session pending doctor /register/doctor",
+      "passed": true
+    },
+    {
+      "name": "only own linked patient listed",
+      "passed": true
+    },
+    {
+      "name": "navigation retains cabinet patient 1440",
+      "passed": false
+    }
+  ]
+}

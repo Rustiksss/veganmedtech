@@ -1,0 +1,3 @@
+config_id,model,provider,prompt,stage,n,quality_ok,fast_correct,p50_correct,p95_correct,max_all,unknown_actual_costs,known_actual_rub,reserved_upper_rub,qualified,errors
+b5539fd98693949c,cohere/command-r7b-12-2024,cohere,russian,screen,4,3,3,3.338,4.685,4.685,0,0.035659170000000004,0.25577645559,False,"{""wrong_categories"": 1}"
+860aafcc1e53e1af,google/gemma-3-4b-it,parasail/bf16,russian,screen,4,1,1,2.834,2.834,2.834,3,0.00894963,0.26860798296,False,"{""http_429"": 2, ""invalid_json_schema_evidence"": 1}"

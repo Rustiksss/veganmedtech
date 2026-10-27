@@ -1,0 +1,175 @@
+{
+  "checks": [
+    {
+      "name": "patient-a registration",
+      "passed": true
+    },
+    {
+      "name": "patient-a HTTPS confirmation",
+      "passed": true
+    },
+    {
+      "name": "patient-a real login",
+      "passed": true
+    },
+    {
+      "name": "patient-b registration",
+      "passed": true
+    },
+    {
+      "name": "patient-b HTTPS confirmation",
+      "passed": true
+    },
+    {
+      "name": "patient-b real login",
+      "passed": true
+    },
+    {
+      "name": "doctor-a registration",
+      "passed": true
+    },
+    {
+      "name": "doctor-a HTTPS confirmation",
+      "passed": true
+    },
+    {
+      "name": "doctor-a real login",
+      "passed": true
+    },
+    {
+      "name": "doctor-b registration",
+      "passed": true
+    },
+    {
+      "name": "doctor-b HTTPS confirmation",
+      "passed": true
+    },
+    {
+      "name": "doctor-b real login",
+      "passed": true
+    },
+    {
+      "name": "assistant visible with disabled detection",
+      "passed": true
+    },
+    {
+      "name": "real Polza answer 1",
+      "passed": true
+    },
+    {
+      "name": "real Polza answer 2",
+      "passed": true
+    },
+    {
+      "name": "context points to history",
+      "passed": true
+    },
+    {
+      "name": "chat survives reload",
+      "passed": true
+    },
+    {
+      "name": "other patient cannot read chat",
+      "passed": true
+    },
+    {
+      "name": "doctor cannot read private chat",
+      "passed": true
+    },
+    {
+      "name": "patient cannot read doctor alerts",
+      "passed": true
+    },
+    {
+      "name": "automatic detector off",
+      "passed": true
+    },
+    {
+      "name": "no automatic event",
+      "passed": true
+    },
+    {
+      "name": "doctor alert list initially empty",
+      "passed": true
+    },
+    {
+      "name": "synthetic event delivered to leading doctor",
+      "passed": true
+    },
+    {
+      "name": "foreign doctor denied event",
+      "passed": true
+    },
+    {
+      "name": "seen is explicitly recorded",
+      "passed": true
+    },
+    {
+      "name": "assistant layout 1440",
+      "passed": true
+    },
+    {
+      "name": "alerts layout 1440",
+      "passed": true
+    },
+    {
+      "name": "assistant layout 390",
+      "passed": true
+    },
+    {
+      "name": "alerts layout 390",
+      "passed": true
+    },
+    {
+      "name": "CSRF rejected over HTTPS",
+      "passed": true
+    },
+    {
+      "name": "Secure HttpOnly session",
+      "passed": true
+    },
+    {
+      "name": "all synthetic sessions logged out",
+      "passed": true
+    }
+  ],
+  "metadata": {
+    "latencies_seconds": [
+      2.518,
+      2.032
+    ],
+    "notification_seconds": 15.079,
+    "usage": [
+      {
+        "id": 2,
+        "model": "deepseek/deepseek-v4-flash",
+        "usage": {
+          "cost": 0.00279134,
+          "total_tokens": 1037,
+          "prompt_tokens": 991,
+          "completion_tokens": 46
+        }
+      },
+      {
+        "id": 1,
+        "model": "deepseek/deepseek-v4-flash",
+        "usage": {
+          "cost": 0.00267922,
+          "total_tokens": 980,
+          "prompt_tokens": 910,
+          "completion_tokens": 70
+        }
+      }
+    ],
+    "control_ids": {
+      "patient": 34,
+      "turns": [
+        1,
+        2
+      ],
+      "event": 1,
+      "report": 14
+    }
+  },
+  "accept_insecure_certs": false
+}

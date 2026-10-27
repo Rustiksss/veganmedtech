@@ -1,0 +1,144 @@
+Локальная сборка veganmedtech-server:20261027T135844Z-9d467081 (linux/amd64).
+#0 building with "default" instance using docker driver
+
+#1 [internal] load build definition from Dockerfile
+#1 transferring dockerfile: 1.30kB done
+#1 DONE 0.0s
+
+#2 [internal] load metadata for docker.io/library/python:3.13-slim-bookworm@sha256:a1165e272e578941b84abc79e4ab38a0305cd12803a5c4247979ac7655f4d641
+#2 DONE 0.0s
+
+#3 [internal] load metadata for ghcr.io/astral-sh/uv:0.13.4@sha256:9f130421e930bfbdc563c00740466603f8723158e90297d07957c2294640262b
+#3 DONE 0.0s
+
+#4 [internal] load .dockerignore
+#4 transferring context: 293B done
+#4 DONE 0.0s
+
+#5 FROM ghcr.io/astral-sh/uv:0.13.4@sha256:9f130421e930bfbdc563c00740466603f8723158e90297d07957c2294640262b
+#5 DONE 0.0s
+
+#6 [base 1/2] FROM docker.io/library/python:3.13-slim-bookworm@sha256:a1165e272e578941b84abc79e4ab38a0305cd12803a5c4247979ac7655f4d641
+#6 DONE 0.0s
+
+#7 [internal] load build context
+#7 transferring context: 69.28kB done
+#7 DONE 0.0s
+
+#8 [build 1/7] COPY --from=ghcr.io/astral-sh/uv:0.13.4@sha256:9f130421e930bfbdc563c00740466603f8723158e90297d07957c2294640262b /uv /usr/local/bin/uv
+#8 CACHED
+
+#9 [base 2/2] WORKDIR /app/backend
+#9 CACHED
+
+#10 [build 2/7] COPY backend/pyproject.toml backend/uv.lock ./
+#10 CACHED
+
+#11 [build 3/7] RUN uv sync --locked --no-dev --no-install-project
+#11 0.317 Using CPython 3.13.16 interpreter at: /usr/local/bin/python3
+#11 0.317 Creating virtual environment at: .venv
+#11 0.327 Resolved 19 packages in 4ms
+#11 0.568 Downloading cryptography (4.5MiB)
+#11 0.619 Downloading django-allauth (2.0MiB)
+#11 0.619 Downloading psycopg-binary (5.0MiB)
+#11 0.620 Downloading django (7.9MiB)
+#11 1.713  Downloaded django-allauth
+#11 2.454  Downloaded cryptography
+#11 2.518  Downloaded psycopg-binary
+#11 2.763  Downloaded django
+#11 2.763 Prepared 16 packages in 2.43s
+#11 2.936 Installed 16 packages in 173ms
+#11 2.936  + argon2-cffi==25.1.0
+#11 2.936  + argon2-cffi-bindings==26.1.0
+#11 2.936  + asgiref==3.12.1
+#11 2.936  + cffi==2.1.1
+#11 2.936  + cryptography==50.0.2
+#11 2.936  + django==5.2.18
+#11 2.936  + django-allauth==65.20.0
+#11 2.936  + djangorestframework==3.18.3
+#11 2.936  + gunicorn==25.3.0
+#11 2.936  + packaging==26.3
+#11 2.936  + psycopg==3.3.6
+#11 2.936  + psycopg-binary==3.3.6
+#11 2.936  + pycparser==3.11
+#11 2.936  + pyjwt==2.15.1
+#11 2.936  + sqlparse==0.6.0
+#11 2.936  + whitenoise==6.12.0
+#11 DONE 3.0s
+
+#12 [build 4/7] COPY backend/ ./
+#12 DONE 0.1s
+
+#13 [build 5/7] COPY frontend/templates/ /app/frontend/templates/
+#13 DONE 0.1s
+
+#14 [build 6/7] COPY frontend/static/ /app/frontend/static/
+#14 DONE 0.1s
+
+#15 [build 7/7] RUN APP_BUILD=1 python manage.py collectstatic --noinput --verbosity 0 --ignore js/questionnaires.js && chmod +x entrypoint.sh
+#15 DONE 1.1s
+
+#16 [runtime 1/2] RUN groupadd --gid 10001 compass && useradd --uid 10001 --gid compass --no-create-home compass
+#16 CACHED
+
+#17 [runtime 2/2] COPY --from=build --chown=10001:10001 /app/ /app/
+#17 DONE 0.3s
+
+#18 exporting to image
+#18 exporting layers
+#18 exporting layers 0.4s done
+#18 writing image sha256:256dd6bcb8326e1f7c0b57edf84eee9bc705033900eee663fbb0e5b558ea7208 done
+#18 naming to docker.io/library/veganmedtech-server:20261027T135844Z-9d467081 0.0s done
+#18 DONE 0.4s
+Готовый образ: 203438171 байт; транспорт: 75231080 байт.
+Подтверждены базовые blob и RAM: транспорт и импорт используют диск последовательно; резерв 256 MiB сохранён.
+Передача версии 20261027T135844Z-9d467081; необходимый резерв с образом и транспортом: 450 MiB.
+Docker version 29.9.2, build a82e528
+Docker Compose version v5.6.1
+Серверная конфигурация проверена, права 0600; значения не выводятся.
+Пути, системный пользователь и порты proxy проверены.
+Реквизиты Mailpit проверены, права 0600; значения не выводятся.
+Loaded image: veganmedtech-server:20261027T135844Z-9d467081
+Образ проверен и загружен; временный транспорт удалён, сборки на сервере нет.
+ Image axllent/mailpit:v1.30.0@sha256:0059ef81e492a7192af3816281eed6859eb078bd7bdc58b76757c13e10e53a7d Skipped Image is already present locally
+ Image postgres:18.6-bookworm@sha256:afc7e2d441324c0388fa80c3d24f733b4194a4eb7f47dd8ee2b08eb1a24a647c Skipped Image is already present locally
+Копия БД проверена: /opt/veganmedtech/backups/20261027T135844Z-9d467081.dump
+Известная серверная конфигурация переведена в HTTPS; секреты сохранены.
+Серверная конфигурация проверена, права 0600; значения не выводятся.
+Запуск и ожидание готовности.
+ Container veganmedtech-db-1 Running 
+ Container veganmedtech-mailpit-1 Running 
+ Container veganmedtech-app-1 Recreate 
+ Container veganmedtech-app-1 Recreated 
+ Container veganmedtech-db-1 Waiting 
+ Container veganmedtech-db-1 Healthy 
+ Container veganmedtech-app-1 Starting 
+ Container veganmedtech-app-1 Started 
+ Container veganmedtech-db-1 Waiting 
+ Container veganmedtech-app-1 Waiting 
+ Container veganmedtech-mailpit-1 Waiting 
+ Container veganmedtech-db-1 Healthy 
+ Container veganmedtech-mailpit-1 Healthy 
+ Container veganmedtech-app-1 Healthy 
+Приватный модуль и отсутствие публичных копий проверены до снятия Basic Auth.
+Пути, системный пользователь и порты proxy проверены.
+Реквизиты Mailpit проверены, права 0600; значения не выводятся.
+TLS и защита Mailpit подготовлены; основной сайт без общего пароля.
+{"level":"info","ts":1793109613.2689512,"msg":"using config from file","file":"/etc/veganmedtech/Caddyfile"}
+{"level":"warn","ts":1793109613.269998,"logger":"caddyfile","msg":"Unnecessary header_up X-Forwarded-For: the reverse proxy's default behavior is to pass headers to the upstream"}
+{"level":"warn","ts":1793109613.2731864,"logger":"caddyfile","msg":"Unnecessary header_up X-Forwarded-For: the reverse proxy's default behavior is to pass headers to the upstream"}
+{"level":"info","ts":1793109613.2776437,"msg":"adapted config to JSON","adapter":"caddyfile"}
+{"level":"info","ts":1793109613.2806776,"logger":"http.auto_https","msg":"server is listening only on the HTTPS port but has no TLS connection policies; adding one to enable TLS","server_name":"srv0","https_port":443}
+{"level":"info","ts":1793109613.2808535,"logger":"http.auto_https","msg":"automatic HTTP->HTTPS redirects are disabled","server_name":"srv0"}
+{"level":"warn","ts":1793109613.2809913,"logger":"http.auto_https","msg":"server is listening only on the HTTP port, so no automatic HTTPS will be applied to this server","server_name":"srv1","http_port":80}
+{"level":"info","ts":1793109613.2816207,"logger":"http.auto_https","msg":"automatic HTTP->HTTPS redirects are disabled","server_name":"srv2"}
+{"level":"info","ts":1793109613.2835689,"logger":"http","msg":"servers shutting down with eternal grace period"}
+{"level":"info","ts":1793109613.283807,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x218fcd874600"}
+{"level":"info","ts":1793109613.283978,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x218fcd874600"}
+Valid configuration
+Реквизиты Mailpit проверены, права 0600; значения не выводятся.
+TLS и защита Mailpit подготовлены; основной сайт без общего пароля.
+Доверенный HTTPS, вход пилота и защита Mailpit проверены.
+Деплой завершён: 20261027T135844Z-9d467081.
+Сайт: https://94.103.3.149 · пилот на вымышленных данных
+Обычный вход в аккаунт; Mailpit оператора: https://94.103.3.149:8443/

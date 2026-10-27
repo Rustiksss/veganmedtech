@@ -1,0 +1,7 @@
+{
+  "scripts/deploy.sh": "cdeeed93c4ae272c73d56514b2cec0e578b044c50a78c7ab63c028c398f698d8",
+  "backend/config/settings.py": "9910e802b662792568e06f262baec90782cb6639b4fd565817892339c2e4f6b2",
+  "compose.yaml": "37c298cf16e8d850f6769dff786f349f22c39609f7688734a4c4e477ccc0aad6",
+  "deploy/Caddyfile": "bf947e9810970c394bc7d6642b991459d4a2ad12925f57b331b50366b3d25db7",
+  "deploy/veganmedtech-proxy.service": "a65dae839785dfcb6f58d8d705d40762f7343002e139f9f0f15121720a304acd"
+}

@@ -1,0 +1,16 @@
+{
+  "frontend/static/js/app.js": "592e18e837c54acab89f15adc238b5e57066b7114b6d70aac5d131511a44e7d4",
+  "frontend/static/js/api.js": "97eec168c2f114b34e0d83028f9db80d58d3cdabf71359699c27023f06cc4212",
+  "frontend/static/js/questionnaires.js": "3e7afa1aeb48e69987066bc0ba40455604995455bf2074e97f72e732ec70d2c5",
+  "frontend/static/css/app.css": "fdeabfb641634034e325f9a64b57d9092a9457fd7e611a158acf393269063faa",
+  "tests/browser/run.py": "12f2da52c42f6cb966ed1802801fc996bea91ad5985afd0168e6557e0e3dd5ad",
+  "specs/001-access-and-self-report/spec.md": "60aee8de1c6c81d97c2964c2c27b013585e25dcdebd41b6df34e291a49dad72a",
+  "specs/001-access-and-self-report/plan.md": "260c6dbae16407dc841f2fca77d4e34a6c1799fd2b7dc0bb5b892c1b8aeb4ebc",
+  "specs/001-access-and-self-report/tasks.md": "5975eecd7df78ec6a08a4cf2ef5a125dd50fca3309893fe4b9acba63b39d6425",
+  "specs/001-access-and-self-report/acceptance.md": "e2df23049b89dc00037e1bb796031ff0f92bf2967949848a9793c2f3d599cb04",
+  "specs/001-access-and-self-report/traceability.json": "f1075df06be47eb648fe082ee25ee1b03a1896a221233739ad8e7968b9ee68d6",
+  "PROJECT_STATUS.md": "a8269cf20af9ac3460b3a77235d4f4bd8f7709cc770267737a4080a511259d85",
+  "TECH_DEBT.md": "d4016afb1f7458a47b3f6558469baf60c0ae5937d69925a0b1d7b14d31525af4",
+  "backend/pyproject.toml": "72ab083cbbd00c015836284b23ce923a7644284b2e061f21ef49707cd1816fa5",
+  "backend/uv.lock": "3463803239c3a06a2fbef098fb6aa66c80d680972e0c22221cb7ebbbafb0c243"
+}

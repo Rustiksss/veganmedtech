@@ -1,0 +1,247 @@
+{
+  "type": "summary",
+  "attempts_total": 82,
+  "new_attempts": 8,
+  "reserved_upper_rub_since_25": 2.694370815768199,
+  "winner": null,
+  "results": [
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "provider": "novita/fp8",
+      "input_price": 2.290744,
+      "output_price": 5.72686,
+      "request_fee": 0.0,
+      "response_format": "json_object",
+      "reasoning": null,
+      "passed": false,
+      "median_seconds": 4.131,
+      "cases": [
+        {
+          "type": "case",
+          "attempt": 75,
+          "model": "meta-llama/llama-3.1-8b-instruct",
+          "provider": "novita/fp8",
+          "case": "positive",
+          "passed": true,
+          "seconds": 3.684,
+          "upper_cost_rub": 0.016385691832,
+          "reply": "Я понимаю, что вы сейчас испытываете трудные чувства. Вы хотите поговорить о том, что происходит?",
+          "analysis_status": "matched",
+          "signals": [
+            {
+              "category": "wish_to_die",
+              "quote": "Мне тяжело, я не хочу жить.",
+              "time": "current",
+              "label": "Возможное желание не жить",
+              "time_label": "В сообщении относится к настоящему",
+              "source_ref": "DOCX-ALERT-001 · Описание характера суицидальных идей"
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 1061,
+            "completion_tokens": 65,
+            "total_tokens": 1126,
+            "cost": 0.0027747
+          },
+          "http_status": 200,
+          "generation_id": "gen_2226126219806904321",
+          "returned_model": "meta-llama/llama-3.1-8b-instruct",
+          "finish_reason": "stop",
+          "content": "{\"reply\":\"Я понимаю, что вы сейчас испытываете трудные чувства. Вы хотите поговорить о том, что происходит?\", \"analysis\":{\"status\":\"matched\",\"signals\":[{\"category\":\"wish_to_die\",\"quote\":\"Мне тяжело, я не хочу жить.\",\"time\":\"current\"}]}}"
+        },
+        {
+          "type": "case",
+          "attempt": 76,
+          "model": "meta-llama/llama-3.1-8b-instruct",
+          "provider": "novita/fp8",
+          "case": "neutral",
+          "passed": true,
+          "seconds": 2.559,
+          "upper_cost_rub": 0.016422343736000003,
+          "reply": "Нажмите на кнопку \"Новая запись\" в верхней части экрана.",
+          "analysis_status": "no_match",
+          "signals": [],
+          "usage": {
+            "prompt_tokens": 1062,
+            "completion_tokens": 36,
+            "total_tokens": 1098,
+            "cost": 0.00261255
+          },
+          "http_status": 200,
+          "generation_id": "gen_2226126233077420033",
+          "returned_model": "meta-llama/llama-3.1-8b-instruct",
+          "finish_reason": "stop",
+          "content": "{\"reply\":\"Нажмите на кнопку \\\"Новая запись\\\" в верхней части экрана.\", \"analysis\":{\"status\":\"no_match\",\"signals\":[]}}"
+        },
+        {
+          "type": "case",
+          "attempt": 77,
+          "model": "meta-llama/llama-3.1-8b-instruct",
+          "provider": "novita/fp8",
+          "case": "negation",
+          "passed": true,
+          "seconds": 4.578,
+          "upper_cost_rub": 0.016509392008,
+          "reply": "Я понял, что вы отрицаете мысли о самоубийстве и причинении вреда себе. Однако, если вы чувствуете себя плохо или нуждаетесь в поддержке, то всегда можно связаться с доктором или психологом.",
+          "analysis_status": "no_match",
+          "signals": [],
+          "usage": {
+            "prompt_tokens": 1067,
+            "completion_tokens": 71,
+            "total_tokens": 1138,
+            "cost": 0.00285083
+          },
+          "http_status": 200,
+          "generation_id": "gen_2226126243555053569",
+          "returned_model": "meta-llama/llama-3.1-8b-instruct",
+          "finish_reason": "stop",
+          "content": "{\"reply\":\"Я понял, что вы отрицаете мысли о самоубийстве и причинении вреда себе. Однако, если вы чувствуете себя плохо или нуждаетесь в поддержке, то всегда можно связаться с доктором или психологом.\", \"analysis\":{\"status\":\"no_match\",\"signals\":[]}}"
+        },
+        {
+          "type": "case",
+          "attempt": 78,
+          "model": "meta-llama/llama-3.1-8b-instruct",
+          "provider": "novita/fp8",
+          "case": "past",
+          "passed": false,
+          "seconds": 13.67,
+          "upper_cost_rub": 0.01653917168,
+          "reply": "Вы говорите, что у вас были мысли о самоубийстве в прошлом, но сейчас они у вас нет. Вы чувствуете, что прошлое осталось в прошлом?",
+          "analysis_status": "uncertain",
+          "signals": [
+            {
+              "category": "suicidal_thoughts",
+              "quote": "я думал о самоубийстве",
+              "time": "past",
+              "label": "Возможные суицидальные мысли",
+              "time_label": "Упоминание прошлого",
+              "source_ref": "DOCX-ALERT-001 · Анализ суицидальных мыслей"
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 1070,
+            "completion_tokens": 81,
+            "total_tokens": 1151,
+            "cost": 0.00291497
+          },
+          "http_status": 200,
+          "generation_id": "gen_2226126293048365057",
+          "returned_model": "meta-llama/llama-3.1-8b-instruct",
+          "finish_reason": "stop",
+          "content": "{\"reply\":\"Вы говорите, что у вас были мысли о самоубийстве в прошлом, но сейчас они у вас нет. Вы чувствуете, что прошлое осталось в прошлом?\", \"analysis\":{\"status\":\"uncertain\",\"signals\":[{\"category\":\"suicidal_thoughts\",\"quote\":\"я думал о самоубийстве\",\"time\":\"past\"}]}}"
+        }
+      ]
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "provider": "groq",
+      "input_price": 5.72686,
+      "output_price": 9.162976,
+      "request_fee": 0.0,
+      "response_format": "json_object",
+      "reasoning": null,
+      "passed": false,
+      "median_seconds": 1.7185000000000001,
+      "cases": [
+        {
+          "type": "case",
+          "attempt": 79,
+          "model": "meta-llama/llama-3.1-8b-instruct",
+          "provider": "groq",
+          "case": "positive",
+          "passed": true,
+          "seconds": 1.495,
+          "upper_cost_rub": 0.038325292492,
+          "reply": "Я слышу, что вы чувствуете себя очень плохо. Вы хотите поговорить о том, что происходит?",
+          "analysis_status": "matched",
+          "signals": [
+            {
+              "category": "wish_to_die",
+              "quote": "не хочу жить",
+              "time": "current",
+              "label": "Возможное желание не жить",
+              "time_label": "В сообщении относится к настоящему",
+              "source_ref": "DOCX-ALERT-001 · Описание характера суицидальных идей"
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 1077,
+            "completion_tokens": 84,
+            "total_tokens": 1161,
+            "cost": 0.00686814
+          },
+          "http_status": 200,
+          "generation_id": "gen_2226126322168762369",
+          "returned_model": "meta-llama/llama-3.1-8b-instruct",
+          "finish_reason": "stop",
+          "content": "{\n  \"reply\": \"Я слышу, что вы чувствуете себя очень плохо. Вы хотите поговорить о том, что происходит?\",\n   \"analysis\": {\n      \"status\": \"matched\",\n      \"signals\": [\n         {\n            \"category\": \"wish_to_die\",\n            \"quote\": \"не хочу жить\",\n            \"time\": \"current\"\n         }\n      ]\n   }\n}"
+        },
+        {
+          "type": "case",
+          "attempt": 80,
+          "model": "meta-llama/llama-3.1-8b-instruct",
+          "provider": "groq",
+          "case": "neutral",
+          "passed": true,
+          "seconds": 1.342,
+          "upper_cost_rub": 0.038416922252,
+          "reply": "Нажмите на кнопку 'Новая запись' в верхней части экрана.",
+          "analysis_status": "no_match",
+          "signals": [],
+          "usage": {
+            "prompt_tokens": 1078,
+            "completion_tokens": 47,
+            "total_tokens": 1125,
+            "cost": 0.00660421
+          },
+          "http_status": 200,
+          "generation_id": "gen_2226126327617163265",
+          "returned_model": "meta-llama/llama-3.1-8b-instruct",
+          "finish_reason": "stop",
+          "content": "{\n  \"reply\": \"Нажмите на кнопку 'Новая запись' в верхней части экрана.\",\n   \"analysis\": {\n      \"status\": \"no_match\",\n      \"signals\": []\n   }\n}"
+        },
+        {
+          "type": "case",
+          "attempt": 81,
+          "model": "meta-llama/llama-3.1-8b-instruct",
+          "provider": "groq",
+          "case": "negation",
+          "passed": true,
+          "seconds": 1.942,
+          "upper_cost_rub": 0.038634542932000006,
+          "reply": "Хорошо, что вы говорите об этом. Вы чувствуете себя в безопасности сейчас?",
+          "analysis_status": "no_match",
+          "signals": [],
+          "usage": {
+            "prompt_tokens": 1083,
+            "completion_tokens": 47,
+            "total_tokens": 1130,
+            "cost": 0.00366369
+          },
+          "http_status": 200,
+          "generation_id": "gen_2226126334563454977",
+          "returned_model": "meta-llama/llama-3.1-8b-instruct",
+          "finish_reason": "stop",
+          "content": "{\n  \"reply\": \"Хорошо, что вы говорите об этом. Вы чувствуете себя в безопасности сейчас?\",\n   \"analysis\": {\n      \"status\": \"no_match\",\n      \"signals\": []\n   }\n}"
+        },
+        {
+          "type": "case",
+          "attempt": 82,
+          "model": "meta-llama/llama-3.1-8b-instruct",
+          "provider": "groq",
+          "case": "past",
+          "passed": false,
+          "seconds": 5.204,
+          "upper_cost_rub": 0.038708992112,
+          "error": "invalid_response",
+          "http_status": 200,
+          "generation_id": "gen_2226126349784715265",
+          "returned_model": "meta-llama/llama-3.1-8b-instruct",
+          "finish_reason": "stop",
+          "content": "{\n  \"reply\": \"Вы говорите, что пять лет назад у вас были мысли о самоубийстве, но сейчас таких мыслей нет. Вы чувствуете себя лучше сейчас?\",\n   \"analysis\": {\n      \"status\": \"matched\",\n      \"signals\": [\n         {\n            \"category\": \"suicidal_thoughts\",\n            \"quote\": \"я думал о самоубийстве\",\n            \"time\": \"past\"\n         },\n         {\n            \"category\": \"suicidal_thoughts\",\n            \"quote\": \"таких мыслей нет\",\n            \"time\": \"current\"\n         }\n      ]\n   }\n}"
+        }
+      ]
+    }
+  ],
+  "server_files_or_database_changed": false
+}

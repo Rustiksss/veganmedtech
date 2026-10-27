@@ -1,0 +1,9 @@
+{
+  "frontend/static/js/app.js": "f8281500e4c3c35963ee3b6acb87900351070e0e4f99a1ac04ee0dc9c9d40e02",
+  "frontend/static/css/app.css": "89cb22e849c26580790fa769419bbf5e35437b5f9318f2860b0ad3c8bf5be091",
+  "tests/browser/run.py": "ba187df28b4226f67686f30ef55ee00ae6be6c49b6be1e00816b3b03f0554d22",
+  "frontend/static/js/api.js": "97eec168c2f114b34e0d83028f9db80d58d3cdabf71359699c27023f06cc4212",
+  "frontend/static/js/questionnaires.js": "3e7afa1aeb48e69987066bc0ba40455604995455bf2074e97f72e732ec70d2c5",
+  "backend/pyproject.toml": "72ab083cbbd00c015836284b23ce923a7644284b2e061f21ef49707cd1816fa5",
+  "backend/uv.lock": "3463803239c3a06a2fbef098fb6aa66c80d680972e0c22221cb7ebbbafb0c243"
+}

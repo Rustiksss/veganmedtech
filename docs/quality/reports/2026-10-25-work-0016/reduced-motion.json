@@ -1,0 +1,41 @@
+{
+  "checks": [
+    {
+      "name": "real chat empty",
+      "passed": true
+    },
+    {
+      "name": "external processing and disabled detector visible",
+      "passed": true
+    },
+    {
+      "name": "one page title",
+      "passed": true
+    },
+    {
+      "name": "OS reduced motion preference",
+      "passed": true
+    },
+    {
+      "name": "screen and spinner motion disabled",
+      "passed": true
+    },
+    {
+      "name": "reduced chat layout 1440",
+      "passed": true
+    },
+    {
+      "name": "reduced chat layout 768",
+      "passed": true
+    },
+    {
+      "name": "reduced chat layout 390",
+      "passed": true
+    },
+    {
+      "name": "reduced notification empty state",
+      "passed": true
+    }
+  ],
+  "metadata": {}
+}

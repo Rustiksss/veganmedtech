@@ -1,0 +1,592 @@
+{
+  "passed": 141,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "direct protected hash requires login",
+      "passed": true
+    },
+    {
+      "name": "patient signup",
+      "passed": true
+    },
+    {
+      "name": "patient email confirmation UI",
+      "passed": true
+    },
+    {
+      "name": "patient verified login",
+      "passed": true
+    },
+    {
+      "name": "patient signup",
+      "passed": true
+    },
+    {
+      "name": "patient email confirmation UI",
+      "passed": true
+    },
+    {
+      "name": "patient verified login",
+      "passed": true
+    },
+    {
+      "name": "doctor signup",
+      "passed": true
+    },
+    {
+      "name": "doctor email confirmation UI",
+      "passed": true
+    },
+    {
+      "name": "doctor verified login",
+      "passed": true
+    },
+    {
+      "name": "doctor signup",
+      "passed": true
+    },
+    {
+      "name": "doctor email confirmation UI",
+      "passed": true
+    },
+    {
+      "name": "doctor verified login",
+      "passed": true
+    },
+    {
+      "name": "doctor pending after signup",
+      "passed": true
+    },
+    {
+      "name": "only own linked patient listed",
+      "passed": true
+    },
+    {
+      "name": "patient persisted report safe text",
+      "passed": true
+    },
+    {
+      "name": "independent doctor sees saved report",
+      "passed": true
+    },
+    {
+      "name": "foreign doctor denied and clears data",
+      "passed": true
+    },
+    {
+      "name": "report survives reload",
+      "passed": true
+    },
+    {
+      "name": "other patient empty history",
+      "passed": true
+    },
+    {
+      "name": "server validation from browser",
+      "passed": true
+    },
+    {
+      "name": "failed write keeps draft",
+      "passed": true
+    },
+    {
+      "name": "retry succeeds once",
+      "passed": true
+    },
+    {
+      "name": "WORK0009 catalog is exactly four existing tools",
+      "passed": true
+    },
+    {
+      "name": "lsia starts without preset answers",
+      "passed": true
+    },
+    {
+      "name": "lsia missing answer blocks progress",
+      "passed": true
+    },
+    {
+      "name": "lsia next keeps first answer",
+      "passed": true
+    },
+    {
+      "name": "lsia draft survives catalog navigation",
+      "passed": true
+    },
+    {
+      "name": "lsia complete answers produce result",
+      "passed": true
+    },
+    {
+      "name": "lsia editing invalidates old result",
+      "passed": true
+    },
+    {
+      "name": "lsia recalculation succeeds",
+      "passed": true
+    },
+    {
+      "name": "lsia cancelling reset keeps result",
+      "passed": true
+    },
+    {
+      "name": "lsia explicit reset clears answers",
+      "passed": true
+    },
+    {
+      "name": "lsia local lifecycle sends no requests",
+      "passed": true
+    },
+    {
+      "name": "lsia answers absent from URL and storage",
+      "passed": true
+    },
+    {
+      "name": "bipq starts without preset answers",
+      "passed": true
+    },
+    {
+      "name": "bipq missing answer blocks progress",
+      "passed": true
+    },
+    {
+      "name": "bipq next keeps first answer",
+      "passed": true
+    },
+    {
+      "name": "bipq draft survives catalog navigation",
+      "passed": true
+    },
+    {
+      "name": "bipq complete answers produce result",
+      "passed": true
+    },
+    {
+      "name": "bipq editing invalidates old result",
+      "passed": true
+    },
+    {
+      "name": "bipq recalculation succeeds",
+      "passed": true
+    },
+    {
+      "name": "bipq cancelling reset keeps result",
+      "passed": true
+    },
+    {
+      "name": "bipq explicit reset clears answers",
+      "passed": true
+    },
+    {
+      "name": "bipq local lifecycle sends no requests",
+      "passed": true
+    },
+    {
+      "name": "bipq answers absent from URL and storage",
+      "passed": true
+    },
+    {
+      "name": "temmo starts without preset answers",
+      "passed": true
+    },
+    {
+      "name": "temmo missing answer blocks progress",
+      "passed": true
+    },
+    {
+      "name": "temmo next keeps first answer",
+      "passed": true
+    },
+    {
+      "name": "temmo draft survives catalog navigation",
+      "passed": true
+    },
+    {
+      "name": "temmo complete answers produce result",
+      "passed": true
+    },
+    {
+      "name": "temmo editing invalidates old result",
+      "passed": true
+    },
+    {
+      "name": "temmo recalculation succeeds",
+      "passed": true
+    },
+    {
+      "name": "temmo cancelling reset keeps result",
+      "passed": true
+    },
+    {
+      "name": "temmo explicit reset clears answers",
+      "passed": true
+    },
+    {
+      "name": "temmo local lifecycle sends no requests",
+      "passed": true
+    },
+    {
+      "name": "temmo answers absent from URL and storage",
+      "passed": true
+    },
+    {
+      "name": "stolin starts without preset answers",
+      "passed": true
+    },
+    {
+      "name": "stolin missing answer blocks progress",
+      "passed": true
+    },
+    {
+      "name": "stolin next keeps first answer",
+      "passed": true
+    },
+    {
+      "name": "stolin draft survives catalog navigation",
+      "passed": true
+    },
+    {
+      "name": "stolin complete answers produce result",
+      "passed": true
+    },
+    {
+      "name": "stolin editing invalidates old result",
+      "passed": true
+    },
+    {
+      "name": "stolin recalculation succeeds",
+      "passed": true
+    },
+    {
+      "name": "stolin cancelling reset keeps result",
+      "passed": true
+    },
+    {
+      "name": "stolin explicit reset clears answers",
+      "passed": true
+    },
+    {
+      "name": "stolin local lifecycle sends no requests",
+      "passed": true
+    },
+    {
+      "name": "stolin answers absent from URL and storage",
+      "passed": true
+    },
+    {
+      "name": "unknown questionnaire has return link",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient/assistant",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient/questionnaires",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient/notifications",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient/doctors",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient/chat/doctor-a",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient/medication",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient/games",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient/films",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient/sounds",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient/report",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient/history",
+      "passed": true
+    },
+    {
+      "name": "questionnaire 1440 lsia",
+      "passed": true
+    },
+    {
+      "name": "questionnaire 1440 bipq",
+      "passed": true
+    },
+    {
+      "name": "questionnaire 1440 temmo",
+      "passed": true
+    },
+    {
+      "name": "questionnaire 1440 stolin",
+      "passed": true
+    },
+    {
+      "name": "doctor layout 1440 /doctor",
+      "passed": true
+    },
+    {
+      "name": "doctor layout 1440 /doctor/patients/5",
+      "passed": true
+    },
+    {
+      "name": "doctor layout 1440 /doctor/interactions",
+      "passed": true
+    },
+    {
+      "name": "layout 768 /patient",
+      "passed": true
+    },
+    {
+      "name": "layout 768 /patient/assistant",
+      "passed": true
+    },
+    {
+      "name": "layout 768 /patient/questionnaires",
+      "passed": true
+    },
+    {
+      "name": "layout 768 /patient/notifications",
+      "passed": true
+    },
+    {
+      "name": "layout 768 /patient/doctors",
+      "passed": true
+    },
+    {
+      "name": "layout 768 /patient/chat/doctor-a",
+      "passed": true
+    },
+    {
+      "name": "layout 768 /patient/medication",
+      "passed": true
+    },
+    {
+      "name": "layout 768 /patient/games",
+      "passed": true
+    },
+    {
+      "name": "layout 768 /patient/films",
+      "passed": true
+    },
+    {
+      "name": "layout 768 /patient/sounds",
+      "passed": true
+    },
+    {
+      "name": "layout 768 /patient/report",
+      "passed": true
+    },
+    {
+      "name": "layout 768 /patient/history",
+      "passed": true
+    },
+    {
+      "name": "questionnaire 768 lsia",
+      "passed": true
+    },
+    {
+      "name": "questionnaire 768 bipq",
+      "passed": true
+    },
+    {
+      "name": "questionnaire 768 temmo",
+      "passed": true
+    },
+    {
+      "name": "questionnaire 768 stolin",
+      "passed": true
+    },
+    {
+      "name": "doctor layout 768 /doctor",
+      "passed": true
+    },
+    {
+      "name": "doctor layout 768 /doctor/patients/5",
+      "passed": true
+    },
+    {
+      "name": "doctor layout 768 /doctor/interactions",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient/assistant",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient/questionnaires",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient/notifications",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient/doctors",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient/chat/doctor-a",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient/medication",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient/games",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient/films",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient/sounds",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient/report",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient/history",
+      "passed": true
+    },
+    {
+      "name": "questionnaire 390 lsia",
+      "passed": true
+    },
+    {
+      "name": "questionnaire 390 bipq",
+      "passed": true
+    },
+    {
+      "name": "questionnaire 390 temmo",
+      "passed": true
+    },
+    {
+      "name": "questionnaire 390 stolin",
+      "passed": true
+    },
+    {
+      "name": "doctor layout 390 /doctor",
+      "passed": true
+    },
+    {
+      "name": "doctor layout 390 /doctor/patients/5",
+      "passed": true
+    },
+    {
+      "name": "doctor layout 390 /doctor/interactions",
+      "passed": true
+    },
+    {
+      "name": "breathing starts",
+      "passed": true
+    },
+    {
+      "name": "leaving stops breathing",
+      "passed": true
+    },
+    {
+      "name": "sound starts or reports supported error",
+      "passed": true
+    },
+    {
+      "name": "sound pauses",
+      "passed": true
+    },
+    {
+      "name": "leaving closes audio",
+      "passed": true
+    },
+    {
+      "name": "local chat labelled and does not reassign doctor",
+      "passed": true
+    },
+    {
+      "name": "calendar renders controls",
+      "passed": true
+    },
+    {
+      "name": "keyboard focus visible target",
+      "passed": true
+    },
+    {
+      "name": "representative contrast >= 4.5",
+      "passed": true
+    },
+    {
+      "name": "revoked relationship clears card",
+      "passed": true
+    },
+    {
+      "name": "logout clears local personal state",
+      "passed": true
+    },
+    {
+      "name": "second user in same tab sees no previous data",
+      "passed": true
+    },
+    {
+      "name": "password request UI",
+      "passed": true
+    },
+    {
+      "name": "password reset UI",
+      "passed": true
+    },
+    {
+      "name": "219 calculation regressions",
+      "passed": true
+    }
+  ],
+  "contrast": [
+    {
+      "selector": "body",
+      "ratio": 11.671861130936787
+    },
+    {
+      "selector": ".btn",
+      "ratio": 6.677202150804576
+    },
+    {
+      "selector": ".retention",
+      "ratio": 5.543397647390261
+    },
+    {
+      "selector": ".field-help",
+      "ratio": 5.280816343386684
+    }
+  ],
+  "calculations": {
+    "passed": 219,
+    "failed": 0
+  }
+}

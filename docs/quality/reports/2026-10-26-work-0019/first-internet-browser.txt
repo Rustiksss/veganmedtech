@@ -1,0 +1,13 @@
+Traceback (most recent call last):
+  File "/home/rustiks/veganmedtech/tests/browser/run.py", line 769, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/rustiks/veganmedtech/tests/browser/run.py", line 328, in main
+    return internet_check(args)
+           ^^^^^^^^^^^^^^^^^^^^
+  File "/home/rustiks/veganmedtech/tests/browser/run.py", line 192, in internet_check
+    b.wait(pa,'!loading && !sessionUser');b.evaluate(pa,'window.fetch=exitFetch;releaseExit()');time.sleep(.2)
+                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rustiks/veganmedtech/tests/browser/bidi.py", line 47, in evaluate
+    raise RuntimeError(result.get("exceptionDetails",{}).get("text", "JavaScript failed"))
+RuntimeError: SyntaxError: missing ) in parenthetical

@@ -1,0 +1,28 @@
+{
+  "type": "summary",
+  "winner": null,
+  "attempts_total": 24,
+  "new_attempts": 1,
+  "budget": 30,
+  "results": [
+    {
+      "model": "mistralai/mistral-nemo",
+      "passed": false,
+      "median_seconds": 18.001,
+      "cases": [
+        {
+          "model": "mistralai/mistral-nemo",
+          "case": "positive",
+          "passed": false,
+          "seconds": 18.001,
+          "error": "timeout"
+        }
+      ]
+    }
+  ],
+  "server_files_or_database_changed": false,
+  "source_sha256": {
+    "client.py": "e09fabe6d69020c098221b198987dee9d3902b89284e0d572f5b1eff5c508386",
+    "prompts.py": "e06f52d895f85d2eb12fae7a2d906518362614ea835dbb72cad78c755b9aafa6"
+  }
+}

@@ -1,0 +1,11 @@
+{
+  "scripts/deploy.sh": "cdeeed93c4ae272c73d56514b2cec0e578b044c50a78c7ab63c028c398f698d8",
+  "backend/config/settings.py": "9910e802b662792568e06f262baec90782cb6639b4fd565817892339c2e4f6b2",
+  "compose.yaml": "37c298cf16e8d850f6769dff786f349f22c39609f7688734a4c4e477ccc0aad6",
+  "deploy/Caddyfile": "bf947e9810970c394bc7d6642b991459d4a2ad12925f57b331b50366b3d25db7",
+  "deploy/veganmedtech-proxy.service": "a65dae839785dfcb6f58d8d705d40762f7343002e139f9f0f15121720a304acd",
+  "backend/accounts/tests/test_accounts.py": "61b2adbb41d04bc002a34127bb983aeddb57d9759a44db6c22ec157d0083d694",
+  "tests/browser/run.py": "3416bc8b617f77c554eee917068da30313ffbae321b30856933b94c764f548f4",
+  "tests/browser/bidi.py": "80096e606c92688c73c3fdd48f90fa205a39166efc49900a4dc3fbbc79191e14",
+  "tests/test_deploy.py": "18b13b49a312a6e9c0804885ee34eab9dc5af009bd95cf1b57bdcb65fa8e67a9"
+}

@@ -1,0 +1,2 @@
+{"type": "case", "attempt": 44, "model": "google/gemini-2.5-flash-lite", "provider": "google-ai-studio", "case": "positive", "passed": false, "seconds": 14.118}
+{"winner": null, "attempts_total": 44}

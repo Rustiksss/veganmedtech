@@ -1,0 +1,47 @@
+Явный проверяемый reuse veganmedtech-server:20261026T001026Z-fb8cfa65, версия 20261026T002622Z-7fc599bf, необходимый резерв 268896256 байт.
+Docker version 29.9.2, build a82e528
+Docker Compose version v5.6.1
+Серверная конфигурация проверена, права 0600; значения не выводятся.
+Пути, системный пользователь и порты proxy проверены.
+Реквизиты Mailpit проверены, права 0600; значения не выводятся.
+Образ проверен и загружен; временный транспорт удалён, сборки на сервере нет.
+ Image axllent/mailpit:v1.30.0@sha256:0059ef81e492a7192af3816281eed6859eb078bd7bdc58b76757c13e10e53a7d Skipped Image is already present locally
+ Image postgres:18.6-bookworm@sha256:afc7e2d441324c0388fa80c3d24f733b4194a4eb7f47dd8ee2b08eb1a24a647c Skipped Image is already present locally
+Копия БД проверена: /opt/veganmedtech/backups/20261026T002622Z-7fc599bf.dump
+Известная серверная конфигурация переведена в HTTPS; секреты сохранены.
+Серверная конфигурация проверена, права 0600; значения не выводятся.
+Запуск и ожидание готовности.
+ Container veganmedtech-mailpit-1 Running 
+ Container veganmedtech-db-1 Running 
+ Container veganmedtech-app-1 Recreate 
+ Container veganmedtech-app-1 Recreated 
+ Container veganmedtech-db-1 Waiting 
+ Container veganmedtech-db-1 Healthy 
+ Container veganmedtech-app-1 Starting 
+ Container veganmedtech-app-1 Started 
+ Container veganmedtech-mailpit-1 Waiting 
+ Container veganmedtech-db-1 Waiting 
+ Container veganmedtech-app-1 Waiting 
+ Container veganmedtech-mailpit-1 Healthy 
+ Container veganmedtech-db-1 Healthy 
+ Container veganmedtech-app-1 Healthy 
+Приватный модуль и отсутствие публичных копий проверены до снятия Basic Auth.
+Пути, системный пользователь и порты proxy проверены.
+Реквизиты Mailpit проверены, права 0600; значения не выводятся.
+TLS и защита Mailpit подготовлены; основной сайт без общего пароля.
+Valid configuration
+{"level":"info","ts":1792974409.9321299,"msg":"using config from file","file":"/etc/veganmedtech/Caddyfile"}
+{"level":"warn","ts":1792974409.933237,"logger":"caddyfile","msg":"Unnecessary header_up X-Forwarded-For: the reverse proxy's default behavior is to pass headers to the upstream"}
+{"level":"warn","ts":1792974409.9343097,"logger":"caddyfile","msg":"Unnecessary header_up X-Forwarded-For: the reverse proxy's default behavior is to pass headers to the upstream"}
+{"level":"info","ts":1792974409.935978,"msg":"adapted config to JSON","adapter":"caddyfile"}
+{"level":"info","ts":1792974409.9371092,"logger":"http.auto_https","msg":"server is listening only on the HTTPS port but has no TLS connection policies; adding one to enable TLS","server_name":"srv0","https_port":443}
+{"level":"info","ts":1792974409.9372308,"logger":"http.auto_https","msg":"automatic HTTP->HTTPS redirects are disabled","server_name":"srv0"}
+{"level":"warn","ts":1792974409.9373403,"logger":"http.auto_https","msg":"server is listening only on the HTTP port, so no automatic HTTPS will be applied to this server","server_name":"srv1","http_port":80}
+{"level":"info","ts":1792974409.9374497,"logger":"http.auto_https","msg":"automatic HTTP->HTTPS redirects are disabled","server_name":"srv2"}
+{"level":"info","ts":1792974409.9391613,"logger":"tls.cache.maintenance","msg":"started background certificate maintenance","cache":"0x2f7156f34500"}
+{"level":"info","ts":1792974409.9392722,"logger":"tls.cache.maintenance","msg":"stopped background certificate maintenance","cache":"0x2f7156f34500"}
+{"level":"info","ts":1792974409.9393265,"logger":"http","msg":"servers shutting down with eternal grace period"}
+Реквизиты Mailpit проверены, права 0600; значения не выводятся.
+TLS и защита Mailpit подготовлены; основной сайт без общего пароля.
+Доверенный HTTPS, вход пилота и защита Mailpit проверены.
+Деплой завершён: 20261026T002622Z-7fc599bf.

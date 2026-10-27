@@ -1,0 +1,1 @@
+{"runtime_checks": 12, "public_assets": 3, "passed": true}

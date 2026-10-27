@@ -1,0 +1,37 @@
+{
+  "policy_version": "chat-alert-demo-v1",
+  "client_sha256": "25ab9d3b0798517a7b9a11ea5dd0408286f4e82b06e45735293725dffb3f323c",
+  "server_files_or_database_changed": false,
+  "calls": 4,
+  "cases": [
+    {
+      "case": "positive",
+      "passed": false,
+      "error": "unavailable",
+      "latency_seconds": 14.659
+    },
+    {
+      "case": "neutral",
+      "passed": false,
+      "error": "timeout",
+      "latency_seconds": 18.001
+    },
+    {
+      "case": "negation",
+      "passed": false,
+      "error": "timeout",
+      "latency_seconds": 18.001
+    },
+    {
+      "case": "past",
+      "passed": false,
+      "error": "timeout",
+      "latency_seconds": 18.001
+    }
+  ],
+  "reviewed_source_sha256": {
+    "alerting.py": "c886def49d9293210b55bd4ec25816b4f9604524d066cc92ed2feb09333c8791",
+    "prompts.py": "fe38a4cfa0b9d676b4dd7bbd5789fa0061dcea4582f29a3c542bdfd4eb41f214",
+    "alert_policy.demo.json": "67db4c59087684b51068876b7951b30324ffdb698dc7efbbb82a2e1783a64e99"
+  }
+}

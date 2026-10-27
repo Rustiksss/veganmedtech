@@ -1,0 +1,370 @@
+{
+  "base_url": "https://94.103.3.149",
+  "accept_insecure_certs": false,
+  "checks": [
+    {
+      "name": "public page without Basic Auth",
+      "passed": true
+    },
+    {
+      "name": "no public module questionnaires.js",
+      "passed": true
+    },
+    {
+      "name": "no public module questionnaires.js.gz",
+      "passed": true
+    },
+    {
+      "name": "no public module questionnaires.js.br",
+      "passed": true
+    },
+    {
+      "name": "no public module questionnaires.039265690600.js",
+      "passed": true
+    },
+    {
+      "name": "no public module questionnaires.039265690600.js.gz",
+      "passed": true
+    },
+    {
+      "name": "no public module questionnaires.039265690600.js.br",
+      "passed": true
+    },
+    {
+      "name": "anonymous questionnaire hash requires app login",
+      "passed": true
+    },
+    {
+      "name": "patient-a registration",
+      "passed": true
+    },
+    {
+      "name": "patient-a operator confirmation notice",
+      "passed": true
+    },
+    {
+      "name": "patient-a unverified module denied",
+      "passed": true
+    },
+    {
+      "name": "patient-a HTTPS confirmation link",
+      "passed": true
+    },
+    {
+      "name": "patient-a confirmation",
+      "passed": true
+    },
+    {
+      "name": "patient-a login",
+      "passed": true
+    },
+    {
+      "name": "patient-b registration",
+      "passed": true
+    },
+    {
+      "name": "patient-b operator confirmation notice",
+      "passed": true
+    },
+    {
+      "name": "patient-b unverified module denied",
+      "passed": true
+    },
+    {
+      "name": "patient-b HTTPS confirmation link",
+      "passed": true
+    },
+    {
+      "name": "patient-b confirmation",
+      "passed": true
+    },
+    {
+      "name": "patient-b login",
+      "passed": true
+    },
+    {
+      "name": "doctor registration",
+      "passed": true
+    },
+    {
+      "name": "doctor operator confirmation notice",
+      "passed": true
+    },
+    {
+      "name": "doctor unverified module denied",
+      "passed": true
+    },
+    {
+      "name": "doctor HTTPS confirmation link",
+      "passed": true
+    },
+    {
+      "name": "doctor confirmation",
+      "passed": true
+    },
+    {
+      "name": "doctor login",
+      "passed": true
+    },
+    {
+      "name": "doctor waits for operator",
+      "passed": true
+    },
+    {
+      "name": "doctor sees own patient",
+      "passed": true
+    },
+    {
+      "name": "patient saves report",
+      "passed": true
+    },
+    {
+      "name": "independent doctor reads report",
+      "passed": true
+    },
+    {
+      "name": "foreign patient denied",
+      "passed": true
+    },
+    {
+      "name": "patient cannot read another patient",
+      "passed": true
+    },
+    {
+      "name": "report survives reload",
+      "passed": true
+    },
+    {
+      "name": "Secure HttpOnly session",
+      "passed": true
+    },
+    {
+      "name": "browser HTTPS and secure context",
+      "passed": true
+    },
+    {
+      "name": "CSRF rejection over public HTTPS",
+      "passed": true
+    },
+    {
+      "name": "doctor cannot fetch questionnaire module",
+      "passed": true
+    },
+    {
+      "name": "patient module is private",
+      "passed": true
+    },
+    {
+      "name": "module not eagerly loaded",
+      "passed": true
+    },
+    {
+      "name": "module failure offers retry",
+      "passed": true
+    },
+    {
+      "name": "module retry loads four questionnaires",
+      "passed": true
+    },
+    {
+      "name": "questionnaire starts lsia",
+      "passed": true
+    },
+    {
+      "name": "questionnaire requires answer lsia",
+      "passed": true
+    },
+    {
+      "name": "questionnaire completes lsia",
+      "passed": true
+    },
+    {
+      "name": "questionnaire starts bipq",
+      "passed": true
+    },
+    {
+      "name": "questionnaire requires answer bipq",
+      "passed": true
+    },
+    {
+      "name": "questionnaire completes bipq",
+      "passed": true
+    },
+    {
+      "name": "questionnaire starts temmo",
+      "passed": true
+    },
+    {
+      "name": "questionnaire requires answer temmo",
+      "passed": true
+    },
+    {
+      "name": "questionnaire completes temmo",
+      "passed": true
+    },
+    {
+      "name": "questionnaire starts stolin",
+      "passed": true
+    },
+    {
+      "name": "questionnaire requires answer stolin",
+      "passed": true
+    },
+    {
+      "name": "questionnaire completes stolin",
+      "passed": true
+    },
+    {
+      "name": "late module cannot restore personal state",
+      "passed": true
+    },
+    {
+      "name": "module denied after logout",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient/report",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient/history",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /patient/questionnaires",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /doctor",
+      "passed": true
+    },
+    {
+      "name": "layout 1440 /doctor/patients/44",
+      "passed": true
+    },
+    {
+      "name": "HTTPS transition retains page patient 1440",
+      "passed": true
+    },
+    {
+      "name": "HTTPS old form blocked 1440",
+      "passed": true
+    },
+    {
+      "name": "HTTPS transition waits for data patient 1440",
+      "passed": true
+    },
+    {
+      "name": "HTTPS latest selection and focus patient 1440",
+      "passed": true
+    },
+    {
+      "name": "HTTPS transition retains page doctor 1440",
+      "passed": true
+    },
+    {
+      "name": "HTTPS transition waits for data doctor 1440",
+      "passed": true
+    },
+    {
+      "name": "HTTPS latest selection and focus doctor 1440",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient/report",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient/history",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /patient/questionnaires",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /doctor",
+      "passed": true
+    },
+    {
+      "name": "layout 390 /doctor/patients/44",
+      "passed": true
+    },
+    {
+      "name": "HTTPS transition retains page patient 390",
+      "passed": true
+    },
+    {
+      "name": "HTTPS old form blocked 390",
+      "passed": true
+    },
+    {
+      "name": "HTTPS transition waits for data patient 390",
+      "passed": true
+    },
+    {
+      "name": "HTTPS latest selection and focus patient 390",
+      "passed": true
+    },
+    {
+      "name": "HTTPS transition retains page doctor 390",
+      "passed": true
+    },
+    {
+      "name": "HTTPS transition waits for data doctor 390",
+      "passed": true
+    },
+    {
+      "name": "HTTPS latest selection and focus doctor 390",
+      "passed": true
+    },
+    {
+      "name": "keyboard navigation",
+      "passed": true
+    },
+    {
+      "name": "password request UI",
+      "passed": true
+    },
+    {
+      "name": "HTTPS reset link",
+      "passed": true
+    },
+    {
+      "name": "password reset UI",
+      "passed": true
+    },
+    {
+      "name": "HTTPS logout during transition clears previous DOM",
+      "passed": true
+    },
+    {
+      "name": "logout clears personal state",
+      "passed": true
+    },
+    {
+      "name": "new password and account switch",
+      "passed": true
+    },
+    {
+      "name": "account switch clears previous questionnaire answers",
+      "passed": true
+    },
+    {
+      "name": "doctor logout",
+      "passed": true
+    },
+    {
+      "name": "219 calculation regressions",
+      "passed": true
+    }
+  ]
+}

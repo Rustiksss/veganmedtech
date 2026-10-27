@@ -1,0 +1,100 @@
+{
+  "checks": [
+    {
+      "name": "anonymous rejected /",
+      "passed": true
+    },
+    {
+      "name": "anonymous rejected /assets/app.js",
+      "passed": true
+    },
+    {
+      "name": "anonymous rejected /api/v1/messages",
+      "passed": true
+    },
+    {
+      "name": "anonymous rejected /api/events",
+      "passed": true
+    },
+    {
+      "name": "anonymous rejected //api/v1/messages",
+      "passed": true
+    },
+    {
+      "name": "anonymous rejected /%61pi/v1/messages",
+      "passed": true
+    },
+    {
+      "name": "wrong password rejected /",
+      "passed": true
+    },
+    {
+      "name": "wrong password rejected /assets/app.js",
+      "passed": true
+    },
+    {
+      "name": "wrong password rejected /api/v1/messages",
+      "passed": true
+    },
+    {
+      "name": "wrong password rejected /api/events",
+      "passed": true
+    },
+    {
+      "name": "wrong password rejected //api/v1/messages",
+      "passed": true
+    },
+    {
+      "name": "wrong password rejected /%61pi/v1/messages",
+      "passed": true
+    },
+    {
+      "name": "anonymous websocket upgrade rejected",
+      "passed": true
+    },
+    {
+      "name": "operator allowed",
+      "passed": true
+    },
+    {
+      "name": "mailbox no-store",
+      "passed": true
+    },
+    {
+      "name": "Host retains port",
+      "passed": true
+    },
+    {
+      "name": "Origin preserved",
+      "passed": true
+    },
+    {
+      "name": "cookie removed",
+      "passed": true
+    },
+    {
+      "name": "authorization removed",
+      "passed": true
+    },
+    {
+      "name": "forwarded removed",
+      "passed": true
+    },
+    {
+      "name": "x-forwarded-host removed",
+      "passed": true
+    },
+    {
+      "name": "proxy protocol replaced",
+      "passed": true
+    },
+    {
+      "name": "client address replaced",
+      "passed": true
+    },
+    {
+      "name": "main site remains public",
+      "passed": true
+    }
+  ]
+}

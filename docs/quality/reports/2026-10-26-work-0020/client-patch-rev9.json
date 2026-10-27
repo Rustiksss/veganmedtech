@@ -1,0 +1,6 @@
+{
+  "published_sha256": "8ba0be3dc8bcfdd43b277aeaf3b2730a30484b403e98487abdd58ba101247bdf",
+  "local_sha256": "a36bb63bfff23bbf35aba7e02818b33546266b34d771f6c3273a4b42ca149d6e",
+  "only_response_close_and_framing_changed": true,
+  "new_model_runtime_added": false
+}

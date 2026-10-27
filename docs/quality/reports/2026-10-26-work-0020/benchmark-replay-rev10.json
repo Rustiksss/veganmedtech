@@ -1,0 +1,689 @@
+{
+  "version": "synthetic-benchmark-v1",
+  "network_requests": 0,
+  "rows": [
+    {
+      "attempt": 85,
+      "run": "screen-cohere-json-rev9.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "wrong_categories",
+        "wrong_status"
+      ],
+      "fast": true
+    },
+    {
+      "attempt": 93,
+      "run": "screen-cohere-russian-json-rev9.jsonl",
+      "old_passed": true,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    },
+    {
+      "attempt": 94,
+      "run": "screen-cohere-russian-json-rev9.jsonl",
+      "old_passed": true,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    },
+    {
+      "attempt": 95,
+      "run": "screen-cohere-russian-json-rev9.jsonl",
+      "old_passed": false,
+      "quality_ok": true,
+      "passed": false,
+      "errors": [],
+      "fast": false
+    },
+    {
+      "attempt": 35,
+      "run": "screen-compact-rev8.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "timeout"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 46,
+      "run": "screen-compact-routes-rev8.jsonl",
+      "old_passed": true,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    },
+    {
+      "attempt": 47,
+      "run": "screen-compact-routes-rev8.jsonl",
+      "old_passed": true,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    },
+    {
+      "attempt": 48,
+      "run": "screen-compact-routes-rev8.jsonl",
+      "old_passed": true,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    },
+    {
+      "attempt": 49,
+      "run": "screen-compact-routes-rev8.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "timeout"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 50,
+      "run": "screen-compact-routes-rev8.jsonl",
+      "old_passed": false,
+      "quality_ok": true,
+      "passed": false,
+      "errors": [],
+      "fast": false
+    },
+    {
+      "attempt": 51,
+      "run": "screen-compact-routes-rev8.jsonl",
+      "old_passed": false,
+      "quality_ok": true,
+      "passed": false,
+      "errors": [],
+      "fast": false
+    },
+    {
+      "attempt": 41,
+      "run": "screen-envelope-rev8.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "invalid_response"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 52,
+      "run": "screen-final-routes-rev8.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "timeout"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 53,
+      "run": "screen-final-routes-rev8.jsonl",
+      "old_passed": true,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    },
+    {
+      "attempt": 54,
+      "run": "screen-final-routes-rev8.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "invalid_response"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 55,
+      "run": "screen-final-routes-rev8.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "timeout"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 45,
+      "run": "screen-groq-schema-rev8.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "wrong_categories"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 66,
+      "run": "screen-llama-boundary-rev9.jsonl",
+      "old_passed": false,
+      "quality_ok": true,
+      "passed": false,
+      "errors": [],
+      "fast": false
+    },
+    {
+      "attempt": 58,
+      "run": "screen-llama-deepinfra-rev9.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "timeout"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 56,
+      "run": "screen-llama-groq-rev9.jsonl",
+      "old_passed": true,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    },
+    {
+      "attempt": 57,
+      "run": "screen-llama-groq-rev9.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "unavailable"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 61,
+      "run": "screen-llama-headers-rev9.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "unavailable"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 75,
+      "run": "screen-llama-negation-rev9.jsonl",
+      "old_passed": true,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    },
+    {
+      "attempt": 76,
+      "run": "screen-llama-negation-rev9.jsonl",
+      "old_passed": true,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    },
+    {
+      "attempt": 77,
+      "run": "screen-llama-negation-rev9.jsonl",
+      "old_passed": true,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    },
+    {
+      "attempt": 78,
+      "run": "screen-llama-negation-rev9.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "wrong_status"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 79,
+      "run": "screen-llama-negation-rev9.jsonl",
+      "old_passed": true,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    },
+    {
+      "attempt": 80,
+      "run": "screen-llama-negation-rev9.jsonl",
+      "old_passed": true,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    },
+    {
+      "attempt": 81,
+      "run": "screen-llama-negation-rev9.jsonl",
+      "old_passed": true,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    },
+    {
+      "attempt": 82,
+      "run": "screen-llama-negation-rev9.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "invalid_response"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 62,
+      "run": "screen-llama-read-fix-rev9.jsonl",
+      "old_passed": true,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    },
+    {
+      "attempt": 63,
+      "run": "screen-llama-read-fix-rev9.jsonl",
+      "old_passed": true,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    },
+    {
+      "attempt": 64,
+      "run": "screen-llama-read-fix-rev9.jsonl",
+      "old_passed": true,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "asserted_safety"
+      ],
+      "fast": true
+    },
+    {
+      "attempt": 65,
+      "run": "screen-llama-read-fix-rev9.jsonl",
+      "old_passed": true,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    },
+    {
+      "attempt": 86,
+      "run": "screen-llama-temporal-rev9.jsonl",
+      "old_passed": true,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    },
+    {
+      "attempt": 87,
+      "run": "screen-llama-temporal-rev9.jsonl",
+      "old_passed": true,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    },
+    {
+      "attempt": 88,
+      "run": "screen-llama-temporal-rev9.jsonl",
+      "old_passed": true,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    },
+    {
+      "attempt": 89,
+      "run": "screen-llama-temporal-rev9.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "timeout"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 90,
+      "run": "screen-llama-temporal-rev9.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "timeout"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 44,
+      "run": "screen-no-thinking-rev8.jsonl",
+      "old_passed": false,
+      "quality_ok": true,
+      "passed": false,
+      "errors": [],
+      "fast": false
+    },
+    {
+      "attempt": 67,
+      "run": "screen-other-routes-rev9.jsonl",
+      "old_passed": true,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    },
+    {
+      "attempt": 68,
+      "run": "screen-other-routes-rev9.jsonl",
+      "old_passed": true,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    },
+    {
+      "attempt": 69,
+      "run": "screen-other-routes-rev9.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "wrong_categories",
+        "wrong_status"
+      ],
+      "fast": true
+    },
+    {
+      "attempt": 70,
+      "run": "screen-other-routes-rev9.jsonl",
+      "old_passed": true,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    },
+    {
+      "attempt": 71,
+      "run": "screen-other-routes-rev9.jsonl",
+      "old_passed": false,
+      "quality_ok": true,
+      "passed": false,
+      "errors": [],
+      "fast": false
+    },
+    {
+      "attempt": 72,
+      "run": "screen-other-routes-rev9.jsonl",
+      "old_passed": true,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    },
+    {
+      "attempt": 73,
+      "run": "screen-other-routes-rev9.jsonl",
+      "old_passed": true,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    },
+    {
+      "attempt": 74,
+      "run": "screen-other-routes-rev9.jsonl",
+      "old_passed": false,
+      "quality_ok": true,
+      "passed": false,
+      "errors": [],
+      "fast": false
+    },
+    {
+      "attempt": 91,
+      "run": "screen-paced-rev9.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "timeout"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 92,
+      "run": "screen-paced-rev9.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "timeout"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 25,
+      "run": "screen-rev8.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "timeout"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 26,
+      "run": "screen-rev8.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "timeout"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 27,
+      "run": "screen-rev8.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "timeout"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 28,
+      "run": "screen-rev8.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "timeout"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 29,
+      "run": "screen-rev8.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "timeout"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 30,
+      "run": "screen-rev8.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "timeout"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 31,
+      "run": "screen-rev8.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "timeout"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 32,
+      "run": "screen-rev8.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "timeout"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 33,
+      "run": "screen-rev8.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "timeout"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 34,
+      "run": "screen-rev8.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "timeout"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 83,
+      "run": "screen-russian-rev9.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "unavailable"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 84,
+      "run": "screen-russian-rev9.jsonl",
+      "old_passed": false,
+      "quality_ok": true,
+      "passed": false,
+      "errors": [],
+      "fast": false
+    },
+    {
+      "attempt": 42,
+      "run": "screen-schema-rev8.jsonl",
+      "old_passed": true,
+      "quality_ok": true,
+      "passed": true,
+      "errors": [],
+      "fast": true
+    },
+    {
+      "attempt": 43,
+      "run": "screen-schema-rev8.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "timeout"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 38,
+      "run": "screen-short-rev8.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "invalid_response"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 39,
+      "run": "screen-short-rev8.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "rate_limit"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 59,
+      "run": "screen-small-models-rev9.jsonl",
+      "old_passed": false,
+      "quality_ok": false,
+      "passed": false,
+      "errors": [
+        "timeout"
+      ],
+      "fast": false
+    },
+    {
+      "attempt": 60,
+      "run": "screen-small-models-rev9.jsonl",
+      "old_passed": false,
+      "quality_ok": true,
+      "passed": false,
+      "errors": [],
+      "fast": false
+    }
+  ],
+  "known_regression_64_detected": true
+}

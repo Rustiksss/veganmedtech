@@ -1,0 +1,2 @@
+{"type": "reservation", "attempt": 40, "model": "google/gemini-2.5-flash-lite", "provider": "google-ai-studio", "case": "--http1.1", "upper_cost_rub": 0.0155669767}
+{"type": "case", "attempt": 40, "protocol": "--http1.1", "curl_exit": 28, "seconds": 18.067, "status": 0, "http_version": "0", "start_transfer": 0.0, "upper_cost_rub": 0.0155669767}

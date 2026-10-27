@@ -1,0 +1,36 @@
+{
+  "type": "summary",
+  "attempts_total": 61,
+  "new_attempts": 1,
+  "reserved_upper_rub_since_25": 1.9452171581442,
+  "winner": null,
+  "results": [
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "provider": "groq",
+      "input_price": 5.72686,
+      "output_price": 9.162976,
+      "request_fee": 0.0,
+      "response_format": "json_object",
+      "reasoning": null,
+      "passed": false,
+      "median_seconds": 1.583,
+      "cases": [
+        {
+          "type": "case",
+          "attempt": 61,
+          "model": "meta-llama/llama-3.1-8b-instruct",
+          "provider": "groq",
+          "case": "positive",
+          "passed": false,
+          "seconds": 1.583,
+          "upper_cost_rub": 0.034476842572000004,
+          "error": "unavailable",
+          "http_status": 200,
+          "transport_exception": "OSError"
+        }
+      ]
+    }
+  ],
+  "server_files_or_database_changed": false
+}

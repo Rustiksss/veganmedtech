@@ -1,0 +1,250 @@
+{
+  "type": "summary",
+  "attempts_total": 51,
+  "new_attempts": 6,
+  "winner": null,
+  "results": [
+    {
+      "model": "upstage/solar-mini4",
+      "provider": "upstage",
+      "input_price": 5.72686,
+      "output_price": 22.90744,
+      "request_fee": 0.0,
+      "json_mode": true,
+      "reasoning": {
+        "effort": "none"
+      },
+      "passed": false,
+      "median_seconds": 6.1685,
+      "cases": [
+        {
+          "type": "case",
+          "attempt": 46,
+          "model": "upstage/solar-mini4",
+          "provider": "upstage",
+          "case": "positive",
+          "passed": true,
+          "seconds": 6.063,
+          "upper_cost_rub": 0.046513556920000004,
+          "reply": "Я слышу, насколько это тяжело сейчас, и благодарю за то, что поделились. Вы не одиноки — я рядом, и мы можем вместе найти кого-то, кого можно поддержать.",
+          "analysis_status": "matched",
+          "signals": [
+            {
+              "category": "wish_to_die",
+              "quote": "я не хочу жить",
+              "time": "current",
+              "label": "Возможное желание не жить",
+              "time_label": "В сообщении относится к настоящему",
+              "source_ref": "DOCX-ALERT-001 · Описание характера суицидальных идей"
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 955,
+            "completion_tokens": 88,
+            "total_tokens": 1043,
+            "cost": 0.00741016
+          },
+          "generation_id": "gen_2226115903291265025",
+          "returned_model": "upstage/solar-mini4",
+          "choice_count": 1,
+          "response_keys": [
+            "id",
+            "object",
+            "created",
+            "model",
+            "choices",
+            "usage"
+          ],
+          "finish_reason": "stop",
+          "content": "{\"analysis\":{\"signals\":[{\"category\":\"wish_to_die\",\"quote\":\"я не хочу жить\",\"time\":\"current\"}],\"status\":\"matched\"},\"reply\":\"Я слышу, насколько это тяжело сейчас, и благодарю за то, что поделились. Вы не одиноки — я рядом, и мы можем вместе найти кого-то, кого можно поддержать.\"}"
+        },
+        {
+          "type": "case",
+          "attempt": 47,
+          "model": "upstage/solar-mini4",
+          "provider": "upstage",
+          "case": "neutral",
+          "passed": true,
+          "seconds": 5.152,
+          "upper_cost_rub": 0.04660518668,
+          "reply": "Чтобы записать наблюдение, используйте кнопку «Новая запись» в верхней части экрана. Если нужно сохранить её на сервер, нажмите «Сохранить запись».",
+          "analysis_status": "no_match",
+          "signals": [],
+          "usage": {
+            "prompt_tokens": 954,
+            "completion_tokens": 69,
+            "total_tokens": 1023,
+            "cost": 0.00704404
+          },
+          "generation_id": "gen_2226115930269421569",
+          "returned_model": "upstage/solar-mini4",
+          "choice_count": 1,
+          "response_keys": [
+            "id",
+            "object",
+            "created",
+            "model",
+            "choices",
+            "usage"
+          ],
+          "finish_reason": "stop",
+          "content": "{\"analysis\":{\"signals\":[],\"status\":\"no_match\"},\"reply\":\"Чтобы записать наблюдение, используйте кнопку «Новая запись» в верхней части экрана. Если нужно сохранить её на сервер, нажмите «Сохранить запись».\"}"
+        },
+        {
+          "type": "case",
+          "attempt": 48,
+          "model": "upstage/solar-mini4",
+          "provider": "upstage",
+          "case": "negation",
+          "passed": true,
+          "seconds": 6.274,
+          "upper_cost_rub": 0.04682280736,
+          "reply": "Спасибо, что поделились этим. Если вам нужно поговорить или просто вынести мысли на обсуждение, я здесь, чтобы прислушаться.",
+          "analysis_status": "no_match",
+          "signals": [],
+          "usage": {
+            "prompt_tokens": 963,
+            "completion_tokens": 58,
+            "total_tokens": 1021,
+            "cost": 0.00677516
+          },
+          "generation_id": "gen_2226115952624799745",
+          "returned_model": "upstage/solar-mini4",
+          "choice_count": 1,
+          "response_keys": [
+            "id",
+            "object",
+            "created",
+            "model",
+            "choices",
+            "usage"
+          ],
+          "finish_reason": "stop",
+          "content": "{\"analysis\":{\"signals\":[],\"status\":\"no_match\"},\"reply\":\"Спасибо, что поделились этим. Если вам нужно поговорить или просто вынести мысли на обсуждение, я здесь, чтобы прислушаться.\"}"
+        },
+        {
+          "type": "case",
+          "attempt": 49,
+          "model": "upstage/solar-mini4",
+          "provider": "upstage",
+          "case": "past",
+          "passed": false,
+          "seconds": 18.001,
+          "upper_cost_rub": 0.04689725654,
+          "error": "timeout"
+        }
+      ]
+    },
+    {
+      "model": "nex-agi/nex-n2.5-mini",
+      "provider": "nex-agi/bf16",
+      "input_price": 2.86343,
+      "output_price": 11.45372,
+      "request_fee": 0.0,
+      "json_mode": false,
+      "reasoning": {
+        "effort": "none"
+      },
+      "passed": false,
+      "median_seconds": 16.837,
+      "cases": [
+        {
+          "type": "case",
+          "attempt": 50,
+          "model": "nex-agi/nex-n2.5-mini",
+          "provider": "nex-agi/bf16",
+          "case": "positive",
+          "passed": false,
+          "seconds": 16.837,
+          "upper_cost_rub": 0.023256778460000002,
+          "reply": "Мне жаль, что вам сейчас так тяжело. Живым человеком прямо сейчас можете обратиться за поддержкой; хотите рассказать, что случилось?",
+          "analysis_status": "matched",
+          "signals": [
+            {
+              "category": "wish_to_die",
+              "quote": "не хочу жить",
+              "time": "current",
+              "label": "Возможное желание не жить",
+              "time_label": "В сообщении относится к настоящему",
+              "source_ref": "DOCX-ALERT-001 · Описание характера суицидальных идей"
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 922,
+            "completion_tokens": 60,
+            "total_tokens": 982,
+            "cost": 0.00329403
+          },
+          "generation_id": "gen_2226116088457465857",
+          "returned_model": "nex-agi/nex-n2.5-mini",
+          "choice_count": 1,
+          "response_keys": [
+            "id",
+            "object",
+            "created",
+            "model",
+            "choices",
+            "usage"
+          ],
+          "finish_reason": "stop",
+          "content": "{\"reply\":\"Мне жаль, что вам сейчас так тяжело. Живым человеком прямо сейчас можете обратиться за поддержкой; хотите рассказать, что случилось?\",\"analysis\":{\"status\":\"matched\",\"signals\":[{\"category\":\"wish_to_die\",\"quote\":\"не хочу жить\",\"time\":\"current\"}]}}"
+        }
+      ]
+    },
+    {
+      "model": "amazon/nova-micro-v1",
+      "provider": "amazon-bedrock",
+      "input_price": 4.008802,
+      "output_price": 16.035208,
+      "request_fee": 0.0,
+      "json_mode": false,
+      "reasoning": null,
+      "passed": false,
+      "median_seconds": 12.709,
+      "cases": [
+        {
+          "type": "case",
+          "attempt": 51,
+          "model": "amazon/nova-micro-v1",
+          "provider": "amazon-bedrock",
+          "case": "positive",
+          "passed": false,
+          "seconds": 12.709,
+          "upper_cost_rub": 0.032559489844000006,
+          "reply": "ваше состояние кажется очень тяжёлым, важно обратиться за помощью",
+          "analysis_status": "matched",
+          "signals": [
+            {
+              "category": "wish_to_die",
+              "quote": "я не хочу жить",
+              "time": "current",
+              "label": "Возможное желание не жить",
+              "time_label": "В сообщении относится к настоящему",
+              "source_ref": "DOCX-ALERT-001 · Описание характера суицидальных идей"
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 942,
+            "completion_tokens": 65,
+            "total_tokens": 1007,
+            "cost": 0.00477039
+          },
+          "generation_id": "gen_2226116148490407937",
+          "returned_model": "amazon/nova-micro-v1",
+          "choice_count": 1,
+          "response_keys": [
+            "id",
+            "object",
+            "created",
+            "model",
+            "choices",
+            "usage"
+          ],
+          "finish_reason": "stop",
+          "content": "{\"reply\":\"ваше состояние кажется очень тяжёлым, важно обратиться за помощью\",\"analysis\":{\"status\":\"matched\",\"signals\":[{\"category\":\"wish_to_die\",\"quote\":\"я не хочу жить\",\"time\":\"current\"}]}}"
+        }
+      ]
+    }
+  ],
+  "server_files_or_database_changed": false
+}

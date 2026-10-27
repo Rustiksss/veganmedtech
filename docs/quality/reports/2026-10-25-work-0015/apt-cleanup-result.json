@@ -1,0 +1,9 @@
+{
+  "files_removed": 67,
+  "allocated_removed": 289689600,
+  "free_before": 16404480,
+  "free_after": 306077696,
+  "reserve_bytes": 268435456,
+  "locks_held": true,
+  "packages_configs_docker_data_untouched": true
+}

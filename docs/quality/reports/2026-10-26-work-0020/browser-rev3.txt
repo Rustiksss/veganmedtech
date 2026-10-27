@@ -1,0 +1,1 @@
+{"passed": 36, "total": 36, "metadata": {"provider": "fixed synthetic fixture; real Polza checked separately", "widths": [1440, 768, 390], "delivery_seconds": 14.915, "control_ids": {"turn": 87, "event": 12}, "control_snapshot": {"turns": 6, "events": 3}}}

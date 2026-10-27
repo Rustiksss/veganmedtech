@@ -1,0 +1,127 @@
+ Container veganmedtech-work0020-test-app-run-b976c36ced01 Creating 
+ Container veganmedtech-work0020-test-app-run-b976c36ced01 Created 
+Found 75 test(s).
+Creating test database for alias 'default' ('test_compass')...
+Operations to perform:
+  Synchronize unmigrated apps: allauth, headless, messages, rest_framework, staticfiles
+  Apply all migrations: account, accounts, assistant, audit, auth, care, contenttypes, reports, sessions
+Synchronizing apps without migrations:
+  Creating tables...
+    Running deferred SQL...
+Running migrations:
+  Applying contenttypes.0001_initial... OK
+  Applying contenttypes.0002_remove_content_type_name... OK
+  Applying auth.0001_initial... OK
+  Applying auth.0002_alter_permission_name_max_length... OK
+  Applying auth.0003_alter_user_email_max_length... OK
+  Applying auth.0004_alter_user_username_opts... OK
+  Applying auth.0005_alter_user_last_login_null... OK
+  Applying auth.0006_require_contenttypes_0002... OK
+  Applying auth.0007_alter_validators_add_error_messages... OK
+  Applying auth.0008_alter_user_username_max_length... OK
+  Applying auth.0009_alter_user_last_name_max_length... OK
+  Applying auth.0010_alter_group_name_max_length... OK
+  Applying auth.0011_update_proxy_permissions... OK
+  Applying auth.0012_alter_user_first_name_max_length... OK
+  Applying accounts.0001_initial... OK
+  Applying account.0001_initial... OK
+  Applying account.0002_email_max_length... OK
+  Applying account.0003_alter_emailaddress_create_unique_verified_email... OK
+  Applying account.0004_alter_emailaddress_drop_unique_email... OK
+  Applying account.0005_emailaddress_idx_upper_email... OK
+  Applying account.0006_emailaddress_lower... OK
+  Applying account.0007_emailaddress_idx_email... OK
+  Applying account.0008_emailaddress_unique_primary_email_fixup... OK
+  Applying account.0009_emailaddress_unique_primary_email... OK
+  Applying accounts.0002_auth_rate_cache... OK
+  Applying assistant.0001_initial... OK
+  Applying assistant.0002_demo_analysis... OK
+  Applying assistant.0003_rollback_defaults... OK
+  Applying audit.0001_initial... OK
+  Applying care.0001_initial... OK
+  Applying reports.0001_initial... OK
+  Applying sessions.0001_initial... OK
+Cache table 'auth_rate_limits' already exists.
+System check identified no issues (0 silenced).
+test_authenticated_login_and_signup_conflict_preserves_account (accounts.tests.test_accounts.AccountTests.test_authenticated_login_and_signup_conflict_preserves_account)
+TEST-001-38: a repeated form cannot replace the authenticated user. ... ok
+test_case_insensitive_duplicate_and_enumeration (accounts.tests.test_accounts.AccountTests.test_case_insensitive_duplicate_and_enumeration) ... ok
+test_change_password_invalidates_other_sessions (accounts.tests.test_accounts.AccountTests.test_change_password_invalidates_other_sessions) ... ok
+test_cookie_and_secure_settings (accounts.tests.test_accounts.AccountTests.test_cookie_and_secure_settings) ... ok
+test_csrf_for_anonymous_and_authenticated_changes (accounts.tests.test_accounts.AccountTests.test_csrf_for_anonymous_and_authenticated_changes) ... ok
+test_doctor_signup_does_not_grant_privileges (accounts.tests.test_accounts.AccountTests.test_doctor_signup_does_not_grant_privileges) ... ok
+test_invalid_and_expired_confirmation (accounts.tests.test_accounts.AccountTests.test_invalid_and_expired_confirmation) ... ok
+test_mail_failure_safe_response (accounts.tests.test_accounts.AccountTests.test_mail_failure_safe_response) ... ok
+test_no_admin_app_or_extra_account_api (accounts.tests.test_accounts.AccountTests.test_no_admin_app_or_extra_account_api) ... ok
+test_password_reset_and_reuse (accounts.tests.test_accounts.AccountTests.test_password_reset_and_reuse) ... ok
+test_password_reset_enumeration (accounts.tests.test_accounts.AccountTests.test_password_reset_enumeration) ... ok
+test_password_reset_invalid_and_expired (accounts.tests.test_accounts.AccountTests.test_password_reset_invalid_and_expired) ... ok
+test_patient_signup_is_unverified_and_private (accounts.tests.test_accounts.AccountTests.test_patient_signup_is_unverified_and_private) ... ok
+test_rate_cache_does_not_evict_live_counters (accounts.tests.test_accounts.AccountTests.test_rate_cache_does_not_evict_live_counters) ... ok
+test_rate_limits_shared_cache_and_forged_proxy (accounts.tests.test_accounts.AccountTests.test_rate_limits_shared_cache_and_forged_proxy) ... ok
+test_real_password_hash_is_argon2id (accounts.tests.test_accounts.AccountTests.test_real_password_hash_is_argon2id) ... ok
+test_signup_validation (accounts.tests.test_accounts.AccountTests.test_signup_validation) ... ok
+test_verify_and_login_then_logout_invalidates_cookie (accounts.tests.test_accounts.AccountTests.test_verify_and_login_then_logout_invalidates_cookie) ... ok
+test_https_login_requires_csrf_and_correct_origin (accounts.tests.test_accounts.ProxyTests.test_https_login_requires_csrf_and_correct_origin) ... ok
+test_opt_in_settings_and_single_replaced_client_ip_header (accounts.tests.test_accounts.ProxyTests.test_opt_in_settings_and_single_replaced_client_ip_header) ... ok
+test_redirect_host_and_private_readiness (accounts.tests.test_accounts.ProxyTests.test_redirect_host_and_private_readiness) ... ok
+test_confirmation_revocation_is_checked_on_next_request (accounts.tests.test_accounts.QuestionnaireModuleTests.test_confirmation_revocation_is_checked_on_next_request) ... ok
+test_only_verified_active_patient_can_read_module (accounts.tests.test_accounts.QuestionnaireModuleTests.test_only_verified_active_patient_can_read_module) ... ok
+test_page_does_not_embed_questionnaire_module_and_other_methods_are_rejected (accounts.tests.test_accounts.QuestionnaireModuleTests.test_page_does_not_embed_questionnaire_module_and_other_methods_are_rejected) ... ok
+test_anonymous_and_roles (care.tests.test_access.AccessTests.test_anonymous_and_roles) ... ok
+test_disabled_user_old_session (care.tests.test_access.AccessTests.test_disabled_user_old_session) ... ok
+test_foreign_and_missing_patient_indistinguishable (care.tests.test_access.AccessTests.test_foreign_and_missing_patient_indistinguishable) ... ok
+test_invalid_operator_requests_and_single_link (care.tests.test_access.AccessTests.test_invalid_operator_requests_and_single_link) ... ok
+test_nested_report_parent_mismatch (care.tests.test_access.AccessTests.test_nested_report_parent_mismatch) ... ok
+test_pending_doctor_and_approval_revoke (care.tests.test_access.AccessTests.test_pending_doctor_and_approval_revoke) ... ok
+test_revoke_relationship_old_session (care.tests.test_access.AccessTests.test_revoke_relationship_old_session) ... ok
+test_seed_is_opt_in_and_does_not_overwrite (care.tests.test_access.AccessTests.test_seed_is_opt_in_and_does_not_overwrite) ... ok
+test_audit_failure_rolls_back_report (reports.tests.test_reports.ReportTests.test_audit_failure_rolls_back_report) ... ok
+test_boundaries_trim_validation_and_extra_fields (reports.tests.test_reports.ReportTests.test_boundaries_trim_validation_and_extra_fields) ... ok
+test_create_and_read_independent_session (reports.tests.test_reports.ReportTests.test_create_and_read_independent_session) ... ok
+test_history_cursor_stable_order_and_isolation (reports.tests.test_reports.ReportTests.test_history_cursor_stable_order_and_isolation) ... ok
+test_repeat_conflict_and_user_scope (reports.tests.test_reports.ReportTests.test_repeat_conflict_and_user_scope) ... ok
+test_audit_without_sensitive_text_and_private_cache (audit.tests.test_audit.AuditTests.test_audit_without_sensitive_text_and_private_cache) ... ok
+test_current_message_atomic_signal_and_lost_response_replay (assistant.tests.test_alerting.DemoAlertTests.test_current_message_atomic_signal_and_lost_response_replay) ... ok
+test_demo_access_reassignment_and_no_general_chat_access (assistant.tests.test_alerting.DemoAlertTests.test_demo_access_reassignment_and_no_general_chat_access) ... ok
+test_final_database_or_audit_failure_rolls_back_result_event_and_audit (assistant.tests.test_alerting.DemoAlertTests.test_final_database_or_audit_failure_rolls_back_result_event_and_audit) ... ok
+test_malformed_unknown_or_unfounded_data_persists_failed_without_paid_retry (assistant.tests.test_alerting.DemoAlertTests.test_malformed_unknown_or_unfounded_data_persists_failed_without_paid_retry) ... ok
+test_negation_quotation_third_person_and_educational_fixtures_do_not_notify (assistant.tests.test_alerting.DemoAlertTests.test_negation_quotation_third_person_and_educational_fixtures_do_not_notify) ... ok
+test_no_doctor_and_ineligible_doctor_never_claim_delivery (assistant.tests.test_alerting.DemoAlertTests.test_no_doctor_and_ineligible_doctor_never_claim_delivery) ... ok
+test_no_match_does_not_repeat_previous_signal_or_assert_safety (assistant.tests.test_alerting.DemoAlertTests.test_no_match_does_not_repeat_previous_signal_or_assert_safety) ... ok
+test_policy_mode_is_fixed_for_pending_turn_and_off_preserves_existing_events (assistant.tests.test_alerting.DemoAlertTests.test_policy_mode_is_fixed_for_pending_turn_and_off_preserves_existing_events) ... ok
+test_provider_failure_and_expired_pending_are_not_negative (assistant.tests.test_alerting.DemoAlertTests.test_provider_failure_and_expired_pending_are_not_negative) ... ok
+test_smaller_context_drops_old_whole_pairs_and_keeps_current_rules (assistant.tests.test_alerting.DemoAlertTests.test_smaller_context_drops_old_whole_pairs_and_keeps_current_rules) ... ok
+test_temporal_context_uncertainty_and_multiple_categories_one_event (assistant.tests.test_alerting.DemoAlertTests.test_temporal_context_uncertainty_and_multiple_categories_one_event) ... ok
+test_policy_source_template_and_categories (assistant.tests.test_alerting.ProtocolTests.test_policy_source_template_and_categories) ... ok
+test_strict_schema_duplicate_keys_types_limits_and_evidence (assistant.tests.test_alerting.ProtocolTests.test_strict_schema_duplicate_keys_types_limits_and_evidence) ... ok
+test_legacy_application_can_insert_after_additive_migrations (assistant.tests.test_alerting.RollbackCompatibilityTests.test_legacy_application_can_insert_after_additive_migrations) ... ok
+test_audit_no_chat_text_and_no_public_synthetic_creation (assistant.tests.test_assistant.AssistantTests.test_audit_no_chat_text_and_no_public_synthetic_creation) ... ok
+test_context_only_own_last_ten_completed_pairs (assistant.tests.test_assistant.AssistantTests.test_context_only_own_last_ten_completed_pairs) ... ok
+test_error_is_persisted_without_automatic_paid_retry (assistant.tests.test_assistant.AssistantTests.test_error_is_persisted_without_automatic_paid_retry) ... ok
+test_input_validation_no_provider (assistant.tests.test_assistant.AssistantTests.test_input_validation_no_provider) ... ok
+test_limits_across_requests_and_daily_limit (assistant.tests.test_assistant.AssistantTests.test_limits_across_requests_and_daily_limit) ... ok
+test_notification_current_doctor_only_reassignment_and_seen (assistant.tests.test_assistant.AssistantTests.test_notification_current_doctor_only_reassignment_and_seen) ... ok
+test_notification_failure_rolls_back_and_retries_without_duplicates (assistant.tests.test_assistant.AssistantTests.test_notification_failure_rolls_back_and_retries_without_duplicates) ... ok
+test_pending_recovery_and_no_parallel_generation (assistant.tests.test_assistant.AssistantTests.test_pending_recovery_and_no_parallel_generation) ... ok
+test_persistent_history_idempotency_and_private_headers (assistant.tests.test_assistant.AssistantTests.test_persistent_history_idempotency_and_private_headers) ... ok
+test_roles_ownership_csrf_and_unverified (assistant.tests.test_assistant.AssistantTests.test_roles_ownership_csrf_and_unverified) ... ok
+test_signed_cursor_is_scoped_and_limit_validated (assistant.tests.test_assistant.AssistantTests.test_signed_cursor_is_scoped_and_limit_validated) ... ok
+test_template_does_not_activate_detection (assistant.tests.test_assistant.AssistantTests.test_template_does_not_activate_detection) ... ok
+test_contract_fixed_tls_origin_caps_and_usage (assistant.tests.test_assistant.ClientTests.test_contract_fixed_tls_origin_caps_and_usage) ... ok
+test_deadline_includes_dns_and_does_not_send_after_expiry (assistant.tests.test_assistant.ClientTests.test_deadline_includes_dns_and_does_not_send_after_expiry) ... ok
+test_invalid_responses_and_model_substitution (assistant.tests.test_assistant.ClientTests.test_invalid_responses_and_model_substitution) ... ok
+test_mistral_json_routes_and_plain_chat_without_reasoning (assistant.tests.test_assistant.ClientTests.test_mistral_json_routes_and_plain_chat_without_reasoning) ... ok
+test_timeout_incomplete_network_and_missing_key (assistant.tests.test_assistant.ClientTests.test_timeout_incomplete_network_and_missing_key) ... ok
+test_upstream_statuses_do_not_leak_bodies (assistant.tests.test_assistant.ClientTests.test_upstream_statuses_do_not_leak_bodies) ... ok
+test_simultaneous_requests_and_email_uniqueness (reports.tests.test_reports.ConcurrentReports.test_simultaneous_requests_and_email_uniqueness) ... ok
+test_late_provider_result_does_not_create_signal_after_interruption (assistant.tests.test_alerting.DemoConcurrencyTests.test_late_provider_result_does_not_create_signal_after_interruption) ... ok
+test_parallel_same_key_generates_and_notifies_once (assistant.tests.test_alerting.DemoConcurrencyTests.test_parallel_same_key_generates_and_notifies_once) ... ok
+test_additive_migration_preserves_history_notification_and_seen (assistant.tests.test_alerting.DemoMigrationTests.test_additive_migration_preserves_history_notification_and_seen) ... ok
+test_two_workers_share_user_lock_and_rate_limit (assistant.tests.test_assistant.ConcurrentTests.test_two_workers_share_user_lock_and_rate_limit) ... ok
+
+----------------------------------------------------------------------
+Ran 75 tests in 3.181s
+
+OK
+Destroying test database for alias 'default' ('test_compass')...

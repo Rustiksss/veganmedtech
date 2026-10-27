@@ -1,0 +1,3 @@
+config_id,model,provider,prompt,stage,n,quality_ok,fast_correct,p50_correct,p95_correct,max_all,unknown_actual_costs,known_actual_rub,reserved_upper_rub,qualified,errors
+5a119e43cc848ba0,meta-llama/llama-3.1-8b-instruct,groq,russian,screen,4,4,4,1.192,1.457,1.457,0,0.03915357,0.312963387272,True,{}
+5a119e43cc848ba0,meta-llama/llama-3.1-8b-instruct,groq,russian,qualify,24,14,14,1.373,2.457,2.457,2,0.24299113,1.879025373952,False,"{""wrong_status"": 8, ""wrong_categories"": 6, ""invalid_json_schema_evidence"": 2}"

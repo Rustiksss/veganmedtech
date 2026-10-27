@@ -1,0 +1,186 @@
+{
+  "checks": [
+    {
+      "name": "real chat empty",
+      "passed": true
+    },
+    {
+      "name": "external processing and disabled detector visible",
+      "passed": true
+    },
+    {
+      "name": "one page title",
+      "passed": true
+    },
+    {
+      "name": "invalid input 3",
+      "passed": true
+    },
+    {
+      "name": "invalid input 2001",
+      "passed": true
+    },
+    {
+      "name": "waiting state",
+      "passed": true
+    },
+    {
+      "name": "real browser model reply",
+      "passed": true
+    },
+    {
+      "name": "no automatic alert",
+      "passed": true
+    },
+    {
+      "name": "reload preserves history",
+      "passed": true
+    },
+    {
+      "name": "other doctor cannot read chat",
+      "passed": true
+    },
+    {
+      "name": "patient cannot read alerts",
+      "passed": true
+    },
+    {
+      "name": "network loss retains draft/key",
+      "passed": true
+    },
+    {
+      "name": "retry gets saved reply without duplicate",
+      "passed": true
+    },
+    {
+      "name": "history bounded and has older page",
+      "passed": true
+    },
+    {
+      "name": "older page loaded",
+      "passed": true
+    },
+    {
+      "name": "untrusted text rendered safely",
+      "passed": true
+    },
+    {
+      "name": "patient width 1440",
+      "passed": true
+    },
+    {
+      "name": "patient width 768",
+      "passed": true
+    },
+    {
+      "name": "patient width 390",
+      "passed": true
+    },
+    {
+      "name": "keyboard reaches message input",
+      "passed": true
+    },
+    {
+      "name": "doctor empty notifications",
+      "passed": true
+    },
+    {
+      "name": "poll delivers persisted demo event",
+      "passed": true
+    },
+    {
+      "name": "other doctor sees no notifications",
+      "passed": true
+    },
+    {
+      "name": "other doctor denied event",
+      "passed": true
+    },
+    {
+      "name": "explicit seen persisted",
+      "passed": true
+    },
+    {
+      "name": "repeat notification has one id",
+      "passed": true
+    },
+    {
+      "name": "doctor width 1440",
+      "passed": true
+    },
+    {
+      "name": "doctor width 768",
+      "passed": true
+    },
+    {
+      "name": "doctor width 390",
+      "passed": true
+    },
+    {
+      "name": "notification transport failure clears stale data",
+      "passed": true
+    },
+    {
+      "name": "notification retry restores data",
+      "passed": true
+    },
+    {
+      "name": "app recreate succeeds",
+      "passed": true
+    },
+    {
+      "name": "history survives app recreate",
+      "passed": true
+    },
+    {
+      "name": "notification survives app recreate",
+      "passed": true
+    },
+    {
+      "name": "database outage is not successful delivery",
+      "passed": true
+    },
+    {
+      "name": "event retained after DB recovery",
+      "passed": true
+    },
+    {
+      "name": "old session denied after relationship revoke",
+      "passed": true
+    },
+    {
+      "name": "logout clears chat and ignores late response",
+      "passed": true
+    },
+    {
+      "name": "template remains disabled",
+      "passed": true
+    }
+  ],
+  "metadata": {
+    "provider": "fixed synthetic fixture",
+    "real_turn_id": 13,
+    "retry_state": {
+      "items": [
+        {
+          "id": 13,
+          "status": "completed"
+        }
+      ],
+      "error": "",
+      "draft": "",
+      "key": null
+    },
+    "first_key_present": true,
+    "keyboard_final_focus": {
+      "id": "assistantText",
+      "tag": "TEXTAREA",
+      "hidden": false
+    },
+    "delivery_seconds": 14.852,
+    "browser": {
+      "ready": false,
+      "message": "Session already started"
+    }
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "passed": 29,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "operating system reduced-motion preference active",
+      "passed": true
+    },
+    {
+      "name": "account layout and labels 1440 /register/patient",
+      "passed": true
+    },
+    {
+      "name": "account layout and labels 1440 /register/doctor",
+      "passed": true
+    },
+    {
+      "name": "account layout and labels 1440 /login",
+      "passed": true
+    },
+    {
+      "name": "account layout and labels 1440 /password/request",
+      "passed": true
+    },
+    {
+      "name": "account layout and labels 1440 /verify-email/invalid",
+      "passed": true
+    },
+    {
+      "name": "account layout and labels 1440 /password/reset/invalid",
+      "passed": true
+    },
+    {
+      "name": "account layout and labels 768 /register/patient",
+      "passed": true
+    },
+    {
+      "name": "account layout and labels 768 /register/doctor",
+      "passed": true
+    },
+    {
+      "name": "account layout and labels 768 /login",
+      "passed": true
+    },
+    {
+      "name": "account layout and labels 768 /password/request",
+      "passed": true
+    },
+    {
+      "name": "account layout and labels 768 /verify-email/invalid",
+      "passed": true
+    },
+    {
+      "name": "account layout and labels 768 /password/reset/invalid",
+      "passed": true
+    },
+    {
+      "name": "account layout and labels 390 /register/patient",
+      "passed": true
+    },
+    {
+      "name": "account layout and labels 390 /register/doctor",
+      "passed": true
+    },
+    {
+      "name": "account layout and labels 390 /login",
+      "passed": true
+    },
+    {
+      "name": "account layout and labels 390 /password/request",
+      "passed": true
+    },
+    {
+      "name": "account layout and labels 390 /verify-email/invalid",
+      "passed": true
+    },
+    {
+      "name": "account layout and labels 390 /password/reset/invalid",
+      "passed": true
+    },
+    {
+      "name": "password-change layout and labels 1440",
+      "passed": true
+    },
+    {
+      "name": "password-change layout and labels 768",
+      "passed": true
+    },
+    {
+      "name": "password-change layout and labels 390",
+      "passed": true
+    },
+    {
+      "name": "breathing animation disabled",
+      "passed": true
+    },
+    {
+      "name": "screen and spinner animation disabled",
+      "passed": true
+    },
+    {
+      "name": "validation error has text and focused invalid field",
+      "passed": true
+    },
+    {
+      "name": "real conflict preserves draft with safe text",
+      "passed": true
+    },
+    {
+      "name": "doctor mobile list present",
+      "passed": true
+    },
+    {
+      "name": "expired session clears data and offers login",
+      "passed": true
+    },
+    {
+      "name": "browser back cannot reveal previous personal view",
+      "passed": true
+    }
+  ]
+}

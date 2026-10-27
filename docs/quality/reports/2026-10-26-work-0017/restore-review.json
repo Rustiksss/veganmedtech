@@ -1,0 +1,7 @@
+{
+  "rejected_action": "Transfer full server dump to local machine and restore locally",
+  "reason": "Automatic approval review found insufficient explicit approval for exporting a potentially sensitive database payload",
+  "executed": false,
+  "local_dump_payloads": 0,
+  "alternative": "Restore stayed on the same server, isolated PostgreSQL, network none, tmpfs PGDATA, bounded RAM and no swap; only result metadata returned"
+}

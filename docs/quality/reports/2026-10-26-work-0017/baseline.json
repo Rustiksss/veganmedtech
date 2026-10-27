@@ -1,0 +1,15 @@
+{
+  "counts": {
+    "users": 32,
+    "reports": 2,
+    "links": 6
+  },
+  "mailpit_id": "9f3be57d04ace90526c672b1cbae7643e7e7932f83bbc3f4479f61679ca33486",
+  "mail_count": 37,
+  "links": {
+    "current": "releases/20261025T100946Z-da5a445c",
+    "previous": "releases/20261025T100713Z-2af80812"
+  },
+  "available_bytes": 291737600,
+  "private_baseline_saved": true
+}

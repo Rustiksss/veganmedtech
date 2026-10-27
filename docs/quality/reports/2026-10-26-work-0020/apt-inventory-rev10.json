@@ -1,0 +1,367 @@
+{
+  "free_bytes": 7778304,
+  "services": {
+    "apt-daily.service": false,
+    "apt-daily-upgrade.service": false
+  },
+  "allocated_bytes": {
+    "/var/cache/apt": 110415872,
+    "/var/lib/apt/lists": 158392320,
+    "/var/log": 31612928,
+    "/opt/veganmedtech": 11649024,
+    "/var/lib/docker": 68984832,
+    "/var/lib/containerd": 1332924416
+  },
+  "apt_files": [
+    {
+      "path": "/var/cache/apt/pkgcache.bin",
+      "bytes": 55212913,
+      "allocated_bytes": 55218176,
+      "mtime": 1793066701,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/srcpkgcache.bin",
+      "bytes": 55171465,
+      "allocated_bytes": 55177216,
+      "mtime": 1793066700,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-backports_InRelease",
+      "bytes": 136546,
+      "allocated_bytes": 139264,
+      "mtime": 1793031071,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-backports_main_dep11_Components-amd64.yml.gz",
+      "bytes": 159,
+      "allocated_bytes": 4096,
+      "mtime": 1776684702,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-backports_multiverse_dep11_Components-amd64.yml.gz",
+      "bytes": 163,
+      "allocated_bytes": 4096,
+      "mtime": 1776684824,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-backports_restricted_dep11_Components-amd64.yml.gz",
+      "bytes": 161,
+      "allocated_bytes": 4096,
+      "mtime": 1776684882,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-backports_universe_binary-amd64_Packages",
+      "bytes": 11149,
+      "allocated_bytes": 12288,
+      "mtime": 1791134807,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-backports_universe_dep11_Components-amd64.yml.gz",
+      "bytes": 1007,
+      "allocated_bytes": 4096,
+      "mtime": 1793017895,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-backports_universe_i18n_Translation-en",
+      "bytes": 24807,
+      "allocated_bytes": 28672,
+      "mtime": 1787676396,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_InRelease",
+      "bytes": 137401,
+      "allocated_bytes": 139264,
+      "mtime": 1793039536,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_main_binary-amd64_Packages",
+      "bytes": 3998813,
+      "allocated_bytes": 4001792,
+      "mtime": 1793039536,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_main_dep11_Components-amd64.yml.gz",
+      "bytes": 146209,
+      "allocated_bytes": 147456,
+      "mtime": 1793018341,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_main_i18n_Translation-en",
+      "bytes": 1931249,
+      "allocated_bytes": 1933312,
+      "mtime": 1793039536,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_multiverse_binary-amd64_Packages",
+      "bytes": 152662,
+      "allocated_bytes": 155648,
+      "mtime": 1791396182,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_multiverse_dep11_Components-amd64.yml.gz",
+      "bytes": 161,
+      "allocated_bytes": 4096,
+      "mtime": 1776685568,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_multiverse_i18n_Translation-en",
+      "bytes": 26839,
+      "allocated_bytes": 28672,
+      "mtime": 1791396182,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_restricted_binary-amd64_Packages",
+      "bytes": 3191431,
+      "allocated_bytes": 3194880,
+      "mtime": 1793036779,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_restricted_dep11_Components-amd64.yml.gz",
+      "bytes": 159,
+      "allocated_bytes": 4096,
+      "mtime": 1776685624,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_restricted_i18n_Translation-en",
+      "bytes": 1889346,
+      "allocated_bytes": 1892352,
+      "mtime": 1793036779,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_universe_binary-amd64_Packages",
+      "bytes": 1640073,
+      "allocated_bytes": 1642496,
+      "mtime": 1793039536,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_universe_dep11_Components-amd64.yml.gz",
+      "bytes": 270091,
+      "allocated_bytes": 270336,
+      "mtime": 1793018415,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_universe_i18n_Translation-en",
+      "bytes": 627627,
+      "allocated_bytes": 630784,
+      "mtime": 1793039536,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_InRelease",
+      "bytes": 135549,
+      "allocated_bytes": 139264,
+      "mtime": 1776964050,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_main_binary-amd64_Packages",
+      "bytes": 7581722,
+      "allocated_bytes": 7585792,
+      "mtime": 1776954878,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_main_dep11_Components-amd64.yml.gz",
+      "bytes": 558928,
+      "allocated_bytes": 561152,
+      "mtime": 1776868918,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_main_i18n_Translation-en",
+      "bytes": 3269754,
+      "allocated_bytes": 3272704,
+      "mtime": 1776863950,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_multiverse_binary-amd64_Packages",
+      "bytes": 1359201,
+      "allocated_bytes": 1359872,
+      "mtime": 1776925610,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_multiverse_dep11_Components-amd64.yml.gz",
+      "bytes": 59230,
+      "allocated_bytes": 61440,
+      "mtime": 1776869683,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_multiverse_i18n_Translation-en",
+      "bytes": 661940,
+      "allocated_bytes": 663552,
+      "mtime": 1776925610,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_restricted_binary-amd64_Packages",
+      "bytes": 1087693,
+      "allocated_bytes": 1089536,
+      "mtime": 1776792415,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_restricted_dep11_Components-amd64.yml.gz",
+      "bytes": 491,
+      "allocated_bytes": 4096,
+      "mtime": 1776869743,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_restricted_i18n_Translation-en",
+      "bytes": 389298,
+      "allocated_bytes": 393216,
+      "mtime": 1776777740,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_universe_binary-amd64_Packages",
+      "bytes": 76792699,
+      "allocated_bytes": 76800000,
+      "mtime": 1776964050,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_universe_dep11_Components-amd64.yml.gz",
+      "bytes": 7047305,
+      "allocated_bytes": 7049216,
+      "mtime": 1776869112,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_universe_i18n_Translation-en",
+      "bytes": 33408698,
+      "allocated_bytes": 33411072,
+      "mtime": 1776957570,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/download.docker.com_linux_ubuntu_dists_resolute_InRelease",
+      "bytes": 32482,
+      "allocated_bytes": 32768,
+      "mtime": 1793027043,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/download.docker.com_linux_ubuntu_dists_resolute_stable_binary-amd64_Packages",
+      "bytes": 180512,
+      "allocated_bytes": 184320,
+      "mtime": 1793027043,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_InRelease",
+      "bytes": 137403,
+      "allocated_bytes": 139264,
+      "mtime": 1793034298,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_main_binary-amd64_Packages",
+      "bytes": 3195342,
+      "allocated_bytes": 3198976,
+      "mtime": 1793034298,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_main_dep11_Components-amd64.yml.gz",
+      "bytes": 59514,
+      "allocated_bytes": 61440,
+      "mtime": 1793018194,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_main_i18n_Translation-en",
+      "bytes": 1609681,
+      "allocated_bytes": 1609728,
+      "mtime": 1793034298,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_multiverse_binary-amd64_Packages",
+      "bytes": 148711,
+      "allocated_bytes": 151552,
+      "mtime": 1791508792,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_multiverse_dep11_Components-amd64.yml.gz",
+      "bytes": 158,
+      "allocated_bytes": 4096,
+      "mtime": 1776685324,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_multiverse_i18n_Translation-en",
+      "bytes": 25221,
+      "allocated_bytes": 28672,
+      "mtime": 1791508792,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_restricted_binary-amd64_Packages",
+      "bytes": 3055827,
+      "allocated_bytes": 3059712,
+      "mtime": 1791508792,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_restricted_dep11_Components-amd64.yml.gz",
+      "bytes": 157,
+      "allocated_bytes": 4096,
+      "mtime": 1776685382,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_restricted_i18n_Translation-en",
+      "bytes": 1811715,
+      "allocated_bytes": 1814528,
+      "mtime": 1791508792,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_universe_binary-amd64_Packages",
+      "bytes": 989130,
+      "allocated_bytes": 991232,
+      "mtime": 1793034298,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_universe_dep11_Components-amd64.yml.gz",
+      "bytes": 69518,
+      "allocated_bytes": 69632,
+      "mtime": 1793018265,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_universe_i18n_Translation-en",
+      "bytes": 376000,
+      "allocated_bytes": 376832,
+      "mtime": 1793034298,
+      "uid": 0
+    }
+  ]
+}

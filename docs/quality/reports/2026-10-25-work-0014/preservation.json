@@ -1,0 +1,20 @@
+{
+  "current": "20261024T235815Z-6f6b551f",
+  "previous": "20261024T235343Z-9097274c",
+  "marker_count": 1,
+  "secrets_unchanged": true,
+  "production_certificate_unchanged": true,
+  "private_permissions": true,
+  "legacy_credentials_preserved_unused": true,
+  "work0013_image_preserved": true,
+  "only_approved_old_tags_removed": true,
+  "questionnaires_absent_from_static_root_and_manifest": true,
+  "backup_size": 53656,
+  "isolated_restore_count": 1,
+  "isolated_restore_database_removed": true,
+  "disk_free": 289366016,
+  "marker_report_removed_after_restore": true,
+  "audit_retained": true,
+  "local_legacy_archive_sha256": "a12b763a1f16214458769323e008256d885bb58f9b7aa96c21112764bd7cec4f",
+  "local_legacy_archive_loaded_and_content_id_verified": true
+}

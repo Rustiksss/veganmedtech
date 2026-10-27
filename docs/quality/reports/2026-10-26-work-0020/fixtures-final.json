@@ -1,0 +1,1 @@
+{"checks": {"only_own_synthetic_users_added": true, "own_users_disabled": true, "own_relationships_inactive": true, "one_new_failed_analysis": true, "no_own_notifications": true, "one_provider_attempt_from_public_ui": true}, "new_own_users": 10}

@@ -1,0 +1,2987 @@
+{
+  "date": "2026-10-20",
+  "browser": "157.0.1",
+  "python": "3.12.3",
+  "sha256": {
+    "index.html": "52ecfb9c6d04345f64edade52b022c7eac82e08290f25fa2ff40c12671466b3d",
+    "questionnaires.js": "3e7afa1aeb48e69987066bc0ba40455604995455bf2074e97f72e732ec70d2c5",
+    "tests/questionnaires.html": "e17a61961b17084cfb58896b1673ea0d0d2b1db6b397cec497506335466e19c0"
+  },
+  "materials_sha256": {
+    "misc_materials/kompas_prototype.html": "38fad7a7b5283974f8488a99f3a5784d783b3160cf0171b75b4804f040e7a793",
+    "misc_materials/Индекс_жизненной_удовлетворенности.docx": "a99bce29961085d3d276eeb42cf8dd60dc36c60bbdb6e26b54bee64dc5a0d5bf",
+    "misc_materials/Кейс_цифровой_помощник_клинический_компас.pdf": "dbc5d5edebab94f5742f8d81ec1b727954c8b088afcc126e67f75ab5691f41ab",
+    "misc_materials/Краткий_опросник_восприятия_болезни_Сирота.docx": "ae7d03c5213b4100e41b46a90466da1e20d56e0a004c3e4125b149799d2631a4",
+    "misc_materials/Тест_экзистенциальных_мотиваций_текст_и_ключи_.pdf": "789fb0455dfcfbb41b9229d12c686031c6fc8ed06dbc18c858abf89782628c46"
+  },
+  "retrieved_source_sha256": {
+    "stolin": "0a2c9cdd26af25198580f1067b2b8c6d08359be7a3b651491554122b636719e0",
+    "bipq-paper": "ece9e2a588db2a89a57d1d622f1ddbc364dda9fe202a9ec0b7faa2facbc00826",
+    "bipq-instructions": "689a59255dd6dc542029637f8420f3e9e5679eb948389acdee184d1ba46c9ab9",
+    "lsia-manual": "caa9d3acac58f885a3841d22b71a2421aae71def7b99efb84c98f4f79861a31e"
+  },
+  "ui_checks": [
+    {
+      "name": "four catalog cards",
+      "passed": true
+    },
+    {
+      "name": "patient navigation contains questionnaires",
+      "passed": true
+    },
+    {
+      "name": "assistant opens catalog",
+      "passed": true
+    },
+    {
+      "name": "lsia instructions, source and version",
+      "passed": true
+    },
+    {
+      "name": "lsia no default choice",
+      "passed": true
+    },
+    {
+      "name": "lsia missing step error with focus",
+      "passed": true
+    },
+    {
+      "name": "lsia progress records falsy values",
+      "passed": true
+    },
+    {
+      "name": "lsia back restores choice",
+      "passed": true
+    },
+    {
+      "name": "lsia draft survives navigation",
+      "passed": true
+    },
+    {
+      "name": "lsia result calculated",
+      "passed": true
+    },
+    {
+      "name": "lsia result groups",
+      "passed": true
+    },
+    {
+      "name": "lsia edit invalidates old calculation",
+      "passed": true
+    },
+    {
+      "name": "lsia recalculation ready",
+      "passed": true
+    },
+    {
+      "name": "lsia explicit reset confirmation",
+      "passed": true
+    },
+    {
+      "name": "lsia reset cancel retains result",
+      "passed": true
+    },
+    {
+      "name": "bipq instructions, source and version",
+      "passed": true
+    },
+    {
+      "name": "bipq no default choice",
+      "passed": true
+    },
+    {
+      "name": "bipq missing step error with focus",
+      "passed": true
+    },
+    {
+      "name": "bipq progress records falsy values",
+      "passed": true
+    },
+    {
+      "name": "bipq back restores choice",
+      "passed": true
+    },
+    {
+      "name": "bipq draft survives navigation",
+      "passed": true
+    },
+    {
+      "name": "bipq result calculated",
+      "passed": true
+    },
+    {
+      "name": "bipq result groups",
+      "passed": true
+    },
+    {
+      "name": "causes are escaped and missing cause shown",
+      "passed": true
+    },
+    {
+      "name": "bipq edit invalidates old calculation",
+      "passed": true
+    },
+    {
+      "name": "bipq recalculation ready",
+      "passed": true
+    },
+    {
+      "name": "bipq explicit reset confirmation",
+      "passed": true
+    },
+    {
+      "name": "bipq reset cancel retains result",
+      "passed": true
+    },
+    {
+      "name": "temmo instructions, source and version",
+      "passed": true
+    },
+    {
+      "name": "temmo no default choice",
+      "passed": true
+    },
+    {
+      "name": "temmo missing step error with focus",
+      "passed": true
+    },
+    {
+      "name": "temmo progress records falsy values",
+      "passed": true
+    },
+    {
+      "name": "temmo back restores choice",
+      "passed": true
+    },
+    {
+      "name": "temmo draft survives navigation",
+      "passed": true
+    },
+    {
+      "name": "temmo result calculated",
+      "passed": true
+    },
+    {
+      "name": "temmo result groups",
+      "passed": true
+    },
+    {
+      "name": "twelve temmo subscales",
+      "passed": true
+    },
+    {
+      "name": "temmo edit invalidates old calculation",
+      "passed": true
+    },
+    {
+      "name": "temmo recalculation ready",
+      "passed": true
+    },
+    {
+      "name": "temmo explicit reset confirmation",
+      "passed": true
+    },
+    {
+      "name": "temmo reset cancel retains result",
+      "passed": true
+    },
+    {
+      "name": "stolin instructions, source and version",
+      "passed": true
+    },
+    {
+      "name": "stolin no default choice",
+      "passed": true
+    },
+    {
+      "name": "stolin missing step error with focus",
+      "passed": true
+    },
+    {
+      "name": "stolin progress records falsy values",
+      "passed": true
+    },
+    {
+      "name": "stolin back restores choice",
+      "passed": true
+    },
+    {
+      "name": "stolin draft survives navigation",
+      "passed": true
+    },
+    {
+      "name": "stolin result calculated",
+      "passed": true
+    },
+    {
+      "name": "stolin result groups",
+      "passed": true
+    },
+    {
+      "name": "stolin edit invalidates old calculation",
+      "passed": true
+    },
+    {
+      "name": "stolin recalculation ready",
+      "passed": true
+    },
+    {
+      "name": "stolin explicit reset confirmation",
+      "passed": true
+    },
+    {
+      "name": "stolin reset cancel retains result",
+      "passed": true
+    },
+    {
+      "name": "reset only selected instrument",
+      "passed": true
+    },
+    {
+      "name": "calculation failure keeps answers",
+      "passed": true
+    },
+    {
+      "name": "calculation retry",
+      "passed": true
+    },
+    {
+      "name": "full validation returns first missing response",
+      "passed": true
+    },
+    {
+      "name": "double submission yields one result",
+      "passed": true
+    },
+    {
+      "name": "unknown questionnaire gives return",
+      "passed": true
+    },
+    {
+      "name": "doctor navigation unchanged",
+      "passed": true
+    },
+    {
+      "name": "Enter starts with legend focus",
+      "passed": true
+    },
+    {
+      "name": "Tab and Space choose zero",
+      "passed": true
+    },
+    {
+      "name": "arrow changes radio",
+      "passed": true
+    },
+    {
+      "name": "keyboard retains visible focus",
+      "passed": true
+    },
+    {
+      "name": "catalog layout 1440",
+      "passed": true
+    },
+    {
+      "name": "all 20 question layouts lsia 1440",
+      "passed": true
+    },
+    {
+      "name": "result fits lsia 1440",
+      "passed": true
+    },
+    {
+      "name": "all 8 question layouts bipq 1440",
+      "passed": true
+    },
+    {
+      "name": "result fits bipq 1440",
+      "passed": true
+    },
+    {
+      "name": "all 36 question layouts temmo 1440",
+      "passed": true
+    },
+    {
+      "name": "result fits temmo 1440",
+      "passed": true
+    },
+    {
+      "name": "all 57 question layouts stolin 1440",
+      "passed": true
+    },
+    {
+      "name": "result fits stolin 1440",
+      "passed": true
+    },
+    {
+      "name": "causal fields fit 1440",
+      "passed": true
+    },
+    {
+      "name": "catalog layout 768",
+      "passed": true
+    },
+    {
+      "name": "all 20 question layouts lsia 768",
+      "passed": true
+    },
+    {
+      "name": "result fits lsia 768",
+      "passed": true
+    },
+    {
+      "name": "all 8 question layouts bipq 768",
+      "passed": true
+    },
+    {
+      "name": "result fits bipq 768",
+      "passed": true
+    },
+    {
+      "name": "all 36 question layouts temmo 768",
+      "passed": true
+    },
+    {
+      "name": "result fits temmo 768",
+      "passed": true
+    },
+    {
+      "name": "all 57 question layouts stolin 768",
+      "passed": true
+    },
+    {
+      "name": "result fits stolin 768",
+      "passed": true
+    },
+    {
+      "name": "causal fields fit 768",
+      "passed": true
+    },
+    {
+      "name": "catalog layout 390",
+      "passed": true
+    },
+    {
+      "name": "mobile menu includes all eleven sections",
+      "passed": true
+    },
+    {
+      "name": "all 20 question layouts lsia 390",
+      "passed": true
+    },
+    {
+      "name": "result fits lsia 390",
+      "passed": true
+    },
+    {
+      "name": "all 8 question layouts bipq 390",
+      "passed": true
+    },
+    {
+      "name": "result fits bipq 390",
+      "passed": true
+    },
+    {
+      "name": "all 36 question layouts temmo 390",
+      "passed": true
+    },
+    {
+      "name": "result fits temmo 390",
+      "passed": true
+    },
+    {
+      "name": "all 57 question layouts stolin 390",
+      "passed": true
+    },
+    {
+      "name": "result fits stolin 390",
+      "passed": true
+    },
+    {
+      "name": "causal fields fit 390",
+      "passed": true
+    },
+    {
+      "name": "reload clears questionnaire drafts and results",
+      "passed": true
+    },
+    {
+      "name": "answers not persisted",
+      "passed": true
+    },
+    {
+      "name": "no browser errors or automatic external requests",
+      "passed": true
+    }
+  ],
+  "question_layouts": [
+    {
+      "width": 1440,
+      "id": "lsia",
+      "questions": 20,
+      "fail": [],
+      "client": 1428,
+      "scroll": 1428
+    },
+    {
+      "width": 1440,
+      "id": "bipq",
+      "questions": 8,
+      "fail": [],
+      "client": 1428,
+      "scroll": 1428
+    },
+    {
+      "width": 1440,
+      "id": "temmo",
+      "questions": 36,
+      "fail": [],
+      "client": 1428,
+      "scroll": 1428
+    },
+    {
+      "width": 1440,
+      "id": "stolin",
+      "questions": 57,
+      "fail": [],
+      "client": 1428,
+      "scroll": 1428
+    },
+    {
+      "width": 768,
+      "id": "lsia",
+      "questions": 20,
+      "fail": [],
+      "client": 756,
+      "scroll": 756
+    },
+    {
+      "width": 768,
+      "id": "bipq",
+      "questions": 8,
+      "fail": [],
+      "client": 756,
+      "scroll": 756
+    },
+    {
+      "width": 768,
+      "id": "temmo",
+      "questions": 36,
+      "fail": [],
+      "client": 756,
+      "scroll": 756
+    },
+    {
+      "width": 768,
+      "id": "stolin",
+      "questions": 57,
+      "fail": [],
+      "client": 756,
+      "scroll": 756
+    },
+    {
+      "width": 390,
+      "id": "lsia",
+      "questions": 20,
+      "fail": [],
+      "client": 378,
+      "scroll": 378
+    },
+    {
+      "width": 390,
+      "id": "bipq",
+      "questions": 8,
+      "fail": [],
+      "client": 378,
+      "scroll": 378
+    },
+    {
+      "width": 390,
+      "id": "temmo",
+      "questions": 36,
+      "fail": [],
+      "client": 378,
+      "scroll": 378
+    },
+    {
+      "width": 390,
+      "id": "stolin",
+      "questions": 57,
+      "fail": [],
+      "client": 378,
+      "scroll": 378
+    }
+  ],
+  "calculation_checks": {
+    "passed": 219,
+    "failed": 0,
+    "results": [
+      {
+        "name": "Четыре инструмента и точное число пунктов",
+        "passed": true
+      },
+      {
+        "name": "ИЖУ: все согласны",
+        "passed": true
+      },
+      {
+        "name": "ИЖУ: все не согласны",
+        "passed": true
+      },
+      {
+        "name": "ИЖУ: все не знают",
+        "passed": true
+      },
+      {
+        "name": "ИЖУ: минимум",
+        "passed": true
+      },
+      {
+        "name": "ИЖУ: максимум опубликованного ключа",
+        "passed": true
+      },
+      {
+        "name": "ИЖУ: проверка отрицательного пункта 1",
+        "passed": true
+      },
+      {
+        "name": "ИЖУ: проверка отрицательного пункта 2",
+        "passed": true
+      },
+      {
+        "name": "ИЖУ: проверка отрицательного пункта 3",
+        "passed": true
+      },
+      {
+        "name": "ИЖУ: проверка отрицательного пункта 4",
+        "passed": true
+      },
+      {
+        "name": "ИЖУ: проверка отрицательного пункта 6",
+        "passed": true
+      },
+      {
+        "name": "ИЖУ: проверка отрицательного пункта 10",
+        "passed": true
+      },
+      {
+        "name": "ИЖУ: проверка отрицательного пункта 14",
+        "passed": true
+      },
+      {
+        "name": "ИЖУ: проверка отрицательного пункта 17",
+        "passed": true
+      },
+      {
+        "name": "ИЖУ: проверка отрицательного пункта 18",
+        "passed": true
+      },
+      {
+        "name": "ИЖУ: проверка отрицательного пункта 20",
+        "passed": true
+      },
+      {
+        "name": "ИЖУ: неизвестный ответ первого пункта даёт 1",
+        "passed": true
+      },
+      {
+        "name": "КОВБ: минимум",
+        "passed": true
+      },
+      {
+        "name": "КОВБ: максимум",
+        "passed": true
+      },
+      {
+        "name": "КОВБ: ноль не является пропуском",
+        "passed": true
+      },
+      {
+        "name": "КОВБ: все 10",
+        "passed": true
+      },
+      {
+        "name": "КОВБ: смешанный профиль",
+        "passed": true
+      },
+      {
+        "name": "КОВБ: инверсия 3",
+        "passed": true
+      },
+      {
+        "name": "КОВБ: инверсия 4",
+        "passed": true
+      },
+      {
+        "name": "КОВБ: инверсия 7",
+        "passed": true
+      },
+      {
+        "name": "ТЭММО: все 1",
+        "passed": true
+      },
+      {
+        "name": "ТЭММО: все 6",
+        "passed": true
+      },
+      {
+        "name": "ТЭММО: смешанные после инверсий",
+        "passed": true
+      },
+      {
+        "name": "ТЭММО: минимум всех 12 субшкал",
+        "passed": true
+      },
+      {
+        "name": "ТЭММО: максимум всех 12 субшкал",
+        "passed": true
+      },
+      {
+        "name": "ТЭММО: инверсия 6",
+        "passed": true
+      },
+      {
+        "name": "ТЭММО: инверсия 8",
+        "passed": true
+      },
+      {
+        "name": "ТЭММО: инверсия 10",
+        "passed": true
+      },
+      {
+        "name": "ТЭММО: инверсия 12",
+        "passed": true
+      },
+      {
+        "name": "ТЭММО: инверсия 21",
+        "passed": true
+      },
+      {
+        "name": "ТЭММО: инверсия 32",
+        "passed": true
+      },
+      {
+        "name": "Столин: все Да, 12 сумм и частот",
+        "passed": true
+      },
+      {
+        "name": "Столин: все Нет, false не пропуск",
+        "passed": true
+      },
+      {
+        "name": "Столин: нечётные Да, чётные Нет",
+        "passed": true
+      },
+      {
+        "name": "Столин: S имеет максимум 28 и частоту 99,67%",
+        "passed": true
+      },
+      {
+        "name": "Столин: I, строка таблицы 7",
+        "passed": true
+      },
+      {
+        "name": "Столин: I, строка таблицы 8",
+        "passed": true
+      },
+      {
+        "name": "Столин: I, строка таблицы 9",
+        "passed": true
+      },
+      {
+        "name": "Столин: I, строка таблицы 10",
+        "passed": true
+      },
+      {
+        "name": "lsia: пустой массив отклоняется",
+        "passed": true
+      },
+      {
+        "name": "lsia: пропуски отклоняются",
+        "passed": true
+      },
+      {
+        "name": "lsia: sparse array отклоняется",
+        "passed": true
+      },
+      {
+        "name": "lsia: лишний ответ отклоняется",
+        "passed": true
+      },
+      {
+        "name": "lsia: неверный тип отклоняется",
+        "passed": true
+      },
+      {
+        "name": "bipq: пустой массив отклоняется",
+        "passed": true
+      },
+      {
+        "name": "bipq: пропуски отклоняются",
+        "passed": true
+      },
+      {
+        "name": "bipq: sparse array отклоняется",
+        "passed": true
+      },
+      {
+        "name": "bipq: лишний ответ отклоняется",
+        "passed": true
+      },
+      {
+        "name": "bipq: неверный тип отклоняется",
+        "passed": true
+      },
+      {
+        "name": "temmo: пустой массив отклоняется",
+        "passed": true
+      },
+      {
+        "name": "temmo: пропуски отклоняются",
+        "passed": true
+      },
+      {
+        "name": "temmo: sparse array отклоняется",
+        "passed": true
+      },
+      {
+        "name": "temmo: лишний ответ отклоняется",
+        "passed": true
+      },
+      {
+        "name": "temmo: неверный тип отклоняется",
+        "passed": true
+      },
+      {
+        "name": "stolin: пустой массив отклоняется",
+        "passed": true
+      },
+      {
+        "name": "stolin: пропуски отклоняются",
+        "passed": true
+      },
+      {
+        "name": "stolin: sparse array отклоняется",
+        "passed": true
+      },
+      {
+        "name": "stolin: лишний ответ отклоняется",
+        "passed": true
+      },
+      {
+        "name": "stolin: неверный тип отклоняется",
+        "passed": true
+      },
+      {
+        "name": "КОВБ: недопустимое значение -1",
+        "passed": true
+      },
+      {
+        "name": "КОВБ: недопустимое значение 11",
+        "passed": true
+      },
+      {
+        "name": "КОВБ: недопустимое значение 1.5",
+        "passed": true
+      },
+      {
+        "name": "КОВБ: недопустимое значение 0",
+        "passed": true
+      },
+      {
+        "name": "КОВБ: недопустимое значение false",
+        "passed": true
+      },
+      {
+        "name": "КОВБ: недопустимое значение NaN",
+        "passed": true
+      },
+      {
+        "name": "КОВБ: недопустимое значение Infinity",
+        "passed": true
+      },
+      {
+        "name": "КОВБ: недопустимое значение undefined",
+        "passed": true
+      },
+      {
+        "name": "Столин: строка Нет не превращается в boolean",
+        "passed": true
+      },
+      {
+        "name": "Неизвестный ID отклоняется",
+        "passed": true
+      },
+      {
+        "name": "Расчёт не изменяет входной массив",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/0",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/1",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/2",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/3",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/4",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/5",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/6",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/7",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/8",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/9",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/10",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/11",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/12",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/13",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/14",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/15",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/16",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/17",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/18",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/19",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/20",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/21",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/22",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/23",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/24",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/25",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/26",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/27",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 0/28",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 1/0",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 1/1",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 1/2",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 1/3",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 1/4",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 1/5",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 1/6",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 1/7",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 1/8",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 1/9",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 1/10",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 1/11",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 1/12",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 1/13",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 1/14",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 1/15",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 2/0",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 2/1",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 2/2",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 2/3",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 2/4",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 2/5",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 2/6",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 2/7",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 2/8",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 2/9",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 2/10",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 2/11",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 2/12",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 2/13",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 2/14",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 2/15",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 2/16",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 3/0",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 3/1",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 3/2",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 3/3",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 3/4",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 3/5",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 3/6",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 3/7",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 3/8",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 3/9",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 3/10",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 3/11",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 3/12",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 3/13",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 4/0",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 4/1",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 4/2",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 4/3",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 4/4",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 4/5",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 4/6",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 4/7",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 4/8",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 5/0",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 5/1",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 5/2",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 5/3",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 5/4",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 5/5",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 5/6",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 5/7",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 5/8",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 6/0",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 6/1",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 6/2",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 6/3",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 6/4",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 6/5",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 6/6",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 6/7",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 6/8",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 7/0",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 7/1",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 7/2",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 7/3",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 7/4",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 7/5",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 7/6",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 7/7",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 8/0",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 8/1",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 8/2",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 8/3",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 8/4",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 8/5",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 8/6",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 8/7",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 9/0",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 9/1",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 9/2",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 9/3",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 9/4",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 9/5",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 9/6",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 9/7",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 9/8",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 10/0",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 10/1",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 10/2",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 10/3",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 10/4",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 10/5",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 10/6",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 10/7",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 11/0",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 11/1",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 11/2",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 11/3",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 11/4",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 11/5",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 11/6",
+        "passed": true
+      },
+      {
+        "name": "Столин: опубликованная строка 11/7",
+        "passed": true
+      }
+    ]
+  },
+  "regression_checks": [
+    {
+      "group": 2,
+      "name": "root role choice",
+      "passed": true
+    },
+    {
+      "group": 2,
+      "name": "patient registration",
+      "passed": true
+    },
+    {
+      "group": 2,
+      "name": "empty name error",
+      "passed": true
+    },
+    {
+      "group": 2,
+      "name": "name over 60 rejected",
+      "passed": true
+    },
+    {
+      "group": 2,
+      "name": "patient profile",
+      "passed": true
+    },
+    {
+      "group": 3,
+      "name": "subjective mood",
+      "passed": true
+    },
+    {
+      "group": 3,
+      "name": "questionnaire catalog replaces placeholder",
+      "passed": true
+    },
+    {
+      "group": 3,
+      "name": "assistant report link",
+      "passed": true
+    },
+    {
+      "group": 3,
+      "name": "notification read and count",
+      "passed": true
+    },
+    {
+      "group": 5,
+      "name": "calendar today selected",
+      "passed": true
+    },
+    {
+      "group": 5,
+      "name": "intake marked",
+      "passed": true
+    },
+    {
+      "group": 5,
+      "name": "intake repeat unique",
+      "passed": true
+    },
+    {
+      "group": 5,
+      "name": "empty schedule Sunday",
+      "passed": true
+    },
+    {
+      "group": 5,
+      "name": "other date unchanged",
+      "passed": true
+    },
+    {
+      "group": 5,
+      "name": "next month",
+      "passed": true
+    },
+    {
+      "group": 5,
+      "name": "previous month",
+      "passed": true
+    },
+    {
+      "group": 3,
+      "name": "calendar reminder synchronization",
+      "passed": true
+    },
+    {
+      "group": 4,
+      "name": "presence and profiles",
+      "passed": true
+    },
+    {
+      "group": 4,
+      "name": "empty chat error",
+      "passed": true
+    },
+    {
+      "group": 4,
+      "name": "long chat rejected",
+      "passed": true
+    },
+    {
+      "group": 4,
+      "name": "chat safe text and repeat",
+      "passed": true
+    },
+    {
+      "group": 4,
+      "name": "chat draft survives navigation",
+      "passed": true
+    },
+    {
+      "group": 4,
+      "name": "chat failure retains draft",
+      "passed": true
+    },
+    {
+      "group": 4,
+      "name": "chat retry",
+      "passed": true
+    },
+    {
+      "group": 4,
+      "name": "other specialist isolated",
+      "passed": true
+    },
+    {
+      "group": 4,
+      "name": "same local chat for leading doctor",
+      "passed": true
+    },
+    {
+      "group": 4,
+      "name": "local doctor reply visible to patient",
+      "passed": true
+    },
+    {
+      "group": 9,
+      "name": "other patient chat empty",
+      "passed": true
+    },
+    {
+      "group": 9,
+      "name": "doctor patients",
+      "passed": true
+    },
+    {
+      "group": 9,
+      "name": "fictional medical history",
+      "passed": true
+    },
+    {
+      "group": 9,
+      "name": "empty report history",
+      "passed": true
+    },
+    {
+      "group": 9,
+      "name": "unknown patient",
+      "passed": true
+    },
+    {
+      "group": 4,
+      "name": "unknown specialist",
+      "passed": true
+    },
+    {
+      "group": 12,
+      "name": "blank report rejected",
+      "passed": true
+    },
+    {
+      "group": 12,
+      "name": "long report rejected",
+      "passed": true
+    },
+    {
+      "group": 12,
+      "name": "empty date rejected",
+      "passed": true
+    },
+    {
+      "group": 12,
+      "name": "invalid calendar date rejected",
+      "passed": true
+    },
+    {
+      "group": 12,
+      "name": "2000 character report accepted",
+      "passed": true
+    },
+    {
+      "group": 12,
+      "name": "report repeat and safe text",
+      "passed": true
+    },
+    {
+      "group": 9,
+      "name": "self report visible at leading doctor",
+      "passed": true
+    },
+    {
+      "group": 12,
+      "name": "report draft survives navigation",
+      "passed": true
+    },
+    {
+      "group": 12,
+      "name": "report failure retains draft",
+      "passed": true
+    },
+    {
+      "group": 12,
+      "name": "report failure retry",
+      "passed": true
+    },
+    {
+      "group": 6,
+      "name": "breathing ready with source",
+      "passed": true
+    },
+    {
+      "group": 6,
+      "name": "breathing started",
+      "passed": true
+    },
+    {
+      "group": 6,
+      "name": "breathing phase advances",
+      "passed": true
+    },
+    {
+      "group": 6,
+      "name": "breathing pause",
+      "passed": true
+    },
+    {
+      "group": 6,
+      "name": "breathing resume",
+      "passed": true
+    },
+    {
+      "group": 6,
+      "name": "breathing reset",
+      "passed": true
+    },
+    {
+      "group": 6,
+      "name": "breathing stops on navigation",
+      "passed": true
+    },
+    {
+      "group": 7,
+      "name": "two films",
+      "passed": true
+    },
+    {
+      "group": 8,
+      "name": "no audio autoplay",
+      "passed": true
+    },
+    {
+      "group": 8,
+      "name": "audio starts",
+      "passed": true
+    },
+    {
+      "group": 8,
+      "name": "audio produces nonzero signal",
+      "passed": true
+    },
+    {
+      "group": 8,
+      "name": "audio volume",
+      "passed": true
+    },
+    {
+      "group": 8,
+      "name": "audio pause",
+      "passed": true
+    },
+    {
+      "group": 8,
+      "name": "audio resume",
+      "passed": true
+    },
+    {
+      "group": 8,
+      "name": "audio closed on navigation",
+      "passed": true
+    },
+    {
+      "group": 8,
+      "name": "audio navigation while starting",
+      "passed": true
+    },
+    {
+      "group": 8,
+      "name": "audio unsupported error",
+      "passed": true
+    },
+    {
+      "group": 10,
+      "name": "external link exact and private",
+      "passed": true
+    },
+    {
+      "group": 10,
+      "name": "external English resource described",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "keyboard role selection Enter",
+      "passed": true
+    },
+    {
+      "group": 2,
+      "name": "keyboard registration Space",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "keyboard Tab advances",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "keyboard Shift Tab back",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "visible focus",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "skip main",
+      "passed": true
+    },
+    {
+      "group": 2,
+      "name": "logout role selection",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 1440 /",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 1440 /",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 1440 /register/patient",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 1440 /register/patient",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 1440 /register/doctor",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 1440 /register/doctor",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 1440 /patient",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 1440 /patient",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 1440 /patient/assistant",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 1440 /patient/assistant",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 1440 /patient/notifications",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 1440 /patient/notifications",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 1440 /patient/doctors",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 1440 /patient/doctors",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 1440 /patient/chat/doctor-a",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 1440 /patient/chat/doctor-a",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 1440 /patient/medication",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 1440 /patient/medication",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 1440 /patient/games",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 1440 /patient/games",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 1440 /patient/films",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 1440 /patient/films",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 1440 /patient/sounds",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 1440 /patient/sounds",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 1440 /patient/report",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 1440 /patient/report",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 1440 /patient/history",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 1440 /patient/history",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 1440 /doctor",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 1440 /doctor",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 1440 /doctor/patients/patient-a",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 1440 /doctor/patients/patient-a",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 1440 /doctor/patients/patient-b",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 1440 /doctor/patients/patient-b",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 1440 /doctor/chat/patient-a",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 1440 /doctor/chat/patient-a",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 1440 /doctor/interactions",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 1440 /doctor/interactions",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 1440 /doctor/patients/unknown",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 1440 /doctor/patients/unknown",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "long alias fits 1440",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 768 /",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 768 /",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 768 /register/patient",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 768 /register/patient",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 768 /register/doctor",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 768 /register/doctor",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 768 /patient",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 768 /patient",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 768 /patient/assistant",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 768 /patient/assistant",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 768 /patient/notifications",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 768 /patient/notifications",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 768 /patient/doctors",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 768 /patient/doctors",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 768 /patient/chat/doctor-a",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 768 /patient/chat/doctor-a",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 768 /patient/medication",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 768 /patient/medication",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 768 /patient/games",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 768 /patient/games",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 768 /patient/films",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 768 /patient/films",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 768 /patient/sounds",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 768 /patient/sounds",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 768 /patient/report",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 768 /patient/report",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 768 /patient/history",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 768 /patient/history",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 768 /doctor",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 768 /doctor",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 768 /doctor/patients/patient-a",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 768 /doctor/patients/patient-a",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 768 /doctor/patients/patient-b",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 768 /doctor/patients/patient-b",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 768 /doctor/chat/patient-a",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 768 /doctor/chat/patient-a",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 768 /doctor/interactions",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 768 /doctor/interactions",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 768 /doctor/patients/unknown",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 768 /doctor/patients/unknown",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "long alias fits 768",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 390 /",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 390 /",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 390 /register/patient",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 390 /register/patient",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 390 /register/doctor",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 390 /register/doctor",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 390 /patient",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 390 /patient",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 390 /patient/assistant",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 390 /patient/assistant",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 390 /patient/notifications",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 390 /patient/notifications",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 390 /patient/doctors",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 390 /patient/doctors",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 390 /patient/chat/doctor-a",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 390 /patient/chat/doctor-a",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 390 /patient/medication",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 390 /patient/medication",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 390 /patient/games",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 390 /patient/games",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 390 /patient/films",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 390 /patient/films",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 390 /patient/sounds",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 390 /patient/sounds",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 390 /patient/report",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 390 /patient/report",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 390 /patient/history",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 390 /patient/history",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 390 /doctor",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 390 /doctor",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 390 /doctor/patients/patient-a",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 390 /doctor/patients/patient-a",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 390 /doctor/patients/patient-b",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 390 /doctor/patients/patient-b",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 390 /doctor/chat/patient-a",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 390 /doctor/chat/patient-a",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 390 /doctor/interactions",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 390 /doctor/interactions",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "layout 390 /doctor/patients/unknown",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "brand 390 /doctor/patients/unknown",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "long alias fits 390",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "mobile all sections available",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "mobile navigation works",
+      "passed": true
+    },
+    {
+      "group": 2,
+      "name": "reload clears local changes",
+      "passed": true
+    },
+    {
+      "group": 12,
+      "name": "no persisted data",
+      "passed": true
+    },
+    {
+      "group": 11,
+      "name": "all fields labelled",
+      "passed": true
+    },
+    {
+      "group": 10,
+      "name": "no automatic external requests",
+      "passed": true
+    },
+    {
+      "group": 12,
+      "name": "no browser console errors",
+      "passed": true
+    }
+  ],
+  "regression_layouts": [
+    {
+      "width": 1440,
+      "route": "/",
+      "client": 1428,
+      "scroll": 1428
+    },
+    {
+      "width": 1440,
+      "route": "/register/patient",
+      "client": 1428,
+      "scroll": 1428
+    },
+    {
+      "width": 1440,
+      "route": "/register/doctor",
+      "client": 1428,
+      "scroll": 1428
+    },
+    {
+      "width": 1440,
+      "route": "/patient",
+      "client": 1428,
+      "scroll": 1428
+    },
+    {
+      "width": 1440,
+      "route": "/patient/assistant",
+      "client": 1428,
+      "scroll": 1428
+    },
+    {
+      "width": 1440,
+      "route": "/patient/notifications",
+      "client": 1428,
+      "scroll": 1428
+    },
+    {
+      "width": 1440,
+      "route": "/patient/doctors",
+      "client": 1428,
+      "scroll": 1428
+    },
+    {
+      "width": 1440,
+      "route": "/patient/chat/doctor-a",
+      "client": 1428,
+      "scroll": 1428
+    },
+    {
+      "width": 1440,
+      "route": "/patient/medication",
+      "client": 1428,
+      "scroll": 1428
+    },
+    {
+      "width": 1440,
+      "route": "/patient/games",
+      "client": 1428,
+      "scroll": 1428
+    },
+    {
+      "width": 1440,
+      "route": "/patient/films",
+      "client": 1428,
+      "scroll": 1428
+    },
+    {
+      "width": 1440,
+      "route": "/patient/sounds",
+      "client": 1428,
+      "scroll": 1428
+    },
+    {
+      "width": 1440,
+      "route": "/patient/report",
+      "client": 1428,
+      "scroll": 1428
+    },
+    {
+      "width": 1440,
+      "route": "/patient/history",
+      "client": 1428,
+      "scroll": 1428
+    },
+    {
+      "width": 1440,
+      "route": "/doctor",
+      "client": 1428,
+      "scroll": 1428
+    },
+    {
+      "width": 1440,
+      "route": "/doctor/patients/patient-a",
+      "client": 1428,
+      "scroll": 1428
+    },
+    {
+      "width": 1440,
+      "route": "/doctor/patients/patient-b",
+      "client": 1428,
+      "scroll": 1428
+    },
+    {
+      "width": 1440,
+      "route": "/doctor/chat/patient-a",
+      "client": 1428,
+      "scroll": 1428
+    },
+    {
+      "width": 1440,
+      "route": "/doctor/interactions",
+      "client": 1428,
+      "scroll": 1428
+    },
+    {
+      "width": 1440,
+      "route": "/doctor/patients/unknown",
+      "client": 1428,
+      "scroll": 1428
+    },
+    {
+      "width": 768,
+      "route": "/",
+      "client": 756,
+      "scroll": 756
+    },
+    {
+      "width": 768,
+      "route": "/register/patient",
+      "client": 756,
+      "scroll": 756
+    },
+    {
+      "width": 768,
+      "route": "/register/doctor",
+      "client": 756,
+      "scroll": 756
+    },
+    {
+      "width": 768,
+      "route": "/patient",
+      "client": 756,
+      "scroll": 756
+    },
+    {
+      "width": 768,
+      "route": "/patient/assistant",
+      "client": 756,
+      "scroll": 756
+    },
+    {
+      "width": 768,
+      "route": "/patient/notifications",
+      "client": 756,
+      "scroll": 756
+    },
+    {
+      "width": 768,
+      "route": "/patient/doctors",
+      "client": 756,
+      "scroll": 756
+    },
+    {
+      "width": 768,
+      "route": "/patient/chat/doctor-a",
+      "client": 756,
+      "scroll": 756
+    },
+    {
+      "width": 768,
+      "route": "/patient/medication",
+      "client": 756,
+      "scroll": 756
+    },
+    {
+      "width": 768,
+      "route": "/patient/games",
+      "client": 756,
+      "scroll": 756
+    },
+    {
+      "width": 768,
+      "route": "/patient/films",
+      "client": 756,
+      "scroll": 756
+    },
+    {
+      "width": 768,
+      "route": "/patient/sounds",
+      "client": 756,
+      "scroll": 756
+    },
+    {
+      "width": 768,
+      "route": "/patient/report",
+      "client": 756,
+      "scroll": 756
+    },
+    {
+      "width": 768,
+      "route": "/patient/history",
+      "client": 756,
+      "scroll": 756
+    },
+    {
+      "width": 768,
+      "route": "/doctor",
+      "client": 756,
+      "scroll": 756
+    },
+    {
+      "width": 768,
+      "route": "/doctor/patients/patient-a",
+      "client": 756,
+      "scroll": 756
+    },
+    {
+      "width": 768,
+      "route": "/doctor/patients/patient-b",
+      "client": 756,
+      "scroll": 756
+    },
+    {
+      "width": 768,
+      "route": "/doctor/chat/patient-a",
+      "client": 756,
+      "scroll": 756
+    },
+    {
+      "width": 768,
+      "route": "/doctor/interactions",
+      "client": 756,
+      "scroll": 756
+    },
+    {
+      "width": 768,
+      "route": "/doctor/patients/unknown",
+      "client": 756,
+      "scroll": 756
+    },
+    {
+      "width": 390,
+      "route": "/",
+      "client": 378,
+      "scroll": 378
+    },
+    {
+      "width": 390,
+      "route": "/register/patient",
+      "client": 378,
+      "scroll": 378
+    },
+    {
+      "width": 390,
+      "route": "/register/doctor",
+      "client": 378,
+      "scroll": 378
+    },
+    {
+      "width": 390,
+      "route": "/patient",
+      "client": 378,
+      "scroll": 378
+    },
+    {
+      "width": 390,
+      "route": "/patient/assistant",
+      "client": 378,
+      "scroll": 378
+    },
+    {
+      "width": 390,
+      "route": "/patient/notifications",
+      "client": 378,
+      "scroll": 378
+    },
+    {
+      "width": 390,
+      "route": "/patient/doctors",
+      "client": 378,
+      "scroll": 378
+    },
+    {
+      "width": 390,
+      "route": "/patient/chat/doctor-a",
+      "client": 378,
+      "scroll": 378
+    },
+    {
+      "width": 390,
+      "route": "/patient/medication",
+      "client": 378,
+      "scroll": 378
+    },
+    {
+      "width": 390,
+      "route": "/patient/games",
+      "client": 378,
+      "scroll": 378
+    },
+    {
+      "width": 390,
+      "route": "/patient/films",
+      "client": 378,
+      "scroll": 378
+    },
+    {
+      "width": 390,
+      "route": "/patient/sounds",
+      "client": 378,
+      "scroll": 378
+    },
+    {
+      "width": 390,
+      "route": "/patient/report",
+      "client": 378,
+      "scroll": 378
+    },
+    {
+      "width": 390,
+      "route": "/patient/history",
+      "client": 378,
+      "scroll": 378
+    },
+    {
+      "width": 390,
+      "route": "/doctor",
+      "client": 378,
+      "scroll": 378
+    },
+    {
+      "width": 390,
+      "route": "/doctor/patients/patient-a",
+      "client": 378,
+      "scroll": 378
+    },
+    {
+      "width": 390,
+      "route": "/doctor/patients/patient-b",
+      "client": 378,
+      "scroll": 378
+    },
+    {
+      "width": 390,
+      "route": "/doctor/chat/patient-a",
+      "client": 378,
+      "scroll": 378
+    },
+    {
+      "width": 390,
+      "route": "/doctor/interactions",
+      "client": 378,
+      "scroll": 378
+    },
+    {
+      "width": 390,
+      "route": "/doctor/patients/unknown",
+      "client": 378,
+      "scroll": 378
+    }
+  ],
+  "contrast": [
+    {
+      "selector": ".q-card h2",
+      "foreground": "rgb(36, 58, 37)",
+      "backgrounds": [
+        "rgb(255, 255, 255)"
+      ],
+      "ratio": 12.302642720019444
+    },
+    {
+      "selector": ".q-card > p",
+      "foreground": "rgb(96, 112, 94)",
+      "backgrounds": [
+        "rgb(255, 255, 255)"
+      ],
+      "ratio": 5.280816343386684
+    },
+    {
+      "selector": ".q-mark",
+      "foreground": "rgb(56, 102, 65)",
+      "backgrounds": [
+        "rgb(230, 238, 220)"
+      ],
+      "ratio": 5.60499436587272
+    },
+    {
+      "selector": ".q-card .pill",
+      "foreground": "rgb(56, 102, 65)",
+      "backgrounds": [
+        "rgb(230, 238, 220)"
+      ],
+      "ratio": 5.60499436587272
+    },
+    {
+      "selector": ".q-details summary",
+      "foreground": "rgb(56, 102, 65)",
+      "backgrounds": [
+        "rgb(255, 255, 255)"
+      ],
+      "ratio": 6.677202150804577
+    },
+    {
+      "selector": ".q-card .btn",
+      "foreground": "rgb(255, 255, 255)",
+      "backgrounds": [
+        "rgb(56, 102, 65)"
+      ],
+      "ratio": 6.677202150804577
+    },
+    {
+      "selector": ".q-details .q-source > span",
+      "foreground": "rgb(96, 112, 94)",
+      "backgrounds": [
+        "rgb(255, 255, 255)"
+      ],
+      "ratio": 5.280816343386684
+    },
+    {
+      "selector": "#qQuestion",
+      "foreground": "rgb(36, 58, 37)",
+      "backgrounds": [
+        "rgb(255, 255, 255)"
+      ],
+      "ratio": 12.302642720019444
+    },
+    {
+      "selector": "#qHelp",
+      "foreground": "rgb(96, 112, 94)",
+      "backgrounds": [
+        "rgb(255, 255, 255)"
+      ],
+      "ratio": 5.280816343386684
+    },
+    {
+      "selector": ".q-progress-head span:first-child",
+      "foreground": "rgb(56, 102, 65)",
+      "backgrounds": [
+        "rgb(255, 255, 255)"
+      ],
+      "ratio": 6.677202150804577
+    },
+    {
+      "selector": ".q-progress-head span:last-child",
+      "foreground": "rgb(96, 112, 94)",
+      "backgrounds": [
+        "rgb(255, 255, 255)"
+      ],
+      "ratio": 5.280816343386684
+    },
+    {
+      "selector": ".q-anchors span",
+      "foreground": "rgb(96, 112, 94)",
+      "backgrounds": [
+        "rgb(255, 255, 255)"
+      ],
+      "ratio": 5.280816343386684
+    },
+    {
+      "selector": ".q-option:has(input:checked) span",
+      "foreground": "rgb(36, 58, 37)",
+      "backgrounds": [
+        "rgb(230, 238, 220)"
+      ],
+      "ratio": 10.327116294171962
+    },
+    {
+      "selector": ".q-option:not(:has(input:checked)) span",
+      "foreground": "rgb(36, 58, 37)",
+      "backgrounds": [
+        "rgb(255, 255, 255)"
+      ],
+      "ratio": 12.302642720019444
+    },
+    {
+      "selector": ".q-aside > p",
+      "foreground": "rgb(76, 101, 69)",
+      "backgrounds": [
+        "rgb(238, 245, 232)"
+      ],
+      "ratio": 5.795186726206925
+    },
+    {
+      "selector": ".q-aside .q-source > span",
+      "foreground": "rgb(96, 112, 94)",
+      "backgrounds": [
+        "rgb(238, 245, 232)"
+      ],
+      "ratio": 4.743086090547593
+    },
+    {
+      "selector": ".q-total strong",
+      "foreground": "rgb(56, 102, 65)",
+      "backgrounds": [
+        "rgb(230, 238, 220)",
+        "rgb(245, 248, 237)"
+      ],
+      "ratio": 5.60499436587272
+    },
+    {
+      "selector": ".q-total span",
+      "foreground": "rgb(56, 102, 65)",
+      "backgrounds": [
+        "rgb(230, 238, 220)",
+        "rgb(245, 248, 237)"
+      ],
+      "ratio": 5.60499436587272
+    },
+    {
+      "selector": ".q-range",
+      "foreground": "rgb(82, 103, 77)",
+      "backgrounds": [
+        "rgb(230, 238, 220)",
+        "rgb(245, 248, 237)"
+      ],
+      "ratio": 5.1754882829707105
+    },
+    {
+      "selector": ".q-result-hero > p:not([class])",
+      "foreground": "rgb(36, 58, 37)",
+      "backgrounds": [
+        "rgb(230, 238, 220)",
+        "rgb(245, 248, 237)"
+      ],
+      "ratio": 10.327116294171962
+    },
+    {
+      "selector": ".q-result-hero .subtle",
+      "foreground": "rgb(82, 103, 77)",
+      "backgrounds": [
+        "rgb(230, 238, 220)",
+        "rgb(245, 248, 237)"
+      ],
+      "ratio": 5.1754882829707105
+    },
+    {
+      "selector": ".q-result-card h3",
+      "foreground": "rgb(36, 58, 37)",
+      "backgrounds": [
+        "rgb(255, 255, 255)"
+      ],
+      "ratio": 12.302642720019444
+    },
+    {
+      "selector": ".q-score span",
+      "foreground": "rgb(96, 112, 94)",
+      "backgrounds": [
+        "rgb(255, 255, 255)"
+      ],
+      "ratio": 5.280816343386684
+    },
+    {
+      "selector": ".q-subscales dt",
+      "foreground": "rgb(36, 58, 37)",
+      "backgrounds": [
+        "rgb(255, 255, 255)"
+      ],
+      "ratio": 12.302642720019444
+    },
+    {
+      "selector": ".q-subscales dd",
+      "foreground": "rgb(56, 102, 65)",
+      "backgrounds": [
+        "rgb(255, 255, 255)"
+      ],
+      "ratio": 6.677202150804577
+    },
+    {
+      "selector": ".q-result-note .q-source > span",
+      "foreground": "rgb(96, 112, 94)",
+      "backgrounds": [
+        "rgb(255, 255, 255)"
+      ],
+      "ratio": 5.280816343386684
+    }
+  ],
+  "external_tab": [
+    "https://www.drugs.com/drug_interactions.html"
+  ],
+  "reduced_motion": {
+    "reduced_motion_questionnaire": {
+      "matches": true,
+      "screen": "none",
+      "radios": 11,
+      "value": 0
+    },
+    "reduced_motion_breathing": {
+      "animation": "none",
+      "text": "Вдох",
+      "seconds": 1
+    }
+  }
+}

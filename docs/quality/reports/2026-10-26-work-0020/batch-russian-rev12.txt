@@ -1,0 +1,9 @@
+{"attempt": 220, "stage": "screen", "config": "b5539fd98693949c", "case": "positive", "quality_ok": true, "seconds": 3.338, "errors": []}
+{"attempt": 221, "stage": "screen", "config": "b5539fd98693949c", "case": "neutral", "quality_ok": true, "seconds": 4.685, "errors": []}
+{"attempt": 222, "stage": "screen", "config": "b5539fd98693949c", "case": "negation", "quality_ok": true, "seconds": 2.449, "errors": []}
+{"attempt": 223, "stage": "screen", "config": "b5539fd98693949c", "case": "past", "quality_ok": false, "seconds": 2.314, "errors": ["wrong_categories"]}
+{"attempt": 224, "stage": "screen", "config": "860aafcc1e53e1af", "case": "positive", "quality_ok": false, "seconds": 2.43, "errors": ["http_429"]}
+{"attempt": 225, "stage": "screen", "config": "860aafcc1e53e1af", "case": "neutral", "quality_ok": false, "seconds": 2.622, "errors": ["invalid_json_schema_evidence"]}
+{"attempt": 226, "stage": "screen", "config": "860aafcc1e53e1af", "case": "negation", "quality_ok": false, "seconds": 0.937, "errors": ["http_429"]}
+{"attempt": 227, "stage": "screen", "config": "860aafcc1e53e1af", "case": "past", "quality_ok": true, "seconds": 2.834, "errors": []}
+[{"manifest": "/home/rustiks/veganmedtech/docs/quality/reports/2026-10-26-work-0020/batch-russian-rev12-1.manifest.json", "rows": 8, "selected": false}, {"manifest": "/home/rustiks/veganmedtech/docs/quality/reports/2026-10-26-work-0020/batch-russian-rev12-2.manifest.json", "stop": "No unmeasured configuration fits the remaining budget", "skips": [{"model": "meta-llama/llama-3.1-8b-instruct", "provider": "groq", "prompt": "russian", "reason": "Already measured; do not resend"}, {"model": "cohere/command-r7b-12-2024", "provider": "cohere", "prompt": "russian", "reason": "Already measured; do not resend"}, {"model": "google/gemma-3-4b-it", "provider": "parasail/bf16", "prompt": "russian", "reason": "Already measured; do not resend"}]}]

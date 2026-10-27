@@ -1,0 +1,6 @@
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+    import config.settings
+  File "/app/backend/config/settings.py", line 79, in <module>
+    raise ImproperlyConfigured("ASSISTANT_ALERTING_MODE: допустимы только off или demo")
+django.core.exceptions.ImproperlyConfigured: ASSISTANT_ALERTING_MODE: допустимы только off или demo

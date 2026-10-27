@@ -1,0 +1,1 @@
+Cohere payload demo/off contract OK; zero network requests

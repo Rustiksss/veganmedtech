@@ -1,0 +1,126 @@
+{
+  "origin": "https://94.103.3.149:8443",
+  "accept_insecure_certs": false,
+  "checks": [
+    {
+      "name": "trusted HTTPS operator UI",
+      "passed": true
+    },
+    {
+      "name": "mailbox no-store",
+      "passed": true
+    },
+    {
+      "name": "actual Mailpit assets found",
+      "passed": true
+    },
+    {
+      "name": "anonymous blocked /",
+      "passed": true
+    },
+    {
+      "name": "anonymous blocked /api/v1/messages",
+      "passed": true
+    },
+    {
+      "name": "anonymous blocked /api/v1/info",
+      "passed": true
+    },
+    {
+      "name": "anonymous blocked /api/events",
+      "passed": true
+    },
+    {
+      "name": "anonymous blocked /dist/app.css",
+      "passed": true
+    },
+    {
+      "name": "anonymous blocked /dist/app.js",
+      "passed": true
+    },
+    {
+      "name": "anonymous websocket blocked",
+      "passed": true
+    },
+    {
+      "name": "wrong password blocked /",
+      "passed": true
+    },
+    {
+      "name": "wrong password blocked /api/v1/messages",
+      "passed": true
+    },
+    {
+      "name": "wrong password blocked /api/v1/info",
+      "passed": true
+    },
+    {
+      "name": "wrong password blocked /api/events",
+      "passed": true
+    },
+    {
+      "name": "wrong password blocked /dist/app.css",
+      "passed": true
+    },
+    {
+      "name": "wrong password blocked /dist/app.js",
+      "passed": true
+    },
+    {
+      "name": "wrong password websocket blocked",
+      "passed": true
+    },
+    {
+      "name": "operator websocket upgrade",
+      "passed": true
+    },
+    {
+      "name": "foreign websocket Origin blocked",
+      "passed": true
+    },
+    {
+      "name": "synthetic registration",
+      "passed": true
+    },
+    {
+      "name": "new letter appears without reload",
+      "passed": true
+    },
+    {
+      "name": "operator opens own letter",
+      "passed": true
+    },
+    {
+      "name": "Mailpit layout 1440",
+      "passed": true
+    },
+    {
+      "name": "Mailpit layout 390",
+      "passed": true
+    },
+    {
+      "name": "email confirmation via mailbox link",
+      "passed": true
+    },
+    {
+      "name": "confirmed account login",
+      "passed": true
+    },
+    {
+      "name": "password request",
+      "passed": true
+    },
+    {
+      "name": "reset letter arrives through live mailbox",
+      "passed": true
+    },
+    {
+      "name": "password reset via mailbox link",
+      "passed": true
+    },
+    {
+      "name": "new password works",
+      "passed": true
+    }
+  ]
+}

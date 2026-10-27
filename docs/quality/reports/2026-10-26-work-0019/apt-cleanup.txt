@@ -1,0 +1,24 @@
+{
+  "task": "WORK-0019",
+  "approved_revision": 2,
+  "files_removed": 172,
+  "allocated_removed": 296030208,
+  "available_before": 0,
+  "available_after": 296022016,
+  "locks_held": [
+    "/var/lib/dpkg/lock-frontend",
+    "/var/lib/dpkg/lock",
+    "/var/lib/apt/lists/lock",
+    "/var/cache/apt/archives/lock"
+  ],
+  "packages_and_configuration_unchanged": true,
+  "timers": {
+    "apt-daily.timer": "enabled",
+    "apt-daily-upgrade.timer": "enabled"
+  },
+  "health": {
+    "veganmedtech-app-1": "healthy",
+    "veganmedtech-db-1": "healthy",
+    "veganmedtech-mailpit-1": "healthy"
+  }
+}

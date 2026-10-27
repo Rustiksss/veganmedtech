@@ -1,0 +1,42 @@
+{
+  "type": "summary",
+  "winner": null,
+  "attempts_total": 19,
+  "new_attempts": 2,
+  "budget": 30,
+  "results": [
+    {
+      "model": "mistralai/mistral-small-24b-instruct-2501",
+      "passed": false,
+      "median_seconds": 18.001,
+      "cases": [
+        {
+          "model": "mistralai/mistral-small-24b-instruct-2501",
+          "case": "positive",
+          "passed": false,
+          "seconds": 18.001,
+          "error": "timeout"
+        }
+      ]
+    },
+    {
+      "model": "mistralai/mistral-nemo",
+      "passed": false,
+      "median_seconds": 18.002,
+      "cases": [
+        {
+          "model": "mistralai/mistral-nemo",
+          "case": "positive",
+          "passed": false,
+          "seconds": 18.002,
+          "error": "timeout"
+        }
+      ]
+    }
+  ],
+  "server_files_or_database_changed": false,
+  "source_sha256": {
+    "client.py": "19268a402006aba891b90769e7d123c930cfe169c1e9e327a1a2c6377e58c9a9",
+    "prompts.py": "e06f52d895f85d2eb12fae7a2d906518362614ea835dbb72cad78c755b9aafa6"
+  }
+}

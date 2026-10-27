@@ -1,0 +1,2 @@
+Ошибок SDD: 1
+- docs/quality/reports/2026-10-26-work-0020/revision-9-results.md: битая локальная ссылка unit-final-rev9.txt

@@ -1,0 +1,11 @@
+{
+  "deploy_stopped_before_publication": true,
+  "current_unchanged": true,
+  "mailpit_and_database_containers_unchanged": true,
+  "previous_message_count": 26,
+  "all_previous_messages_retained": true,
+  "main_https_public": true,
+  "mailpit_8443_not_published": true,
+  "operator_credentials_not_created": true,
+  "disk_free": 16408576
+}

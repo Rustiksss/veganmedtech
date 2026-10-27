@@ -1,0 +1,8 @@
+ Container veganmedtech-work0020-test-app-run-b5a777a4133b Creating 
+ Container veganmedtech-work0020-test-app-run-b5a777a4133b Created 
+Migrations for 'assistant':
+  assistant/migrations/0003_rollback_defaults.py
+    ~ Alter field alerting_mode on assistantturn
+    ~ Alter field analysis on assistantturn
+    ~ Alter field analysis_status on assistantturn
+    ~ Alter field policy_version on assistantturn

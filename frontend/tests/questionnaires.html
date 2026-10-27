@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="ru"><meta charset="utf-8"><title>Расчётные проверки WORK-0007</title>
+<style>body{font:16px/1.6 system-ui;max-width:1000px;margin:30px auto;padding:20px;color:#243a25} .fail{color:#9c2828} .pass{color:#386641}</style>
+<h1>Контрольные расчёты опросников</h1><p>Вымышленные ответы. Эталоны сверены с указанными в SPEC-002 таблицами и посчитаны независимо. Откройте этот файл в браузере; внешние зависимости не нужны.</p>
+<p id="summary" role="status">Проверка…</p><ol id="results"></ol>
+<script src="../static/js/questionnaires.js"></script><script>
+'use strict';
+const results=[];
+function test(name,fn){try{fn();results.push({name,passed:true});}catch(error){results.push({name,passed:false,error:error.message});}}
+function eq(actual,expected){if(JSON.stringify(actual)!==JSON.stringify(expected))throw Error('Ожидалось '+JSON.stringify(expected)+', получено '+JSON.stringify(actual));}
+const score=CompassQuestionnaires.score;
+const groups=result=>result.groups.map(group=>group.raw);
+const freq=result=>result.groups.map(group=>group.frequency);
+const blank=id=>Array(CompassQuestionnaires.get(id).questions.length).fill(null);
+function rejects(id,answers){let rejected=false;try{score(id,answers);}catch(error){rejected=error instanceof RangeError;}eq(rejected,true);}
+test('Четыре инструмента и точное число пунктов',()=>eq(CompassQuestionnaires.list.map(x=>[x.id,x.questions.length]),[['lsia',20],['bipq',8],['temmo',36],['stolin',57]]));
+// ИЖУ: буквальная таблица издания 2022, с.180. В первом пункте 0/1/1;
+// 10 остальных положительных пунктов и 9 отрицательных дают достижимый максимум 39.
+test('ИЖУ: все согласны',()=>eq([score('lsia',Array(20).fill('agree')).total,groups(score('lsia',Array(20).fill('agree')))], [20,[4,6,4,4,2]]));
+test('ИЖУ: все не согласны',()=>eq([score('lsia',Array(20).fill('disagree')).total,groups(score('lsia',Array(20).fill('disagree')))], [19,[3,2,4,4,6]]));
+test('ИЖУ: все не знают',()=>eq([score('lsia',Array(20).fill('unknown')).total,groups(score('lsia',Array(20).fill('unknown')))], [20,[4,4,4,4,4]]));
+const lsiaMin=['agree','agree','agree','agree','disagree','agree','disagree','disagree','disagree','agree','disagree','disagree','disagree','agree','disagree','disagree','agree','agree','disagree','agree'];
+const lsiaMax=['disagree','disagree','disagree','disagree','agree','disagree','agree','agree','agree','disagree','agree','agree','agree','disagree','agree','agree','disagree','disagree','agree','disagree'];
+test('ИЖУ: минимум',()=>eq([score('lsia',lsiaMin).total,groups(score('lsia',lsiaMin))],[0,[0,0,0,0,0]]));
+test('ИЖУ: максимум опубликованного ключа',()=>eq([score('lsia',lsiaMax).total,score('lsia',lsiaMax).max,groups(score('lsia',lsiaMax))],[39,39,[7,8,8,8,8]]));
+for(const [item,loss] of [[1,1],[2,2],[3,2],[4,2],[6,2],[10,2],[14,2],[17,2],[18,2],[20,2]])test('ИЖУ: проверка отрицательного пункта '+item,()=>{const a=[...lsiaMax];a[item-1]='agree';eq(score('lsia',a).total,39-loss);});
+test('ИЖУ: неизвестный ответ первого пункта даёт 1',()=>{const a=[...lsiaMin];a[0]='unknown';eq(score('lsia',a).total,1);});
+// КОВБ: в профиле исходные числа; только суммарная шкала обращает 3/4/7.
+test('КОВБ: минимум',()=>eq(score('bipq',[0,0,10,10,0,0,10,0]).total,0));
+test('КОВБ: максимум',()=>eq(score('bipq',[10,10,0,0,10,10,0,10]).total,80));
+test('КОВБ: ноль не является пропуском',()=>eq(score('bipq',Array(8).fill(0)).total,30));
+test('КОВБ: все 10',()=>eq(score('bipq',Array(8).fill(10)).total,50));
+test('КОВБ: смешанный профиль',()=>{const r=score('bipq',[1,2,3,4,5,6,7,8]);eq(r.total,38);eq(groups(r),[1,2,3,4,5,6,7,8]);});
+for(const item of [3,4,7])test('КОВБ: инверсия '+item,()=>{const a=Array(8).fill(0);a[item-1]=10;eq(score('bipq',a).total,20);});
+// ТЭММО: шесть инверсий, 30 прямых. Все 1 -> 30+36=66, все 6 ->180+6=186.
+test('ТЭММО: все 1',()=>eq([score('temmo',Array(36).fill(1)).total,groups(score('temmo',Array(36).fill(1)))],[66,[24,9,24,9]]));
+test('ТЭММО: все 6',()=>eq([score('temmo',Array(36).fill(6)).total,groups(score('temmo',Array(36).fill(6)))],[186,[39,54,39,54]]));
+test('ТЭММО: смешанные после инверсий',()=>eq([score('temmo',Array(36).fill(3)).total,groups(score('temmo',Array(36).fill(3)))],[114,[30,27,30,27]]));
+const temmoMin=[1,1,1,1,1,6,1,6,1,6,1,6,1,1,1,1,1,1,1,1,6,1,1,1,1,1,1,1,1,1,1,6,1,1,1,1];
+const temmoMax=temmoMin.map(v=>7-v);
+test('ТЭММО: минимум всех 12 субшкал',()=>{const r=score('temmo',temmoMin);eq(r.total,36);eq(groups(r),[9,9,9,9]);eq(r.groups.flatMap(g=>g.children.map(x=>x.raw)),Array(12).fill(3));});
+test('ТЭММО: максимум всех 12 субшкал',()=>{const r=score('temmo',temmoMax);eq(r.total,216);eq(groups(r),[54,54,54,54]);eq(r.groups.flatMap(g=>g.children.map(x=>x.raw)),Array(12).fill(18));});
+for(const item of [6,8,10,12,21,32])test('ТЭММО: инверсия '+item,()=>{const a=Array(36).fill(1);a[item-1]=6;eq(score('temmo',a).total,61);});
+// Столин: независимые ручные суммы чисел в + и - списках azps, порядок S/I/II/III/IV/1..7.
+test('Столин: все Да, 12 сумм и частот',()=>{const r=score('stolin',Array(57).fill(true));eq(groups(r),[11,4,8,6,6,5,5,6,2,8,3,1]);eq(freq(r),[38.33,16,58,9,71.33,65.67,32,89.67,25.67,100,20,21.33]);});
+test('Столин: все Нет, false не пропуск',()=>{const r=score('stolin',Array(57).fill(false));eq(groups(r),[17,11,8,7,2,3,3,1,5,0,4,6]);eq(freq(r),[80,86.67,58,17.67,5.33,29.33,7.33,7.67,79.67,1.67,34.33,99.33]);});
+test('Столин: нечётные Да, чётные Нет',()=>{const r=score('stolin',Array.from({length:57},(_,i)=>i%2===0));eq(groups(r),[15,7,6,8,4,3,5,1,2,4,4,5]);eq(freq(r),[69.33,44.67,37.33,27.33,29,29.33,32,7.67,25.67,43.33,34.33,94]);});
+test('Столин: S имеет максимум 28 и частоту 99,67%',()=>{const a=Array(57).fill(false);[2,5,23,33,27,42,46,48,52,53,57].forEach(n=>a[n-1]=true);const r=score('stolin',a).groups[0];eq([r.raw,r.max,r.frequency],[28,28,99.67]);});
+for(const [changes,raw,frequency,category] of [[[8,13,25,27],7,44.67,'Признак не выражен'],[[8,13,25],8,58.67,'Признак выражен'],[[8,13],9,71.33,'Признак выражен'],[[8],10,80,'Признак ярко выражен']])test('Столин: I, строка таблицы '+raw,()=>{const a=Array(57).fill(false);changes.forEach(n=>a[n-1]=true);const g=score('stolin',a).groups[1];eq([g.raw,g.frequency,g.level],[raw,frequency,category]);});
+for(const id of ['lsia','bipq','temmo','stolin']){
+ test(id+': пустой массив отклоняется',()=>rejects(id,[]));
+ test(id+': пропуски отклоняются',()=>rejects(id,blank(id)));
+ test(id+': sparse array отклоняется',()=>rejects(id,new Array(blank(id).length)));
+ test(id+': лишний ответ отклоняется',()=>rejects(id,[...blank(id),0]));
+ test(id+': неверный тип отклоняется',()=>rejects(id,blank(id).fill({})));
+}
+for(const value of [-1,11,1.5,'0',false,NaN,Infinity,undefined])test('КОВБ: недопустимое значение '+String(value),()=>{const a=Array(8).fill(0);a[0]=value;rejects('bipq',a);});
+test('Столин: строка Нет не превращается в boolean',()=>rejects('stolin',Array(57).fill('false')));
+test('Неизвестный ID отклоняется',()=>rejects('missing',[]));
+test('Расчёт не изменяет входной массив',()=>{const a=Array(36).fill(1),snapshot=JSON.stringify(a);score('temmo',a);eq(JSON.stringify(a),snapshot);});
+// Независимая выгрузка числовых строк и +/- ключей непосредственно из HTML azps.ru.
+// Проверяет каждую достижимую строку всех таблиц, в том числе диапазоны категорий.
+const sourceRows = [{"yes":[2,5,23,33,27,42,46,48,52,53,57],"no":[6,9,13,14,16,18,30,35,38,39,41,43,44,45,49,50,56],"table":[0.0,0.67,3.0,5.33,6.33,9.0,13.0,16.0,21.33,26.67,32.33,38.33,49.0,55.33,62.67,69.33,74.33,80.0,85.0,88.0,90.67,93.33,96.0,96.67,98.0,98.33,98.67,99.67,99.67,100.0,100.0]},{"yes":[2,23,53,57],"no":[8,13,25,27,31,35,38,39,40,41,50],"table":[1.67,4.0,6.0,9.33,16.0,25.33,34.0,44.67,58.67,71.33,80.0,86.67,91.33,96.67,99.67,100.0]},{"yes":[12,18,28,29,37,46,48,54],"no":[4,9,11,16,19,24,45,56],"table":[0.33,3.67,9.0,16.0,21.67,28.0,37.33,47.0,58.0,69.67,77.33,86.0,90.67,96.67,98.33,99.67,100.0]},{"yes":[1,5,10,15,42,55],"no":[3,26,30,32,43,44,49],"table":[0.0,0.0,0.67,1.0,3.33,6.0,9.0,17.67,27.33,39.67,53.0,72.33,91.33,100.0]},{"yes":[7,17,20,33,34,52],"no":[14,51],"table":[0.67,2.0,5.33,16.0,29.0,49.67,71.33,92.33,100.0]},{"yes":[2,23,37,42,46],"no":[38,39,41],"table":[3.77,7.33,16.67,29.33,47.67,65.67,81.33,92.33,100.0]},{"yes":[1,5,10,52,55],"no":[32,43,44],"table":[0.0,0.67,3.67,7.33,15.0,32.0,51.33,80.0,100.0]},{"yes":[12,18,28,47,48,54],"no":[21],"table":[2.67,7.67,16.67,34.33,50.67,70.67,89.67,100.0]},{"yes":[50,57],"no":[25,27,31,35,36],"table":[3.0,9.67,25.67,38.33,60.33,79.67,92.0,100.0]},{"yes":[3,4,9,11,16,24,45,56],"no":[],"table":[1.67,4.67,15.0,27.67,43.33,60.67,81.67,96.67,100.0]},{"yes":[17,20,33],"no":[26,30,49,51],"table":[0.67,3.0,11.33,20.0,34.33,54.67,80.0,100.0]},{"yes":[53],"no":[6,8,13,15,22,40],"table":[4.33,21.33,43.33,68.67,83.67,94.0,99.33,100.0]}];
+sourceRows.forEach((row,factor)=>{
+ for(let raw=0;raw<=row.yes.length+row.no.length;raw++)test('Столин: опубликованная строка '+factor+'/'+raw,()=>{
+  const answers=Array(57).fill(false);
+  row.no.forEach(n=>answers[n-1]=true);
+  [...row.yes,...row.no].slice(0,raw).forEach(n=>answers[n-1]=row.yes.includes(n));
+  const group=score('stolin',answers).groups[factor];
+  eq([group.raw,group.frequency],[raw,row.table[raw]]);
+  eq(group.level,row.table[raw]<50?'Признак не выражен':row.table[raw]<=74?'Признак выражен':'Признак ярко выражен');
+ });
+});
+
+window.testResults={passed:results.filter(r=>r.passed).length,failed:results.filter(r=>!r.passed).length,results};
+document.querySelector('#summary').textContent=`Пройдено: ${testResults.passed}, ошибок: ${testResults.failed}`;
+for(const result of results){const li=document.createElement('li');li.className=result.passed?'pass':'fail';li.textContent=(result.passed?'PASS: ':'FAIL: ')+result.name+(result.error?' — '+result.error:'');document.querySelector('#results').append(li);}
+</script></html>

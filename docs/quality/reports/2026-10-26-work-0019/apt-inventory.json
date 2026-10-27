@@ -1,0 +1,1392 @@
+{
+  "files": [
+    {
+      "path": "/var/cache/apt/archives/diffutils_1%3a3.12-1ubuntu0.1_amd64.deb",
+      "bytes": 176296,
+      "allocated_bytes": 180224,
+      "inode": 9785,
+      "mtime_ns": 1788170437000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/gzip_1.14-1~exp2ubuntu1.1_amd64.deb",
+      "bytes": 105530,
+      "allocated_bytes": 106496,
+      "inode": 9786,
+      "mtime_ns": 1783342791000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/libc-dev-bin_2.43-2ubuntu2.4_amd64.deb",
+      "bytes": 23328,
+      "allocated_bytes": 24576,
+      "inode": 32789,
+      "mtime_ns": 1788882009000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/libnss-systemd_259.5-0ubuntu3.4_amd64.deb",
+      "bytes": 226508,
+      "allocated_bytes": 229376,
+      "inode": 32788,
+      "mtime_ns": 1786369827000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/libpam-systemd_259.5-0ubuntu3.4_amd64.deb",
+      "bytes": 273636,
+      "allocated_bytes": 274432,
+      "inode": 9790,
+      "mtime_ns": 1786369828000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/libperl5.40_5.40.1-7ubuntu0.3_amd64.deb",
+      "bytes": 4888904,
+      "allocated_bytes": 4890624,
+      "inode": 9788,
+      "mtime_ns": 1788961818000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/libsystemd-shared_259.5-0ubuntu3.4_amd64.deb",
+      "bytes": 2462336,
+      "allocated_bytes": 2465792,
+      "inode": 9791,
+      "mtime_ns": 1786369824000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/libsystemd0_259.5-0ubuntu3.4_amd64.deb",
+      "bytes": 480732,
+      "allocated_bytes": 483328,
+      "inode": 9783,
+      "mtime_ns": 1786369828000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/libudev1_259.5-0ubuntu3.4_amd64.deb",
+      "bytes": 150760,
+      "allocated_bytes": 151552,
+      "inode": 32730,
+      "mtime_ns": 1786369828000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/bpftool_7.7.0+7.0.0-38.38_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32772,
+      "mtime_ns": 1788802500000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/bsdextrautils_2.41.3-3ubuntu2.2_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32690,
+      "mtime_ns": 1788180297000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/bsdutils_1%3a2.41.3-3ubuntu2.2_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32744,
+      "mtime_ns": 1788180303000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/dirmngr_2.4.8-4ubuntu3.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32775,
+      "mtime_ns": 1788435058000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/distro-info-data_2026.10.12-0ubuntu0.26.04.1_all.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32745,
+      "mtime_ns": 1791995452000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/dracut-core_110-11ubuntu0.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32782,
+      "mtime_ns": 1789419009000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/dracut-install_110-11ubuntu0.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32781,
+      "mtime_ns": 1789419009000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/dracut_110-11ubuntu0.1_all.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32783,
+      "mtime_ns": 1789419009000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/fdisk_2.41.3-3ubuntu2.2_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32694,
+      "mtime_ns": 1788180302000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/gawk_1%3a5.3.2-1ubuntu1.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32740,
+      "mtime_ns": 1784740137000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/gir1.2-girepository-3.0_2.88.0-1ubuntu0.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32746,
+      "mtime_ns": 1790015714000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/gir1.2-glib-2.0_2.88.0-1ubuntu0.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32748,
+      "mtime_ns": 1790015714000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/gnu-coreutils_9.7-3ubuntu2.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32701,
+      "mtime_ns": 1788176442000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/gnupg-l10n_2.4.8-4ubuntu3.1_all.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32784,
+      "mtime_ns": 1788435058000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/gnupg-utils_2.4.8-4ubuntu3.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32773,
+      "mtime_ns": 1788435056000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/gnupg_2.4.8-4ubuntu3.1_all.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32779,
+      "mtime_ns": 1788435059000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/gpg-agent_2.4.8-4ubuntu3.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32776,
+      "mtime_ns": 1788435055000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/gpg-wks-client_2.4.8-4ubuntu3.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32774,
+      "mtime_ns": 1788435055000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/gpg_2.4.8-4ubuntu3.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32777,
+      "mtime_ns": 1788435057000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/gpgconf_2.4.8-4ubuntu3.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32778,
+      "mtime_ns": 1788435055000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/gpgsm_2.4.8-4ubuntu3.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32780,
+      "mtime_ns": 1788435057000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/gpgv_2.4.8-4ubuntu3.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32743,
+      "mtime_ns": 1788435056000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/krb5-locales_1.22.1-2ubuntu4.1_all.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32750,
+      "mtime_ns": 1784725294000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libattr1_1%3a2.5.2-4ubuntu0.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32741,
+      "mtime_ns": 1788169626000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libblkid1_2.41.3-3ubuntu2.2_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32695,
+      "mtime_ns": 1788180301000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libbz2-1.0_1.0.8-6ubuntu0.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32686,
+      "mtime_ns": 1788155286000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libc-bin_2.43-2ubuntu2.4_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32700,
+      "mtime_ns": 1788882009000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libc-gconv-modules-extra_2.43-2ubuntu2.4_amd64.deb",
+      "bytes": 1277952,
+      "allocated_bytes": 1277952,
+      "inode": 32674,
+      "mtime_ns": 1788882008000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libc6-dev_2.43-2ubuntu2.4_amd64.deb",
+      "bytes": 1638400,
+      "allocated_bytes": 1638400,
+      "inode": 32790,
+      "mtime_ns": 1788882011000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libc6_2.43-2ubuntu2.4_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32680,
+      "mtime_ns": 1788882012000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libexpat1_2.7.4-1ubuntu0.2_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32729,
+      "mtime_ns": 1790255171000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libfdisk1_2.41.3-3ubuntu2.2_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32689,
+      "mtime_ns": 1788180299000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libfreetype6_2.14.2+dfsg-1ubuntu0.2_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32785,
+      "mtime_ns": 1791289994000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libgcrypt20_1.12.0-2ubuntu1.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32742,
+      "mtime_ns": 1788279143000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libgirepository-2.0-0_2.88.0-1ubuntu0.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32747,
+      "mtime_ns": 1790015713000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libglib2.0-0t64_2.88.0-1ubuntu0.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32749,
+      "mtime_ns": 1790015713000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libglib2.0-data_2.88.0-1ubuntu0.1_all.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32751,
+      "mtime_ns": 1790015715000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libgssapi-krb5-2_1.22.1-2ubuntu4.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32753,
+      "mtime_ns": 1784725293000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libisns0t64_0.101-2.1ubuntu0.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32786,
+      "mtime_ns": 1790173192000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libk5crypto3_1.22.1-2ubuntu4.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32752,
+      "mtime_ns": 1784725292000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libkrb5-3_1.22.1-2ubuntu4.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32755,
+      "mtime_ns": 1784725293000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libkrb5support0_1.22.1-2ubuntu4.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32754,
+      "mtime_ns": 1784725292000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/liblzma5_5.8.3-1ubuntu0.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32737,
+      "mtime_ns": 1792511717000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libmount1_2.41.3-3ubuntu2.2_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32696,
+      "mtime_ns": 1788180300000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libnghttp2-14_1.68.0-2ubuntu0.2_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32763,
+      "mtime_ns": 1782999660000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libpam-modules-bin_1.7.0-5ubuntu3.2_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32723,
+      "mtime_ns": 1788277924000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libpam-modules_1.7.0-5ubuntu3.2_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32725,
+      "mtime_ns": 1788277925000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libpam-runtime_1.7.0-5ubuntu3.2_all.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32706,
+      "mtime_ns": 1788277925000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libpam0g_1.7.0-5ubuntu3.2_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32709,
+      "mtime_ns": 1788277925000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libpng16-16t64_1.6.57-1ubuntu0.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32764,
+      "mtime_ns": 1791398959000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libpolkit-agent-1-0_127-2ubuntu1.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 21532,
+      "mtime_ns": 1789481477000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libpolkit-gobject-1-0_127-2ubuntu1.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32791,
+      "mtime_ns": 1789481478000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libpython3.14-minimal_3.14.4-1ubuntu0.2_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32735,
+      "mtime_ns": 1788882003000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libpython3.14-stdlib_3.14.4-1ubuntu0.2_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32733,
+      "mtime_ns": 1788882003000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libpython3.14_3.14.4-1ubuntu0.2_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32732,
+      "mtime_ns": 1788882003000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libsgutils2-1.48_1.48-3ubuntu3.2_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32792,
+      "mtime_ns": 1791282132000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libsmartcols1_2.41.3-3ubuntu2.2_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32692,
+      "mtime_ns": 1788180299000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libsqlite3-0_3.46.1-9ubuntu0.3_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32738,
+      "mtime_ns": 1789581561000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libssh2-1t64_1.11.1-1ubuntu0.26.04.4_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32793,
+      "mtime_ns": 1788438908000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libssl3t64_3.5.5-1ubuntu3.7_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32721,
+      "mtime_ns": 1790858840000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libuuid1_2.41.3-3ubuntu2.2_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32698,
+      "mtime_ns": 1788180301000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libx11-6_2%3a1.8.13-1ubuntu0.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32766,
+      "mtime_ns": 1791808809000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libx11-data_2%3a1.8.13-1ubuntu0.1_all.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32765,
+      "mtime_ns": 1791808809000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/libxml2-16_2.15.2+dfsg-0.1ubuntu0.3_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32756,
+      "mtime_ns": 1791479273000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/linux-generic_7.0.0-38.38_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32823,
+      "mtime_ns": 1788802487000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/linux-headers-7.0.0-38-generic_7.0.0-38.38_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32826,
+      "mtime_ns": 1788802492000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/linux-headers-7.0.0-38_7.0.0-38.38_all.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32825,
+      "mtime_ns": 1788802492000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/linux-headers-generic_7.0.0-38.38_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32827,
+      "mtime_ns": 1788802487000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/linux-image-7.0.0-38-generic_7.0.0-38.38_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32822,
+      "mtime_ns": 1788802489000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/linux-image-generic_7.0.0-38.38_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32824,
+      "mtime_ns": 1788802487000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/linux-libc-dev_7.0.0-38.38_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32685,
+      "mtime_ns": 1788802500000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/linux-main-modules-zfs-7.0.0-38-generic_7.0.0-38.38_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32819,
+      "mtime_ns": 1788802407000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/linux-modules-7.0.0-38-generic_7.0.0-38.38_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32821,
+      "mtime_ns": 1788802498000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/linux-perf_7.0.0-38.38_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32828,
+      "mtime_ns": 1788802500000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/linux-tools-7.0.0-38-generic_7.0.0-38.38_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32831,
+      "mtime_ns": 1788802491000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/linux-tools-7.0.0-38_7.0.0-38.38_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32830,
+      "mtime_ns": 1788802498000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/linux-tools-common_7.0.0-38.38_all.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32829,
+      "mtime_ns": 1788802506000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/login_1%3a4.16.0-2+really2.41.3-3ubuntu2.2_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32727,
+      "mtime_ns": 1788180301000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/mount_2.41.3-3ubuntu2.2_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32697,
+      "mtime_ns": 1788180301000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/openssh-client_1%3a10.2p1-2ubuntu3.8_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32769,
+      "mtime_ns": 1791981659000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/openssh-server_1%3a10.2p1-2ubuntu3.8_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32768,
+      "mtime_ns": 1791981658000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/openssh-sftp-server_1%3a10.2p1-2ubuntu3.8_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32767,
+      "mtime_ns": 1791981658000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/openssl-provider-legacy_3.5.5-1ubuntu3.7_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32714,
+      "mtime_ns": 1790858835000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/openssl_3.5.5-1ubuntu3.7_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32757,
+      "mtime_ns": 1790858841000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/polkitd_127-2ubuntu1.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 9781,
+      "mtime_ns": 1789481477000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/python3-cryptography_46.0.5-1ubuntu2.2_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32832,
+      "mtime_ns": 1789581561000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/python3-httplib2_0.22.0-1ubuntu0.1_all.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32833,
+      "mtime_ns": 1784031676000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/python3-jwt_2.10.1-4ubuntu1.3_all.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32834,
+      "mtime_ns": 1792466229000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/python3.14-minimal_3.14.4-1ubuntu0.2_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32734,
+      "mtime_ns": 1788882000000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/python3.14_3.14.4-1ubuntu0.2_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32731,
+      "mtime_ns": 1788881999000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/sg3-utils-udev_1.48-3ubuntu3.2_all.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32836,
+      "mtime_ns": 1791282132000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/sg3-utils_1.48-3ubuntu3.2_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32835,
+      "mtime_ns": 1791282132000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/snapd_2.76+ubuntu26.04.3_amd64.deb",
+      "bytes": 5394432,
+      "allocated_bytes": 5394432,
+      "inode": 32679,
+      "mtime_ns": 1784645963000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/sudo-rs_0.2.13-0ubuntu1.2_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32758,
+      "mtime_ns": 1788273837000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/sudo_1.9.17p2-1ubuntu3.2_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32739,
+      "mtime_ns": 1791378369000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/tar_1.35+dfsg-4ubuntu0.4_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32688,
+      "mtime_ns": 1784732619000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/tzdata_2026e-0ubuntu0.26.04.1_all.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32736,
+      "mtime_ns": 1791221006000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/util-linux_2.41.3-3ubuntu2.2_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32699,
+      "mtime_ns": 1788180301000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/vim-common_2%3a9.1.2141-1ubuntu4.9_all.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32760,
+      "mtime_ns": 1788887449000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/vim-runtime_2%3a9.1.2141-1ubuntu4.9_all.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32761,
+      "mtime_ns": 1788887449000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/vim_2%3a9.1.2141-1ubuntu4.9_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32759,
+      "mtime_ns": 1788887448000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/wget_1.25.0-2ubuntu4.4_amd64.deb",
+      "bytes": 319488,
+      "allocated_bytes": 319488,
+      "inode": 32770,
+      "mtime_ns": 1787260412000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/wireless-regdb_2026.05.30-0ubuntu1~26.04.1_all.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32820,
+      "mtime_ns": 1787717027000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/xxd_2%3a9.1.2141-1ubuntu4.9_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32762,
+      "mtime_ns": 1788887445000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/xz-utils_5.8.3-1ubuntu0.1_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32771,
+      "mtime_ns": 1792511718000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/partial/zlib1g_1%3a1.3.dfsg+really1.3.1-1ubuntu3.2_amd64.deb",
+      "bytes": 0,
+      "allocated_bytes": 0,
+      "inode": 32687,
+      "mtime_ns": 1792695063000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/perl-base_5.40.1-7ubuntu0.3_amd64.deb",
+      "bytes": 1850424,
+      "allocated_bytes": 1851392,
+      "inode": 32722,
+      "mtime_ns": 1788961819000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/perl-modules-5.40_5.40.1-7ubuntu0.3_all.deb",
+      "bytes": 3212300,
+      "allocated_bytes": 3215360,
+      "inode": 32728,
+      "mtime_ns": 1788961821000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/perl_5.40.1-7ubuntu0.3_amd64.deb",
+      "bytes": 262084,
+      "allocated_bytes": 262144,
+      "inode": 21240,
+      "mtime_ns": 1788961819000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/systemd-cryptsetup_259.5-0ubuntu3.4_amd64.deb",
+      "bytes": 124294,
+      "allocated_bytes": 126976,
+      "inode": 32724,
+      "mtime_ns": 1786369822000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/systemd-sysv_259.5-0ubuntu3.4_amd64.deb",
+      "bytes": 9250,
+      "allocated_bytes": 12288,
+      "inode": 9789,
+      "mtime_ns": 1786369829000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/systemd_259.5-0ubuntu3.4_amd64.deb",
+      "bytes": 3128676,
+      "allocated_bytes": 3129344,
+      "inode": 21199,
+      "mtime_ns": 1786369829000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/archives/udev_259.5-0ubuntu3.4_amd64.deb",
+      "bytes": 1500726,
+      "allocated_bytes": 1503232,
+      "inode": 32726,
+      "mtime_ns": 1786369829000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/pkgcache.bin",
+      "bytes": 55142599,
+      "allocated_bytes": 55148544,
+      "inode": 9777,
+      "mtime_ns": 1792973543137966043,
+      "uid": 0
+    },
+    {
+      "path": "/var/cache/apt/srcpkgcache.bin",
+      "bytes": 55142131,
+      "allocated_bytes": 55148544,
+      "inode": 9775,
+      "mtime_ns": 1792973542790968715,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-backports_InRelease",
+      "bytes": 136546,
+      "allocated_bytes": 139264,
+      "inode": 32702,
+      "mtime_ns": 1792934923000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-backports_main_dep11_Components-amd64.yml.gz",
+      "bytes": 159,
+      "allocated_bytes": 4096,
+      "inode": 32859,
+      "mtime_ns": 1776684702000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-backports_multiverse_dep11_Components-amd64.yml.gz",
+      "bytes": 163,
+      "allocated_bytes": 4096,
+      "inode": 32864,
+      "mtime_ns": 1776684824000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-backports_restricted_dep11_Components-amd64.yml.gz",
+      "bytes": 161,
+      "allocated_bytes": 4096,
+      "inode": 32860,
+      "mtime_ns": 1776684882000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-backports_universe_binary-amd64_Packages",
+      "bytes": 11149,
+      "allocated_bytes": 12288,
+      "inode": 32861,
+      "mtime_ns": 1791134807000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-backports_universe_dep11_Components-amd64.yml.gz",
+      "bytes": 1009,
+      "allocated_bytes": 4096,
+      "inode": 32863,
+      "mtime_ns": 1792923451000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-backports_universe_i18n_Translation-en",
+      "bytes": 24807,
+      "allocated_bytes": 28672,
+      "inode": 32862,
+      "mtime_ns": 1787676396000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_InRelease",
+      "bytes": 137401,
+      "allocated_bytes": 139264,
+      "inode": 32691,
+      "mtime_ns": 1792955701000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_main_binary-amd64_Packages",
+      "bytes": 3961836,
+      "allocated_bytes": 3964928,
+      "inode": 32847,
+      "mtime_ns": 1792955701000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_main_dep11_Components-amd64.yml.gz",
+      "bytes": 146650,
+      "allocated_bytes": 147456,
+      "inode": 32849,
+      "mtime_ns": 1792923870000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_main_i18n_Translation-en",
+      "bytes": 1908908,
+      "allocated_bytes": 1912832,
+      "inode": 32848,
+      "mtime_ns": 1792676950000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_multiverse_binary-amd64_Packages",
+      "bytes": 152662,
+      "allocated_bytes": 155648,
+      "inode": 32856,
+      "mtime_ns": 1791396182000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_multiverse_dep11_Components-amd64.yml.gz",
+      "bytes": 161,
+      "allocated_bytes": 4096,
+      "inode": 32858,
+      "mtime_ns": 1776685568000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_multiverse_i18n_Translation-en",
+      "bytes": 26839,
+      "allocated_bytes": 28672,
+      "inode": 32857,
+      "mtime_ns": 1791396182000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_restricted_binary-amd64_Packages",
+      "bytes": 3130674,
+      "allocated_bytes": 3133440,
+      "inode": 32850,
+      "mtime_ns": 1791396182000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_restricted_dep11_Components-amd64.yml.gz",
+      "bytes": 159,
+      "allocated_bytes": 4096,
+      "inode": 32852,
+      "mtime_ns": 1776685624000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_restricted_i18n_Translation-en",
+      "bytes": 1847298,
+      "allocated_bytes": 1851392,
+      "inode": 32851,
+      "mtime_ns": 1791396182000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_universe_binary-amd64_Packages",
+      "bytes": 1638890,
+      "allocated_bytes": 1642496,
+      "inode": 32853,
+      "mtime_ns": 1792955701000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_universe_dep11_Components-amd64.yml.gz",
+      "bytes": 271934,
+      "allocated_bytes": 274432,
+      "inode": 32855,
+      "mtime_ns": 1792923943000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute-updates_universe_i18n_Translation-en",
+      "bytes": 626488,
+      "allocated_bytes": 626688,
+      "inode": 32854,
+      "mtime_ns": 1792568249000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_InRelease",
+      "bytes": 135549,
+      "allocated_bytes": 139264,
+      "inode": 21241,
+      "mtime_ns": 1776964050000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_main_binary-amd64_Packages",
+      "bytes": 7581722,
+      "allocated_bytes": 7585792,
+      "inode": 32806,
+      "mtime_ns": 1776954878000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_main_dep11_Components-amd64.yml.gz",
+      "bytes": 558928,
+      "allocated_bytes": 561152,
+      "inode": 32809,
+      "mtime_ns": 1776868918000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_main_i18n_Translation-en",
+      "bytes": 3269754,
+      "allocated_bytes": 3272704,
+      "inode": 32807,
+      "mtime_ns": 1776863950000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_multiverse_binary-amd64_Packages",
+      "bytes": 1359201,
+      "allocated_bytes": 1359872,
+      "inode": 32844,
+      "mtime_ns": 1776925610000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_multiverse_dep11_Components-amd64.yml.gz",
+      "bytes": 59230,
+      "allocated_bytes": 61440,
+      "inode": 32846,
+      "mtime_ns": 1776869683000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_multiverse_i18n_Translation-en",
+      "bytes": 661940,
+      "allocated_bytes": 663552,
+      "inode": 32845,
+      "mtime_ns": 1776925610000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_restricted_binary-amd64_Packages",
+      "bytes": 1087693,
+      "allocated_bytes": 1089536,
+      "inode": 32815,
+      "mtime_ns": 1776792415000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_restricted_dep11_Components-amd64.yml.gz",
+      "bytes": 491,
+      "allocated_bytes": 4096,
+      "inode": 32817,
+      "mtime_ns": 1776869743000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_restricted_i18n_Translation-en",
+      "bytes": 389298,
+      "allocated_bytes": 393216,
+      "inode": 32816,
+      "mtime_ns": 1776777740000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_universe_binary-amd64_Packages",
+      "bytes": 76792699,
+      "allocated_bytes": 76800000,
+      "inode": 32818,
+      "mtime_ns": 1776964050000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_universe_dep11_Components-amd64.yml.gz",
+      "bytes": 7047305,
+      "allocated_bytes": 7049216,
+      "inode": 32843,
+      "mtime_ns": 1776869112000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/archive.ubuntu.com_ubuntu_dists_resolute_universe_i18n_Translation-en",
+      "bytes": 33408698,
+      "allocated_bytes": 33415168,
+      "inode": 32842,
+      "mtime_ns": 1776957570000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/download.docker.com_linux_ubuntu_dists_resolute_InRelease",
+      "bytes": 32482,
+      "allocated_bytes": 32768,
+      "inode": 32682,
+      "mtime_ns": 1792728006000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/download.docker.com_linux_ubuntu_dists_resolute_stable_binary-amd64_Packages",
+      "bytes": 179785,
+      "allocated_bytes": 180224,
+      "inode": 32684,
+      "mtime_ns": 1792727857000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_InRelease",
+      "bytes": 137403,
+      "allocated_bytes": 139264,
+      "inode": 32613,
+      "mtime_ns": 1792934883000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_main_binary-amd64_Packages",
+      "bytes": 3192760,
+      "allocated_bytes": 3194880,
+      "inode": 32704,
+      "mtime_ns": 1792695526000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_main_dep11_Components-amd64.yml.gz",
+      "bytes": 59141,
+      "allocated_bytes": 61440,
+      "inode": 32711,
+      "mtime_ns": 1792923725000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_main_i18n_Translation-en",
+      "bytes": 1608536,
+      "allocated_bytes": 1609728,
+      "inode": 32710,
+      "mtime_ns": 1792512412000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_multiverse_binary-amd64_Packages",
+      "bytes": 148711,
+      "allocated_bytes": 151552,
+      "inode": 32812,
+      "mtime_ns": 1791508792000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_multiverse_dep11_Components-amd64.yml.gz",
+      "bytes": 158,
+      "allocated_bytes": 4096,
+      "inode": 32814,
+      "mtime_ns": 1776685324000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_multiverse_i18n_Translation-en",
+      "bytes": 25221,
+      "allocated_bytes": 28672,
+      "inode": 32813,
+      "mtime_ns": 1791508792000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_restricted_binary-amd64_Packages",
+      "bytes": 3055827,
+      "allocated_bytes": 3059712,
+      "inode": 32713,
+      "mtime_ns": 1791508792000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_restricted_dep11_Components-amd64.yml.gz",
+      "bytes": 157,
+      "allocated_bytes": 4096,
+      "inode": 32802,
+      "mtime_ns": 1776685382000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_restricted_i18n_Translation-en",
+      "bytes": 1811715,
+      "allocated_bytes": 1814528,
+      "inode": 32801,
+      "mtime_ns": 1791508792000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_universe_binary-amd64_Packages",
+      "bytes": 987164,
+      "allocated_bytes": 991232,
+      "inode": 32808,
+      "mtime_ns": 1792695526000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_universe_dep11_Components-amd64.yml.gz",
+      "bytes": 69253,
+      "allocated_bytes": 69632,
+      "inode": 32811,
+      "mtime_ns": 1792923796000000000,
+      "uid": 0
+    },
+    {
+      "path": "/var/lib/apt/lists/security.ubuntu.com_ubuntu_dists_resolute-security_universe_i18n_Translation-en",
+      "bytes": 374861,
+      "allocated_bytes": 376832,
+      "inode": 32810,
+      "mtime_ns": 1792512412000000000,
+      "uid": 0
+    }
+  ],
+  "total_allocated_bytes": 296030208,
+  "available_bytes": 0,
+  "apt_states": [
+    "inactive",
+    "inactive"
+  ],
+  "app_image": "veganmedtech-server:20261025T213505Z-81b7c2d9",
+  "health": {
+    "veganmedtech-app-1": "healthy",
+    "veganmedtech-db-1": "healthy",
+    "veganmedtech-mailpit-1": "healthy"
+  }
+}

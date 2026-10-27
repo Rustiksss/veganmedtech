@@ -1,0 +1,69 @@
+{
+  "policy_version": "chat-alert-demo-v1",
+  "client_sha256": "25ab9d3b0798517a7b9a11ea5dd0408286f4e82b06e45735293725dffb3f323c",
+  "server_files_or_database_changed": false,
+  "calls": 4,
+  "cases": [
+    {
+      "case": "positive",
+      "trace": [
+        {
+          "phase": "tls_connected"
+        }
+      ],
+      "passed": false,
+      "error": "timeout",
+      "latency_seconds": 18.002
+    },
+    {
+      "case": "neutral",
+      "trace": [
+        {
+          "phase": "response_failed",
+          "type": "TimeoutError"
+        },
+        {
+          "phase": "tls_connected"
+        }
+      ],
+      "passed": false,
+      "error": "timeout",
+      "latency_seconds": 18.002
+    },
+    {
+      "case": "negation",
+      "trace": [
+        {
+          "phase": "response_failed",
+          "type": "TimeoutError"
+        },
+        {
+          "phase": "tls_connected"
+        }
+      ],
+      "passed": false,
+      "error": "timeout",
+      "latency_seconds": 18.002
+    },
+    {
+      "case": "past",
+      "trace": [
+        {
+          "phase": "response_failed",
+          "type": "TimeoutError"
+        },
+        {
+          "phase": "tls_connected"
+        }
+      ],
+      "passed": false,
+      "error": "timeout",
+      "latency_seconds": 18.002
+    }
+  ],
+  "reviewed_source_sha256": {
+    "alerting.py": "c886def49d9293210b55bd4ec25816b4f9604524d066cc92ed2feb09333c8791",
+    "prompts.py": "fe38a4cfa0b9d676b4dd7bbd5789fa0061dcea4582f29a3c542bdfd4eb41f214",
+    "alert_policy.demo.json": "67db4c59087684b51068876b7951b30324ffdb698dc7efbbb82a2e1783a64e99"
+  }
+}

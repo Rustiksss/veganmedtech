@@ -1,0 +1,13 @@
+{
+  "backend/Dockerfile": "d3983b7b80d6b605fa6ab0bf1d6e845c53afd18ff20af4afa3c42dd5b1b60a81",
+  "backend/config/views.py": "a5f80c142a95c8b6c854a6d8bd16113d9da656157f548ea70a96652ba08e72ad",
+  "backend/config/urls.py": "d68673bbd3e42857b4e758dfb1e29256f4cb4d5a8bf021f482c8458bdb58d278",
+  "frontend/templates/index.html": "8cd24b5ad6d4f0d2f191a0ec7920ea471342655f8c3b79eb95a3defe0be7c71a",
+  "frontend/static/js/app.js": "410af4e08abafc0c49244a59281f08ef59cded92fdb5ae4fefaea5ce43905e4f",
+  "frontend/static/js/questionnaires.js": "3e7afa1aeb48e69987066bc0ba40455604995455bf2074e97f72e732ec70d2c5",
+  "deploy/Caddyfile": "1dae0c123dc258d59670a09eeb203f2faa79b994e6d699754f528977f3ad8d92",
+  "scripts/deploy.sh": "a33a9ad0de68caf834fd5209545612c0a842493b9d20bbb560687d1049f1fce7",
+  "backend/accounts/tests/test_accounts.py": "6b443080d51cc7903d2c3378cd68a69ccb071eeb229234a66ea210c67f8d7563",
+  "tests/test_deploy.py": "5cf88f18b7a5d47a609714b423458c51cba16eb541320952c41e7264f59875c1",
+  "tests/browser/run.py": "5a03f29f1f9308731ebb60bd330be1104f610658f2e6e28d109353a6e455091c"
+}

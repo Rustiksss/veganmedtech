@@ -1,0 +1,188 @@
+{
+  "id": "cohere/command-r7b-12-2024",
+  "name": "Cohere: Command R7B (12-2024)",
+  "type": "chat",
+  "short_description": "Текстовая модель для диалогов, RAG и вызова инструментов: помогает отвечать по документам, выполнять составные запросы и поддерживать агентные процессы.",
+  "description": "## Суть\nCommand R7B — текстовая языковая модель Cohere для прикладных задач, в которых важны скорость и умеренные требования к вычислительным ресурсам. Она предназначена для диалогов и инструкций, а также для работы с документами, кодом и внешними инструментами.\n\n## Сильные стороны\nМодель обучена отвечать с опорой на предоставленные фрагменты документов в сценариях retrieval-augmented generation (RAG). Она также умеет формировать вызовы инструментов, например API, баз данных или поисковых систем, и использовать результаты этих вызовов в дальнейшем ответе. В описании Cohere Labs отдельно отмечены суммаризация, ответы на вопросы, рассуждения и задачи с кодом. Для многошаговых задач модель может комбинировать инструменты; сами инструменты при этом должны быть подключены приложением.\n\n## Контекст и модальности\nСогласно данным каталога, длина контекста — 128 000 токенов. Вход и выход — текстовые: модель не принимает изображения или аудио и не генерирует их.\n\n## Типовые сценарии\nПодходит для чат-ботов и помощников, которые отвечают по внутренним документам, извлекают из текста нужные сведения, составляют сводки или помогают с кодом. В приложениях с поиском и внешними API может выступать компонентом агентного процесса: выбирать подходящий инструмент, передавать ему запрос и формулировать ответ по результатам.\n\n## Ограничения\nДля доступа к свежим или закрытым сведениям нужны документы, поиск или другие подключённые инструменты — сама модель не заменяет их. Результаты вызова инструмента также зависят от приложения и источника данных. Модель работает только с текстом. Карточка Cohere Labs указывает для открытых весов лицензию CC-BY-NC и требования соблюдать политику допустимого использования; условия конкретного способа развёртывания следует проверять отдельно.\n\n## Отличие от соседей по семейству\nCohere позиционирует R7B как компактную и быструю модель семейства Command R, ориентированную на сценарии, где важны скорость и вычислительная эффективность. При этом она сохраняет поддержку RAG, вызова инструментов и многошаговых агентных задач. Это делает её вариантом для более лёгких рабочих процессов, а не основанием считать её равной по возможностям более крупным моделям семейства.",
+  "icon_provider_slug": "cohere",
+  "is_fz152_compliant": false,
+  "stores_data_in_russia": false,
+  "created": 1769617387,
+  "architecture": {
+    "modality": "text->text",
+    "input_modalities": [
+      "text"
+    ],
+    "output_modalities": [
+      "text"
+    ],
+    "tokenizer": "Cohere",
+    "instruct_type": null
+  },
+  "context_length": 128000,
+  "max_completion_tokens": 4000,
+  "top_provider": {
+    "name": "cohere",
+    "icon_provider_slug": "cohere",
+    "is_fz152_compliant": false,
+    "stores_data_in_russia": false,
+    "is_hosted_on_polza_infrastructure": false,
+    "is_unofficial": false,
+    "is_moderated": false,
+    "context_length": 128000,
+    "max_completion_tokens": 4000,
+    "pricing": {
+      "prompt_per_million": "4.29514500",
+      "completion_per_million": "17.18058000",
+      "currency": "RUB"
+    },
+    "supported_parameters": [
+      "max_tokens",
+      "temperature",
+      "top_p",
+      "stop",
+      "frequency_penalty",
+      "presence_penalty",
+      "top_k",
+      "seed",
+      "structured_outputs",
+      "response_format"
+    ],
+    "capabilities": {
+      "tools": {
+        "status": "rejected",
+        "verified_at": null
+      },
+      "tool_choice_required": {
+        "status": "rejected",
+        "verified_at": null
+      },
+      "tool_choice_function": {
+        "status": "rejected",
+        "verified_at": null
+      },
+      "tool_choice_none": {
+        "status": "rejected",
+        "verified_at": null
+      },
+      "json_object": {
+        "status": "supported",
+        "verified_at": null
+      },
+      "json_schema_strict": {
+        "status": "supported",
+        "verified_at": null
+      },
+      "reasoning_effort": {
+        "status": "rejected",
+        "verified_at": null
+      },
+      "input_image": {
+        "status": "rejected",
+        "verified_at": null
+      },
+      "input_pdf": {
+        "status": "rejected",
+        "verified_at": null
+      },
+      "prompt_cache_implicit": {
+        "status": "rejected",
+        "verified_at": null
+      },
+      "native_web_search": {
+        "status": "rejected",
+        "verified_at": null
+      }
+    },
+    "default_parameters": {
+      "temperature": null,
+      "top_p": null,
+      "frequency_penalty": null
+    }
+  },
+  "providers": [
+    {
+      "name": "cohere",
+      "icon_provider_slug": "cohere",
+      "is_fz152_compliant": false,
+      "stores_data_in_russia": false,
+      "is_hosted_on_polza_infrastructure": false,
+      "is_unofficial": false,
+      "context_length": 128000,
+      "max_completion_tokens": 4000,
+      "is_moderated": false,
+      "pricing": {
+        "prompt_per_million": "4.29514500",
+        "completion_per_million": "17.18058000",
+        "currency": "RUB"
+      },
+      "supported_parameters": [
+        "max_tokens",
+        "temperature",
+        "top_p",
+        "stop",
+        "frequency_penalty",
+        "presence_penalty",
+        "top_k",
+        "seed",
+        "structured_outputs",
+        "response_format"
+      ],
+      "supports_native_web_search": false,
+      "capabilities": {
+        "tools": {
+          "status": "rejected",
+          "verified_at": null
+        },
+        "tool_choice_required": {
+          "status": "rejected",
+          "verified_at": null
+        },
+        "tool_choice_function": {
+          "status": "rejected",
+          "verified_at": null
+        },
+        "tool_choice_none": {
+          "status": "rejected",
+          "verified_at": null
+        },
+        "json_object": {
+          "status": "supported",
+          "verified_at": null
+        },
+        "json_schema_strict": {
+          "status": "supported",
+          "verified_at": null
+        },
+        "reasoning_effort": {
+          "status": "rejected",
+          "verified_at": null
+        },
+        "input_image": {
+          "status": "rejected",
+          "verified_at": null
+        },
+        "input_pdf": {
+          "status": "rejected",
+          "verified_at": null
+        },
+        "prompt_cache_implicit": {
+          "status": "rejected",
+          "verified_at": null
+        },
+        "native_web_search": {
+          "status": "rejected",
+          "verified_at": null
+        }
+      },
+      "default_parameters": {
+        "temperature": null,
+        "top_p": null,
+        "frequency_penalty": null
+      }
+    }
+  ],
+  "endpoints": [
+    "/api/v1/chat/completions"
+  ]
+}

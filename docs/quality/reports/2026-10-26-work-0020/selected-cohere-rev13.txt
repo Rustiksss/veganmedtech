@@ -1,0 +1,13 @@
+{"attempt": 228, "stage": "functional", "config": "dca5c3c9517f3693", "case": "positive", "quality_ok": true, "seconds": 3.014, "errors": []}
+{"attempt": 229, "stage": "functional", "config": "dca5c3c9517f3693", "case": "neutral", "quality_ok": true, "seconds": 2.887, "errors": []}
+{"attempt": 230, "stage": "functional", "config": "dca5c3c9517f3693", "case": "negation", "quality_ok": false, "seconds": 2.551, "errors": ["wrong_categories", "wrong_status"]}
+{"attempt": 231, "stage": "functional", "config": "dca5c3c9517f3693", "case": "past", "quality_ok": true, "seconds": 2.26, "errors": []}
+{"attempt": 232, "stage": "functional", "config": "dca5c3c9517f3693", "case": "past_wish", "quality_ok": true, "seconds": 1.666, "errors": []}
+{"attempt": 233, "stage": "functional", "config": "dca5c3c9517f3693", "case": "third_person", "quality_ok": true, "seconds": 2.104, "errors": []}
+{"attempt": 234, "stage": "functional", "config": "dca5c3c9517f3693", "case": "literary_quote", "quality_ok": false, "seconds": 2.664, "errors": ["wrong_categories", "wrong_status"]}
+{"attempt": 235, "stage": "functional", "config": "dca5c3c9517f3693", "case": "educational", "quality_ok": true, "seconds": 2.798, "errors": []}
+{"attempt": 236, "stage": "functional", "config": "dca5c3c9517f3693", "case": "ordinary_distress", "quality_ok": false, "seconds": 3.041, "errors": ["invalid_json_schema_evidence"]}
+{"attempt": 237, "stage": "functional", "config": "dca5c3c9517f3693", "case": "override", "quality_ok": false, "seconds": 2.136, "errors": ["wrong_categories", "wrong_status"]}
+{"attempt": 238, "stage": "functional", "config": "dca5c3c9517f3693", "case": "history_not_evidence", "quality_ok": true, "seconds": 2.893, "errors": []}
+{"attempt": 239, "stage": "functional", "config": "dca5c3c9517f3693", "case": "current_signal_after_neutral", "quality_ok": true, "seconds": 1.767, "errors": []}
+{"rows": 12, "selected": false}

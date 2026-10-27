@@ -1,0 +1,81 @@
+{
+  "type": "summary",
+  "attempts_total": 84,
+  "new_attempts": 2,
+  "reserved_upper_rub_since_25": 2.840351054255199,
+  "winner": null,
+  "results": [
+    {
+      "model": "cohere/command-r7b-12-2024",
+      "provider": "cohere",
+      "input_price": 4.295145,
+      "output_price": 17.18058,
+      "request_fee": 0.0,
+      "response_format": "json_schema",
+      "reasoning": null,
+      "passed": false,
+      "median_seconds": 3.475,
+      "cases": [
+        {
+          "type": "case",
+          "attempt": 83,
+          "model": "cohere/command-r7b-12-2024",
+          "provider": "cohere",
+          "case": "positive",
+          "passed": false,
+          "seconds": 3.475,
+          "upper_cost_rub": 0.067721551215,
+          "error": "unavailable",
+          "http_status": 400
+        }
+      ]
+    },
+    {
+      "model": "meta-llama/llama-3.1-8b-instruct",
+      "provider": "groq",
+      "input_price": 5.72686,
+      "output_price": 9.162976,
+      "request_fee": 0.0,
+      "response_format": "json_object",
+      "reasoning": null,
+      "passed": false,
+      "median_seconds": 12.54,
+      "cases": [
+        {
+          "type": "case",
+          "attempt": 84,
+          "model": "meta-llama/llama-3.1-8b-instruct",
+          "provider": "groq",
+          "case": "positive",
+          "passed": false,
+          "seconds": 12.54,
+          "upper_cost_rub": 0.07825868727200001,
+          "reply": "Я слышу, что вы чувствуете себя очень трудно. Хотите поговорить о том, что происходит?",
+          "analysis_status": "matched",
+          "signals": [
+            {
+              "category": "wish_to_die",
+              "quote": "я не хочу жить",
+              "time": "current",
+              "label": "Возможное желание не жить",
+              "time_label": "В сообщении относится к настоящему",
+              "source_ref": "DOCX-ALERT-001 · Описание характера суицидальных идей"
+            }
+          ],
+          "usage": {
+            "prompt_tokens": 2111,
+            "completion_tokens": 85,
+            "total_tokens": 2196,
+            "cost": 0.01273957
+          },
+          "http_status": 200,
+          "generation_id": "gen_2226126813221752833",
+          "returned_model": "meta-llama/llama-3.1-8b-instruct",
+          "finish_reason": "stop",
+          "content": "{\n  \"reply\": \"Я слышу, что вы чувствуете себя очень трудно. Хотите поговорить о том, что происходит?\",\n   \"analysis\": {\n      \"status\": \"matched\",\n      \"signals\": [\n         {\n            \"category\": \"wish_to_die\",\n            \"quote\": \"я не хочу жить\",\n            \"time\": \"current\"\n         }\n      ]\n   }\n}"
+        }
+      ]
+    }
+  ],
+  "server_files_or_database_changed": false
+}

@@ -1,0 +1,58 @@
+Локальная сборка veganmedtech-server:20261025T100713Z-2af80812 (linux/amd64).
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Готовый образ: 217345334 байт; транспорт: 81395623 байт.
+Проверен неизменный установленный образ; повторная передача не нужна.
+Передача версии 20261025T100713Z-2af80812; необходимый резерв с образом и транспортом: 256 MiB.
+Docker version 29.9.2, build a82e528
+Docker Compose version v5.6.1
+Серверная конфигурация проверена, права 0600; значения не выводятся.
+Пути, системный пользователь и порты proxy проверены.
+Образ проверен и загружен; временный транспорт удалён, сборки на сервере нет.
+ Image axllent/mailpit:v1.30.0@sha256:0059ef81e492a7192af3816281eed6859eb078bd7bdc58b76757c13e10e53a7d Skipped Image is already present locally
+ Image postgres:18.6-bookworm@sha256:afc7e2d441324c0388fa80c3d24f733b4194a4eb7f47dd8ee2b08eb1a24a647c Skipped Image is already present locally
+Копия БД проверена: /opt/veganmedtech/backups/20261025T100713Z-2af80812.dump
+Известная серверная конфигурация переведена в HTTPS; секреты сохранены.
+Серверная конфигурация проверена, права 0600; значения не выводятся.
+Запуск и ожидание готовности.
+ Container veganmedtech-mailpit-1 Running 
+ Container veganmedtech-db-1 Running 
+ Container veganmedtech-app-1 Recreate 
+ Container veganmedtech-app-1 Recreated 
+ Container veganmedtech-db-1 Waiting 
+ Container veganmedtech-db-1 Healthy 
+ Container veganmedtech-app-1 Starting 
+ Container veganmedtech-app-1 Started 
+ Container veganmedtech-db-1 Waiting 
+ Container veganmedtech-app-1 Waiting 
+ Container veganmedtech-mailpit-1 Waiting 
+ Container veganmedtech-mailpit-1 Healthy 
+ Container veganmedtech-db-1 Healthy 
+ Container veganmedtech-app-1 Healthy 
+Приватный модуль и отсутствие публичных копий проверены до снятия Basic Auth.
+Пути, системный пользователь и порты proxy проверены.
+Реквизиты Mailpit проверены, права 0600; значения не выводятся.
+TLS и защита Mailpit подготовлены; основной сайт без общего пароля.
+Valid configuration
+Реквизиты Mailpit проверены, права 0600; значения не выводятся.
+TLS и защита Mailpit подготовлены; основной сайт без общего пароля.
+Доверенный HTTPS, вход пилота и защита Mailpit проверены.
+Деплой завершён: 20261025T100713Z-2af80812.
+Сайт: https://94.103.3.149 · пилот на вымышленных данных
+Обычный вход в аккаунт; Mailpit оператора: https://94.103.3.149:8443/

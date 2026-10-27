@@ -1,0 +1,18 @@
+{
+  "strict_trusted_https": true,
+  "checks": {
+    "https://94.103.3.149/": 200,
+    "https://94.103.3.149/api/me": 401,
+    "https://94.103.3.149/api/questionnaires/module": 401,
+    "https://94.103.3.149/api/v1/messages": 404,
+    "https://94.103.3.149/api/events": 404,
+    "https://94.103.3.149:8443/": 401,
+    "https://94.103.3.149:8443/api/v1/messages": 401,
+    "https://94.103.3.149:8443/api/events": 401,
+    "closed_port_18008": true,
+    "closed_port_18025": true,
+    "closed_port_5432": true,
+    "closed_port_1025": true,
+    "closed_port_2019": true
+  }
+}

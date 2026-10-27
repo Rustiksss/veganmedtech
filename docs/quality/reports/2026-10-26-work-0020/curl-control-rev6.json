@@ -1,0 +1,1 @@
+{"attempt": 23, "transport": "host curl HTTP1.1; same key stays on server", "exit_code": 28, "seconds": 18.058, "curl_metrics": "000|18.003427|0.000000|0", "received_bytes": 1}

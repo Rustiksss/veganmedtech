@@ -1,0 +1,2 @@
+{"type": "case", "attempt": 66, "model": "meta-llama/llama-3.1-8b-instruct", "provider": "groq", "case": "positive", "passed": false, "seconds": 17.302}
+{"winner": null, "attempts_total": 66}

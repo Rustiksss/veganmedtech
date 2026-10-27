@@ -1,0 +1,130 @@
+{
+  "passed": 31,
+  "failed": 0,
+  "checks": [
+    {
+      "name": "reduced motion active patient",
+      "passed": true
+    },
+    {
+      "name": "reduced screen animation patient 1440",
+      "passed": true
+    },
+    {
+      "name": "reduced breathing animation 1440",
+      "passed": true
+    },
+    {
+      "name": "reduced transition retains view patient 1440",
+      "passed": true
+    },
+    {
+      "name": "old form blocked before hashchange patient 1440",
+      "passed": true
+    },
+    {
+      "name": "reduced ready layout and focus patient 1440",
+      "passed": true
+    },
+    {
+      "name": "reduced screen animation patient 768",
+      "passed": true
+    },
+    {
+      "name": "reduced breathing animation 768",
+      "passed": true
+    },
+    {
+      "name": "reduced transition retains view patient 768",
+      "passed": true
+    },
+    {
+      "name": "old form blocked before hashchange patient 768",
+      "passed": true
+    },
+    {
+      "name": "reduced ready layout and focus patient 768",
+      "passed": true
+    },
+    {
+      "name": "reduced screen animation patient 390",
+      "passed": true
+    },
+    {
+      "name": "reduced breathing animation 390",
+      "passed": true
+    },
+    {
+      "name": "reduced transition retains view patient 390",
+      "passed": true
+    },
+    {
+      "name": "old form blocked before hashchange patient 390",
+      "passed": true
+    },
+    {
+      "name": "reduced ready layout and focus patient 390",
+      "passed": true
+    },
+    {
+      "name": "late assistant poll cannot clear session or replace pending view",
+      "passed": true
+    },
+    {
+      "name": "late assistant send cannot clear session after navigation",
+      "passed": true
+    },
+    {
+      "name": "reduced motion active doctor",
+      "passed": true
+    },
+    {
+      "name": "reduced screen animation doctor 1440",
+      "passed": true
+    },
+    {
+      "name": "reduced transition retains view doctor 1440",
+      "passed": true
+    },
+    {
+      "name": "old form blocked before hashchange doctor 1440",
+      "passed": true
+    },
+    {
+      "name": "reduced ready layout and focus doctor 1440",
+      "passed": true
+    },
+    {
+      "name": "reduced screen animation doctor 768",
+      "passed": true
+    },
+    {
+      "name": "reduced transition retains view doctor 768",
+      "passed": true
+    },
+    {
+      "name": "old form blocked before hashchange doctor 768",
+      "passed": true
+    },
+    {
+      "name": "reduced ready layout and focus doctor 768",
+      "passed": true
+    },
+    {
+      "name": "reduced screen animation doctor 390",
+      "passed": true
+    },
+    {
+      "name": "reduced transition retains view doctor 390",
+      "passed": true
+    },
+    {
+      "name": "old form blocked before hashchange doctor 390",
+      "passed": true
+    },
+    {
+      "name": "reduced ready layout and focus doctor 390",
+      "passed": true
+    }
+  ]
+}

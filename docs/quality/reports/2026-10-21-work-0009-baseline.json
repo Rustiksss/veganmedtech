@@ -1,0 +1,14 @@
+{
+  "frontend/static/js/questionnaires.js": "3e7afa1aeb48e69987066bc0ba40455604995455bf2074e97f72e732ec70d2c5",
+  "frontend/static/js/app.js": "7a9c437193397d717b76a07989e8439378a2a96efa90126d4c3baaecd2efacd7",
+  "frontend/static/js/api.js": "4e7f74b29de3ed126ea0cee1bbbb3bf86b30dad1f61324984a55a11359ef9f26",
+  "frontend/static/css/app.css": "6caaecfd4221f272dc100913cc8c385c6b5dd3c0ab43aab92e551fe4987ae372",
+  "frontend/templates/index.html": "7e3a4c3b54abadd0ae848ac0403db6258a97a0eb396776cede292a2a1cdacc68",
+  "frontend/tests/questionnaires.html": "d9ed29780ecf39ace4422eb6d51c1422b80cf1e6bce97417d18f5fe8ae2e7b37",
+  "misc_materials/kompas_prototype.html": "38fad7a7b5283974f8488a99f3a5784d783b3160cf0171b75b4804f040e7a793",
+  "misc_materials/Индекс_жизненной_удовлетворенности.docx": "a99bce29961085d3d276eeb42cf8dd60dc36c60bbdb6e26b54bee64dc5a0d5bf",
+  "misc_materials/Кейс_цифровой_помощник_клинический_компас.pdf": "dbc5d5edebab94f5742f8d81ec1b727954c8b088afcc126e67f75ab5691f41ab",
+  "misc_materials/Клинический компас шкалы.docx": "0d6e9951b90c2e2cb7ce65cf6a88ceccd1b2001f23857fc955e0433c8dc9920b",
+  "misc_materials/Краткий_опросник_восприятия_болезни_Сирота.docx": "ae7d03c5213b4100e41b46a90466da1e20d56e0a004c3e4125b149799d2631a4",
+  "misc_materials/Тест_экзистенциальных_мотиваций_текст_и_ключи_.pdf": "789fb0455dfcfbb41b9229d12c686031c6fc8ed06dbc18c858abf89782628c46"
+}

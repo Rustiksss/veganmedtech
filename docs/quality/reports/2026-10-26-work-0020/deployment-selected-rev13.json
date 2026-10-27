@@ -1,0 +1,14 @@
+{
+  "model": "cohere/command-r7b-12-2024",
+  "provider": "cohere",
+  "prompt_version": "service-support-cohere-v3",
+  "user_directed_publication": true,
+  "model_quality_acceptance_passed": false,
+  "speed_gate": false,
+  "source_sha256": {
+    "backend/assistant/client.py": "3c93da935a4752b01fe193e8f870cc7525ad9d46086ad544afb2fac1f3737c57",
+    "backend/assistant/prompts.py": "93f34b03ebb5a1942513d452a8d570f9f6a2a70bddc7978277e25676c41bcf25",
+    "backend/config/settings.py": "0dd8326041bcf219b480fd65e72f45511ab0e33088c1298e08e75e72eefa30eb",
+    "scripts/deploy.sh": "610c68989b9208b8419ea736fa13202f1372fc6c6a1002e882d74c91f28cb842"
+  }
+}

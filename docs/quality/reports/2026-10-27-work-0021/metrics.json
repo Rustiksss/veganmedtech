@@ -1,0 +1,323 @@
+{
+  "schema_version": 1,
+  "collected_at": "2026-10-27T14:29:45.175936+00:00",
+  "window_hours": 24,
+  "sources": {
+    "http": "ok",
+    "app": "ok",
+    "resources": "ok",
+    "runtime": "ok",
+    "backups": "ok",
+    "public": "ok"
+  },
+  "limitations": [
+    "Только агрегаты; в БД есть синтетические тестовые записи.",
+    "Логи только текущего контейнера, до5000 строк; полнота окна не гарантирована.",
+    "Длительности из БД — до5000 последних значений каждого вида; пустая выборка даёт null."
+  ],
+  "metrics": [
+    {
+      "requirement": "NFR-001",
+      "name": "Быстродействие",
+      "status": "partial",
+      "data": {
+        "http": {
+          "requests_observed": 337,
+          "status_counts": {
+            "200": 323,
+            "401": 4,
+            "404": 9,
+            "201": 1
+          },
+          "latency": {
+            "samples": 337,
+            "mean_ms": 50.485810089020774,
+            "p50_ms": 32.262,
+            "p95_ms": 82.759,
+            "max_ms": 2818.618
+          },
+          "successful_latency": {
+            "samples": 324,
+            "mean_ms": 52.11253086419753,
+            "p50_ms": 32.6115,
+            "p95_ms": 82.759,
+            "max_ms": 2818.618
+          },
+          "server_error_fraction": 0.0,
+          "access_denials_401_403": 4,
+          "ignored_lines": 5,
+          "coverage_complete": false,
+          "tail_limit": 5000
+        },
+        "app": {
+          "completed_turn": {
+            "samples": 2,
+            "mean_ms": 2995.8095000000003,
+            "p50_ms": 2995.8095000000003,
+            "p95_ms": 3336.795,
+            "max_ms": 3336.795
+          },
+          "failed_turn": {
+            "samples": 5,
+            "mean_ms": 18043.583199999997,
+            "p50_ms": 18041.02,
+            "p95_ms": 18066.825999999997,
+            "max_ms": 18066.825999999997
+          },
+          "demo_event_available": {
+            "samples": 1,
+            "mean_ms": 3347.7760000000003,
+            "p50_ms": 3347.7760000000003,
+            "p95_ms": 3347.7760000000003,
+            "max_ms": 3347.7760000000003
+          },
+          "demo_seen": {
+            "samples": 1,
+            "mean_ms": 269.19300000000004,
+            "p50_ms": 269.19300000000004,
+            "p95_ms": 269.19300000000004,
+            "max_ms": 269.19300000000004
+          }
+        },
+        "public": {
+          "ready": true,
+          "probe_ms": 161.90903200185858,
+          "vantage": "deployment_host",
+          "tls_verified": true,
+          "certificate_expires_in_seconds": 342047.9674794674,
+          "headers": {
+            "Strict-Transport-Security": null,
+            "X-Content-Type-Options": "nosniff",
+            "X-Frame-Options": "DENY",
+            "Referrer-Policy": "no-referrer"
+          }
+        }
+      },
+      "limitation": "Демособытие доступно в БД; доставка в браузер и рекомендации не измерены."
+    },
+    {
+      "requirement": "NFR-002",
+      "name": "Качество извлечения",
+      "status": "not_implemented",
+      "data": {
+        "precision": null,
+        "recall": null
+      },
+      "limitation": "Извлечение истории болезни не реализовано; качество демоанализа не равно этой метрике."
+    },
+    {
+      "requirement": "NFR-003",
+      "name": "Надёжность и входные данные",
+      "status": "measured",
+      "data": {
+        "turn_states": {
+          "pending": 0,
+          "completed": 2,
+          "failed": 5,
+          "interrupted": 0
+        },
+        "analysis_states": {
+          "not_evaluated": 0,
+          "matched": 1,
+          "no_match": 1,
+          "uncertain": 0,
+          "failed": 5
+        },
+        "audit_outcomes": {
+          "success": 100,
+          "denied": 4,
+          "other": 7
+        }
+      },
+      "limitation": "Ошибки отражают наблюдаемое окно, не универсальную корректность."
+    },
+    {
+      "requirement": "NFR-004",
+      "name": "Эргономика",
+      "status": "not_measured",
+      "data": null,
+      "limitation": "Ручной start/stop; активации и изменения полей считаются отдельно, не все физические действия."
+    },
+    {
+      "requirement": "NFR-005",
+      "name": "Обоснованность выводов",
+      "status": "partial",
+      "data": {
+        "evaluated_turns": 2,
+        "with_policy_version": 2
+      },
+      "limitation": "Наличие версии не подтверждает клиническую обоснованность; медицинских рекомендаций нет."
+    },
+    {
+      "requirement": "NFR-006",
+      "name": "Устойчивость к нагрузке",
+      "status": "partial",
+      "data": {
+        "containers": [
+          {
+            "service": "app",
+            "cpu_percent": 20.58,
+            "memory_used_bytes": 138097459,
+            "memory_display_limit_bytes": 1002858086
+          },
+          {
+            "service": "db",
+            "cpu_percent": 0.11,
+            "memory_used_bytes": 34844180,
+            "memory_display_limit_bytes": 1002858086
+          },
+          {
+            "service": "mailpit",
+            "cpu_percent": 0.0,
+            "memory_used_bytes": 23760732,
+            "memory_display_limit_bytes": 1002858086
+          }
+        ],
+        "disk_free_bytes": 301858816,
+        "memory": {
+          "MemTotal": 1002827776,
+          "MemAvailable": 531922944
+        },
+        "load_average": [
+          0.48681640625,
+          0.5166015625,
+          0.54150390625
+        ],
+        "capacity_users": null
+      },
+      "limitation": "Снимок ресурсов текущей нагрузки, не нагрузочный тест и не предел пользователей."
+    },
+    {
+      "requirement": "NFR-007",
+      "name": "Восстановление и сохранность",
+      "status": "partial",
+      "data": {
+        "dump_count": 18,
+        "latest_bytes": 88021,
+        "latest_age_seconds": 1798.2525568008423,
+        "restore_seconds": null,
+        "actual_data_loss": null,
+        "guaranteed_rpo_seconds": null
+      },
+      "limitation": "Возраст копии не является гарантией RPO; новый restore и сбой не проводились."
+    },
+    {
+      "requirement": "NFR-008",
+      "name": "Кроссплатформенность",
+      "status": "partial",
+      "data": {
+        "runtime": "5.2.18",
+        "database_vendor": "postgresql",
+        "browser_sample": null
+      },
+      "limitation": "Один браузерный образец не доказывает совместимость всех платформ."
+    },
+    {
+      "requirement": "NFR-009",
+      "name": "Масштабируемость",
+      "status": "documented",
+      "data": {
+        "workers": 2,
+        "app_containers": 1,
+        "app_started_at": "2026-10-27T13:59:49.992604407Z",
+        "health": {
+          "app": "healthy",
+          "db": "healthy",
+          "mailpit": "healthy"
+        }
+      },
+      "limitation": "Один узел приложения/БД; число workers не равно числу поддерживаемых пользователей."
+    },
+    {
+      "requirement": "NFR-010",
+      "name": "Расширяемость правил",
+      "status": "documented",
+      "data": {
+        "demo_policy_version": "chat-alert-demo-v1",
+        "demo_categories": 9,
+        "questionnaires": 4,
+        "clinical_drug_registry": false
+      },
+      "limitation": "Четыре учебные шкалы в questionnaires.js; правила отдельно, изменение кода требует поставки/проверки."
+    },
+    {
+      "requirement": "NFR-011",
+      "name": "Гибкость данных",
+      "status": "measured",
+      "data": {
+        "database_bytes": 9778879,
+        "probe_ms": 0.27381000109016895,
+        "cumulative": {
+          "connections": 1,
+          "commits": 120373,
+          "rollbacks": 7,
+          "blocks_read": 796,
+          "blocks_hit": 5796495
+        },
+        "rows": {
+          "users": 57,
+          "relationships": 15,
+          "self_reports": 3,
+          "assistant_turns": 12,
+          "notifications": 2,
+          "audit": 458
+        }
+      },
+      "limitation": "SELECT1 — контроль чтения, не скорость всех запросов; статистика PostgreSQL накопительная."
+    },
+    {
+      "requirement": "NFR-012",
+      "name": "Полнота модели",
+      "status": "documented",
+      "data": {
+        "rows": {
+          "users": 57,
+          "relationships": 15,
+          "self_reports": 3,
+          "assistant_turns": 12,
+          "notifications": 2,
+          "audit": 458
+        },
+        "clinical_engine": false,
+        "prescriptions": false
+      },
+      "limitation": "Есть аккаунты/связи/самоотчёты/чат/демособытия/аудит; полного клинического контура нет."
+    },
+    {
+      "requirement": "NFR-013",
+      "name": "Защищённость данных",
+      "status": "partial",
+      "data": {
+        "configuration": {
+          "django": "5.2.18",
+          "database_vendor": "postgresql",
+          "session_secure": true,
+          "session_httponly": true,
+          "csrf_secure": true,
+          "debug": false,
+          "clinical_detection_enabled": false,
+          "alerting_mode": "demo"
+        },
+        "public": {
+          "ready": true,
+          "probe_ms": 161.90903200185858,
+          "vantage": "deployment_host",
+          "tls_verified": true,
+          "certificate_expires_in_seconds": 342047.9674794674,
+          "headers": {
+            "Strict-Transport-Security": null,
+            "X-Content-Type-Options": "nosniff",
+            "X-Frame-Options": "DENY",
+            "Referrer-Policy": "no-referrer"
+          }
+        },
+        "audit_outcomes": {
+          "success": 100,
+          "denied": 4,
+          "other": 7
+        }
+      },
+      "limitation": "Проверка механизмов/отказов, не аудит безопасности или подтверждение правового соответствия."
+    }
+  ]
+}

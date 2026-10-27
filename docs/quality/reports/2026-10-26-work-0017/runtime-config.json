@@ -1,0 +1,5 @@
+{
+  "key_configured": true,
+  "model": "deepseek/deepseek-v4-flash",
+  "automatic_detection_enabled": false
+}

@@ -1,0 +1,5 @@
+{"type": "case", "attempt": 62, "model": "meta-llama/llama-3.1-8b-instruct", "provider": "groq", "case": "positive", "passed": true, "seconds": 3.35}
+{"type": "case", "attempt": 63, "model": "meta-llama/llama-3.1-8b-instruct", "provider": "groq", "case": "neutral", "passed": true, "seconds": 7.761}
+{"type": "case", "attempt": 64, "model": "meta-llama/llama-3.1-8b-instruct", "provider": "groq", "case": "negation", "passed": true, "seconds": 3.524}
+{"type": "case", "attempt": 65, "model": "meta-llama/llama-3.1-8b-instruct", "provider": "groq", "case": "past", "passed": true, "seconds": 1.577}
+{"winner": "meta-llama/llama-3.1-8b-instruct", "attempts_total": 65}

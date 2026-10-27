@@ -1,0 +1,3 @@
+ Container veganmedtech-work0020-test-app-run-b93b7cbae982 Creating 
+ Container veganmedtech-work0020-test-app-run-b93b7cbae982 Created 
+No changes detected

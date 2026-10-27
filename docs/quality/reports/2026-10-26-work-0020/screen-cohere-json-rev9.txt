@@ -1,0 +1,2 @@
+{"type": "case", "attempt": 85, "model": "cohere/command-r7b-12-2024", "provider": "cohere", "case": "positive", "passed": false, "seconds": 2.371}
+{"winner": null, "attempts_total": 85}

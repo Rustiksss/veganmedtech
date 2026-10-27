@@ -1,0 +1,18 @@
+{
+  "source": "/opt/veganmedtech/backups/20261025T213505Z-81b7c2d9.dump",
+  "bytes": 76907,
+  "location": "same server; isolated container, network none, PGDATA in tmpfs",
+  "database": "compass_restore_work0017",
+  "assistant_schema_present": true,
+  "own_chat_report_event_match": true,
+  "audit_retained": true,
+  "own_temporary_database_removed": true,
+  "container_memory_limit": 268435456,
+  "swap_disabled": true,
+  "no_persistent_volumes": true,
+  "available_memory_before_bytes": 535404544,
+  "disk_available_before_bytes": 289980416,
+  "temporary_container_removed": true,
+  "disk_available_after_bytes": 289976320,
+  "public_app_ready": true
+}

@@ -1,0 +1,1 @@
+{"passed": 9, "total": 9, "metadata": {"provider": "fixed synthetic fixture; real Polza checked separately", "widths": [1440, 768, 390]}}

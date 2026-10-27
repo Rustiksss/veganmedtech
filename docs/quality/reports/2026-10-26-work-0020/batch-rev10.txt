@@ -1,0 +1,111 @@
+{"manifest": "/home/rustiks/veganmedtech/docs/quality/reports/2026-10-26-work-0020/batch-rev10.manifest.json", "configs": 12, "skips": [{"model": "google/gemma-3-12b-it", "provider": "deepinfra/bf16/priority", "prompt": "russian", "reason": "Control price exceeds 0.10"}, {"model": "google/gemma-3-27b-it", "provider": "deepinfra/fp8", "prompt": "russian", "reason": "Control price exceeds 0.10"}, {"model": "qwen/qwen3.5-35b-a3b", "provider": "darkbloom/fp4", "prompt": "russian", "reason": "Control price exceeds 0.10"}, {"model": "meta-llama/llama-3.1-8b-instruct", "provider": "groq", "prompt": "russian", "reason": "Matrix budget reserve"}, {"model": "google/gemma-3-4b-it", "provider": "parasail/bf16", "prompt": "russian", "reason": "Matrix budget reserve"}, {"model": "mistralai/ministral-3b-2512", "provider": "mistral", "prompt": "russian", "reason": "Control price exceeds 0.10"}, {"model": "cohere/command-r7b-12-2024", "provider": "cohere", "prompt": "russian", "reason": "Matrix budget reserve"}, {"model": "openai/gpt-oss-20b", "provider": "groq", "prompt": "russian", "reason": "Control price exceeds 0.10"}]}
+{"attempt": 96, "stage": "screen", "config": "76fb470ca3ed618c", "case": "positive", "quality_ok": true, "seconds": 6.269, "errors": []}
+{"attempt": 97, "stage": "screen", "config": "76fb470ca3ed618c", "case": "neutral", "quality_ok": true, "seconds": 6.336, "errors": []}
+{"attempt": 98, "stage": "screen", "config": "76fb470ca3ed618c", "case": "negation", "quality_ok": false, "seconds": 18.001, "errors": ["timeout"]}
+{"attempt": 99, "stage": "screen", "config": "76fb470ca3ed618c", "case": "past", "quality_ok": false, "seconds": 3.547, "errors": ["wrong_categories", "wrong_status"]}
+{"attempt": 100, "stage": "screen", "config": "c012c67c4c06c37e", "case": "positive", "quality_ok": true, "seconds": 4.464, "errors": []}
+{"attempt": 101, "stage": "screen", "config": "c012c67c4c06c37e", "case": "neutral", "quality_ok": true, "seconds": 3.056, "errors": []}
+{"attempt": 102, "stage": "screen", "config": "c012c67c4c06c37e", "case": "negation", "quality_ok": true, "seconds": 2.521, "errors": []}
+{"attempt": 103, "stage": "screen", "config": "c012c67c4c06c37e", "case": "past", "quality_ok": false, "seconds": 3.633, "errors": ["invalid_json_schema_evidence"]}
+{"attempt": 104, "stage": "screen", "config": "899b9519f91644e9", "case": "positive", "quality_ok": true, "seconds": 3.938, "errors": []}
+{"attempt": 105, "stage": "screen", "config": "899b9519f91644e9", "case": "neutral", "quality_ok": true, "seconds": 4.067, "errors": []}
+{"attempt": 106, "stage": "screen", "config": "899b9519f91644e9", "case": "negation", "quality_ok": true, "seconds": 17.629, "errors": []}
+{"attempt": 107, "stage": "screen", "config": "899b9519f91644e9", "case": "past", "quality_ok": false, "seconds": 18.001, "errors": ["timeout"]}
+{"attempt": 108, "stage": "screen", "config": "85dbb3290fab48a4", "case": "positive", "quality_ok": true, "seconds": 2.141, "errors": []}
+{"attempt": 109, "stage": "screen", "config": "85dbb3290fab48a4", "case": "neutral", "quality_ok": true, "seconds": 3.215, "errors": []}
+{"attempt": 110, "stage": "screen", "config": "85dbb3290fab48a4", "case": "negation", "quality_ok": true, "seconds": 2.281, "errors": []}
+{"attempt": 111, "stage": "screen", "config": "85dbb3290fab48a4", "case": "past", "quality_ok": false, "seconds": 1.894, "errors": ["wrong_categories", "wrong_status"]}
+{"attempt": 112, "stage": "screen", "config": "4e0a9ad1e262ce11", "case": "positive", "quality_ok": true, "seconds": 1.649, "errors": []}
+{"attempt": 113, "stage": "screen", "config": "4e0a9ad1e262ce11", "case": "neutral", "quality_ok": true, "seconds": 1.64, "errors": []}
+{"attempt": 114, "stage": "screen", "config": "4e0a9ad1e262ce11", "case": "negation", "quality_ok": true, "seconds": 2.989, "errors": []}
+{"attempt": 115, "stage": "screen", "config": "4e0a9ad1e262ce11", "case": "past", "quality_ok": true, "seconds": 1.596, "errors": []}
+{"attempt": 116, "stage": "screen", "config": "7d38cb77e84cb7a4", "case": "positive", "quality_ok": true, "seconds": 15.241, "errors": []}
+{"attempt": 117, "stage": "screen", "config": "7d38cb77e84cb7a4", "case": "neutral", "quality_ok": true, "seconds": 2.864, "errors": []}
+{"attempt": 118, "stage": "screen", "config": "7d38cb77e84cb7a4", "case": "negation", "quality_ok": true, "seconds": 2.084, "errors": []}
+{"attempt": 119, "stage": "screen", "config": "7d38cb77e84cb7a4", "case": "past", "quality_ok": true, "seconds": 2.16, "errors": []}
+{"attempt": 120, "stage": "screen", "config": "5269675c41a4f20f", "case": "positive", "quality_ok": true, "seconds": 4.363, "errors": []}
+{"attempt": 121, "stage": "screen", "config": "5269675c41a4f20f", "case": "neutral", "quality_ok": true, "seconds": 6.603, "errors": []}
+{"attempt": 122, "stage": "screen", "config": "5269675c41a4f20f", "case": "negation", "quality_ok": true, "seconds": 2.579, "errors": []}
+{"attempt": 123, "stage": "screen", "config": "5269675c41a4f20f", "case": "past", "quality_ok": false, "seconds": 1.941, "errors": ["wrong_categories", "wrong_status"]}
+{"attempt": 124, "stage": "screen", "config": "464deb61903c48dc", "case": "positive", "quality_ok": true, "seconds": 3.674, "errors": []}
+{"attempt": 125, "stage": "screen", "config": "464deb61903c48dc", "case": "neutral", "quality_ok": true, "seconds": 1.693, "errors": []}
+{"attempt": 126, "stage": "screen", "config": "464deb61903c48dc", "case": "negation", "quality_ok": true, "seconds": 1.989, "errors": []}
+{"attempt": 127, "stage": "screen", "config": "464deb61903c48dc", "case": "past", "quality_ok": false, "seconds": 1.746, "errors": ["wrong_categories"]}
+{"attempt": 128, "stage": "screen", "config": "e5a470e305dd159f", "case": "positive", "quality_ok": true, "seconds": 3.665, "errors": []}
+{"attempt": 129, "stage": "screen", "config": "e5a470e305dd159f", "case": "neutral", "quality_ok": false, "seconds": 18.001, "errors": ["timeout"]}
+{"attempt": 130, "stage": "screen", "config": "e5a470e305dd159f", "case": "negation", "quality_ok": true, "seconds": 6.984, "errors": []}
+{"attempt": 131, "stage": "screen", "config": "e5a470e305dd159f", "case": "past", "quality_ok": false, "seconds": 4.483, "errors": ["wrong_categories", "wrong_status"]}
+{"attempt": 132, "stage": "screen", "config": "4b5c06e4cf5751e6", "case": "positive", "quality_ok": true, "seconds": 1.661, "errors": []}
+{"attempt": 133, "stage": "screen", "config": "4b5c06e4cf5751e6", "case": "neutral", "quality_ok": true, "seconds": 1.978, "errors": []}
+{"attempt": 134, "stage": "screen", "config": "4b5c06e4cf5751e6", "case": "negation", "quality_ok": true, "seconds": 5.321, "errors": []}
+{"attempt": 135, "stage": "screen", "config": "4b5c06e4cf5751e6", "case": "past", "quality_ok": true, "seconds": 4.272, "errors": []}
+{"attempt": 136, "stage": "screen", "config": "fa30920f28d5efd4", "case": "positive", "quality_ok": true, "seconds": 5.581, "errors": []}
+{"attempt": 137, "stage": "screen", "config": "fa30920f28d5efd4", "case": "neutral", "quality_ok": true, "seconds": 3.164, "errors": []}
+{"attempt": 138, "stage": "screen", "config": "fa30920f28d5efd4", "case": "negation", "quality_ok": true, "seconds": 5.493, "errors": []}
+{"attempt": 139, "stage": "screen", "config": "fa30920f28d5efd4", "case": "past", "quality_ok": true, "seconds": 6.354, "errors": []}
+{"attempt": 140, "stage": "screen", "config": "50126fcc933ac053", "case": "positive", "quality_ok": false, "seconds": 10.32, "errors": ["wrong_status"]}
+{"attempt": 141, "stage": "screen", "config": "50126fcc933ac053", "case": "neutral", "quality_ok": true, "seconds": 4.127, "errors": []}
+{"attempt": 142, "stage": "screen", "config": "50126fcc933ac053", "case": "negation", "quality_ok": true, "seconds": 2.146, "errors": []}
+{"attempt": 143, "stage": "screen", "config": "50126fcc933ac053", "case": "past", "quality_ok": true, "seconds": 2.214, "errors": []}
+{"attempt": 144, "stage": "qualify", "config": "4e0a9ad1e262ce11", "case": "positive", "quality_ok": true, "seconds": 2.333, "errors": []}
+{"attempt": 145, "stage": "qualify", "config": "4e0a9ad1e262ce11", "case": "neutral", "quality_ok": true, "seconds": 1.145, "errors": []}
+{"attempt": 146, "stage": "qualify", "config": "4e0a9ad1e262ce11", "case": "negation", "quality_ok": true, "seconds": 9.925, "errors": []}
+{"attempt": 147, "stage": "qualify", "config": "4e0a9ad1e262ce11", "case": "past", "quality_ok": true, "seconds": 3.878, "errors": []}
+{"attempt": 148, "stage": "qualify", "config": "4e0a9ad1e262ce11", "case": "past_wish", "quality_ok": true, "seconds": 1.318, "errors": []}
+{"attempt": 149, "stage": "qualify", "config": "4e0a9ad1e262ce11", "case": "third_person", "quality_ok": false, "seconds": 8.786, "errors": ["wrong_categories", "wrong_status"]}
+{"attempt": 150, "stage": "qualify", "config": "4e0a9ad1e262ce11", "case": "literary_quote", "quality_ok": false, "seconds": 1.533, "errors": ["wrong_categories", "wrong_status"]}
+{"attempt": 151, "stage": "qualify", "config": "4e0a9ad1e262ce11", "case": "educational", "quality_ok": true, "seconds": 1.34, "errors": []}
+{"attempt": 152, "stage": "qualify", "config": "4e0a9ad1e262ce11", "case": "ordinary_distress", "quality_ok": true, "seconds": 4.294, "errors": []}
+{"attempt": 153, "stage": "qualify", "config": "4e0a9ad1e262ce11", "case": "override", "quality_ok": false, "seconds": 4.409, "errors": ["wrong_categories", "wrong_status"]}
+{"attempt": 154, "stage": "qualify", "config": "4e0a9ad1e262ce11", "case": "history_not_evidence", "quality_ok": true, "seconds": 1.37, "errors": []}
+{"attempt": 155, "stage": "qualify", "config": "4e0a9ad1e262ce11", "case": "current_signal_after_neutral", "quality_ok": true, "seconds": 1.275, "errors": []}
+{"attempt": 156, "stage": "qualify", "config": "4e0a9ad1e262ce11", "case": "positive", "quality_ok": true, "seconds": 1.21, "errors": []}
+{"attempt": 157, "stage": "qualify", "config": "4e0a9ad1e262ce11", "case": "neutral", "quality_ok": true, "seconds": 1.777, "errors": []}
+{"attempt": 158, "stage": "qualify", "config": "4e0a9ad1e262ce11", "case": "negation", "quality_ok": true, "seconds": 1.472, "errors": []}
+{"attempt": 159, "stage": "qualify", "config": "4e0a9ad1e262ce11", "case": "past", "quality_ok": true, "seconds": 2.236, "errors": []}
+{"attempt": 160, "stage": "qualify", "config": "4e0a9ad1e262ce11", "case": "past_wish", "quality_ok": true, "seconds": 10.392, "errors": []}
+{"attempt": 161, "stage": "qualify", "config": "4e0a9ad1e262ce11", "case": "third_person", "quality_ok": false, "seconds": 1.321, "errors": ["wrong_categories", "wrong_status"]}
+{"attempt": 162, "stage": "qualify", "config": "4e0a9ad1e262ce11", "case": "literary_quote", "quality_ok": false, "seconds": 1.296, "errors": ["wrong_categories", "wrong_status"]}
+{"attempt": 163, "stage": "qualify", "config": "4e0a9ad1e262ce11", "case": "educational", "quality_ok": true, "seconds": 1.184, "errors": []}
+{"attempt": 164, "stage": "qualify", "config": "4e0a9ad1e262ce11", "case": "ordinary_distress", "quality_ok": true, "seconds": 2.151, "errors": []}
+{"attempt": 165, "stage": "qualify", "config": "4e0a9ad1e262ce11", "case": "override", "quality_ok": false, "seconds": 7.625, "errors": ["wrong_categories", "wrong_status"]}
+{"attempt": 166, "stage": "qualify", "config": "4e0a9ad1e262ce11", "case": "history_not_evidence", "quality_ok": true, "seconds": 1.356, "errors": []}
+{"attempt": 167, "stage": "qualify", "config": "4e0a9ad1e262ce11", "case": "current_signal_after_neutral", "quality_ok": true, "seconds": 1.28, "errors": []}
+{"attempt": 168, "stage": "qualify", "config": "4b5c06e4cf5751e6", "case": "positive", "quality_ok": true, "seconds": 13.49, "errors": []}
+{"attempt": 169, "stage": "qualify", "config": "4b5c06e4cf5751e6", "case": "neutral", "quality_ok": true, "seconds": 7.433, "errors": []}
+{"attempt": 170, "stage": "qualify", "config": "4b5c06e4cf5751e6", "case": "negation", "quality_ok": true, "seconds": 6.7, "errors": []}
+{"attempt": 171, "stage": "qualify", "config": "4b5c06e4cf5751e6", "case": "past", "quality_ok": true, "seconds": 1.593, "errors": []}
+{"attempt": 172, "stage": "qualify", "config": "4b5c06e4cf5751e6", "case": "past_wish", "quality_ok": true, "seconds": 1.328, "errors": []}
+{"attempt": 173, "stage": "qualify", "config": "4b5c06e4cf5751e6", "case": "third_person", "quality_ok": false, "seconds": 8.126, "errors": ["wrong_categories", "wrong_status"]}
+{"attempt": 174, "stage": "qualify", "config": "4b5c06e4cf5751e6", "case": "literary_quote", "quality_ok": false, "seconds": 1.727, "errors": ["wrong_categories", "wrong_status"]}
+{"attempt": 175, "stage": "qualify", "config": "4b5c06e4cf5751e6", "case": "educational", "quality_ok": true, "seconds": 2.584, "errors": []}
+{"attempt": 176, "stage": "qualify", "config": "4b5c06e4cf5751e6", "case": "ordinary_distress", "quality_ok": true, "seconds": 3.701, "errors": []}
+{"attempt": 177, "stage": "qualify", "config": "4b5c06e4cf5751e6", "case": "override", "quality_ok": true, "seconds": 4.733, "errors": []}
+{"attempt": 178, "stage": "qualify", "config": "4b5c06e4cf5751e6", "case": "history_not_evidence", "quality_ok": true, "seconds": 5.067, "errors": []}
+{"attempt": 179, "stage": "qualify", "config": "4b5c06e4cf5751e6", "case": "current_signal_after_neutral", "quality_ok": true, "seconds": 14.546, "errors": []}
+{"attempt": 180, "stage": "qualify", "config": "4b5c06e4cf5751e6", "case": "positive", "quality_ok": true, "seconds": 2.825, "errors": []}
+{"attempt": 181, "stage": "qualify", "config": "4b5c06e4cf5751e6", "case": "neutral", "quality_ok": true, "seconds": 1.881, "errors": []}
+{"attempt": 182, "stage": "qualify", "config": "4b5c06e4cf5751e6", "case": "negation", "quality_ok": true, "seconds": 4.345, "errors": []}
+{"attempt": 183, "stage": "qualify", "config": "4b5c06e4cf5751e6", "case": "past", "quality_ok": true, "seconds": 1.878, "errors": []}
+Traceback (most recent call last):
+  File "/home/rustiks/veganmedtech/scripts/benchmark_assistant.py", line 590, in <module>
+    if __name__=='__main__':main()
+                            ^^^^^^
+  File "/home/rustiks/veganmedtech/scripts/benchmark_assistant.py", line 584, in main
+    result=execute(manifest,remote)
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rustiks/veganmedtech/scripts/benchmark_assistant.py", line 524, in execute
+    rows=[result_for(config,case,'qualify',repeat) for repeat in range(manifest['qualification_repeats']) for case in manifest['cases']]
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/rustiks/veganmedtech/scripts/benchmark_assistant.py", line 491, in result_for
+    time.sleep(pause)
+KeyboardInterrupt
+{"attempt": 184, "stage": "qualify", "config": "4b5c06e4cf5751e6", "case": "past_wish", "quality_ok": true, "seconds": 2.185, "errors": []}
+{"attempt": 185, "stage": "qualify", "config": "4b5c06e4cf5751e6", "case": "third_person", "quality_ok": false, "seconds": 1.295, "errors": ["wrong_categories", "wrong_status"]}
+{"attempt": 186, "stage": "qualify", "config": "4b5c06e4cf5751e6", "case": "literary_quote", "quality_ok": false, "seconds": 1.843, "errors": ["wrong_categories", "wrong_status"]}
+{"attempt": 187, "stage": "qualify", "config": "4b5c06e4cf5751e6", "case": "educational", "quality_ok": true, "seconds": 1.159, "errors": []}
+{"attempt": 188, "stage": "qualify", "config": "4b5c06e4cf5751e6", "case": "ordinary_distress", "quality_ok": true, "seconds": 1.102, "errors": []}
+{"attempt": 189, "stage": "qualify", "config": "4b5c06e4cf5751e6", "case": "override", "quality_ok": true, "seconds": 1.279, "errors": []}
+{"attempt": 190, "stage": "qualify", "config": "4b5c06e4cf5751e6", "case": "history_not_evidence", "quality_ok": true, "seconds": 0.902, "errors": []}
+{"attempt": 191, "stage": "qualify", "config": "4b5c06e4cf5751e6", "case": "current_signal_after_neutral", "quality_ok": false, "seconds": 11.598, "errors": ["http_503"]}
+{"rows": 96, "selected": false, "report": "/home/rustiks/veganmedtech/docs/quality/reports/2026-10-26-work-0020/batch-rev10.md"}

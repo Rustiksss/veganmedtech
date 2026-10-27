@@ -1,0 +1,33 @@
+{
+  "environment": "isolated loopback HTTP, synthetic credentials/mail only; public TLS not tested yet",
+  "checks": [
+    {
+      "name": "real operator WebSocket upgrade",
+      "passed": true
+    },
+    {
+      "name": "foreign Origin denied",
+      "passed": true
+    },
+    {
+      "name": "own synthetic message accepted",
+      "passed": true
+    },
+    {
+      "name": "new letter visible without reload",
+      "passed": true
+    },
+    {
+      "name": "letter opened",
+      "passed": true
+    },
+    {
+      "name": "layout 1440",
+      "passed": true
+    },
+    {
+      "name": "layout 390",
+      "passed": true
+    }
+  ]
+}

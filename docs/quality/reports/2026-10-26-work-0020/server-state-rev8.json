@@ -1,0 +1,17 @@
+{
+  "links": {
+    "current": "releases/20261026T172503Z-368b0976",
+    "previous": "releases/20261026T171831Z-b0771a9e"
+  },
+  "health": {
+    "veganmedtech-app-1": "healthy",
+    "veganmedtech-db-1": "healthy",
+    "veganmedtech-mailpit-1": "healthy"
+  },
+  "available_bytes": 272658432,
+  "published_source_hashes": {
+    "/app/backend/assistant/client.py": "8ba0be3dc8bcfdd43b277aeaf3b2730a30484b403e98487abdd58ba101247bdf",
+    "/app/backend/assistant/prompts.py": "fe38a4cfa0b9d676b4dd7bbd5789fa0061dcea4582f29a3c542bdfd4eb41f214"
+  },
+  "public_https_ready": true
+}

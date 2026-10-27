@@ -1,0 +1,9 @@
+13 objects imported automatically (use -v 2 for details).
+
+Only WORK-0020 isolated test-volume fixtures disabled; records retained
+ Container veganmedtech-work0020-test-app-1 Stopping 
+ Container veganmedtech-work0020-test-mailpit-1 Stopping 
+ Container veganmedtech-work0020-test-app-1 Stopped 
+ Container veganmedtech-work0020-test-db-1 Stopping 
+ Container veganmedtech-work0020-test-mailpit-1 Stopped 
+ Container veganmedtech-work0020-test-db-1 Stopped 

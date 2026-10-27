@@ -1,0 +1,20 @@
+#14 CACHED
+
+#15 [build 3/7] RUN uv sync --locked --no-dev --no-install-project
+#15 CACHED
+
+#16 [build 4/7] COPY backend/ ./
+#16 CACHED
+
+#17 [runtime 2/2] COPY --from=build --chown=10001:10001 /app/ /app/
+#17 CACHED
+
+#18 exporting to image
+#18 exporting layers done
+#18 writing image sha256:4b5d1287f873b066ecdb72cb715b62140c31c1605f7445984336f34bf63e3419 done
+#18 naming to docker.io/library/veganmedtech-server:20261025T095233Z-d9635b4d 0.0s done
+#18 DONE 0.0s
+Готовый образ: 217345334 байт; транспорт: 81395622 байт.
+Проверен неизменный установленный образ; повторная передача не нужна.
+Передача версии 20261025T095233Z-d9635b4d; необходимый резерв с образом и транспортом: 256 MiB.
+Ошибка: Недостаточно места: свободно 15 MiB, требуется 256 MiB. Автоматической очистки данных нет.

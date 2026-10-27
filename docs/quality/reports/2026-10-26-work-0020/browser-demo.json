@@ -1,0 +1,165 @@
+{
+  "checks": [
+    {
+      "name": "demo boundary before sending",
+      "passed": true
+    },
+    {
+      "name": "empty doctor list no safety claim",
+      "passed": true
+    },
+    {
+      "name": "demo analysis persisted automatically",
+      "passed": true
+    },
+    {
+      "name": "automatic signal delivered by existing cabinet",
+      "passed": true
+    },
+    {
+      "name": "signal has source version temporal context",
+      "passed": true
+    },
+    {
+      "name": "delivery is separate from reading",
+      "passed": true
+    },
+    {
+      "name": "other doctor denied event",
+      "passed": true
+    },
+    {
+      "name": "other patient denied chat",
+      "passed": true
+    },
+    {
+      "name": "doctor denied whole chat",
+      "passed": true
+    },
+    {
+      "name": "patient denied alerts",
+      "passed": true
+    },
+    {
+      "name": "CSRF rejection",
+      "passed": true
+    },
+    {
+      "name": "explicit read state persisted",
+      "passed": true
+    },
+    {
+      "name": "history and server delivery status survive navigation",
+      "passed": true
+    },
+    {
+      "name": "neutral does not repeat historical signal",
+      "passed": true
+    },
+    {
+      "name": "no match does not promise safety",
+      "passed": true
+    },
+    {
+      "name": "past context retained",
+      "passed": true
+    },
+    {
+      "name": "uncertainty visible and creates event",
+      "passed": true
+    },
+    {
+      "name": "analysis failure is explicit not no match",
+      "passed": true
+    },
+    {
+      "name": "failure has explicit retry",
+      "passed": true
+    },
+    {
+      "name": "saved key returns saved signal",
+      "passed": true
+    },
+    {
+      "name": "replay adds no provider attempt",
+      "passed": true
+    },
+    {
+      "name": "text and replies are escaped",
+      "passed": true
+    },
+    {
+      "name": "all signal kinds reachable",
+      "passed": true
+    },
+    {
+      "name": "layout assistant 1440",
+      "passed": true
+    },
+    {
+      "name": "layout alerts 1440",
+      "passed": true
+    },
+    {
+      "name": "layout assistant 768",
+      "passed": true
+    },
+    {
+      "name": "layout alerts 768",
+      "passed": true
+    },
+    {
+      "name": "layout assistant 390",
+      "passed": true
+    },
+    {
+      "name": "layout alerts 390",
+      "passed": true
+    },
+    {
+      "name": "keyboard reaches patient input",
+      "passed": true
+    },
+    {
+      "name": "failed poll clears sensitive content",
+      "passed": true
+    },
+    {
+      "name": "retry restores notifications",
+      "passed": true
+    },
+    {
+      "name": "revoked doctor no longer reads event",
+      "passed": true
+    },
+    {
+      "name": "patient sees current no doctor state",
+      "passed": true
+    },
+    {
+      "name": "new doctor sees event with own unread state",
+      "passed": true
+    },
+    {
+      "name": "logout ignores late signal response",
+      "passed": true
+    }
+  ],
+  "metadata": {
+    "provider": "fixed synthetic fixture; real Polza checked separately",
+    "widths": [
+      1440,
+      768,
+      390
+    ],
+    "delivery_seconds": 15.308,
+    "control_ids": {
+      "turn": 81,
+      "event": 9
+    },
+    "control_snapshot": {
+      "turns": 6,
+      "events": 3
+    }
+  }
+}

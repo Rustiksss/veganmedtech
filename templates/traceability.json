@@ -1,0 +1,17 @@
+{
+  "schema_version": 1,
+  "feature": "{{NNN}}-{{slug}}",
+  "status": "draft",
+  "mappings": [
+    {
+      "requirement": "{{REQ-ID}}",
+      "coverage": "partial",
+      "acceptance": ["AC-{{NNN}}-01", "AC-{{NNN}}-02"],
+      "tests": ["TEST-{{NNN}}-01", "TEST-{{NNN}}-02"]
+    }
+  ],
+  "verification": [
+    {"test": "TEST-{{NNN}}-01", "status": "planned", "evidence": []},
+    {"test": "TEST-{{NNN}}-02", "status": "planned", "evidence": []}
+  ]
+}

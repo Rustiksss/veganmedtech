@@ -1,0 +1,65 @@
+{
+  "files": {
+    "frontend/static/js/questionnaires.js": {
+      "before": "3e7afa1aeb48e69987066bc0ba40455604995455bf2074e97f72e732ec70d2c5",
+      "after": "3e7afa1aeb48e69987066bc0ba40455604995455bf2074e97f72e732ec70d2c5",
+      "unchanged": true
+    },
+    "frontend/static/js/app.js": {
+      "before": "7a9c437193397d717b76a07989e8439378a2a96efa90126d4c3baaecd2efacd7",
+      "after": "7a9c437193397d717b76a07989e8439378a2a96efa90126d4c3baaecd2efacd7",
+      "unchanged": true
+    },
+    "frontend/static/js/api.js": {
+      "before": "4e7f74b29de3ed126ea0cee1bbbb3bf86b30dad1f61324984a55a11359ef9f26",
+      "after": "4e7f74b29de3ed126ea0cee1bbbb3bf86b30dad1f61324984a55a11359ef9f26",
+      "unchanged": true
+    },
+    "frontend/static/css/app.css": {
+      "before": "6caaecfd4221f272dc100913cc8c385c6b5dd3c0ab43aab92e551fe4987ae372",
+      "after": "6caaecfd4221f272dc100913cc8c385c6b5dd3c0ab43aab92e551fe4987ae372",
+      "unchanged": true
+    },
+    "frontend/templates/index.html": {
+      "before": "7e3a4c3b54abadd0ae848ac0403db6258a97a0eb396776cede292a2a1cdacc68",
+      "after": "7e3a4c3b54abadd0ae848ac0403db6258a97a0eb396776cede292a2a1cdacc68",
+      "unchanged": true
+    },
+    "frontend/tests/questionnaires.html": {
+      "before": "d9ed29780ecf39ace4422eb6d51c1422b80cf1e6bce97417d18f5fe8ae2e7b37",
+      "after": "d9ed29780ecf39ace4422eb6d51c1422b80cf1e6bce97417d18f5fe8ae2e7b37",
+      "unchanged": true
+    },
+    "misc_materials/kompas_prototype.html": {
+      "before": "38fad7a7b5283974f8488a99f3a5784d783b3160cf0171b75b4804f040e7a793",
+      "after": "38fad7a7b5283974f8488a99f3a5784d783b3160cf0171b75b4804f040e7a793",
+      "unchanged": true
+    },
+    "misc_materials/Индекс_жизненной_удовлетворенности.docx": {
+      "before": "a99bce29961085d3d276eeb42cf8dd60dc36c60bbdb6e26b54bee64dc5a0d5bf",
+      "after": "a99bce29961085d3d276eeb42cf8dd60dc36c60bbdb6e26b54bee64dc5a0d5bf",
+      "unchanged": true
+    },
+    "misc_materials/Кейс_цифровой_помощник_клинический_компас.pdf": {
+      "before": "dbc5d5edebab94f5742f8d81ec1b727954c8b088afcc126e67f75ab5691f41ab",
+      "after": "dbc5d5edebab94f5742f8d81ec1b727954c8b088afcc126e67f75ab5691f41ab",
+      "unchanged": true
+    },
+    "misc_materials/Клинический компас шкалы.docx": {
+      "before": "0d6e9951b90c2e2cb7ce65cf6a88ceccd1b2001f23857fc955e0433c8dc9920b",
+      "after": "0d6e9951b90c2e2cb7ce65cf6a88ceccd1b2001f23857fc955e0433c8dc9920b",
+      "unchanged": true
+    },
+    "misc_materials/Краткий_опросник_восприятия_болезни_Сирота.docx": {
+      "before": "ae7d03c5213b4100e41b46a90466da1e20d56e0a004c3e4125b149799d2631a4",
+      "after": "ae7d03c5213b4100e41b46a90466da1e20d56e0a004c3e4125b149799d2631a4",
+      "unchanged": true
+    },
+    "misc_materials/Тест_экзистенциальных_мотиваций_текст_и_ключи_.pdf": {
+      "before": "789fb0455dfcfbb41b9229d12c686031c6fc8ed06dbc18c858abf89782628c46",
+      "after": "789fb0455dfcfbb41b9229d12c686031c6fc8ed06dbc18c858abf89782628c46",
+      "unchanged": true
+    }
+  },
+  "all_unchanged": true
+}

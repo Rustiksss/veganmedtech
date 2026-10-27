@@ -1,0 +1,22 @@
+services:
+  app:
+    image: ${DEPLOY_IMAGE:?Use scripts/deploy.sh}
+    restart: unless-stopped
+    labels:
+      io.veganmedtech.deployment: work0012
+  db:
+    restart: unless-stopped
+    labels:
+      io.veganmedtech.deployment: work0012
+  mailpit:
+    restart: unless-stopped
+    labels:
+      io.veganmedtech.deployment: work0012
+volumes:
+  postgres_data:
+    labels:
+      io.veganmedtech.deployment: work0012
+networks:
+  default:
+    labels:
+      io.veganmedtech.deployment: work0012

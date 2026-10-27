@@ -1,0 +1,18 @@
+{
+  "tags": [
+    "veganmedtech-server:20261024T235343Z-9097274c",
+    "veganmedtech-server:20261024T235815Z-6f6b551f",
+    "veganmedtech-server:20261025T100713Z-2af80812",
+    "veganmedtech-server:20261025T100946Z-da5a445c"
+  ],
+  "remote_image_id": "sha256:064c406dd6a0aa2c619fadbc82d01906d88e458983053282f1d0dfac1e9f4505",
+  "content_sha256": "6150fd43ec5ddc65aadd9aae90819d09424356c3255e63539744c51c544079fb",
+  "archive_path": "/tmp/work0019-private/work0014-application-image.tar.gz",
+  "archive_bytes": 81021168,
+  "archive_sha256": "924d6b4f7ada50f0767854c441b55702ca41d8497a2b9cdb22f19e7a0ec81743",
+  "layers_verified": true,
+  "local_remote_identical": true,
+  "docker_load_passed": true,
+  "no_container_references": true,
+  "runtime_secret_variables_absent": true
+}

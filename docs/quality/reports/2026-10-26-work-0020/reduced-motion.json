@@ -1,0 +1,48 @@
+{
+  "checks": [
+    {
+      "name": "demo boundary before sending",
+      "passed": true
+    },
+    {
+      "name": "empty doctor list no safety claim",
+      "passed": true
+    },
+    {
+      "name": "reduced motion preference",
+      "passed": true
+    },
+    {
+      "name": "reduced layout 2474875f-3e0b-4119-937d-2c69d104c6d9 1440",
+      "passed": true
+    },
+    {
+      "name": "reduced layout 1887f1b9-c2e3-4474-8288-96bfe1160725 1440",
+      "passed": true
+    },
+    {
+      "name": "reduced layout 2474875f-3e0b-4119-937d-2c69d104c6d9 768",
+      "passed": true
+    },
+    {
+      "name": "reduced layout 1887f1b9-c2e3-4474-8288-96bfe1160725 768",
+      "passed": true
+    },
+    {
+      "name": "reduced layout 2474875f-3e0b-4119-937d-2c69d104c6d9 390",
+      "passed": true
+    },
+    {
+      "name": "reduced layout 1887f1b9-c2e3-4474-8288-96bfe1160725 390",
+      "passed": true
+    }
+  ],
+  "metadata": {
+    "provider": "fixed synthetic fixture; real Polza checked separately",
+    "widths": [
+      1440,
+      768,
+      390
+    ]
+  }
+}
