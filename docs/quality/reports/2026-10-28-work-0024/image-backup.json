@@ -1,0 +1,25 @@
+{
+  "tags": [
+    "veganmedtech-server:20261026T171831Z-b0771a9e",
+    "veganmedtech-server:20261026T172503Z-368b0976"
+  ],
+  "image_id": "sha256:7baa6a49bc78949365088714d49836b07fa4b1c793ca4b72bb4a20dafa52f56e",
+  "identity": "28ef312835e382267f71f513a18f0289f6cfae4816b84ef6f046dd4fe2b5aab5",
+  "layers": [
+    "sha256:e58989146fcec76699871403b9897b5c014af1ccd85f5a9300a215e7975525d7",
+    "sha256:ba0f973ad05d82f20d8dd8dc79a9d1b71e9d90ab48380d8c0912fad39dda5ced",
+    "sha256:8664c9b18215e1141ccc8fa3cbc7483f4cd16fb5230b570fa7c744da58251da3",
+    "sha256:c167899be569aee196241ae0905aeed34708881d5a8784be3de0ed9bf9db7200",
+    "sha256:fa7c5e4e5f3827366a9211bd40f23d4091a622f03d2cbeacc7cad4329f2c8839",
+    "sha256:bf329c27bdaebe8f21c7fc676fd72e6895a3c99ed78eab3b5fae2fe6e617ae84",
+    "sha256:2c6d72f9d35180d60f3c59cfb6338ce7c72f52587b440e8c8679d4792a87a8ef"
+  ],
+  "no_container_references": true,
+  "archive": "/tmp/work0024-private/previous-work0020-r4-image.tar.gz",
+  "archive_bytes": 81081732,
+  "archive_sha256": "f28acd375251b24d90fe4f43f5f785131234d3723b08450aef690023a51a1747",
+  "layers_verified": true,
+  "docker_load_verified": true,
+  "local_remote_same_content": true,
+  "secret_variables_absent": true
+}

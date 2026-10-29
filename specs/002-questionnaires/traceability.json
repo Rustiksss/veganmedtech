@@ -47,7 +47,8 @@
         "AC-002-08",
         "AC-002-09",
         "AC-002-10",
-        "AC-002-14"
+        "AC-002-14",
+        "AC-002-15"
       ],
       "tests": [
         "TEST-002-01",
@@ -60,7 +61,9 @@
         "TEST-002-08",
         "TEST-002-09",
         "TEST-002-10",
-        "TEST-002-14"
+        "TEST-002-14",
+        "TEST-002-15",
+        "TEST-002-16"
       ]
     },
     {
@@ -135,7 +138,8 @@
         "AC-002-08",
         "AC-002-09",
         "AC-002-10",
-        "AC-002-14"
+        "AC-002-14",
+        "AC-002-15"
       ],
       "tests": [
         "TEST-002-01",
@@ -148,7 +152,9 @@
         "TEST-002-08",
         "TEST-002-09",
         "TEST-002-10",
-        "TEST-002-14"
+        "TEST-002-14",
+        "TEST-002-15",
+        "TEST-002-16"
       ]
     },
     {
@@ -164,7 +170,8 @@
         "AC-002-07",
         "AC-002-08",
         "AC-002-09",
-        "AC-002-10"
+        "AC-002-10",
+        "AC-002-15"
       ],
       "tests": [
         "TEST-002-01",
@@ -176,7 +183,9 @@
         "TEST-002-07",
         "TEST-002-08",
         "TEST-002-09",
-        "TEST-002-10"
+        "TEST-002-10",
+        "TEST-002-15",
+        "TEST-002-16"
       ]
     },
     {
@@ -193,7 +202,8 @@
         "AC-002-08",
         "AC-002-09",
         "AC-002-10",
-        "AC-002-14"
+        "AC-002-14",
+        "AC-002-15"
       ],
       "tests": [
         "TEST-002-01",
@@ -206,21 +216,26 @@
         "TEST-002-08",
         "TEST-002-09",
         "TEST-002-10",
-        "TEST-002-14"
+        "TEST-002-14",
+        "TEST-002-15",
+        "TEST-002-16"
       ]
     },
     {
       "requirement": "FR-016",
-      "coverage": "full",
+      "coverage": "partial",
       "acceptance": [
         "AC-002-11",
         "AC-002-12",
-        "AC-002-13"
+        "AC-002-13",
+        "AC-002-15"
       ],
       "tests": [
         "TEST-002-11",
         "TEST-002-12",
-        "TEST-002-13"
+        "TEST-002-13",
+        "TEST-002-15",
+        "TEST-002-16"
       ]
     }
   ],
@@ -339,7 +354,26 @@
       "evidence": [
         "tasks/completed/WORK-0014.md",
         "docs/quality/reports/2026-10-25-work-0014/browser-results.json",
-        "docs/quality/reports/2026-10-25-work-0014/preservation.json"
+        "docs/quality/reports/2026-10-25-work-0014/preservation.json",
+        "docs/quality/reports/2026-10-28-work-0024.md"
+      ]
+    },
+    {
+      "test": "TEST-002-15",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-28-work-0023.md",
+        "docs/quality/reports/2026-10-28-work-0023/node-calculations.json",
+        "docs/quality/reports/2026-10-28-work-0024.md"
+      ]
+    },
+    {
+      "test": "TEST-002-16",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-28-work-0023.md",
+        "docs/quality/reports/2026-10-28-work-0023/browser.json",
+        "docs/quality/reports/2026-10-28-work-0024.md"
       ]
     }
   ]

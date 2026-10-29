@@ -1,0 +1,134 @@
+{
+  "checks": [
+    {
+      "name": "1440 doctor form + 11 drugs",
+      "passed": true
+    },
+    {
+      "name": "1440 keyboard select to comment",
+      "passed": true
+    },
+    {
+      "name": "1440 preview no write",
+      "passed": true
+    },
+    {
+      "name": "1440 exact preview and escaped note",
+      "passed": true
+    },
+    {
+      "name": "1440 edit retains selection",
+      "passed": true
+    },
+    {
+      "name": "1440 changed preview",
+      "passed": true
+    },
+    {
+      "name": "1440 failed response keeps retryable confirmation",
+      "passed": true
+    },
+    {
+      "name": "1440 confirmed once",
+      "passed": true
+    },
+    {
+      "name": "1440 demo labels and no overflow",
+      "passed": true
+    },
+    {
+      "name": "1440 persisted doctor reload no duplicate",
+      "passed": true
+    },
+    {
+      "name": "1440 patient sees persisted doctor record",
+      "passed": true
+    },
+    {
+      "name": "1440 escaped saved comment",
+      "passed": true
+    },
+    {
+      "name": "1440 patient demo notice no overflow",
+      "passed": true
+    },
+    {
+      "name": "1440 other patient empty list and isolation",
+      "passed": true
+    },
+    {
+      "name": "1440 foreign patient has no retained record",
+      "passed": true
+    },
+    {
+      "name": "1440 logout clears records and draft",
+      "passed": true
+    },
+    {
+      "name": "390 doctor form + 11 drugs",
+      "passed": true
+    },
+    {
+      "name": "390 keyboard select to comment",
+      "passed": true
+    },
+    {
+      "name": "390 preview no write",
+      "passed": true
+    },
+    {
+      "name": "390 exact preview and escaped note",
+      "passed": true
+    },
+    {
+      "name": "390 edit retains selection",
+      "passed": true
+    },
+    {
+      "name": "390 changed preview",
+      "passed": true
+    },
+    {
+      "name": "390 failed response keeps retryable confirmation",
+      "passed": true
+    },
+    {
+      "name": "390 confirmed once",
+      "passed": true
+    },
+    {
+      "name": "390 demo labels and no overflow",
+      "passed": true
+    },
+    {
+      "name": "390 persisted doctor reload no duplicate",
+      "passed": true
+    },
+    {
+      "name": "390 patient sees persisted doctor record",
+      "passed": true
+    },
+    {
+      "name": "390 escaped saved comment",
+      "passed": true
+    },
+    {
+      "name": "390 patient demo notice no overflow",
+      "passed": true
+    },
+    {
+      "name": "390 other patient empty list and isolation",
+      "passed": true
+    },
+    {
+      "name": "390 foreign patient has no retained record",
+      "passed": true
+    },
+    {
+      "name": "390 logout clears records and draft",
+      "passed": true
+    }
+  ],
+  "passed": 32,
+  "environment": "Firefox headless; real local Django API + isolated PostgreSQL; synthetic fixtures only"
+}

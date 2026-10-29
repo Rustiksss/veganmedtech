@@ -1,0 +1,57 @@
+{
+  "task": "WORK-0023",
+  "checks": [
+    {
+      "path": "misc_materials/kompas_prototype.html",
+      "unchanged": true
+    },
+    {
+      "path": "misc_materials/Индекс_жизненной_удовлетворенности.docx",
+      "unchanged": true
+    },
+    {
+      "path": "misc_materials/Кейс_цифровой_помощник_клинический_компас.pdf",
+      "unchanged": true
+    },
+    {
+      "path": "misc_materials/Клинический компас шкалы.docx",
+      "unchanged": true
+    },
+    {
+      "path": "misc_materials/Краткий_опросник_восприятия_болезни_Сирота.docx",
+      "unchanged": true
+    },
+    {
+      "path": "misc_materials/Тест_экзистенциальных_мотиваций_текст_и_ключи_.pdf",
+      "unchanged": true
+    },
+    {
+      "path": "misc_materials/Шкала депрессии Бека.docx",
+      "unchanged": true
+    },
+    {
+      "path": "misc_materials/алертинг.docx",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/static/js/questionnaires.js",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/static/js/app.js",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/static/css/app.css",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/templates/index.html",
+      "unchanged": true
+    },
+    {
+      "path": "frontend/tests/questionnaires.html",
+      "unchanged": true
+    }
+  ]
+}

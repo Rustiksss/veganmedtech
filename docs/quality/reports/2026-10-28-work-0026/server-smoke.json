@@ -1,0 +1,62 @@
+{
+  "checks": [
+    {
+      "name": "new migration applied",
+      "passed": true
+    },
+    {
+      "name": "catalog 11 names including Aviandr",
+      "passed": true
+    },
+    {
+      "name": "preview does not create record (status 200)",
+      "passed": true
+    },
+    {
+      "name": "confirmed once and safe retry",
+      "passed": true
+    },
+    {
+      "name": "patient reads own saved Aviandr",
+      "passed": true
+    },
+    {
+      "name": "foreign patient denied",
+      "passed": true
+    },
+    {
+      "name": "patient cannot prescribe",
+      "passed": true
+    },
+    {
+      "name": "own synthetic accounts inactive and relationship revoked",
+      "passed": true
+    }
+  ],
+  "counts": {
+    "account_emailaddress": 66,
+    "account_emailconfirmation": 0,
+    "accounts_user": 68,
+    "accounts_user_groups": 0,
+    "accounts_user_user_permissions": 0,
+    "assistant_assistantattempt": 15,
+    "assistant_assistantnotification": 3,
+    "assistant_assistantturn": 15,
+    "audit_auditevent": 568,
+    "auth_group": 0,
+    "auth_group_permissions": 0,
+    "auth_permission": 56,
+    "auth_rate_limits": 136,
+    "care_carerelationship": 19,
+    "django_content_type": 14,
+    "django_migrations": 33,
+    "django_session": 44,
+    "prescriptions_demoprescription": 1,
+    "reports_selfreport": 3
+  },
+  "created_synthetic_accounts": 3,
+  "model": "cohere/command-r7b-12-2024",
+  "alerting_mode": "demo",
+  "original_table_counts_not_decreased": true,
+  "ai_mode_unchanged": true
+}

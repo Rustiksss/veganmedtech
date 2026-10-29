@@ -1,0 +1,12 @@
+{
+  "checked_on": "2026-10-28",
+  "source_url": "https://psytests.org/depr/bdi-bl.html",
+  "source_sha256": "75909374f6af74e5147e8f147f725747d0b5b4fbd4b525dbb0df19230690ae51",
+  "encoding": "windows-1251",
+  "normalization": "HTML entities decoded; whitespace normalized to spaces",
+  "question_count": 21,
+  "option_count": 84,
+  "scoring_source": "misc_materials/Шкала депрессии Бека.docx",
+  "legal_status": "Проверку авторских прав пользователь принял на себя; лицензия не подтверждается",
+  "clinical_status": "Только техническая демонстрация на вымышленных ответах; клинического допуска нет"
+}

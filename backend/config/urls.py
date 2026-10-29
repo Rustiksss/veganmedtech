@@ -4,7 +4,13 @@ from accounts.views import MeView
 from reports.views import OwnReports, PatientList, PatientReports, ReportDetail
 from assistant.views import Messages, MessageDetail, Notifications, NotificationDetail
 
+from prescriptions.views import Catalog, Preview, PatientPrescriptions, OwnPrescriptions
+
 urlpatterns = [
+    path("api/prescriptions/catalog", Catalog.as_view()),
+    path("api/me/prescriptions", OwnPrescriptions.as_view()),
+    path("api/patients/<int:patient_id>/prescriptions/preview", Preview.as_view()),
+    path("api/patients/<int:patient_id>/prescriptions", PatientPrescriptions.as_view()),
     path("", index), path("health/ready", ready),
     path("_allauth/", include("allauth.headless.urls")),
     path("api/me", MeView.as_view()), path("api/patients", PatientList.as_view()),

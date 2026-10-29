@@ -1,0 +1,102 @@
+{
+  "schema_version": 1,
+  "feature": "003-demo-prescriptions",
+  "status": "verified",
+  "mappings": [
+    {
+      "requirement": "FR-019",
+      "coverage": "full",
+      "acceptance": [
+        "AC-003-01",
+        "AC-003-02",
+        "AC-003-03"
+      ],
+      "tests": [
+        "TEST-003-01",
+        "TEST-003-02",
+        "TEST-003-03"
+      ]
+    },
+    {
+      "requirement": "CON-002",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-003-01",
+        "AC-003-02",
+        "AC-003-03"
+      ],
+      "tests": [
+        "TEST-003-01",
+        "TEST-003-02",
+        "TEST-003-03"
+      ]
+    },
+    {
+      "requirement": "CON-003",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-003-01",
+        "AC-003-02",
+        "AC-003-03"
+      ],
+      "tests": [
+        "TEST-003-01",
+        "TEST-003-02",
+        "TEST-003-03"
+      ]
+    },
+    {
+      "requirement": "CON-004",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-003-01",
+        "AC-003-02",
+        "AC-003-03"
+      ],
+      "tests": [
+        "TEST-003-01",
+        "TEST-003-02",
+        "TEST-003-03"
+      ]
+    },
+    {
+      "requirement": "NFR-013",
+      "coverage": "partial",
+      "acceptance": [
+        "AC-003-01",
+        "AC-003-02",
+        "AC-003-03"
+      ],
+      "tests": [
+        "TEST-003-01",
+        "TEST-003-02",
+        "TEST-003-03"
+      ]
+    }
+  ],
+  "verification": [
+    {
+      "test": "TEST-003-01",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-28-work-0025.md",
+        "docs/quality/reports/2026-10-28-work-0026.md"
+      ]
+    },
+    {
+      "test": "TEST-003-02",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-28-work-0025.md",
+        "docs/quality/reports/2026-10-28-work-0026.md"
+      ]
+    },
+    {
+      "test": "TEST-003-03",
+      "status": "passed",
+      "evidence": [
+        "docs/quality/reports/2026-10-28-work-0025.md"
+      ]
+    }
+  ]
+}

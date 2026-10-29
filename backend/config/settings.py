@@ -21,7 +21,7 @@ CSRF_TRUSTED_ORIGINS = [BASE_URL]
 INSTALLED_APPS = [
     "django.contrib.auth", "django.contrib.contenttypes", "django.contrib.sessions",
     "django.contrib.messages", "django.contrib.staticfiles", "rest_framework",
-    "allauth", "allauth.account", "allauth.headless", "accounts", "care", "reports", "audit", "assistant",
+    "allauth", "allauth.account", "allauth.headless", "accounts", "care", "reports", "audit", "assistant", "prescriptions",
 ]
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware", "whitenoise.middleware.WhiteNoiseMiddleware",

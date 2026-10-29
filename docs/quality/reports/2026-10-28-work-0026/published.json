@@ -1,0 +1,74 @@
+{
+  "checks": [
+    {
+      "name": "HTTPS homepage",
+      "passed": true
+    },
+    {
+      "name": "HTTPS ready",
+      "passed": true
+    },
+    {
+      "name": "anonymous protected /api/prescriptions/catalog",
+      "passed": true
+    },
+    {
+      "name": "anonymous protected /api/me/prescriptions",
+      "passed": true
+    },
+    {
+      "name": "anonymous protected /api/questionnaires/module",
+      "passed": true
+    },
+    {
+      "name": "published asset matches /static/css/app.css",
+      "passed": true
+    },
+    {
+      "name": "published asset matches /static/js/api.js",
+      "passed": true
+    },
+    {
+      "name": "published asset matches /static/js/app.js",
+      "passed": true
+    },
+    {
+      "name": "runtime configuration unchanged",
+      "passed": true
+    },
+    {
+      "name": "3 healthy",
+      "passed": true
+    },
+    {
+      "name": "rollback is prior Beck release",
+      "passed": true
+    },
+    {
+      "name": "disk reserve 256 MiB",
+      "passed": true
+    },
+    {
+      "name": "backup verified",
+      "passed": true
+    }
+  ],
+  "state": {
+    "release": "20261028T091858Z-e4de8023",
+    "current": "releases/20261028T091858Z-e4de8023",
+    "previous": "releases/20261028T081648Z-ad345488",
+    "health": {
+      "veganmedtech-app-1": "healthy",
+      "veganmedtech-db-1": "healthy",
+      "veganmedtech-mailpit-1": "healthy"
+    },
+    "env_sha256": {
+      "veganmedtech-app-1": "076ba08c0d78f7591c8d3b5cb0d094bb7abbd6fb49d119047472e4702244b098",
+      "veganmedtech-db-1": "c80386946373e7908880f049f94da8a9fbd99a1935705a455f03654c287a0173",
+      "veganmedtech-mailpit-1": "1c24775fadba31bd348800df91e54a100f1b2e4936bd629e5a36e89c5c8f51f7"
+    },
+    "available": 324411392,
+    "backup_bytes": 93736,
+    "backup_list_verified": true
+  }
+}

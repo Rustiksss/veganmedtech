@@ -81,6 +81,7 @@ const state = {
     registrationError: '',
     mood: '',
     questionnaires: {},
+    prescriptions: {items: [], catalog: [], patientId: null, drugId: "", note: "", preview: null, pending: false, error: "", message: ""},
     read: new Set(),
     taken: new Set(),
     selectedDay: todayKey,
@@ -127,6 +128,7 @@ const patientItems = [
     ['questionnaires', 'edit', 'Опросники', '/patient/questionnaires'],
     ['notifications', 'bell', 'Уведомления', '/patient/notifications'],
     ['doctors', 'chat', 'Связаться с доктором', '/patient/doctors'],
+    ['prescriptions', 'pill', 'Назначения', '/patient/prescriptions'],
     ['medication', 'pill', 'Календарь приёма', '/patient/medication'],
     ['games', 'game', 'Мини-игры', '/patient/games'],
     ['films', 'film', 'Кино для вечера', '/patient/films'],
@@ -265,7 +267,7 @@ function patientHome() {
 }
 
 function assistantOverview() {
-    return `${heading('Как вы себя чувствуете?','Ваш цифровой ассистент поможет сохранить наблюдения и не потерять важные дела.')}<div class="content-grid"><div class="stack"><section class="surface tile"><span class="eyebrow">${icon('sparkle')} Небольшая проверка самочувствия</span><h2>Как бы вы описали настроение?</h2><p>Выберите близкое вам слово. Это ваша самооценка, без баллов и диагноза.</p><div class="moods">${['Непростое','Нейтральное','Спокойное','Приподнятое'].map(x=>`<button class="btn outline small" data-mood="${x}" aria-pressed="${state.mood===x}">${x}</button>`).join('')}</div><p id="moodStatus" class="subtle" role="status">${state.mood?`Вы отметили: ${escapeHtml(state.mood)}. Эта отметка сохранена в текущей вкладке.`:'Можно выбрать позже — здесь нет обязательных ответов.'}</p>${linkButton('Записать самочувствие','#/patient/report','soft')}</section><section class="surface tile"><span class="eyebrow">${icon('edit')} В своём темпе</span><h2>Опросники о себе</h2><p>Удовлетворённость жизнью, восприятие болезни, отношения и самоотношение. Выберите методику и получите расчёт по своим ответам.</p>${linkButton('Выбрать опросник '+icon('arrow'),'#/patient/questionnaires','outline small')}</section></div><aside class="aside-card"><div class="hero-icon">${icon('bell')}</div><h2>Ваши напоминания</h2><p>${state.taken.has(todayKey)?'Учебный приём на сегодня отмечен.':hasIntake(todayKey)?'Пример: учебный приём в 09:00.':'Сегодня учебных приёмов нет.'}<br>Пример: встреча с психиатром сегодня в 16:00.</p><a class="text-link" href="#/patient/notifications">Все уведомления ${icon('arrow')}</a><p>Ассистент не оценивает диагноз и не меняет план врача.</p></aside></div>`;
+    return `${heading('Как вы себя чувствуете?','Ваш цифровой ассистент поможет сохранить наблюдения и не потерять важные дела.')}<div class="content-grid"><div class="stack"><section class="surface tile"><span class="eyebrow">${icon('sparkle')} Небольшая проверка самочувствия</span><h2>Как бы вы описали настроение?</h2><p>Выберите близкое вам слово. Это ваша самооценка, без баллов и диагноза.</p><div class="moods">${['Непростое','Нейтральное','Спокойное','Приподнятое'].map(x=>`<button class="btn outline small" data-mood="${x}" aria-pressed="${state.mood===x}">${x}</button>`).join('')}</div><p id="moodStatus" class="subtle" role="status">${state.mood?`Вы отметили: ${escapeHtml(state.mood)}. Эта отметка сохранена в текущей вкладке.`:'Можно выбрать позже — здесь нет обязательных ответов.'}</p>${linkButton('Записать самочувствие','#/patient/report','soft')}</section><section class="surface tile"><span class="eyebrow">${icon('edit')} В своём темпе</span><h2>Опросники о себе</h2><p>Депрессивные симптомы по Беку, удовлетворённость жизнью, восприятие болезни, отношения и самоотношение. Выберите методику и получите расчёт по своим ответам.</p>${linkButton('Выбрать опросник '+icon('arrow'),'#/patient/questionnaires','outline small')}</section></div><aside class="aside-card"><div class="hero-icon">${icon('bell')}</div><h2>Ваши напоминания</h2><p>${state.taken.has(todayKey)?'Учебный приём на сегодня отмечен.':hasIntake(todayKey)?'Пример: учебный приём в 09:00.':'Сегодня учебных приёмов нет.'}<br>Пример: встреча с психиатром сегодня в 16:00.</p><a class="text-link" href="#/patient/notifications">Все уведомления ${icon('arrow')}</a><p>Ассистент не оценивает диагноз и не меняет план врача.</p></aside></div>`;
 }
 
 function assistant() {
@@ -432,10 +434,56 @@ function medication(){const y=state.month.getFullYear(),m=state.month.getMonth()
         return `${heading('Мои пациенты','Только пациенты с действующей связью.')}<div class="stack">${people.length?people.map(p=>`<article class="surface tile"><div class="person">${avatar(p)}<div><strong>${escapeHtml(p.name)}</strong><small>Связанный пациент</small></div></div><div class="actions" style="margin-top:18px">${linkButton('История пациента '+icon('arrow'),'#/doctor/patients/'+p.id,'soft small')}${linkButton('Учебный чат','#/doctor/chat/'+p.id,'outline small')}</div></article>`).join(''):'<div class="surface empty"><h2>Пока нет пациентов</h2><p>Пациенты появятся после назначения связи оператором.</p></div>'}</div>`;
     }
 
+
+    function prescriptionCards() {
+        return state.prescriptions.items.length ? `<div class="stack">${state.prescriptions.items.map(item => `<article class="surface tile" data-prescription-id="${item.id}"><span class="pill">Демоназначение</span><h3>${escapeHtml(item.drug_name)}</h3><p>Подтвердил врач: ${escapeHtml(item.doctor_name)}</p><p><time datetime="${escapeHtml(item.confirmed_at)}">${prettyDate(item.confirmed_at)}</time></p>${item.note ? `<p style="white-space:pre-wrap;overflow-wrap:anywhere">${escapeHtml(item.note)}</p>` : ''}</article>`).join('')}</div>` : '<div class="surface empty"><p>Демоназначений пока нет.</p></div>';
+    }
+    function patientPrescriptions() {
+        return `${heading('Назначения','Сохранённые демоназначения вашего врача.')}<p class="notice">Демонстрация на вымышленных данных. Эти записи не являются рецептом или указанием принимать препарат.</p>${prescriptionCards()}`;
+    }
+    function doctorPrescriptions(patient) {
+        const box = state.prescriptions, preview = box.preview;
+        return `<div class="section-heading"><h2>Назначить препарат</h2></div><section class="surface tile"><p class="notice">Деморежим · только вымышленные данные. Список содержит названия для демонстрации; подбор лечения и дозировки не выполняется.</p>
+        ${box.message ? `<p role="status">${escapeHtml(box.message)}</p>` : ''}
+        ${preview ? `<form id="prescriptionConfirmForm" aria-busy="${box.pending}"><h3>Проверьте назначение</h3><p>Пациент: <strong>${escapeHtml(patient.name)}</strong></p><p>Препарат: <strong>${escapeHtml(preview.drug_name)}</strong></p><p style="white-space:pre-wrap;overflow-wrap:anywhere">Комментарий: ${escapeHtml(preview.note || 'Не указан')}</p><p class="field-help">Будет сохранено демоназначение. Подтверждайте только проверенный выбор.</p><div class="actions"><button class="btn" type="submit" ${box.pending?'disabled':''}>${box.pending?'Сохраняем…':'Подтвердить демоназначение'}</button><button class="btn outline" type="button" data-prescription-edit ${box.pending?'disabled':''}>Изменить</button></div></form>` :
+        `<form id="prescriptionForm" aria-busy="${box.pending}"><label for="prescriptionDrug">Препарат</label><select id="prescriptionDrug" required ${box.pending?'disabled':''} aria-describedby="prescriptionHelp"><option value="">Выберите препарат</option>${box.catalog.map(drug => `<option value="${escapeHtml(drug.id)}" ${box.drugId===drug.id?'selected':''}>${escapeHtml(drug.name)}</option>`).join('')}</select><p id="prescriptionHelp" class="field-help">Авиандр и ещё 10 препаратов. Выбор не означает клиническую рекомендацию.</p><label for="prescriptionNote">Комментарий врача · необязательно</label><textarea id="prescriptionNote" maxlength="1000" rows="3" style="min-height:100px" ${box.pending?'disabled':''}>${escapeHtml(box.note)}</textarea><p class="field-help">До 1000 символов. Только вымышленные сведения.</p><button class="btn" type="submit" ${box.pending?'disabled':''}>${box.pending?'Подготавливаем…':'Проверить назначение'}</button></form>`}
+        ${box.error ? `<p class="field-error" role="alert">${escapeHtml(box.error)}</p>` : ''}</section><div class="section-heading"><h2>Сохранённые демоназначения</h2></div>${prescriptionCards()}`;
+    }
+    async function submitPrescription(event, confirm) {
+        event.preventDefault();
+        const route = readRoute(), box = state.prescriptions, ticket = routeToken;
+        if (box.pending || route.view !== 'detail' || route.patientId !== box.patientId) return;
+        if (!confirm) {
+            box.drugId = document.querySelector('#prescriptionDrug').value;
+            box.note = document.querySelector('#prescriptionNote').value;
+            if (!box.drugId) {box.error = 'Выберите препарат.'; render(); document.querySelector('#prescriptionDrug')?.focus(); return;}
+        } else if (!box.preview) return;
+        box.pending = true; box.error = ''; box.message = ''; render();
+        const current = () => ticket === routeToken && box === state.prescriptions;
+        try {
+            const path = `/api/patients/${route.patientId}/prescriptions`;
+            const result = await CompassAPI.request(path + (confirm ? '' : '/preview'), {method:'POST', body: confirm ? {proposal_token:box.preview.proposal_token,confirmed:true} : {drug_id:box.drugId,note:box.note}});
+            if (!current()) return;
+            if (confirm) {
+                box.items = [result, ...box.items.filter(item => item.id !== result.id)];
+                box.preview = null; box.drugId = ''; box.note = ''; box.message = 'Демоназначение сохранено и доступно пациенту.';
+            } else box.preview = result;
+        } catch (error) {
+            if (!current() || error.name === 'AbortError') return;
+            box.error = error.status === 400 ? 'Проверьте данные. Если предложение устарело, нажмите «Изменить» и подготовьте его заново.' : error.status === 404 ? 'Пациент недоступен. Обновите страницу.' : (error.message || 'Не удалось сохранить. Повторите попытку.');
+            if ([401,403].includes(error.status)) {applyUser(null); authNotice = 'Войдите в аккаунт с действующим доступом.'; render();}
+        } finally {
+            // Leaving a route must not leave its draft permanently busy.
+            box.pending = false;
+            if (current()) {render(); document.querySelector(confirm && !box.preview ? '#prescriptionDrug' : '#prescriptionConfirmForm button, #prescriptionForm button')?.focus();}
+            else if (box === state.prescriptions && !loading && readRoute().view === 'detail' && readRoute().patientId === route.patientId) render();
+        }
+    }
+
     function doctorDetail(route) {
         const p = people.find(p => p.id === route.patientId);
         if (!p) return missingPage(route);
-        return `<a class="back" href="#/doctor">К моим пациентам</a>${heading(escapeHtml(p.name),'Сохранённые наблюдения пациента.')}<section class="surface tile"><h2>Ведущий врач</h2><p>${escapeHtml(sessionUser.name)}</p><p>Назначения и клинические заключения не формируются.</p></section><div class="section-heading"><h2>Наблюдения пациента</h2></div><div class="history-list">${reportCards(p.id)}</div>${moreReports()}`;
+        return `<a class="back" href="#/doctor">К моим пациентам</a>${heading(escapeHtml(p.name),'Сохранённые наблюдения пациента.')}<section class="surface tile"><h2>Ведущий врач</h2><p>${escapeHtml(sessionUser.name)}</p><p>Демонстрационные назначения подтверждаются отдельно.</p></section>${doctorPrescriptions(p)}<div class="section-heading"><h2>Наблюдения пациента</h2></div><div class="history-list">${reportCards(p.id)}</div>${moreReports()}`;
     }
 
     function interactions() {
@@ -455,13 +503,13 @@ function medication(){const y=state.month.getFullYear(),m=state.month.getMonth()
         error: '',
         resetPrompt: false
     });
-    const qAnswered = (tool, draft) => draft.answers.filter(value => tool.options.some(option => option[0] === value)).length;
+    const qAnswered = (tool, draft) => draft.answers.filter((value, index) => CompassQuestionnaires.getOptions(tool.id, index).some(option => option[0] === value)).length;
     const qSource = tool => `<p class="q-source">${external(escapeHtml(tool.source),tool.sourceUrl)}${tool.scoringUrl?`<br>${external('Инструкция подсчёта E. Broadbent',tool.scoringUrl)}`:''}<br><span>${escapeHtml(tool.version)}</span></p>`;
 
     function questionnaireCatalog() {
         return `${heading('Опросники','Небольшая пауза, чтобы прислушаться к себе. Выберите, с чего начать.')}<div class="q-intro"><p>Ответы обрабатываются автоматически. Вы увидите баллы и пояснение к выбранной методике.</p><p class="subtle">Только демонстрация на вымышленных ответах. Результаты не являются диагнозом. Ответы и черновики останутся в этой вкладке до перезагрузки.</p></div><div class="q-catalog">${CompassQuestionnaires.list.map((tool,i)=>{
         const draft=state.questionnaires[tool.id],count=draft?qAnswered(tool,draft):0;
-        return `<article class="surface q-card"><div class="q-card-top"><span class="q-mark" aria-hidden="true">${String(i+1).padStart(2,'0')}</span><span class="pill">${escapeHtml(tool.tag)}</span></div><h2>${escapeHtml(tool.title)}</h2><p>${escapeHtml(tool.description)}</p><p class="q-meta">${tool.questions.length} ${tool.id==='bipq'?'оценок и три причины':tool.id==='temmo'?'утверждений':tool.id==='lsia'?'утверждений':'утверждений'} · ${tool.id==='bipq'?'От 0 до 10':tool.id==='temmo'?'Шесть вариантов':tool.id==='lsia'?'Три варианта':'Да или нет'}</p><div class="q-card-bottom">${draft?.result?'<span class="q-state">Расчёт готов</span>':count?`<span class="q-state">Ответов: ${count} из ${tool.questions.length}</span>`:'<span class="subtle">Можно пройти в своём темпе</span>'}${linkButton(`${draft?.result?'Открыть результат':draft?.started?'Продолжить':'Начать'} ${icon('arrow')}`,'#/patient/questionnaires/'+tool.id,'small')}</div><details class="q-details"><summary>Источник и особенности</summary>${qSource(tool)}<p class="subtle">${escapeHtml(tool.notice)}</p></details></article>`;
+        return `<article class="surface q-card"><div class="q-card-top"><span class="q-mark" aria-hidden="true">${String(i+1).padStart(2,'0')}</span><span class="pill">${escapeHtml(tool.tag)}</span></div><h2>${escapeHtml(tool.title)}</h2><p>${escapeHtml(tool.description)}</p><p class="q-meta">${tool.questions.length} ${tool.id==='bipq'?'оценок и три причины':tool.id==='bdi'?'группа утверждений':'утверждений'} · ${tool.id==='bipq'?'От 0 до 10':tool.id==='temmo'?'Шесть вариантов':tool.id==='lsia'?'Три варианта':tool.id==='bdi'?'Четыре варианта в каждой группе':'Да или нет'}</p><div class="q-card-bottom">${draft?.result?'<span class="q-state">Расчёт готов</span>':count?`<span class="q-state">Ответов: ${count} из ${tool.questions.length}</span>`:'<span class="subtle">Можно пройти в своём темпе</span>'}${linkButton(`${draft?.result?'Открыть результат':draft?.started?'Продолжить':'Начать'} ${icon('arrow')}`,'#/patient/questionnaires/'+tool.id,'small')}</div><details class="q-details"><summary>Источник и особенности</summary>${qSource(tool)}<p class="subtle">${escapeHtml(tool.notice)}</p></details></article>`;
       }).join('')}</div>`;
     }
 
@@ -473,11 +521,11 @@ function medication(){const y=state.month.getFullYear(),m=state.month.getMonth()
             back = '<a class="back" href="#/patient/questionnaires">' + icon('back') + ' Все опросники</a>';
         if (draft.showResult && draft.result) return back + questionnaireResult(tool, draft);
         const source = `<aside class="aside-card q-aside"><span class="eyebrow">О методике</span><h2>${escapeHtml(tool.short)}</h2><p>${escapeHtml(tool.notice)}</p>${qSource(tool)}<p class="subtle">Демонстрационный расчёт. Для медицинского применения требуется отдельная проверка.</p></aside>`;
-        if (!draft.started) return `${back}${heading(tool.title,tool.tag)}<div class="content-grid"><section class="surface form-card q-start"><span class="pill">${tool.questions.length} ${tool.id==='bipq'?'числовых оценок':'утверждений'}</span><h2>Перед началом</h2><p>${escapeHtml(tool.instruction)}</p><p class="retention">${icon('info')}<span>Используйте вымышленные ответы. Они сохраняются только до перезагрузки этой вкладки. Можно вернуться к любому ответу.</span></p><button class="btn" data-q-action="start">Начать опрос ${icon('arrow')}</button></section>${source}</div>`;
+        if (!draft.started) return `${back}${heading(tool.title,tool.tag)}<div class="content-grid"><section class="surface form-card q-start"><span class="pill">${tool.questions.length} ${tool.id==='bipq'?'числовых оценок':tool.id==='bdi'?'группа утверждений':'утверждений'}</span><h2>Перед началом</h2><p>${escapeHtml(tool.instruction)}</p><p class="retention">${icon('info')}<span>Используйте вымышленные ответы. Они сохраняются только до перезагрузки этой вкладки. Можно вернуться к любому ответу.</span></p><button class="btn" data-q-action="start">Начать опрос ${icon('arrow')}</button></section>${source}</div>`;
         const causes = tool.id === 'bipq' && draft.step === tool.questions.length,
             last = draft.step === tool.questions.length - 1 && tool.id !== 'bipq',
             steps = tool.questions.length + (tool.id === 'bipq' ? 1 : 0);
-        const question = causes ? `<fieldset class="q-fieldset"><legend id="qQuestion" tabindex="-1">Что, по вашему мнению, могло вызвать заболевание?</legend><p class="field-help" id="qHelp">Перечислите до трёх причин в порядке значимости. Этот шаг можно пропустить: текст не влияет на баллы. До 500 символов в каждом поле.</p>${draft.causes.map((value,i)=>`<label class="q-cause-label" for="qCause${i}">Причина ${i+1}${i===0?' · наиболее важная':''}</label><textarea id="qCause${i}" data-q-cause="${i}" rows="2" maxlength="500" aria-describedby="qHelp">${escapeHtml(value)}</textarea>`).join('')}</fieldset>` : `<fieldset class="q-fieldset" aria-describedby="qHelp${draft.error?' qError':''}"><legend id="qQuestion" tabindex="-1">${escapeHtml(tool.questions[draft.step])}</legend><p class="field-help" id="qHelp">${tool.anchors?'Выберите одно число. Ноль — полноценный ответ.':'Выберите один вариант, который вам ближе.'}</p>${tool.anchors?`<div class="q-anchors"><span><b>0</b> · ${escapeHtml(tool.anchors[draft.step][0])}</span><span><b>10</b> · ${escapeHtml(tool.anchors[draft.step][1])}</span></div>`:''}<div class="q-options ${tool.anchors?'q-numbers':''}">${tool.options.map(([value,label],i)=>`<label class="q-option"><input type="radio" name="qAnswer" value="${i}" data-q-answer="${draft.step}" ${draft.answers[draft.step]===value?'checked':''} ${draft.error?'aria-invalid="true"':''}><span>${tool.id==='temmo'?`<b class="q-option-number">${value}</b>`:''}${escapeHtml(label)}</span></label>`).join('')}</div></fieldset>`;
+        const question = causes ? `<fieldset class="q-fieldset"><legend id="qQuestion" tabindex="-1">Что, по вашему мнению, могло вызвать заболевание?</legend><p class="field-help" id="qHelp">Перечислите до трёх причин в порядке значимости. Этот шаг можно пропустить: текст не влияет на баллы. До 500 символов в каждом поле.</p>${draft.causes.map((value,i)=>`<label class="q-cause-label" for="qCause${i}">Причина ${i+1}${i===0?' · наиболее важная':''}</label><textarea id="qCause${i}" data-q-cause="${i}" rows="2" maxlength="500" aria-describedby="qHelp">${escapeHtml(value)}</textarea>`).join('')}</fieldset>` : `<fieldset class="q-fieldset" aria-describedby="qHelp${draft.error?' qError':''}"><legend id="qQuestion" tabindex="-1">${escapeHtml(tool.questions[draft.step])}</legend><p class="field-help" id="qHelp">${tool.anchors?'Выберите одно число. Ноль — полноценный ответ.':'Выберите один вариант, который вам ближе.'}</p>${tool.anchors?`<div class="q-anchors"><span><b>0</b> · ${escapeHtml(tool.anchors[draft.step][0])}</span><span><b>10</b> · ${escapeHtml(tool.anchors[draft.step][1])}</span></div>`:''}<div class="q-options ${tool.anchors?'q-numbers':''}">${CompassQuestionnaires.getOptions(tool.id, draft.step).map(([value,label],i)=>`<label class="q-option"><input type="radio" name="qAnswer" value="${i}" data-q-answer="${draft.step}" ${draft.answers[draft.step]===value?'checked':''} ${draft.error?'aria-invalid="true"':''}><span>${tool.id==='temmo'?`<b class="q-option-number">${value}</b>`:''}${escapeHtml(label)}</span></label>`).join('')}</div></fieldset>`;
         return `${back}${heading(tool.title,'Можно остановиться и продолжить позже в этой вкладке.')}<div class="content-grid"><form id="questionnaireForm" class="surface form-card q-form" novalidate><div class="q-progress-head"><span>Шаг ${draft.step+1} из ${steps}</span><span id="qProgressLabel">Ответов: ${count} из ${tool.questions.length}</span></div><progress id="qProgress" value="${count}" max="${tool.questions.length}" aria-label="Количество заполненных ответов"></progress>${question}<p class="field-error" id="qError" role="alert" ${draft.error?'':'hidden'}>${escapeHtml(draft.error)}</p><div class="form-actions">${draft.step>0?'<button type="button" class="btn outline" data-q-action="back">'+icon('back')+' Назад</button>':''}<button type="submit" class="btn">${causes||last?'Рассчитать результат '+icon('check'):'Далее '+icon('arrow')}</button></div><p class="field-help">${causes?'Причины будут показаны так, как вы их ввели.':'Ответы не отправляются врачу и не меняют лечение.'}</p></form>${source}</div>`;
     }
 
@@ -512,7 +560,7 @@ function medication(){const y=state.month.getFullYear(),m=state.month.getMonth()
         const draft = qDraft(tool);
         draft.error = '';
         if (draft.showResult) return;
-        if (draft.step < tool.questions.length && !tool.options.some(option => option[0] === draft.answers[draft.step])) {
+        if (draft.step < tool.questions.length && !CompassQuestionnaires.getOptions(tool.id, draft.step).some(option => option[0] === draft.answers[draft.step])) {
             draft.error = 'Выберите ответ, чтобы продолжить.';
             render();
             focusQuestion('input[name="qAnswer"]');
@@ -526,7 +574,7 @@ function medication(){const y=state.month.getFullYear(),m=state.month.getMonth()
             focusQuestion();
             return;
         }
-        const missing = draft.answers.findIndex(value => !tool.options.some(option => option[0] === value));
+        const missing = draft.answers.findIndex((value, index) => !CompassQuestionnaires.getOptions(tool.id, index).some(option => option[0] === value));
         if (missing >= 0) {
             draft.step = missing;
             draft.error = 'Ответьте на этот вопрос перед расчётом результата.';
@@ -606,6 +654,7 @@ function medication(){const y=state.month.getFullYear(),m=state.month.getMonth()
             questionnaires: 'Опросники',
             notifications: 'Уведомления',
             doctors: 'Связаться с доктором',
+            prescriptions: 'Назначения',
             medication: 'Календарь приёма',
             games: 'Мини-игры',
             films: 'Кино для спокойного вечера',
@@ -627,6 +676,7 @@ function medication(){const y=state.month.getFullYear(),m=state.month.getMonth()
             questionnaires: () => route.questionnaireId ? questionnairePage(route) : questionnaireCatalog(),
             notifications: notificationPage,
             doctors: doctorDirectory,
+            prescriptions: patientPrescriptions,
             medication,
             games,
             films,
@@ -648,7 +698,7 @@ function medication(){const y=state.month.getFullYear(),m=state.month.getMonth()
                 name: state.profiles[route.role],
                 initials: state.profiles[route.role].trim().slice(0, 2).toUpperCase()
             };
-            document.querySelector('#app').innerHTML = `<aside class="sidebar">${brand('#/'+route.role)}<div class="nav-label">${doctor?'Рабочее пространство':'Личный кабинет'}</div><nav class="desktop-nav" aria-label="${doctor?'Кабинет врача':'Кабинет пациента'}">${navLinks(route)}</nav><div class="sidebar-footer"><div class="sidebar-profile">${avatar(user)}<div><strong>${escapeHtml(user.name)}</strong><small>${doctor?'Врач':'Пациент'} · аккаунт</small></div></div><button class="btn outline small logout" data-action="logout">Выйти</button></div></aside><div class="workspace"><header class="mobile-header">${brand('#/'+route.role)}${avatar(user)}<details class="mobile-menu"><summary>${titles[route.view]} · Все разделы</summary><nav aria-label="Мобильная навигация">${navLinks(route)}<button class="btn outline small logout" data-action="logout">Выйти</button></nav></details></header><div class="topbar"><div class="breadcrumb">${doctor?'Кабинет врача':'Личный кабинет'}<span>/</span>${titles[route.view]}</div><span class="today">${icon('history')}${new Intl.DateTimeFormat('ru',{day:'numeric',month:'long',year:'numeric'}).format(new Date())}</span></div><main class="main" id="mainContent" tabindex="-1"><div class="environment">${icon('info')}<span><b>Пилот: только вымышленные данные.</b> Аккаунты, самоотчёты и ИИ-чат — на сервере; учебные разделы — в памяти вкладки.</span></div><div class="screen-enter">${content}</div>${footer}</main></div>`;
+            document.querySelector('#app').innerHTML = `<aside class="sidebar">${brand('#/'+route.role)}<div class="nav-label">${doctor?'Рабочее пространство':'Личный кабинет'}</div><nav class="desktop-nav" aria-label="${doctor?'Кабинет врача':'Кабинет пациента'}">${navLinks(route)}</nav><div class="sidebar-footer"><div class="sidebar-profile">${avatar(user)}<div><strong>${escapeHtml(user.name)}</strong><small>${doctor?'Врач':'Пациент'} · аккаунт</small></div></div><button class="btn outline small logout" data-action="logout">Выйти</button></div></aside><div class="workspace"><header class="mobile-header">${brand('#/'+route.role)}${avatar(user)}<details class="mobile-menu"><summary>${titles[route.view]} · Все разделы</summary><nav aria-label="Мобильная навигация">${navLinks(route)}<button class="btn outline small logout" data-action="logout">Выйти</button></nav></details></header><div class="topbar"><div class="breadcrumb">${doctor?'Кабинет врача':'Личный кабинет'}<span>/</span>${titles[route.view]}</div><span class="today">${icon('history')}${new Intl.DateTimeFormat('ru',{day:'numeric',month:'long',year:'numeric'}).format(new Date())}</span></div><main class="main" id="mainContent" tabindex="-1"><div class="environment">${icon('info')}<span><b>Пилот: только вымышленные данные.</b> Аккаунты, самоотчёты, назначения и ИИ-чат — на сервере; учебные разделы — в памяти вкладки.</span></div><div class="screen-enter">${content}</div>${footer}</main></div>`;
         }
         if (focus) document.querySelector('#pageTitle')?.focus({
             preventScroll: true
@@ -821,6 +871,8 @@ function medication(){const y=state.month.getFullYear(),m=state.month.getMonth()
         }
     }
     document.addEventListener('submit', event => {
+        if (event.target.id === 'prescriptionForm') submitPrescription(event, false);
+        if (event.target.id === 'prescriptionConfirmForm') submitPrescription(event, true);
         if (event.target.id === 'reportForm') saveReport(event);
         if (event.target.id === 'chatForm') sendChat(event);
         if (event.target.id === 'assistantForm') sendAssistant(event);
@@ -828,11 +880,13 @@ function medication(){const y=state.month.getFullYear(),m=state.month.getMonth()
     });
     document.addEventListener('input', event => {
         const el = event.target;
+        if (el.id === 'prescriptionDrug') state.prescriptions.drugId = el.value;
+        if (el.id === 'prescriptionNote') state.prescriptions.note = el.value;
         if (el.matches('[data-q-answer]')) {
             const tool = CompassQuestionnaires.get(readRoute().questionnaireId);
             if (tool) {
                 const draft = qDraft(tool);
-                draft.answers[Number(el.dataset.qAnswer)] = tool.options[Number(el.value)][0];
+                draft.answers[Number(el.dataset.qAnswer)] = CompassQuestionnaires.getOptions(tool.id, Number(el.dataset.qAnswer))[Number(el.value)][0];
                 draft.result = null;
                 draft.showResult = false;
                 draft.error = '';
@@ -865,6 +919,9 @@ function medication(){const y=state.month.getFullYear(),m=state.month.getMonth()
         }
     });
     document.addEventListener('click', event => {
+        if (event.target.closest('[data-prescription-edit]') && !state.prescriptions.pending) {
+            state.prescriptions.preview = null; state.prescriptions.error = ''; render(); document.querySelector('#prescriptionDrug')?.focus();
+        }
         const el = event.target.closest('button');
         if (!el) return;
         if (el.hasAttribute('data-assistant-more')) moreAssistant(el);
@@ -1128,6 +1185,7 @@ function medication(){const y=state.month.getFullYear(),m=state.month.getMonth()
             }
             if (user.role !== route.role || user.role === 'doctor' && !user.doctor_approved) {
                 state.reports = [];
+                state.prescriptions = structuredClone(initialState.prescriptions);
                 people = [];
                 nextCursor = null;
                 loading = false;
@@ -1139,6 +1197,12 @@ function medication(){const y=state.month.getFullYear(),m=state.month.getMonth()
                 if (ticket !== routeToken) return;
                 state.reports = mapReports(data.results, user.id);
                 nextCursor = data.next_cursor;
+            }
+            if (user.role === 'patient' && route.view === 'prescriptions') {
+                state.prescriptions.items = [];
+                const data = await CompassAPI.request('/api/me/prescriptions');
+                if (ticket !== routeToken) return;
+                state.prescriptions.items = data.results;
             }
             if (user.role === 'patient' && route.view === 'assistant') {
                 const data=await CompassAPI.request('/api/me/assistant/messages');
@@ -1158,6 +1222,11 @@ function medication(){const y=state.month.getFullYear(),m=state.month.getMonth()
                     initials: p.name.slice(0, 2).toUpperCase()
                 }));
                 if (route.view === 'detail') {
+                    if (state.prescriptions.patientId !== route.patientId) state.prescriptions = structuredClone(initialState.prescriptions);
+                    state.prescriptions.patientId = route.patientId; state.prescriptions.items = [];
+                    const [catalog, prescriptions] = await Promise.all([CompassAPI.request('/api/prescriptions/catalog'), CompassAPI.request(`/api/patients/${route.patientId}/prescriptions`)]);
+                    if (ticket !== routeToken) return;
+                    state.prescriptions.catalog = catalog.results; state.prescriptions.items = prescriptions.results;
                     state.reports = [];
                     const history = await CompassAPI.request(`/api/patients/${route.patientId}/self-reports`);
                     if (ticket !== routeToken) return;
@@ -1179,6 +1248,7 @@ function medication(){const y=state.month.getFullYear(),m=state.month.getMonth()
                 state.reports = [];
                 people = [];
                 nextCursor = null;
+                state.prescriptions = structuredClone(initialState.prescriptions);
                 routeError = error.message || 'Сервис недоступен. Попробуйте позднее.';
             }
             loading = false;

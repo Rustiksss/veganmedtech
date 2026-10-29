@@ -1,0 +1,1 @@
+{"files_removed": 69, "allocated_removed": 288657408, "available_before": 0, "available_after": 288641024, "packages_config_timers_preserved": true, "health": {"veganmedtech-app-1": "healthy", "veganmedtech-db-1": "healthy", "veganmedtech-mailpit-1": "healthy"}}

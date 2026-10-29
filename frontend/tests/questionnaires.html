@@ -13,7 +13,7 @@ const groups=result=>result.groups.map(group=>group.raw);
 const freq=result=>result.groups.map(group=>group.frequency);
 const blank=id=>Array(CompassQuestionnaires.get(id).questions.length).fill(null);
 function rejects(id,answers){let rejected=false;try{score(id,answers);}catch(error){rejected=error instanceof RangeError;}eq(rejected,true);}
-test('Четыре инструмента и точное число пунктов',()=>eq(CompassQuestionnaires.list.map(x=>[x.id,x.questions.length]),[['lsia',20],['bipq',8],['temmo',36],['stolin',57]]));
+test('Пять инструментов и точное число пунктов',()=>eq(CompassQuestionnaires.list.map(x=>[x.id,x.questions.length]),[['lsia',20],['bipq',8],['temmo',36],['stolin',57],['bdi',21]]));
 // ИЖУ: буквальная таблица издания 2022, с.180. В первом пункте 0/1/1;
 // 10 остальных положительных пунктов и 9 отрицательных дают достижимый максимум 39.
 test('ИЖУ: все согласны',()=>eq([score('lsia',Array(20).fill('agree')).total,groups(score('lsia',Array(20).fill('agree')))], [20,[4,6,4,4,2]]));
@@ -47,7 +47,7 @@ test('Столин: все Нет, false не пропуск',()=>{const r=score
 test('Столин: нечётные Да, чётные Нет',()=>{const r=score('stolin',Array.from({length:57},(_,i)=>i%2===0));eq(groups(r),[15,7,6,8,4,3,5,1,2,4,4,5]);eq(freq(r),[69.33,44.67,37.33,27.33,29,29.33,32,7.67,25.67,43.33,34.33,94]);});
 test('Столин: S имеет максимум 28 и частоту 99,67%',()=>{const a=Array(57).fill(false);[2,5,23,33,27,42,46,48,52,53,57].forEach(n=>a[n-1]=true);const r=score('stolin',a).groups[0];eq([r.raw,r.max,r.frequency],[28,28,99.67]);});
 for(const [changes,raw,frequency,category] of [[[8,13,25,27],7,44.67,'Признак не выражен'],[[8,13,25],8,58.67,'Признак выражен'],[[8,13],9,71.33,'Признак выражен'],[[8],10,80,'Признак ярко выражен']])test('Столин: I, строка таблицы '+raw,()=>{const a=Array(57).fill(false);changes.forEach(n=>a[n-1]=true);const g=score('stolin',a).groups[1];eq([g.raw,g.frequency,g.level],[raw,frequency,category]);});
-for(const id of ['lsia','bipq','temmo','stolin']){
+for(const id of ['lsia','bipq','temmo','stolin','bdi']){
  test(id+': пустой массив отклоняется',()=>rejects(id,[]));
  test(id+': пропуски отклоняются',()=>rejects(id,blank(id)));
  test(id+': sparse array отклоняется',()=>rejects(id,new Array(blank(id).length)));
@@ -71,6 +71,18 @@ sourceRows.forEach((row,factor)=>{
   eq(group.level,row.table[raw]<50?'Признак не выражен':row.table[raw]<=74?'Признак выражен':'Признак ярко выражен');
  });
 });
+
+
+// BDI-IA: independent boundary totals from the supplied DOCX, no diagnostic assertions.
+test('Бек: минимум и ноль как ответ',()=>{const r=score('bdi',Array(21).fill(0));eq([r.total,r.min,r.max,groups(r)],[0,0,63,[0,0]]);});
+test('Бек: максимум и две субшкалы',()=>{const r=score('bdi',Array(21).fill(3));eq([r.total,groups(r),r.groups.map(g=>g.max)],[63,[39,24],[39,24]]);});
+test('Бек: смешанный независимый пример',()=>{const a=[0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0,1,2,3,0];const snapshot=JSON.stringify(a),r=score('bdi',a);eq([r.total,groups(r)],[30,[18,12]]);eq(JSON.stringify(a),snapshot);});
+for(const [total,category] of [[0,'Депрессивные симптомы практически отсутствуют'],[9,'Депрессивные симптомы практически отсутствуют'],[10,'Лёгкая выраженность, субдепрессивный уровень'],[15,'Лёгкая выраженность, субдепрессивный уровень'],[16,'Умеренная выраженность'],[19,'Умеренная выраженность'],[20,'Выраженные симптомы средней тяжести'],[29,'Выраженные симптомы средней тяжести'],[30,'Высокая выраженность, тяжёлый уровень'],[63,'Высокая выраженность, тяжёлый уровень']])test('Бек: граница '+total,()=>{const a=Array(21).fill(0);for(let i=0;i<Math.floor(total/3);i++)a[i]=3;if(total%3)a[Math.floor(total/3)]=total%3;eq(score('bdi',a).category,category);});
+for(const value of [-1,4,1.5,'0',false,null,NaN,Infinity,undefined])test('Бек: недопустимое значение '+String(value),()=>{const a=Array(21).fill(0);a[20]=value;rejects('bdi',a);});
+test('Бек: собственные варианты каждой группы',()=>{const q=CompassQuestionnaires.get('bdi');eq(q.itemOptions.length,21);eq(q.itemOptions.map(a=>a.map(o=>o[0])),Array.from({length:21},()=>[0,1,2,3]));eq(CompassQuestionnaires.getOptions('bdi',0),q.itemOptions[0]);eq(CompassQuestionnaires.getOptions('bdi',1),q.itemOptions[1]);eq(q.itemOptions[0][0][1]===q.itemOptions[1][0][1],false);});
+test('Бек: версия сохраняется в результате',()=>eq(score('bdi',Array(21).fill(0)).version,CompassQuestionnaires.get('bdi').version));
+test('Варианты старых форм сохраняются',()=>{for(const id of ['lsia','bipq','temmo','stolin'])eq(CompassQuestionnaires.getOptions(id,0),CompassQuestionnaires.get(id).options);});
+test('Неверный инструмент/индекс не даёт вариантов',()=>{for(const [id,index] of [['missing',0],['bdi',-1],['bdi',21],['bdi',1.5],['bdi','0']])eq(CompassQuestionnaires.getOptions(id,index),[]);});
 
 window.testResults={passed:results.filter(r=>r.passed).length,failed:results.filter(r=>!r.passed).length,results};
 document.querySelector('#summary').textContent=`Пройдено: ${testResults.passed}, ошибок: ${testResults.failed}`;

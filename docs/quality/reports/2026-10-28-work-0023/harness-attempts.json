@@ -1,0 +1,25 @@
+{
+  "attempts": [
+    {
+      "result": "failed before UI checks",
+      "cause": "Escaping of a CSS selector in test JavaScript; corrected in harness"
+    },
+    {
+      "result": "80 UI checks passed; calculation fixture failed",
+      "cause": "Fixture calculation page used the unavailable public static path; switched to the private module path"
+    },
+    {
+      "result": "82 checks passed",
+      "directory": "/tmp/compass-beck-browser-r3"
+    },
+    {
+      "result": "snapshot rerun failed on pointer geometry after mobile focus/scroll",
+      "cause": "Test helper sampled a button before the focus timer settled; added a short wait in click helper"
+    },
+    {
+      "result": "82 checks passed; final screenshots saved",
+      "directory": "/tmp/compass-beck-browser-final2"
+    }
+  ],
+  "production_code_changed_to_fix_harness": false
+}

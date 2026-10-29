@@ -9,7 +9,7 @@
       margin: 0; background: #f7faf3; color: var(--ink);
       font: 14px/1.6 Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
     }
-    button, input, textarea { font: inherit; }
+    button, input, textarea, select { font: inherit; }
     button, a { -webkit-tap-highlight-color: transparent; touch-action: manipulation; }
     button { cursor: pointer; }
     button:disabled { cursor: wait; opacity: .65; }
@@ -99,7 +99,7 @@
     .content-grid { display: grid; grid-template-columns: minmax(0, 1.65fr) minmax(240px, 1fr); gap: 24px; align-items: start; }
     .form-card { padding: 28px; }
     label { display: block; font-weight: 750; font-size: 12px; margin-bottom: 9px; }
-    input, textarea { width: 100%; min-width: 0; padding: 12px 14px; min-height: 47px; border: 1px solid #789270; border-radius: 12px; background: white; color: var(--ink); }
+    input, textarea, select { width: 100%; min-width: 0; padding: 12px 14px; min-height: 47px; border: 1px solid #789270; border-radius: 12px; background: white; color: var(--ink); }
     input[type="datetime-local"] { max-width: 340px; color-scheme: light; }
     textarea { resize: vertical; line-height: 1.8; min-height: 206px; }
     textarea::placeholder { color: #60705e; }

@@ -142,6 +142,8 @@ raise SystemExit('Synthetic email was not received')
         # The raw/hashed data module is never public; authenticated delivery is role checked.
         check('doctor cannot fetch questionnaire module',b.evaluate(da,'(async()=>{const r=await fetch("/api/questionnaires/module");return r.status===403;})()'))
         check('patient module is private',b.evaluate(pa,'(async()=>{const r=await fetch("/api/questionnaires/module");return r.status===200 && r.headers.get("Cache-Control")==="no-store" && (await r.text()).includes("CompassQuestionnaires");})()'))
+        module_sha=hashlib.sha256((ROOT/'frontend/static/js/questionnaires.js').read_bytes()).hexdigest()
+        check('private module matches checked source',b.evaluate(pa,'(async()=>{const r=await fetch("/api/questionnaires/module");const h=await crypto.subtle.digest("SHA-256",await r.arrayBuffer());return [...new Uint8Array(h)].map(x=>x.toString(16).padStart(2,"0")).join("");})()')==module_sha)
         check('module not eagerly loaded',b.evaluate(pa,'!window.CompassQuestionnaires'))
         b.evaluate(pa,'''(()=>{window.appendOriginal=document.head.appendChild;document.head.appendChild=function(el){if(el.src?.endsWith('/api/questionnaires/module'))el.src='/api/questionnaires/missing';return window.appendOriginal.call(this,el);};return true;})()''')
         route(pa,'/patient/questionnaires')
@@ -149,8 +151,8 @@ raise SystemExit('Synthetic email was not received')
         check('module failure offers retry',b.evaluate(pa,'!!document.querySelector("[data-api-retry]") && !document.querySelector("#questionnaireForm")'))
         b.evaluate(pa,'document.head.appendChild=window.appendOriginal')
         b.click(pa,'[data-api-retry]');b.wait(pa,'!loading && !routeError && !!window.CompassQuestionnaires')
-        check('module retry loads four questionnaires',b.evaluate(pa,'CompassQuestionnaires.list.length===4 && document.querySelectorAll(".q-card").length===4'))
-        for tool in ['lsia','bipq','temmo','stolin']:
+        check('module retry loads five questionnaires',b.evaluate(pa,'CompassQuestionnaires.list.length===5 && document.querySelectorAll(".q-card").length===5'))
+        for tool in ['lsia','bipq','temmo','stolin','bdi']:
             route(pa,'/patient/questionnaires/'+tool)
             b.click(pa,'[data-q-action=start]')
             check('questionnaire starts '+tool,b.evaluate(pa,'!!document.querySelector("#questionnaireForm") && !routeError'))
@@ -167,6 +169,20 @@ raise SystemExit('Synthetic email was not received')
         b.evaluate(pb,'document.head.appendChild=window.appendOriginal')
         check('module denied after logout',b.evaluate(pb,'(async()=>{const r=await fetch("/api/questionnaires/module");return r.status===401;})()'))
         for width in [1440,390]:
+            # WORK-0024: actual HTTPS BDI flow on both layouts, no API mocks.
+            b.viewport(pa,width);route(pa,'/patient/questionnaires/bdi')
+            b.click(pa,'[data-q-action=reset-prompt]');time.sleep(.15)
+            b.click(pa,'[data-q-action=reset-confirm]');time.sleep(.15)
+            check(f'HTTPS BDI no default {width}',b.evaluate(pa,'!document.querySelector("[name=qAnswer]:checked") && state.questionnaires.bdi.step===0'))
+            b.evaluate(pa,'document.querySelector("#questionnaireForm").requestSubmit()')
+            check(f'HTTPS BDI required answer {width}',b.evaluate(pa,'!document.querySelector("#qError").hidden && !state.questionnaires.bdi.result'))
+            b.evaluate(pa,'(()=>{document.activeElement?.blur();window.scrollTo(0,0);return true;})()');time.sleep(.35)
+            b.screenshot(pa,Path(args.output).with_name(f'https-bdi-question-{width}.png'))
+            run=b.evaluate(pa,'''(()=>{window.bdiWrites=[];const original=window.fetch;window.fetch=(path,options)=>{if(options?.method&&options.method!=="GET")bdiWrites.push(path);return original(path,options);};let steps=0,valid=true;while(document.querySelector('#questionnaireForm')&&steps<21){const i=state.questionnaires.bdi.step,labels=[...document.querySelectorAll('.q-option>span')].map(x=>x.textContent);valid=valid&&i===steps&&JSON.stringify(labels)===JSON.stringify(CompassQuestionnaires.getOptions('bdi',i).map(x=>x[1]))&&labels.length===4&&document.documentElement.scrollWidth<=innerWidth+1;document.querySelectorAll('[name=qAnswer]')[steps%4].click();document.querySelector('#questionnaireForm').requestSubmit();steps++;}window.fetch=original;return {steps,valid,total:state.questionnaires.bdi.result?.total,writes:bdiWrites.length,version:state.questionnaires.bdi.result?.version};})()''')
+            check(f'HTTPS BDI 21 groups, result, version, privacy {width}',run['steps']==21 and run['valid'] and run['total']==30 and run['writes']==0 and 'BDI-IA' in run['version'])
+            check(f'HTTPS BDI result layout {width}',b.evaluate(pa,'!!document.querySelector(".q-result-hero") && document.querySelectorAll(".q-result-card").length===2 && document.documentElement.scrollWidth<=innerWidth+1'))
+            b.evaluate(pa,'(()=>{document.activeElement?.blur();window.scrollTo(0,0);return true;})()');time.sleep(.35)
+            b.screenshot(pa,Path(args.output).with_name(f'https-bdi-result-{width}.png'))
             for c,paths in [(pa,['/patient','/patient/report','/patient/history','/patient/questionnaires']), (da,['/doctor',f'/doctor/patients/{pid}'])]:
                 b.viewport(c,width)
                 for path in paths:
@@ -196,11 +212,11 @@ raise SystemExit('Synthetic email was not received')
         b.wait(pa,'!!sessionUser && !loading && readRoute().view!=="login"')
         check('new password and account switch',b.evaluate(pa,'sessionUser.id')==other)
         route(pa,'/patient/questionnaires')
-        check('account switch clears previous questionnaire answers',b.evaluate(pa,'Object.keys(state.questionnaires).length===0 && document.querySelectorAll(".q-card").length===4'))
+        check('account switch clears previous questionnaire answers',b.evaluate(pa,'Object.keys(state.questionnaires).length===0 && document.querySelectorAll(".q-card").length===5'))
         b.evaluate(da,'logout()');b.wait(da,'!loading && !sessionUser')
         check('doctor logout',b.evaluate(da,'people.length===0 && state.reports.length===0 && !!document.querySelector("#accountForm")'))
         calc=b.context(private=True);b.navigate(calc,(ROOT/'frontend/tests/questionnaires.html').as_uri());b.wait(calc,'typeof testResults!=="undefined"')
-        check('219 calculation regressions',b.evaluate(calc,'({passed:testResults.passed,failed:testResults.failed})')==dict(passed=219,failed=0))
+        check('250 calculation regressions',b.evaluate(calc,'({passed:testResults.passed,failed:testResults.failed})')==dict(passed=250,failed=0))
     finally:
         b.close()
         # Preserve audit actors/events; deactivate only this run's synthetic accounts.
@@ -756,7 +772,7 @@ def main():
         # Static integrity calculation page remains local, never HTTP published.
         calc=b.context(private=True);b.navigate(calc,(ROOT/'frontend/tests/questionnaires.html').as_uri());wait(calc,'typeof testResults !== "undefined"')
         calculation=b.evaluate(calc,'({passed:testResults.passed,failed:testResults.failed})')
-        check('219 calculation regressions',calculation=={'passed':219,'failed':0})
+        check('250 calculation regressions',calculation=={'passed':250,'failed':0})
         report={'passed':sum(x['passed'] for x in results),'failed':sum(not x['passed'] for x in results),'checks':results,'contrast':contrast,'calculations':calculation}
         Path(args.output).write_text(json.dumps(report,ensure_ascii=False,indent=2)+'\n')
         print(json.dumps({'passed':report['passed'],'failed':report['failed'],'calculations':calculation},ensure_ascii=False))

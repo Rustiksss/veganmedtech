@@ -1,0 +1,499 @@
+{
+  "environment": "Real Firefox, loopback fixture with mock /api/me and logout; no database/server permission acceptance",
+  "checks": [
+    {
+      "name": "1440: catalog 5 and BDI metadata",
+      "passed": true
+    },
+    {
+      "name": "1440: source and edition before start",
+      "passed": true
+    },
+    {
+      "name": "1440: no default answer",
+      "passed": true
+    },
+    {
+      "name": "1440: required answer error",
+      "passed": true
+    },
+    {
+      "name": "1440: keyboard radio and tab to submit",
+      "passed": true
+    },
+    {
+      "name": "1440: back preserves zero",
+      "passed": true
+    },
+    {
+      "name": "1440: group 2, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "1440: group 3, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "1440: group 4, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "1440: group 5, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "1440: group 6, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "1440: group 7, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "1440: group 8, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "1440: group 9, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "1440: group 10, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "1440: group 11, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "1440: group 12, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "1440: group 13, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "1440: group 14, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "1440: group 15, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "1440: group 16, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "1440: group 17, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "1440: group 18, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "1440: group 19, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "1440: group 20, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "1440: group 21, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "1440: result 30, two subscales, edition",
+      "passed": true
+    },
+    {
+      "name": "1440: changing answer invalidates old result",
+      "passed": true
+    },
+    {
+      "name": "1440: recompute to 33",
+      "passed": true
+    },
+    {
+      "name": "1440: reset cancelled",
+      "passed": true
+    },
+    {
+      "name": "1440: explicit reset clears answers",
+      "passed": true
+    },
+    {
+      "name": "1440: draft resumed",
+      "passed": true
+    },
+    {
+      "name": "1440: account switch clears local answers",
+      "passed": true
+    },
+    {
+      "name": "1440: logout clears all drafts",
+      "passed": true
+    },
+    {
+      "name": "1440: re-entry is empty",
+      "passed": true
+    },
+    {
+      "name": "1440: previous lsia completes",
+      "passed": true
+    },
+    {
+      "name": "1440: previous bipq completes",
+      "passed": true
+    },
+    {
+      "name": "1440: previous temmo completes",
+      "passed": true
+    },
+    {
+      "name": "1440: previous stolin completes",
+      "passed": true
+    },
+    {
+      "name": "1440: storage empty",
+      "passed": true
+    },
+    {
+      "name": "390: catalog 5 and BDI metadata",
+      "passed": true
+    },
+    {
+      "name": "390: source and edition before start",
+      "passed": true
+    },
+    {
+      "name": "390: no default answer",
+      "passed": true
+    },
+    {
+      "name": "390: required answer error",
+      "passed": true
+    },
+    {
+      "name": "390: keyboard radio and tab to submit",
+      "passed": true
+    },
+    {
+      "name": "390: back preserves zero",
+      "passed": true
+    },
+    {
+      "name": "390: group 2, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "390: group 3, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "390: group 4, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "390: group 5, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "390: group 6, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "390: group 7, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "390: group 8, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "390: group 9, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "390: group 10, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "390: group 11, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "390: group 12, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "390: group 13, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "390: group 14, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "390: group 15, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "390: group 16, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "390: group 17, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "390: group 18, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "390: group 19, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "390: group 20, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "390: group 21, own four options, no default, fits",
+      "passed": true
+    },
+    {
+      "name": "390: result 30, two subscales, edition",
+      "passed": true
+    },
+    {
+      "name": "390: changing answer invalidates old result",
+      "passed": true
+    },
+    {
+      "name": "390: recompute to 33",
+      "passed": true
+    },
+    {
+      "name": "390: reset cancelled",
+      "passed": true
+    },
+    {
+      "name": "390: explicit reset clears answers",
+      "passed": true
+    },
+    {
+      "name": "390: draft resumed",
+      "passed": true
+    },
+    {
+      "name": "390: account switch clears local answers",
+      "passed": true
+    },
+    {
+      "name": "390: logout clears all drafts",
+      "passed": true
+    },
+    {
+      "name": "390: re-entry is empty",
+      "passed": true
+    },
+    {
+      "name": "390: previous lsia completes",
+      "passed": true
+    },
+    {
+      "name": "390: previous bipq completes",
+      "passed": true
+    },
+    {
+      "name": "390: previous temmo completes",
+      "passed": true
+    },
+    {
+      "name": "390: previous stolin completes",
+      "passed": true
+    },
+    {
+      "name": "390: storage empty",
+      "passed": true
+    },
+    {
+      "name": "Firefox: 250 calculations",
+      "passed": true
+    },
+    {
+      "name": "No answer POST/PUT requests",
+      "passed": true
+    }
+  ],
+  "traffic": [
+    {
+      "method": "GET",
+      "path": "/"
+    },
+    {
+      "method": "GET",
+      "path": "/static/css/app.css"
+    },
+    {
+      "method": "GET",
+      "path": "/static/js/api.js"
+    },
+    {
+      "method": "GET",
+      "path": "/static/js/app.js"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "method": "GET",
+      "path": "/favicon.ico"
+    },
+    {
+      "method": "GET",
+      "path": "/api/questionnaires/module"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "method": "DELETE",
+      "path": "/_allauth/browser/v1/auth/session"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "method": "GET",
+      "path": "/"
+    },
+    {
+      "method": "GET",
+      "path": "/static/css/app.css"
+    },
+    {
+      "method": "GET",
+      "path": "/static/js/api.js"
+    },
+    {
+      "method": "GET",
+      "path": "/static/js/app.js"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "method": "GET",
+      "path": "/favicon.ico"
+    },
+    {
+      "method": "GET",
+      "path": "/api/questionnaires/module"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "method": "DELETE",
+      "path": "/_allauth/browser/v1/auth/session"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "method": "GET",
+      "path": "/api/me"
+    },
+    {
+      "method": "GET",
+      "path": "/calculations.html"
+    },
+    {
+      "method": "GET",
+      "path": "/api/questionnaires/module"
+    },
+    {
+      "method": "GET",
+      "path": "/favicon.ico"
+    }
+  ]
+}

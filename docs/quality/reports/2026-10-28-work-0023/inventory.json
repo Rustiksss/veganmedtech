@@ -1,0 +1,86 @@
+{
+  "task": "WORK-0023",
+  "checked_on": "2026-10-28",
+  "materials": [
+    {
+      "path": "misc_materials/kompas_prototype.html",
+      "sha256": "38fad7a7b5283974f8488a99f3a5784d783b3160cf0171b75b4804f040e7a793",
+      "size_bytes": 64737
+    },
+    {
+      "path": "misc_materials/Индекс_жизненной_удовлетворенности.docx",
+      "sha256": "a99bce29961085d3d276eeb42cf8dd60dc36c60bbdb6e26b54bee64dc5a0d5bf",
+      "size_bytes": 14832,
+      "paragraph_count": 111,
+      "text_character_count": 1592,
+      "media_or_embeddings": [],
+      "external_relationships": []
+    },
+    {
+      "path": "misc_materials/Кейс_цифровой_помощник_клинический_компас.pdf",
+      "sha256": "dbc5d5edebab94f5742f8d81ec1b727954c8b088afcc126e67f75ab5691f41ab",
+      "size_bytes": 100768
+    },
+    {
+      "path": "misc_materials/Клинический компас шкалы.docx",
+      "sha256": "0d6e9951b90c2e2cb7ce65cf6a88ceccd1b2001f23857fc955e0433c8dc9920b",
+      "size_bytes": 17350,
+      "paragraph_count": 43,
+      "text_character_count": 2922,
+      "media_or_embeddings": [],
+      "external_relationships": [
+        "https://psytests.org/diag/ais-run.html?utm_source=chatgpt.com",
+        "https://psytests.org/diag/pcl5-run.html?utm_source=chatgpt.com",
+        "https://psytests.org/diag/bcis.html?utm_source=chatgpt.com",
+        "https://psytests.org/diag/raadsr-run.html ",
+        "https://psytests.org/stress/dors.html?utm_source=chatgpt.com",
+        "https://psytests.org/diag/asrm-run.html?utm_source=chatgpt.com",
+        "https://psytests.org/stress/pss-run.html?utm_source=chatgpt.com",
+        "https://psytests.org/anxiety/stai.html?utm_source=chatgpt.com",
+        "https://psytests.org/diag/asrs5.html?utm_source=chatgpt.com",
+        "https://psytests.org/diag/srosr.html?utm_source=chatgpt.com",
+        "https://psytests.org/diag/psqi-run.html?utm_source=chatgpt.com",
+        "https://psytests.org/diag/cage.html?utm_source=chatgpt.com"
+      ]
+    },
+    {
+      "path": "misc_materials/Краткий_опросник_восприятия_болезни_Сирота.docx",
+      "sha256": "ae7d03c5213b4100e41b46a90466da1e20d56e0a004c3e4125b149799d2631a4",
+      "size_bytes": 18195,
+      "paragraph_count": 177,
+      "text_character_count": 1598,
+      "media_or_embeddings": [],
+      "external_relationships": []
+    },
+    {
+      "path": "misc_materials/Тест_экзистенциальных_мотиваций_текст_и_ключи_.pdf",
+      "sha256": "789fb0455dfcfbb41b9229d12c686031c6fc8ed06dbc18c858abf89782628c46",
+      "size_bytes": 898693
+    },
+    {
+      "path": "misc_materials/Шкала депрессии Бека.docx",
+      "sha256": "6f476290c72739defbb149dd9b80fe440e39c52f5083e08f0a249cbb53756031",
+      "size_bytes": 39704,
+      "paragraph_count": 474,
+      "text_character_count": 19317,
+      "media_or_embeddings": [],
+      "external_relationships": []
+    },
+    {
+      "path": "misc_materials/алертинг.docx",
+      "sha256": "2efe6058392c9ac9e4dd5d1ab22343fedbcbf20aaab4f4b4970098ab36637653",
+      "size_bytes": 21586,
+      "paragraph_count": 61,
+      "text_character_count": 13010,
+      "media_or_embeddings": [],
+      "external_relationships": []
+    }
+  ],
+  "application_sha256": {
+    "frontend/static/js/questionnaires.js": "3e7afa1aeb48e69987066bc0ba40455604995455bf2074e97f72e732ec70d2c5",
+    "frontend/static/js/app.js": "1a16ed2073873ea9a315a32a90d6318369201c0e9c6415a5ddf9c27688490a64",
+    "frontend/static/css/app.css": "89cb22e849c26580790fa769419bbf5e35437b5f9318f2860b0ad3c8bf5be091",
+    "frontend/templates/index.html": "8cd24b5ad6d4f0d2f191a0ec7920ea471342655f8c3b79eb95a3defe0be7c71a",
+    "frontend/tests/questionnaires.html": "d9ed29780ecf39ace4422eb6d51c1422b80cf1e6bce97417d18f5fe8ae2e7b37"
+  }
+}

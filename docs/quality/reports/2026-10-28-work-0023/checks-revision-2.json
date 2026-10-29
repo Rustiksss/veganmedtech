@@ -1,0 +1,34 @@
+[
+  {
+    "command": [
+      "python3",
+      "-B",
+      "scripts/check_sdd.py"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "git",
+      "diff",
+      "--check"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "/home/rustiks/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "--check",
+      "frontend/static/js/questionnaires.js"
+    ],
+    "exit_code": 0
+  },
+  {
+    "command": [
+      "/home/rustiks/.cache/codex-runtimes/codex-primary-runtime/dependencies/node/bin/node",
+      "--check",
+      "frontend/static/js/app.js"
+    ],
+    "exit_code": 0
+  }
+]
